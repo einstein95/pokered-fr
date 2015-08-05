@@ -266,4 +266,4 @@ INCLUDE "data/credits_order.asm"
 INCLUDE "text/credits_text.asm"
 
 TheEndGfx: ; 7473e (1d:473e) (7473f on blue)
-	INCBIN "gfx/theend.interleave.2bpp"
+	INCBIN "gfx/theend.2bpp"
