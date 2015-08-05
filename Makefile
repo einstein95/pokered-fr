@@ -66,18 +66,19 @@ $(foreach obj, $(all_obj), \
 )
 
 
-# Image files are added to a queue to reduce build time. They're converted when building parent objects.
-%.png:  ;
-%.2bpp: %.png  ; $(eval 2bppq += $<) @rm -f $@
-%.1bpp: %.png  ; $(eval 1bppq += $<) @rm -f $@
+# Image files are converted using rgbgfx. Pokemon pics are added to a queue and compressed.
+.png.2bpp:
+	@rgbgfx -o $@ $<
+
+.png.1bpp:
+	@rgbgfx -b -o $@ $<
+
 %.pic:  %.2bpp ; $(eval picq  += $<) @rm -f $@
 
 # Assemble source files into objects.
 # Queue payloads are here. These are made silent since there may be hundreds of targets.
 # Use rgbasm -h to use halts without nops.
 $(all_obj): $$*.asm $$($$*_dep)
-	@$(gfx) 2bpp $(2bppq);    $(eval 2bppq :=)
-	@$(gfx) 1bpp $(1bppq);    $(eval 1bppq :=)
 	@$(pic) compress $(picq); $(eval picq  :=)
 	rgbasm -h -o $@ $*.asm
 
