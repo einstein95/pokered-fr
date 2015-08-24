@@ -29,7 +29,7 @@ MonsterNames: ; 1c21e (7:421e)
 	db "BLASTOISE@"
 	db "PINSIR@@@@"
 	db "TANGELA@@@"
-	db "MISSINGNO."
+	db "LEAFEON@@@"
 	db "MISSINGNO."
 	db "GROWLITHE@"
 	db "ONIX@@@@@@"

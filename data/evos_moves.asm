@@ -29,7 +29,7 @@ EvosMovesPointerTable: ; 3b05c (e:705c)
 	dw Mon009_EvosMoves
 	dw Mon127_EvosMoves
 	dw Mon114_EvosMoves
-	dw Mon152_EvosMoves	;MissingNo
+	dw Mon152_EvosMoves
 	dw Mon153_EvosMoves	;MissingNo
 	dw Mon058_EvosMoves
 	dw Mon095_EvosMoves
@@ -566,10 +566,17 @@ Mon114_EvosMoves: ; 3b362 (e:7362)
 	db 0
 
 Mon152_EvosMoves: ; 3b370 (e:7370)
-;MISSINGNO
+;LEAFEON
 ;Evolutions
 	db 0
 ;Learnset
+	db 7,LEECH_SEED
+	db 13,VINE_WHIP
+	db 22,POISONPOWDER
+	db 30,RAZOR_LEAF
+	db 43,GROWTH
+	db 55,SLEEP_POWDER
+	db 65,SOLARBEAM
 	db 0
 
 Mon153_EvosMoves: ; 3b372 (e:7372)
@@ -1341,6 +1348,7 @@ Mon040_EvosMoves: ; 3b642 (e:7642)
 Mon133_EvosMoves: ; 3b644 (e:7644)
 ;EEVEE
 ;Evolutions
+	db EV_ITEM,LEAF_STONE,1,LEAFEON
 	db EV_ITEM,FIRE_STONE,1,FLAREON
 	db EV_ITEM,THUNDER_STONE,1,JOLTEON
 	db EV_ITEM,WATER_STONE,1,VAPOREON

@@ -298,6 +298,16 @@ _TangelaDexEntry::
 	next "shake as it walks"
 	dex
 
+_LeafeonDexEntry::
+	text "LEAFEON is always"
+	next "surrounded by"
+	next "fresh clean air"
+
+	page "because it uses"
+	next "photosynthesis"
+	next "just like a plant"
+	dex
+
 _GrowlitheDexEntry::
 	text "Very protective"
 	next "of its territory."
