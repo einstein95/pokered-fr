@@ -31,4 +31,4 @@ db 0 ; growth rate
 	tmlearn 34,35,39,40
 	tmlearn 44,48
 	tmlearn 50,54
-db 0 ; padding
+db BANK(PrimeapePicFront)

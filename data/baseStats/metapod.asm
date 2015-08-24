@@ -26,4 +26,4 @@ db 0 ; growth rate
 	tmlearn 0
 	tmlearn 0
 	tmlearn 0
-db 0 ; padding
+db BANK(MetapodPicFront)

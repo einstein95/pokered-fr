@@ -10,6 +10,7 @@ PICS_2 EQU $A
 PICS_3 EQU $B
 PICS_4 EQU $C
 PICS_5 EQU $D
+PICS_6 EQU $2D
 
 
 INCLUDE "home.asm"
@@ -5340,8 +5341,6 @@ KakunaPicBack::       INCBIN "pic/monback/kakunab.pic"
 BeedrillPicFront::    INCBIN "pic/bmon/beedrill.pic"
 BeedrillPicBack::     INCBIN "pic/monback/beedrillb.pic"
 
-FossilKabutopsPic::   INCBIN "pic/bmon/fossilkabutops.pic"
-
 
 SECTION "Battle (bank B)", ROMX, BANK[$B]
 
@@ -5471,8 +5470,6 @@ WartortlePicFront::    INCBIN "pic/bmon/wartortle.pic"
 WartortlePicBack::     INCBIN "pic/monback/wartortleb.pic"
 CharizardPicFront::    INCBIN "pic/bmon/charizard.pic"
 CharizardPicBack::     INCBIN "pic/monback/charizardb.pic"
-FossilAerodactylPic::  INCBIN "pic/bmon/fossilaerodactyl.pic"
-GhostPic::             INCBIN "pic/other/ghost.pic"
 OddishPicFront::       INCBIN "pic/bmon/oddish.pic"
 OddishPicBack::        INCBIN "pic/monback/oddishb.pic"
 GloomPicFront::        INCBIN "pic/bmon/gloom.pic"
@@ -6711,6 +6708,14 @@ INCLUDE "engine/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 
 INCLUDE "engine/items/tm_prices.asm"
+
+
+SECTION "Pics 6", ROMX, BANK[PICS_6]
+
+FossilKabutopsPic::    INCBIN "pic/bmon/fossilkabutops.pic"
+FossilAerodactylPic::  INCBIN "pic/bmon/fossilaerodactyl.pic"
+GhostPic::             INCBIN "pic/other/ghost.pic"
+
 
 IF DEF(_OPTION_BEACH_HOUSE)
 SECTION "bank3C",ROMX[$4314],BANK[$3C]

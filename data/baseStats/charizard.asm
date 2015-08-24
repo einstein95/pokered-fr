@@ -30,4 +30,4 @@ IF DEF(_YELLOW)
 ELSE
 	tmlearn 50,51,54
 ENDC
-db 0 ; padding
+db BANK(CharizardPicFront)
