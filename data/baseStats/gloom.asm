@@ -1,5 +1,5 @@
 GloomBaseStats: ; 38892 (e:4892)
-db DEX_GLOOM ; pokedex id
+db GLOOM ; pokedex id
 db 60 ; base hp
 db 65 ; base attack
 db 70 ; base defense

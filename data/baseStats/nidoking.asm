@@ -1,5 +1,5 @@
 NidokingBaseStats: ; 3877a (e:477a)
-db DEX_NIDOKING ; pokedex id
+db NIDOKING ; pokedex id
 db 81 ; base hp
 db 92 ; base attack
 db 77 ; base defense

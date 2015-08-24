@@ -1,5 +1,5 @@
 ZapdosBaseStats: ; 3939e (e:539e)
-db DEX_ZAPDOS ; pokedex id
+db ZAPDOS ; pokedex id
 db 90 ; base hp
 db 90 ; base attack
 db 85 ; base defense

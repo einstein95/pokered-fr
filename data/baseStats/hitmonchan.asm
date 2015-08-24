@@ -1,5 +1,5 @@
 HitmonchanBaseStats: ; 38f76 (e:4f76)
-db DEX_HITMONCHAN ; pokedex id
+db HITMONCHAN ; pokedex id
 db 50 ; base hp
 db 105 ; base attack
 db 79 ; base defense

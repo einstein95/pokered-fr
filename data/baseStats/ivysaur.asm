@@ -1,5 +1,5 @@
 IvysaurBaseStats: ; 383fa (e:43fa)
-db DEX_IVYSAUR ; pokedex id
+db IVYSAUR ; pokedex id
 db 60 ; base hp
 db 62 ; base attack
 db 63 ; base defense

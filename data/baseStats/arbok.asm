@@ -1,5 +1,5 @@
 ArbokBaseStats: ; 38662 (e:4662)
-db DEX_ARBOK ; pokedex id
+db ARBOK ; pokedex id
 db 60 ; base hp
 db 85 ; base attack
 db 69 ; base defense

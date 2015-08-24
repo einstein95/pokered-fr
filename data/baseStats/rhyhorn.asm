@@ -1,5 +1,5 @@
 RhyhornBaseStats: ; 38fe6 (e:4fe6)
-db DEX_RHYHORN ; pokedex id
+db RHYHORN ; pokedex id
 db 80 ; base hp
 db 85 ; base attack
 db 95 ; base defense

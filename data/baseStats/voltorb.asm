@@ -1,5 +1,5 @@
 VoltorbBaseStats: ; 38eb2 (e:4eb2)
-db DEX_VOLTORB ; pokedex id
+db VOLTORB ; pokedex id
 db 40 ; base hp
 db 30 ; base attack
 db 50 ; base defense

@@ -1,5 +1,5 @@
 DiglettBaseStats: ; 3893a (e:493a)
-db DEX_DIGLETT ; pokedex id
+db DIGLETT ; pokedex id
 db 10 ; base hp
 db 55 ; base attack
 db 25 ; base defense

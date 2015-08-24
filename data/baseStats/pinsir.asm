@@ -1,5 +1,5 @@
 PinsirBaseStats: ; 391a6 (e:51a6)
-db DEX_PINSIR ; pokedex id
+db PINSIR ; pokedex id
 db 65 ; base hp
 db 125 ; base attack
 db 100 ; base defense

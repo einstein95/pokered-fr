@@ -1,5 +1,5 @@
 StaryuBaseStats: ; 390e2 (e:50e2)
-db DEX_STARYU ; pokedex id
+db STARYU ; pokedex id
 db 30 ; base hp
 db 45 ; base attack
 db 55 ; base defense

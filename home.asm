@@ -275,10 +275,7 @@ LoadFrontSpriteByMonIndex:: ; 1389 (0:1389)
 	ld a, [wd11e]
 	push af
 	ld a, [wcf91]
-	ld [wd11e], a
-	predef IndexToPokedex
 	ld hl, wd11e
-	ld a, [hl]
 	pop bc
 	ld [hl], b
 	and a
@@ -580,7 +577,6 @@ GetMonHeader:: ; 1537 (0:1537)
 	jr z,.specialID
 	cp a,MEW
 	jr z,.mew
-	predef IndexToPokedex   ; convert pokemon ID in [wd11e] to pokedex number
 	ld a,[wd11e]
 	dec a
 	ld bc,MonBaseStatsEnd - MonBaseStats

@@ -1,5 +1,5 @@
 NinetalesBaseStats: ; 387ea (e:47ea)
-db DEX_NINETALES ; pokedex id
+db NINETALES ; pokedex id
 db 73 ; base hp
 db 76 ; base attack
 db 75 ; base defense

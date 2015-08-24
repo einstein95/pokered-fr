@@ -1,5 +1,5 @@
 ArcanineBaseStats: ; 38a36 (e:4a36)
-db DEX_ARCANINE ; pokedex id
+db ARCANINE ; pokedex id
 db 90 ; base hp
 db 110 ; base attack
 db 80 ; base defense

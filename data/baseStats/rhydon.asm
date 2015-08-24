@@ -1,6 +1,6 @@
 MonBaseStats:
 RhydonBaseStats: ; 39002 (e:5002)
-db DEX_RHYDON ; pokedex id
+db RHYDON ; pokedex id
 db 105 ; base hp
 db 130 ; base attack
 db 120 ; base defense

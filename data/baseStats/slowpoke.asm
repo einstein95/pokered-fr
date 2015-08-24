@@ -1,5 +1,5 @@
 SlowpokeBaseStats: ; 38c66 (e:4c66)
-db DEX_SLOWPOKE ; pokedex id
+db SLOWPOKE ; pokedex id
 db 90 ; base hp
 db 65 ; base attack
 db 65 ; base defense

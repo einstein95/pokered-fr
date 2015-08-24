@@ -1,5 +1,5 @@
 ZubatBaseStats: ; 3883e (e:483e)
-db DEX_ZUBAT ; pokedex id
+db ZUBAT ; pokedex id
 db 40 ; base hp
 db 45 ; base attack
 db 35 ; base defense

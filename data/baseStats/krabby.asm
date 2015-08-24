@@ -1,5 +1,5 @@
 KrabbyBaseStats: ; 38e7a (e:4e7a)
-db DEX_KRABBY ; pokedex id
+db KRABBY ; pokedex id
 db 30 ; base hp
 db 105 ; base attack
 db 90 ; base defense

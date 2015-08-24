@@ -1,5 +1,5 @@
 NidorinoBaseStats: ; 3875e (e:475e)
-db DEX_NIDORINO ; pokedex id
+db NIDORINO ; pokedex id
 db 61 ; base hp
 db 72 ; base attack
 db 57 ; base defense

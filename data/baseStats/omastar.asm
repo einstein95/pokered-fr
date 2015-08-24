@@ -1,5 +1,5 @@
 OmastarBaseStats: ; 392f6 (e:52f6)
-db DEX_OMASTAR ; pokedex id
+db OMASTAR ; pokedex id
 db 70 ; base hp
 db 60 ; base attack
 db 125 ; base defense

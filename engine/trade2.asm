@@ -4,7 +4,6 @@ Trade_PrintPlayerMonInfoText: ; 42769 (10:6769)
 	call PlaceString
 	ld a,[wTradedPlayerMonSpecies]
 	ld [wd11e],a
-	predef IndexToPokedex
 	coord hl, 9, 0
 	ld de,wd11e
 	lb bc, LEADING_ZEROES | 1, 3
@@ -26,7 +25,6 @@ Trade_PrintEnemyMonInfoText: ; 427a7 (10:67a7)
 	call PlaceString
 	ld a,[wTradedEnemyMonSpecies]
 	ld [wd11e],a
-	predef IndexToPokedex
 	coord hl, 9, 10
 	ld de,wd11e
 	lb bc, LEADING_ZEROES | 1, 3

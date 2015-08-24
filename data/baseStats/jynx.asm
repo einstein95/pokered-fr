@@ -1,5 +1,5 @@
 JynxBaseStats: ; 39152 (e:5152)
-db DEX_JYNX ; pokedex id
+db JYNX ; pokedex id
 db 65 ; base hp
 db 50 ; base attack
 db 35 ; base defense

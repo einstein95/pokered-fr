@@ -1,5 +1,5 @@
 TentacoolBaseStats: ; 38ba2 (e:4ba2)
-db DEX_TENTACOOL ; pokedex id
+db TENTACOOL ; pokedex id
 db 40 ; base hp
 db 40 ; base attack
 db 35 ; base defense

@@ -1,5 +1,5 @@
 ClefairyBaseStats: ; 38796 (e:4796)
-db DEX_CLEFAIRY ; pokedex id
+db CLEFAIRY ; pokedex id
 db 70 ; base hp
 db 45 ; base attack
 db 48 ; base defense

@@ -1,5 +1,5 @@
 NidoqueenBaseStats: ; 38726 (e:4726)
-db DEX_NIDOQUEEN ; pokedex id
+db NIDOQUEEN ; pokedex id
 db 90 ; base hp
 db 82 ; base attack
 db 87 ; base defense

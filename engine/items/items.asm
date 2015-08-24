@@ -396,7 +396,6 @@ ItemUseBall: ; d687 (3:5687)
 	jr z,.printText1
 	ld hl,ItemUseBallText05
 	call PrintText
-	predef IndexToPokedex
 	ld a,[wd11e]
 	dec a
 	ld c,a

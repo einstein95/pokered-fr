@@ -1,5 +1,5 @@
 VileplumeBaseStats: ; 388ae (e:48ae)
-db DEX_VILEPLUME ; pokedex id
+db VILEPLUME ; pokedex id
 db 75 ; base hp
 db 80 ; base attack
 db 85 ; base defense

@@ -77,7 +77,6 @@ HandlePokedexSideMenu: ; 4006d (10:406d)
 	call IsPokemonBitSet
 	ld b,2
 	jr z,.exitSideMenu
-	call PokedexToIndex
 	ld hl,wTopMenuItemY
 	ld a,10
 	ld [hli],a ; top menu item Y
@@ -260,7 +259,6 @@ HandlePokedexListMenu: ; 40111 (10:4111)
 .dashedLine ; for unseen pokemon in the list
 	db "----------@"
 .getPokemonName
-	call PokedexToIndex
 	call GetMonName
 .skipGettingName
 	pop hl
@@ -460,7 +458,6 @@ ShowPokedexDataInternal: ; 402e2 (10:42e2)
 	push de
 	ld a,[wd11e]
 	push af
-	call IndexToPokedex
 	coord hl, 2, 8
 	ld a, "№"
 	ld [hli],a
@@ -604,42 +601,3 @@ DrawTileLine: ; 40474 (10:4474)
 	ret
 
 INCLUDE "data/pokedex_entries.asm"
-
-PokedexToIndex: ; 40ff9 (10:4ff9)
-	; converts the Pokédex number at wd11e to an index
-	push bc
-	push hl
-	ld a,[wd11e]
-	ld b,a
-	ld c,0
-	ld hl,PokedexOrder
-
-.loop ; go through the list until we find an entry with a matching dex number
-	inc c
-	ld a,[hli]
-	cp b
-	jr nz,.loop
-
-	ld a,c
-	ld [wd11e],a
-	pop hl
-	pop bc
-	ret
-
-IndexToPokedex: ; 41010 (10:5010)
-	; converts the indexédex number at wd11e to a Pokédex number
-	push bc
-	push hl
-	ld a,[wd11e]
-	dec a
-	ld hl,PokedexOrder
-	ld b,0
-	ld c,a
-	add hl,bc
-	ld a,[hl]
-	ld [wd11e],a
-	pop hl
-	pop bc
-	ret
-
-INCLUDE "data/pokedex_order.asm"

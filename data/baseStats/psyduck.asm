@@ -1,5 +1,5 @@
 PsyduckBaseStats: ; 389aa (e:49aa)
-db DEX_PSYDUCK ; pokedex id
+db PSYDUCK ; pokedex id
 db 50 ; base hp
 db 52 ; base attack
 db 48 ; base defense

@@ -1,5 +1,5 @@
 LickitungBaseStats: ; 38f92 (e:4f92)
-db DEX_LICKITUNG ; pokedex id
+db LICKITUNG ; pokedex id
 db 90 ; base hp
 db 55 ; base attack
 db 75 ; base defense

@@ -1,5 +1,5 @@
 NidoranMBaseStats: ; 38742 (e:4742)
-db DEX_NIDORAN_M ; pokedex id
+db NIDORAN_M ; pokedex id
 db 46 ; base hp
 db 57 ; base attack
 db 40 ; base defense

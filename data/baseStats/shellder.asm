@@ -1,5 +1,5 @@
 ShellderBaseStats: ; 38d9a (e:4d9a)
-db DEX_SHELLDER ; pokedex id
+db SHELLDER ; pokedex id
 db 30 ; base hp
 db 65 ; base attack
 db 100 ; base defense

@@ -1,5 +1,5 @@
 ElectrodeBaseStats: ; 38ece (e:4ece)
-db DEX_ELECTRODE ; pokedex id
+db ELECTRODE ; pokedex id
 db 60 ; base hp
 db 50 ; base attack
 db 70 ; base defense

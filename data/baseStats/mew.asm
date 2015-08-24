@@ -1,5 +1,5 @@
 MewBaseStats: ; 425b (1:425b)
-db DEX_MEW ; pokedex id
+db MEW ; pokedex id
 db 100 ; base hp
 db 100 ; base attack
 db 100 ; base defense

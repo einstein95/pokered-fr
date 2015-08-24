@@ -1,5 +1,5 @@
 FearowBaseStats: ; 3862a (e:462a)
-db DEX_FEAROW ; pokedex id
+db FEAROW ; pokedex id
 db 65 ; base hp
 db 90 ; base attack
 db 65 ; base defense

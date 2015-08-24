@@ -1,5 +1,5 @@
 ScytherBaseStats: ; 39136 (e:5136)
-db DEX_SCYTHER ; pokedex id
+db SCYTHER ; pokedex id
 db 70 ; base hp
 db 110 ; base attack
 db 80 ; base defense

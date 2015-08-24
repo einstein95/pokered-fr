@@ -1,5 +1,5 @@
 ExeggcuteBaseStats: ; 38eea (e:4eea)
-db DEX_EXEGGCUTE ; pokedex id
+db EXEGGCUTE ; pokedex id
 db 60 ; base hp
 db 40 ; base attack
 db 80 ; base defense

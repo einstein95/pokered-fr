@@ -1,5 +1,5 @@
 BellsproutBaseStats: ; 38b4e (e:4b4e)
-db DEX_BELLSPROUT ; pokedex id
+db BELLSPROUT ; pokedex id
 db 50 ; base hp
 db 75 ; base attack
 db 35 ; base defense

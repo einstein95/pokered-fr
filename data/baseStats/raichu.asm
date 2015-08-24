@@ -1,5 +1,5 @@
 RaichuBaseStats: ; 3869a (e:469a)
-db DEX_RAICHU ; pokedex id
+db RAICHU ; pokedex id
 db 60 ; base hp
 db 90 ; base attack
 db 55 ; base defense

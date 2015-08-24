@@ -1,5 +1,5 @@
 DragonairBaseStats: ; 393f2 (e:53f2)
-db DEX_DRAGONAIR ; pokedex id
+db DRAGONAIR ; pokedex id
 db 61 ; base hp
 db 84 ; base attack
 db 65 ; base defense

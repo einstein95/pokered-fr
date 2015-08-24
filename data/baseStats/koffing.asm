@@ -1,5 +1,5 @@
 KoffingBaseStats: ; 38fae (e:4fae)
-db DEX_KOFFING ; pokedex id
+db KOFFING ; pokedex id
 db 40 ; base hp
 db 65 ; base attack
 db 95 ; base defense

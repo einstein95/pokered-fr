@@ -1,5 +1,5 @@
 MachokeBaseStats: ; 38b16 (e:4b16)
-db DEX_MACHOKE ; pokedex id
+db MACHOKE ; pokedex id
 db 80 ; base hp
 db 100 ; base attack
 db 70 ; base defense

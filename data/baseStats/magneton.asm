@@ -1,5 +1,5 @@
 MagnetonBaseStats: ; 38cba (e:4cba)
-db DEX_MAGNETON ; pokedex id
+db MAGNETON ; pokedex id
 db 50 ; base hp
 db 60 ; base attack
 db 95 ; base defense

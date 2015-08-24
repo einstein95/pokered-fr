@@ -1,5 +1,5 @@
 MukBaseStats: ; 38d7e (e:4d7e)
-db DEX_MUK ; pokedex id
+db MUK ; pokedex id
 db 105 ; base hp
 db 105 ; base attack
 db 75 ; base defense

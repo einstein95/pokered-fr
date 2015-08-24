@@ -1,5 +1,5 @@
 DugtrioBaseStats: ; 38956 (e:4956)
-db DEX_DUGTRIO ; pokedex id
+db DUGTRIO ; pokedex id
 db 35 ; base hp
 db 80 ; base attack
 db 50 ; base defense

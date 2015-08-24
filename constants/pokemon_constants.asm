@@ -154,3 +154,5 @@ const_value = 1
 	const FOSSIL_KABUTOPS   ; 152
 	const FOSSIL_AERODACTYL ; 153
 	const MON_GHOST         ; 154
+
+NUM_POKEMON EQU 151

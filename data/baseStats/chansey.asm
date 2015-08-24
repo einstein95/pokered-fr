@@ -1,5 +1,5 @@
 ChanseyBaseStats: ; 3901e (e:501e)
-db DEX_CHANSEY ; pokedex id
+db CHANSEY ; pokedex id
 db 250 ; base hp
 db 5 ; base attack
 db 5 ; base defense

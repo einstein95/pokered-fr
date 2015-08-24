@@ -1,5 +1,5 @@
 CloysterBaseStats: ; 38db6 (e:4db6)
-db DEX_CLOYSTER ; pokedex id
+db CLOYSTER ; pokedex id
 db 50 ; base hp
 db 95 ; base attack
 db 180 ; base defense

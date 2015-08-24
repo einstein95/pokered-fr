@@ -1,5 +1,5 @@
 ButterfreeBaseStats: ; 38512 (e:4512)
-db DEX_BUTTERFREE ; pokedex id
+db BUTTERFREE ; pokedex id
 db 60 ; base hp
 db 45 ; base attack
 db 50 ; base defense

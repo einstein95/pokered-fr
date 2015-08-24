@@ -1,5 +1,5 @@
 BlastoiseBaseStats: ; 384be (e:44be)
-db DEX_BLASTOISE ; pokedex id
+db BLASTOISE ; pokedex id
 db 79 ; base hp
 db 83 ; base attack
 db 100 ; base defense

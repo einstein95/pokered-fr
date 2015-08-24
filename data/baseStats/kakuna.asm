@@ -1,5 +1,5 @@
 KakunaBaseStats: ; 3854a (e:454a)
-db DEX_KAKUNA ; pokedex id
+db KAKUNA ; pokedex id
 db 45 ; base hp
 db 25 ; base attack
 db 50 ; base defense

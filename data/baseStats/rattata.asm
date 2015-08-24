@@ -1,5 +1,5 @@
 RattataBaseStats: ; 385d6 (e:45d6)
-db DEX_RATTATA ; pokedex id
+db RATTATA ; pokedex id
 db 30 ; base hp
 db 56 ; base attack
 db 35 ; base defense

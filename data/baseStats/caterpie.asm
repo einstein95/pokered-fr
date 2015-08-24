@@ -1,5 +1,5 @@
 CaterpieBaseStats: ; 384da (e:44da)
-db DEX_CATERPIE ; pokedex id
+db CATERPIE ; pokedex id
 db 45 ; base hp
 db 30 ; base attack
 db 35 ; base defense

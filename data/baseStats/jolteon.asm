@@ -1,5 +1,5 @@
 JolteonBaseStats: ; 39286 (e:5286)
-db DEX_JOLTEON ; pokedex id
+db JOLTEON ; pokedex id
 db 65 ; base hp
 db 65 ; base attack
 db 60 ; base defense

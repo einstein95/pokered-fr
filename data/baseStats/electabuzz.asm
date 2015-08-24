@@ -1,5 +1,5 @@
 ElectabuzzBaseStats: ; 3916e (e:516e)
-db DEX_ELECTABUZZ ; pokedex id
+db ELECTABUZZ ; pokedex id
 db 65 ; base hp
 db 83 ; base attack
 db 57 ; base defense

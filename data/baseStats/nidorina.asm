@@ -1,5 +1,5 @@
 NidorinaBaseStats: ; 3870a (e:470a)
-db DEX_NIDORINA ; pokedex id
+db NIDORINA ; pokedex id
 db 70 ; base hp
 db 62 ; base attack
 db 67 ; base defense

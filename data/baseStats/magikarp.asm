@@ -1,5 +1,5 @@
 MagikarpBaseStats: ; 391de (e:51de)
-db DEX_MAGIKARP ; pokedex id
+db MAGIKARP ; pokedex id
 db 20 ; base hp
 db 10 ; base attack
 db 55 ; base defense

@@ -1,5 +1,5 @@
 KabutoBaseStats: ; 39312 (e:5312)
-db DEX_KABUTO ; pokedex id
+db KABUTO ; pokedex id
 db 30 ; base hp
 db 80 ; base attack
 db 90 ; base defense

@@ -1,5 +1,5 @@
 AerodactylBaseStats: ; 3934a (e:534a)
-db DEX_AERODACTYL ; pokedex id
+db AERODACTYL ; pokedex id
 db 80 ; base hp
 db 105 ; base attack
 db 65 ; base defense

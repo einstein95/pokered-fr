@@ -1,5 +1,5 @@
 GolduckBaseStats: ; 389c6 (e:49c6)
-db DEX_GOLDUCK ; pokedex id
+db GOLDUCK ; pokedex id
 db 80 ; base hp
 db 82 ; base attack
 db 78 ; base defense

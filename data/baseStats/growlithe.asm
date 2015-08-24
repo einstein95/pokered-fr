@@ -1,5 +1,5 @@
 GrowlitheBaseStats: ; 38a1a (e:4a1a)
-db DEX_GROWLITHE ; pokedex id
+db GROWLITHE ; pokedex id
 db 55 ; base hp
 db 70 ; base attack
 db 45 ; base defense

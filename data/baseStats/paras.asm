@@ -1,5 +1,5 @@
 ParasBaseStats: ; 388ca (e:48ca)
-db DEX_PARAS ; pokedex id
+db PARAS ; pokedex id
 db 35 ; base hp
 db 70 ; base attack
 db 55 ; base defense
