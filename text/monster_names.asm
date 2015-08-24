@@ -30,7 +30,7 @@ MonsterNames: ; 1c21e (7:421e)
 	db "PINSIR@@@@"
 	db "TANGELA@@@"
 	db "LEAFEON@@@"
-	db "MISSINGNO."
+	db "GLACEON@@@"
 	db "GROWLITHE@"
 	db "ONIX@@@@@@"
 	db "FEAROW@@@@"

@@ -31,7 +31,7 @@ CryData: ; 39446 (e:5446)
 	db $14, $00, $80; Pinsir
 	db $12, $00, $80; Tangela
 	db $1A, $AA, $FF; Leafeon
-	db $00, $00, $00; MissingNo.
+	db $1A, $AA, $FF; Glaceon
 	db $1F, $20, $40; Growlithe
 	db $17, $FF, $C0; Onix
 	db $18, $40, $A0; Fearow

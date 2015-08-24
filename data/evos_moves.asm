@@ -30,7 +30,7 @@ EvosMovesPointerTable: ; 3b05c (e:705c)
 	dw Mon127_EvosMoves
 	dw Mon114_EvosMoves
 	dw Mon152_EvosMoves
-	dw Mon153_EvosMoves	;MissingNo
+	dw Mon153_EvosMoves
 	dw Mon058_EvosMoves
 	dw Mon095_EvosMoves
 	dw Mon022_EvosMoves
@@ -580,10 +580,16 @@ Mon152_EvosMoves: ; 3b370 (e:7370)
 	db 0
 
 Mon153_EvosMoves: ; 3b372 (e:7372)
-;MISSINGNO
+;GLACEON
 ;Evolutions
 	db 0
 ;Learnset
+	db 27,QUICK_ATTACK
+	db 31,AURORA_BEAM
+	db 37,TAIL_WHIP
+	db 40,BITE
+	db 48,MIST
+	db 54,BLIZZARD
 	db 0
 
 Mon058_EvosMoves: ; 3b374 (e:7374)
@@ -1348,6 +1354,7 @@ Mon040_EvosMoves: ; 3b642 (e:7642)
 Mon133_EvosMoves: ; 3b644 (e:7644)
 ;EEVEE
 ;Evolutions
+	db EV_ITEM,ICE_STONE,1,GLACEON
 	db EV_ITEM,LEAF_STONE,1,LEAFEON
 	db EV_ITEM,FIRE_STONE,1,FLAREON
 	db EV_ITEM,THUNDER_STONE,1,JOLTEON

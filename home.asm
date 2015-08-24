@@ -742,6 +742,10 @@ UncompressMonSprite:: ; 1627 (0:1627)
 	ld a,BANK(LeafeonPicFront)
 	jr z,.GotBank
 	ld a,b
+	cp GLACEON
+	ld a,BANK(GlaceonPicFront)
+	jr z,.GotBank
+	ld a,b
 	cp FOSSIL_KABUTOPS
 	ld a,BANK(FossilKabutopsPic)
 	jr z,.GotBank

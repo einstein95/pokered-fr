@@ -96,3 +96,4 @@ ItemPrices: ; 4608 (1:4608)
 	money 0     ; FLOOR_10F
 	money 0     ; FLOOR_11F
 	money 0     ; FLOOR_B4F
+	money 2100  ; ICE_STONE

@@ -308,6 +308,16 @@ _LeafeonDexEntry::
 	next "just like a plant"
 	dex
 
+_GlaceonDexEntry::
+	text "The Fresh Snow"
+	next "#MON. It can"
+	next "freeze the fur on"
+
+	page "its body, and make"
+	next "it stick out like"
+	next "sharp needles"
+	dex
+
 _GrowlitheDexEntry::
 	text "Very protective"
 	next "of its territory."

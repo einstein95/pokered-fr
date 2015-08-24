@@ -96,3 +96,4 @@ ItemNames: ; 472b (1:472b)
 	db "10F@"
 	db "11F@"
 	db "B4F@"
+	db "ICE STONE@"

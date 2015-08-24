@@ -6717,6 +6717,8 @@ SECTION "Pics 6", ROMX, BANK[PICS_6]
 
 LeafeonPicFront::    INCBIN "pic/bmon/leafeon.pic"
 LeafeonPicBack::     INCBIN "pic/monback/leafeonb.pic"
+GlaceonPicFront::    INCBIN "pic/bmon/glaceon.pic"
+GlaceonPicBack::     INCBIN "pic/monback/glaceonb.pic"
 
 
 IF DEF(_OPTION_BEACH_HOUSE)
