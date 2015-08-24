@@ -1,3 +1,38 @@
+DevolvePokemon:
+	ld a, [hTilesetType]
+	push af
+	push hl
+	push bc
+	push de
+	ld a, [wWhichPokemon]
+	ld hl, wPartySpecies
+	ld c, a
+	ld b, 0
+	add hl, bc
+	push hl
+	ld a, [hl]
+	ld [wBuffer], a
+	ld a, [wWhichPokemon]
+	ld hl, wDevolveMons
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	and a
+	jr nz, .devolve
+	pop hl
+	pop de
+	pop bc
+	pop hl
+	pop af
+	xor a
+	ld [wEvolutionOccurred], a
+	ret
+.devolve
+	ld [wBuffer + 1], a
+	ld a, 2
+	jp ForceDevolve
+
 ; try to evolve the mon in [wWhichPokemon]
 TryEvolvingMon: ; 3ad0e (e:6d0e)
 	ld hl, wCanEvolveFlags
@@ -30,7 +65,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	inc hl
 	ld a, [hl]
 	cp $ff ; have we reached the end of the party?
-	jp z, .done
+	jp z, Evolution_done
 	ld [wEvoOldSpecies], a
 	push hl
 	ld a, [wWhichPokemon]
@@ -62,7 +97,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld [wcf91], a
 	pop hl
 
-.evoEntryLoop ; loop over evolution entries
+evoEntryLoop: ; loop over evolution entries
 	ld a, [hli]
 	and a ; have we reached the end of the evolution data?
 	jr z, Evolution_PartyMonLoop
@@ -85,7 +120,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 .checkTradeEvo
 	ld a, [wLinkState]
 	cp LINK_STATE_TRADING
-	jp nz, .nextEvoEntry1 ; if not trading, go to the next evolution entry
+	jp nz, nextEvoEntry1 ; if not trading, go to the next evolution entry
 	ld a, [hli] ; level requirement
 	ld b, a
 	ld a, [wLoadedMonLevel]
@@ -97,16 +132,17 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld b, a ; evolution item
 	ld a, [wcf91] ; this is supposed to be the last item used, but it is also used to hold species numbers
 	cp b ; was the evolution item in this entry used?
-	jp nz, .nextEvoEntry1 ; if not, go to the next evolution entry
+	jp nz, nextEvoEntry1 ; if not, go to the next evolution entry
 .checkLevel
 	ld a, [hli] ; level requirement
 	ld b, a
 	ld a, [wLoadedMonLevel]
 	cp b ; is the mon's level greater than the evolution requirement?
-	jp c, .nextEvoEntry2 ; if so, go the next evolution entry
+	jp c, nextEvoEntry2 ; if so, go the next evolution entry
 .doEvolution
 	ld [W_CURENEMYLVL], a
 	ld a, 1
+ForceDevolve:
 	ld [wEvolutionOccurred], a
 	push hl
 	ld a, [hl]
@@ -180,6 +216,9 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld e, l
 	ld d, h
 	push hl
+	ld a, [wEvolutionOccurred]
+	cp 2
+	jr z, .skipStatChanges
 	push bc
 	ld bc, wPartyMon1MaxHP - wPartyMon1
 	add hl, bc
@@ -203,6 +242,13 @@ Evolution_PartyMonLoop: ; loop over party mons
 	dec hl
 	pop bc
 	call CopyData
+	jr .statChangesDone
+.skipStatChanges
+	ld a, [wLoadedMon]
+	ld [wPartyMon1], a
+	ld a, 1
+	ld [wEvolutionOccurred], a
+.statChangesDone
 	ld a, [wd0b5]
 	ld [wd11e], a
 	xor a
@@ -231,16 +277,16 @@ Evolution_PartyMonLoop: ; loop over party mons
 	push hl
 	ld l, e
 	ld h, d
-	jr .nextEvoEntry2
+	jr nextEvoEntry2
 
-.nextEvoEntry1
+nextEvoEntry1:
 	inc hl
 
-.nextEvoEntry2
+nextEvoEntry2:
 	inc hl
-	jp .evoEntryLoop
+	jp evoEntryLoop
 
-.done
+Evolution_done:
 	pop de
 	pop bc
 	pop hl

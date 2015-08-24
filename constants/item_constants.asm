@@ -100,6 +100,7 @@ SAFARI_ROCK           EQU $16 ; overload
 	const FLOOR_11F     ; $60
 	const FLOOR_B4F     ; $61
 	const ICE_STONE     ; $62
+	const DEVOLVE_STONE ; $63
 
 const_value = $C4
 

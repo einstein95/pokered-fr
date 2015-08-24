@@ -7,6 +7,7 @@
 ; 03: learn TM/HM menu
 ; 04: swap pokemon positions menu
 ; 05: use evolution stone on pokemon menu
+; 06: use devolution stone on pokemon menu
 ; otherwise, it is a message ID
 ; f0: poison healed
 ; f1: burn healed
@@ -36,6 +37,16 @@ RedrawPartyMenu_: ; 12ce3 (4:6ce3)
 	ld c,a
 	ld [hPartyMonIndex],a
 	ld [wWhichPartyMenuHPBar],a
+	push hl
+	push bc
+	ld hl, wEvolutionData
+	ld b, 6
+.clearDevolveMons
+	ld [hli], a
+	dec b
+	jr nz, .clearDevolveMons
+	pop bc
+	pop hl
 .loop
 	ld a,[de]
 	cp a,$FF ; reached the terminator?
@@ -80,6 +91,8 @@ RedrawPartyMenu_: ; 12ce3 (4:6ce3)
 	jr z,.teachMoveMenu
 	cp a,EVO_STONE_PARTY_MENU
 	jr z,.evolutionStoneMenu
+	cp a,DEVO_STONE_PARTY_MENU
+	jp z,.devolutionStoneMenu
 	push hl
 	ld bc,14 ; 14 columns to the right
 	add hl,bc
@@ -187,6 +200,83 @@ RedrawPartyMenu_: ; 12ce3 (4:6ce3)
 	db "ABLE@"
 .notAbleToEvolveText
 	db "NOT ABLE@"
+
+.devolutionStoneMenu
+	push hl
+	xor a
+.loadEvolutionDataLoop
+	push af
+	ld hl, EvosMovesPointerTable
+	ld b, 0
+	add a
+	rl b
+	ld c, a
+	add hl, bc
+	ld de, wcd6d
+	ld a, BANK(EvosMovesPointerTable)
+	ld bc, 2
+	call FarCopyData
+	ld hl, wcd6d
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	ld de, wEvolutionData
+	ld a, BANK(EvosMovesPointerTable)
+	ld bc, Mon133_EvosEnd - Mon133_EvosMoves
+	call FarCopyData
+	ld hl, wEvolutionData
+; loop through the pokemon's evolution entries
+.checkDevolutionsLoop
+	ld a, [hli]
+	and a ; reached terminator?
+	jr nz, .keepChecking
+	pop af
+	inc a
+	cp VICTREEBEL
+	ld de, .notAbleToDevolveText
+	jr z, .placeDevolutionStoneString
+	jr .loadEvolutionDataLoop
+.keepChecking
+	inc hl
+	cp a, EV_ITEM
+	jr nz, .skipinc
+	inc hl
+.skipinc
+	ld a, [wWhichPokemon] ; pokemon number
+	ld c, a
+	ld b, 0
+	ld a, [hli] ; evolved mon id
+	push hl
+	ld hl, wPartySpecies
+	add hl, bc
+	ld b, a
+	ld a, [hl]
+	pop hl
+	cp b ; does the player's pokemon match this evolution entry's evolution?
+	jr nz, .checkDevolutionsLoop
+; if it does match
+	ld hl, wDevolveMons
+	ld a, [wWhichPokemon]
+	ld e, a
+	ld d, 0
+	add hl, de
+	pop af
+	inc a
+	ld [hl], a
+	ld de, .ableToDevolveText
+.placeDevolutionStoneString
+	ld bc, SCREEN_WIDTH + 9 ; down 1 row and right 9 columns
+	pop hl
+	push hl
+	add hl, bc
+	call PlaceString
+	pop hl
+	jp .printLevel
+.ableToDevolveText
+	db "ABLE@"
+.notAbleToDevolveText
+	db "NOT ABLE@"
+
 .afterDrawingMonEntries
 	ld b, SET_PAL_PARTY_MENU
 	call RunPaletteCommand
@@ -251,6 +341,7 @@ PartyMenuMessagePointers: ; 12e73 (4:6e73)
 	dw PartyMenuBattleText
 	dw PartyMenuUseTMText
 	dw PartyMenuSwapMonText
+	dw PartyMenuItemUseText
 	dw PartyMenuItemUseText
 
 PartyMenuNormalText: ; 12e7f (4:6e7f)

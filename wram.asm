@@ -2842,7 +2842,10 @@ W_ROUTE18GATECURSCRIPT:: ; d669
 wGameProgressFlagsEnd::
 
 wEvolutionData::
-	ds 56
+	ds 50
+
+wDevolveMons::
+	ds 6
 
 wObtainedHiddenItemsFlags::
 	ds 14
