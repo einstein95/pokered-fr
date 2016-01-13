@@ -40,11 +40,11 @@ ChooseRivalName: ; 69a4 (1:69a4)
 	jr z, .customName
 	ld hl, DefaultNamesRivalList
 	call GetDefaultName
-	ld de, W_RIVALNAME
+	ld de, wRivalName
 	call OakSpeechSlidePicLeft
 	jr .done
 .customName
-	ld hl, W_RIVALNAME
+	ld hl, wRivalName
 	ld a, NAME_RIVAL_SCREEN
 	ld [wNamingScreenType], a
 	call DisplayNamingScreen
@@ -73,7 +73,7 @@ OakSpeechSlidePicLeft: ; 69ec (1:69ec)
 	call DelayFrames
 	pop de
 	ld hl, wcd6d
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	call Delay3
 	coord hl, 12, 4
@@ -177,7 +177,7 @@ DisplayIntroNameTextBox: ; 6a6c (1:6a6c)
 	ld [wLastMenuItem], a
 	inc a
 	ld [wTopMenuItemX], a
-	ld [wMenuWatchedKeys], a
+	ld [wMenuWatchedKeys], a ; A_BUTTON
 	inc a
 	ld [wTopMenuItemY], a
 	inc a

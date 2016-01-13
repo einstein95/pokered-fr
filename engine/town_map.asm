@@ -7,7 +7,7 @@ DisplayTownMap: ; 70e3e (1c:4e3e)
 	push hl
 	ld a, $1
 	ld [hJoy7], a
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	push af
 	ld b, $0
 	call DrawPlayerOrBirdSprite ; player sprite
@@ -20,7 +20,7 @@ DisplayTownMap: ; 70e3e (1c:4e3e)
 	call CopyData
 	ld hl, vSprites + $40
 	ld de, TownMapCursor
-	lb bc, BANK(TownMapCursor), $04
+	lb bc, BANK(TownMapCursor), (TownMapCursorEnd - TownMapCursor) / $8
 	call CopyVideoDataDouble
 	xor a
 	ld [wWhichTownMapLocation], a
@@ -107,6 +107,7 @@ INCLUDE "data/town_map_order.asm"
 
 TownMapCursor: ; 70f40 (1c:4f40)
 	INCBIN "gfx/town_map_cursor.1bpp"
+TownMapCursorEnd:
 
 LoadTownMap_Nest: ; 70f60 (1c:4f60)
 	call LoadTownMap
@@ -144,7 +145,7 @@ LoadTownMap_Fly: ; 70f90 (1c:4f90)
 	call CopyVideoData
 	ld de, TownMapUpArrow
 	ld hl, vChars1 + $6d0
-	lb bc, BANK(TownMapUpArrow), $01
+	lb bc, BANK(TownMapUpArrow), (TownMapUpArrowEnd - TownMapUpArrow) / $8
 	call CopyVideoDataDouble
 	call BuildFlyLocationsList
 	ld hl, wUpdateSpritesEnabled
@@ -155,7 +156,7 @@ LoadTownMap_Fly: ; 70f90 (1c:4f90)
 	coord hl, 0, 0
 	ld de, ToText
 	call PlaceString
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	ld b, $0
 	call DrawPlayerOrBirdSprite
 	ld hl, wFlyLocationsList
@@ -249,9 +250,9 @@ BuildFlyLocationsList: ; 71070 (1c:5070)
 	ld hl, wFlyLocationsList - 1
 	ld [hl], $ff
 	inc hl
-	ld a, [W_TOWNVISITEDFLAG]
+	ld a, [wTownVisitedFlag]
 	ld e, a
-	ld a, [W_TOWNVISITEDFLAG + 1]
+	ld a, [wTownVisitedFlag + 1]
 	ld d, a
 	ld bc, SAFFRON_CITY + 1
 .loop
@@ -271,6 +272,7 @@ BuildFlyLocationsList: ; 71070 (1c:5070)
 
 TownMapUpArrow: ; 71093 (1c:5093)
 	INCBIN "gfx/up_arrow.1bpp"
+TownMapUpArrowEnd:
 
 LoadTownMap: ; 7109b (1c:509b)
 	call GBPalWhiteOutWithDelay3
@@ -283,12 +285,12 @@ LoadTownMap: ; 7109b (1c:509b)
 	call DisableLCD
 	ld hl, WorldMapTileGraphics
 	ld de, vChars2 + $600
-	ld bc, $100
+	ld bc, WorldMapTileGraphicsEnd - WorldMapTileGraphics
 	ld a, BANK(WorldMapTileGraphics)
 	call FarCopyData2
 	ld hl, MonNestIcon
 	ld de, vSprites + $40
-	ld bc, $8
+	ld bc, MonNestIconEnd - MonNestIcon
 	ld a, BANK(MonNestIcon)
 	call FarCopyDataDouble
 	coord hl, 0, 0
@@ -312,8 +314,8 @@ LoadTownMap: ; 7109b (1c:509b)
 	jr .nextTile
 .done
 	call EnableLCD
-	ld b, $2
-	call GoPAL_SET
+	ld b, SET_PAL_TOWN_MAP
+	call RunPaletteCommand
 	call Delay3
 	call GBPalNormal
 	xor a
@@ -336,7 +338,7 @@ ExitTownMap: ; 711ab (1c:51ab)
 	call LoadPlayerSpriteGraphics
 	call LoadFontTilePatterns
 	call UpdateSprites
-	jp GoPAL_SET_CF1C
+	jp RunDefaultPaletteCommand
 
 DrawPlayerOrBirdSprite: ; 711c4 (1c:51c4)
 ; a = map number
@@ -403,7 +405,7 @@ DisplayWildLocations: ; 711ef (1c:51ef)
 	call PlaceString
 	jr .done
 .drawPlayerSprite
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	ld b, $0
 	call DrawPlayerOrBirdSprite
 .done
@@ -442,8 +444,12 @@ WritePlayerOrBirdSpriteOAM: ; 7126d (1c:526d)
 
 WriteTownMapSpriteOAM: ; 71279 (1c:5279)
 	push hl
+
+; Subtract 4 from c (X coord) and 4 from b (Y coord). However, the carry from c
+; is added to b, so the net result is that only 3 is subtracted from b.
 	lb hl, -4, -4
-	add hl, bc ; subtract 4 from c (X coord) and 4 from b (Y coord)
+	add hl, bc
+
 	ld b, h
 	ld c, l
 	pop hl
@@ -467,14 +473,14 @@ WriteAsymmetricMonPartySpriteOAM: ; 71281 (1c:5281)
 	xor a
 	ld [hli], a
 	inc d
-	ld a, $8
+	ld a, 8
 	add c
 	ld c, a
 	dec e
 	jr nz, .innerLoop
 	pop bc
 	pop de
-	ld a, $8
+	ld a, 8
 	add b
 	ld b, a
 	dec d
@@ -582,6 +588,7 @@ INCLUDE "text/map_names.asm"
 
 MonNestIcon: ; 716be (1c:56be)
 	INCBIN "gfx/mon_nest_icon.1bpp"
+MonNestIconEnd:
 
 TownMapSpriteBlinkingAnimation: ; 716c6 (1c:56c6)
 	ld a, [wAnimCounter]

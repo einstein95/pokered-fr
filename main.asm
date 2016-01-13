@@ -24,7 +24,7 @@ ResetStatusAndHalveMoneyOnBlackout::
 	xor a
 	ld [wBattleResult], a
 	ld [wWalkBikeSurfState], a
-	ld [W_ISINBATTLE], a
+	ld [wIsInBattle], a
 	ld [wMapPalOffset], a
 	ld [wNPCMovementScriptFunctionNum], a
 	ld [hJoyHeld], a
@@ -86,7 +86,7 @@ LoadMonData_:
 ;  2: boxmon
 ;  3: daycaremon
 ; Return monster id at wcf91 and its data at wLoadedMon.
-; Also load base stats at W_MONHDEXNUM for convenience.
+; Also load base stats at wMonHeader for convenience.
 
 	ld a, [wDayCareMonSpecies]
 	ld [wcf91], a
@@ -161,7 +161,7 @@ PrintWaitingText:
 	coord hl, 3, 10
 	ld b, $1
 	ld c, $b
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	and a
 	jr z, .asm_4c17
 	call TextBoxBorder
@@ -284,7 +284,7 @@ DetectCollisionBetweenSprites:
 	ld [hld], a ; zero [$c1ic] (directions in which collisions occurred)
 
 	ld a, [$ff91]
-	ld [hld], a ; [$c1ib] = adjusted X coordiate
+	ld [hld], a ; [$c1ib] = adjusted X coordinate
 	ld a, [$ff90]
 	ld [hl], a ; [$c1ia] = adjusted Y coordinate
 
@@ -545,10 +545,10 @@ TestBattle:
 	; Don't mess around
 	; with obedience.
 	ld a, %10000000 ; EARTHBADGE
-	ld [W_OBTAINEDBADGES], a
+	ld [wObtainedBadges], a
 
-	ld hl, W_FLAGS_D733
-	set 0, [hl]
+	ld hl, wFlags_D733
+	set BIT_TEST_BATTLE, [hl]
 
 	; Reset the party.
 	ld hl, wPartyCount
@@ -562,16 +562,16 @@ TestBattle:
 	ld a, RHYDON
 	ld [wcf91], a
 	ld a, 20
-	ld [W_CURENEMYLVL], a
+	ld [wCurEnemyLVL], a
 	xor a
 	ld [wMonDataLocation], a
-	ld [W_CURMAP], a
+	ld [wCurMap], a
 	call AddPartyMon
 
 	; Fight against a
 	; level 20 Rhydon.
 	ld a, RHYDON
-	ld [W_CUROPPONENT], a
+	ld [wCurOpponent], a
 
 	predef InitOpponent
 
@@ -590,7 +590,7 @@ INCLUDE "engine/cable_club.asm"
 LoadTrainerInfoTextBoxTiles: ; 5ae6 (1:5ae6)
 	ld de, TrainerInfoTextBoxTileGraphics
 	ld hl, vChars2 + $760
-	lb bc, BANK(TrainerInfoTextBoxTileGraphics), $09
+	lb bc, BANK(TrainerInfoTextBoxTileGraphics), (TrainerInfoTextBoxTileGraphicsEnd - TrainerInfoTextBoxTileGraphics) / $10
 	jp CopyVideoData
 
 INCLUDE "engine/menu/main_menu.asm"
@@ -655,7 +655,7 @@ LoadSpecialWarpData: ; 62ff (1:62ff)
 	jr nz, .notFirstMap
 	ld hl, FirstMapSpec
 .copyWarpData
-	ld de, W_CURMAP
+	ld de, wCurMap
 	ld c, $7
 .copyWarpDataLoop
 	ld a, [hli]
@@ -664,11 +664,11 @@ LoadSpecialWarpData: ; 62ff (1:62ff)
 	dec c
 	jr nz, .copyWarpDataLoop
 	ld a, [hli]
-	ld [W_CURMAPTILESET], a
+	ld [wCurMapTileset], a
 	xor a
 	jr .done
 .notFirstMap
-	ld a, [wLastMap]
+	ld a, [wLastMap] ; this value is overwritten before it's ever read
 	ld hl, wd732
 	bit 4, [hl] ; used dungeon warp (jumped down hole/waterfall)?
 	jr nz, .usedDunegonWarp
@@ -683,7 +683,7 @@ LoadSpecialWarpData: ; 62ff (1:62ff)
 	res 4, [hl]
 	ld a, [wDungeonWarpDestinationMap]
 	ld b, a
-	ld [W_CURMAP], a
+	ld [wCurMap], a
 	ld a, [wWhichDungeonWarp]
 	ld c, a
 	ld hl, DungeonWarpList
@@ -713,7 +713,7 @@ LoadSpecialWarpData: ; 62ff (1:62ff)
 	ld a, [wDestinationMap]
 .usedFlyWarp
 	ld b, a
-	ld [W_CURMAP], a
+	ld [wCurMap], a
 	ld hl, FlyWarpDataPtr
 .flyWarpDataPtrLoop
 	ld a, [hli]
@@ -737,7 +737,7 @@ LoadSpecialWarpData: ; 62ff (1:62ff)
 	dec c
 	jr nz, .copyWarpDataLoop2
 	xor a ; OVERWORLD
-	ld [W_CURMAPTILESET], a
+	ld [wCurMapTileset], a
 .done
 	ld [wYOffsetSinceLastSpecialWarp], a
 	ld [wXOffsetSinceLastSpecialWarp], a
@@ -765,7 +765,7 @@ SetIshiharaTeam: ; 64ca (1:64ca)
 	ld [wcf91], a
 	inc de
 	ld a, [de]
-	ld [W_CURENEMYLVL], a
+	ld [wCurEnemyLVL], a
 	inc de
 	call AddPartyMon
 	jr .loop
@@ -966,7 +966,7 @@ SetLastBlackoutMap:
 
 	push hl
 	ld hl, SafariZoneRestHouses
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	ld b, a
 .loop
 	ld a, [hli]
@@ -1082,7 +1082,7 @@ DrawStartMenu: ; 710b (1:710b)
 	ld c,$08
 .drawTextBoxBorder
 	call TextBoxBorder
-	ld a,%11001011 ; bit mask for down, up, start, B, and A buttons
+	ld a,D_DOWN | D_UP | START | B_BUTTON | A_BUTTON
 	ld [wMenuWatchedKeys],a
 	ld a,$02
 	ld [wTopMenuItemY],a ; Y position of first menu choice
@@ -1931,7 +1931,7 @@ _RemovePokemon: ; 7b68 (1:7b68)
 	ld a, [wRemoveMonFromBox]
 	and a
 	jr z, .asm_7b74
-	ld hl, W_NUMINBOX
+	ld hl, wNumInBox
 .asm_7b74
 	ld a, [hl]
 	dec a
@@ -1967,7 +1967,7 @@ _RemovePokemon: ; 7b68 (1:7b68)
 .asm_7ba6
 	ld d, h
 	ld e, l
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	add hl, bc
 	ld bc, wPartyMonNicks
 	ld a, [wRemoveMonFromBox]
@@ -2007,12 +2007,12 @@ _RemovePokemon: ; 7b68 (1:7b68)
 	jr z, .asm_7bfa
 	ld hl, wBoxMonNicks
 .asm_7bfa
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	ld a, [wWhichPokemon]
 	call AddNTimes
 	ld d, h
 	ld e, l
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	add hl, bc
 	ld bc, wPokedexOwned
 	ld a, [wRemoveMonFromBox]
@@ -2058,7 +2058,7 @@ ClearVariablesAfterLoadingMapData: ; c335 (3:4335)
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
 	ld [wStepCounter], a
-	ld [W_LONEATTACKNO], a
+	ld [wLoneAttackNo], a
 	ld [hJoyPressed], a
 	ld [hJoyReleased], a
 	ld [hJoyHeld], a
@@ -2068,7 +2068,7 @@ ClearVariablesAfterLoadingMapData: ; c335 (3:4335)
 	ld [hli], a
 	ld [hl], a
 	ld hl, wWhichTrade
-	ld bc, $1e
+	ld bc, wStandingOnWarpPadOrHole - wWhichTrade
 	call FillMemory
 	ret
 
@@ -2080,11 +2080,11 @@ IsPlayerStandingOnWarp: ; c35f (3:435f)
 	ld c, a
 	ld hl, wWarpEntries
 .loop
-	ld a, [W_YCOORD]
+	ld a, [wYCoord]
 	cp [hl]
 	jr nz, .nextWarp1
 	inc hl
-	ld a, [W_XCOORD]
+	ld a, [wXCoord]
 	cp [hl]
 	jr nz, .nextWarp2
 	inc hl
@@ -2110,11 +2110,11 @@ CheckForceBikeOrSurf: ; c38b (3:438b)
 	bit 5, [hl]
 	ret nz
 	ld hl, ForcedBikeOrSurfMaps
-	ld a, [W_YCOORD]
+	ld a, [wYCoord]
 	ld b, a
-	ld a, [W_XCOORD]
+	ld a, [wXCoord]
 	ld c, a
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	ld d, a
 .loop
 	ld a, [hli]
@@ -2128,15 +2128,15 @@ CheckForceBikeOrSurf: ; c38b (3:438b)
 	ld a, [hli]
 	cp c ;compare x-coord
 	jr nz, .loop ; incorrect x-coord, check next item
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	cp SEAFOAM_ISLANDS_4
 	ld a, $2
-	ld [W_SEAFOAMISLANDS4CURSCRIPT], a
+	ld [wSeafoamIslands4CurScript], a
 	jr z, .forceSurfing
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	cp SEAFOAM_ISLANDS_5
 	ld a, $2
-	ld [W_SEAFOAMISLANDS5CURSCRIPT], a
+	ld [wSeafoamIslands5CurScript], a
 	jr z, .forceSurfing
 	;force bike riding
 	ld hl, wd732
@@ -2171,9 +2171,9 @@ IsPlayerFacingEdgeOfMap: ; c3ff (3:43ff)
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	ld a, [W_YCOORD]
+	ld a, [wYCoord]
 	ld b, a
-	ld a, [W_XCOORD]
+	ld a, [wXCoord]
 	ld c, a
 	ld de, .asm_c41e
 	push de
@@ -2191,7 +2191,7 @@ IsPlayerFacingEdgeOfMap: ; c3ff (3:43ff)
 	dw .facingRight
 
 .facingDown
-	ld a, [W_CURMAPHEIGHT]
+	ld a, [wCurMapHeight]
 	add a
 	dec a
 	cp b
@@ -2211,7 +2211,7 @@ IsPlayerFacingEdgeOfMap: ; c3ff (3:43ff)
 	jr .resetCarry
 
 .facingRight
-	ld a, [W_CURMAPWIDTH]
+	ld a, [wCurMapWidth]
 	add a
 	dec a
 	cp c
@@ -2229,7 +2229,7 @@ IsWarpTileInFrontOfPlayer: ; c44e (3:444e)
 	push de
 	push bc
 	call _GetTileAndCoordsInFrontOfPlayer
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	cp SS_ANNE_5
 	jr z, .ssAnne5
 	ld a, [wSpriteStateData1 + 9] ; player sprite's facing direction
@@ -2284,7 +2284,7 @@ IsPlayerStandingOnDoorTileOrWarpTile: ; c49d (3:449d)
 	push bc
 	callba IsPlayerStandingOnDoorTile
 	jr c, .done
-	ld a, [W_CURMAPTILESET]
+	ld a, [wCurMapTileset]
 	add a
 	ld c, a
 	ld b, $0
@@ -2308,7 +2308,7 @@ IsPlayerStandingOnDoorTileOrWarpTile: ; c49d (3:449d)
 INCLUDE "data/warp_tile_ids.asm"
 
 PrintSafariZoneSteps: ; c52f (3:452f)
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	cp SAFARI_ZONE_EAST
 	ret c
 	cp UNKNOWN_DUNGEON_2
@@ -2327,7 +2327,7 @@ PrintSafariZoneSteps: ; c52f (3:452f)
 	coord hl, 1, 3
 	ld de, SafariBallText
 	call PlaceString
-	ld a, [W_NUMSAFARIBALLS]
+	ld a, [wNumSafariBalls]
 	cp 10
 	jr nc, .asm_c56d
 	coord hl, 5, 3
@@ -2335,7 +2335,7 @@ PrintSafariZoneSteps: ; c52f (3:452f)
 	ld [hl], a
 .asm_c56d
 	coord hl, 6, 3
-	ld de, W_NUMSAFARIBALLS
+	ld de, wNumSafariBalls
 	lb bc, 1, 2
 	jp PrintNumber
 
@@ -2349,9 +2349,9 @@ GetTileAndCoordsInFrontOfPlayer: ; c586 (3:4586)
 	call GetPredefRegisters
 
 _GetTileAndCoordsInFrontOfPlayer: ; c589 (3:4589)
-	ld a, [W_YCOORD]
+	ld a, [wYCoord]
 	ld d, a
-	ld a, [W_XCOORD]
+	ld a, [wXCoord]
 	ld e, a
 	ld a, [wSpriteStateData1 + 9] ; player's sprite facing direction
 	and a ; cp SPRITE_FACING_DOWN
@@ -2388,7 +2388,7 @@ _GetTileAndCoordsInFrontOfPlayer: ; c589 (3:4589)
 GetTileTwoStepsInFrontOfPlayer: ; c5be (3:45be)
 	xor a
 	ld [$ffdb], a
-	ld hl, W_YCOORD
+	ld hl, wYCoord
 	ld a, [hli]
 	ld d, a
 	ld e, [hl]
@@ -2435,7 +2435,7 @@ GetTileTwoStepsInFrontOfPlayer: ; c5be (3:45be)
 
 CheckForCollisionWhenPushingBoulder: ; c60b (3:460b)
 	call GetTileTwoStepsInFrontOfPlayer
-	ld hl, W_TILESETCOLLISIONPTR
+	ld hl, wTileSetCollisionPtr
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
@@ -2471,7 +2471,7 @@ CheckForBoulderCollisionWithSprites: ; c636 (3:4636)
 	ld [$ffdc], a
 	ld a, [hl] ; map X position
 	ld [$ffdd], a
-	ld a, [W_NUMSPRITES]
+	ld a, [wNumSprites]
 	ld c, a
 	ld de, $f
 	ld hl, wSpriteStateData2 + $14
@@ -2653,7 +2653,7 @@ LoadTilesetHeader: ; c754 (3:4754)
 	call GetPredefRegisters
 	push hl
 	ld d, 0
-	ld a, [W_CURMAPTILESET]
+	ld a, [wCurMapTileset]
 	add a
 	add a
 	ld b, a
@@ -2665,7 +2665,7 @@ LoadTilesetHeader: ; c754 (3:4754)
 	ld e, a
 	ld hl, Tilesets
 	add hl, de
-	ld de, W_TILESETBANK
+	ld de, wTileSetBank
 	ld c, $b
 .copyTilesetHeaderLoop
 	ld a, [hli]
@@ -2678,7 +2678,7 @@ LoadTilesetHeader: ; c754 (3:4754)
 	xor a
 	ld [$ffd8], a
 	pop hl
-	ld a, [W_CURMAPTILESET]
+	ld a, [wCurMapTileset]
 	push hl
 	push de
 	ld hl, DungeonTilesets
@@ -2687,7 +2687,7 @@ LoadTilesetHeader: ; c754 (3:4754)
 	pop de
 	pop hl
 	jr c, .asm_c797
-	ld a, [W_CURMAPTILESET]
+	ld a, [wCurMapTileset]
 	ld b, a
 	ld a, [hPreviousTileset]
 	cp b
@@ -2697,12 +2697,12 @@ LoadTilesetHeader: ; c754 (3:4754)
 	cp $ff
 	jr z, .done
 	call LoadDestinationWarpPosition
-	ld a, [W_YCOORD]
+	ld a, [wYCoord]
 	and $1
-	ld [W_YBLOCKCOORD], a
-	ld a, [W_XCOORD]
+	ld [wYBlockCoord], a
+	ld a, [wXCoord]
 	and $1
-	ld [W_XBLOCKCOORD], a
+	ld [wXBlockCoord], a
 .done
 	ret
 
@@ -2711,7 +2711,7 @@ INCLUDE "data/dungeon_tilesets.asm"
 INCLUDE "data/tileset_headers.asm"
 
 IncrementDayCareMonExp: ; c8de (3:48de)
-	ld a, [W_DAYCARE_IN_USE]
+	ld a, [wDayCareInUse]
 	and a
 	ret z
 	ld hl, wDayCareMonExp + 2
@@ -2751,13 +2751,16 @@ CanMoveBouldersText: ; cdbb (3:4dbb)
 	TX_FAR _CanMoveBouldersText
 	db "@"
 
-CheckForForcedBikeSurf: ; cdc0 (3:4dc0)
+IsSurfingAllowed: ; cdc0 (3:4dc0)
+; Returns whether surfing is allowed in bit 1 of wd728.
+; Surfing isn't allowed on the Cycling Road or in the lowest level of the
+; Seafoam Islands before the current has been slowed with boulders.
 	ld hl, wd728
 	set 1, [hl]
 	ld a, [wd732]
 	bit 5, a
-	jr nz, .asm_cdec
-	ld a, [W_CURMAP]
+	jr nz, .forcedToRideBike
+	ld a, [wCurMap]
 	cp SEAFOAM_ISLANDS_5
 	ret nz
 	CheckBothEventsSet EVENT_SEAFOAM4_BOULDER1_DOWN_HOLE, EVENT_SEAFOAM4_BOULDER2_DOWN_HOLE
@@ -2769,7 +2772,7 @@ CheckForForcedBikeSurf: ; cdc0 (3:4dc0)
 	res 1, [hl]
 	ld hl, CurrentTooFastText
 	jp PrintText
-.asm_cdec
+.forcedToRideBike
 	ld hl, wd728
 	res 1, [hl]
 	ld hl, CyclingIsFunText
@@ -2799,7 +2802,7 @@ AddItemToInventory_: ; ce04 (3:4e04)
 	push de
 	push hl
 	push hl
-	ld d,50 ; PC box can hold 50 items
+	ld d,PC_ITEM_CAPACITY ; how many items the PC can hold
 	ld a,wNumBagItems & $FF
 	cp l
 	jr nz,.checkIfInventoryFull
@@ -2807,7 +2810,7 @@ AddItemToInventory_: ; ce04 (3:4e04)
 	cp h
 	jr nz,.checkIfInventoryFull
 ; if the destination is the bag
-	ld d,20 ; bag can hold 20 items
+	ld d,BAG_ITEM_CAPACITY ; how many items the bag can hold
 .checkIfInventoryFull
 	ld a,[hl]
 	sub d
@@ -2941,7 +2944,7 @@ RemoveItemFromInventory_: ; ce74 (3:4e74)
 
 LoadWildData: ; ceb8 (3:4eb8)
 	ld hl,WildDataPointers
-	ld a,[W_CURMAP]
+	ld a,[wCurMap]
 
 	; get wild data for current map
 	ld c,a
@@ -2952,11 +2955,11 @@ LoadWildData: ; ceb8 (3:4eb8)
 	ld h,[hl]
 	ld l,a       ; hl now points to wild data for current map
 	ld a,[hli]
-	ld [W_GRASSRATE],a
+	ld [wGrassRate],a
 	and a
 	jr z,.NoGrassData ; if no grass data, skip to surfing data
 	push hl
-	ld de,W_GRASSMONS ; otherwise, load grass data
+	ld de,wGrassMons ; otherwise, load grass data
 	ld bc,$0014
 	call CopyData
 	pop hl
@@ -2964,10 +2967,10 @@ LoadWildData: ; ceb8 (3:4eb8)
 	add hl,bc
 .NoGrassData
 	ld a,[hli]
-	ld [W_WATERRATE],a
+	ld [wWaterRate],a
 	and a
 	ret z        ; if no water data, we're done
-	ld de,W_WATERMONS  ; otherwise, load surfing data
+	ld de,wWaterMons  ; otherwise, load surfing data
 	ld bc,$0014
 	jp CopyData
 
@@ -2997,7 +3000,7 @@ DrawBadges: ; ea03 (3:6a03)
 ; Alter these based on owned badges.
 	ld de, wTempObtainedBadgesBooleans
 	ld hl, wBadgeOrFaceTiles
-	ld a, [W_OBTAINEDBADGES]
+	ld a, [wObtainedBadges]
 	ld b, a
 	ld c, 8
 .CheckBadge
@@ -3103,7 +3106,7 @@ GymLeaderFaceAndBadgeTileGraphics: ; ea9e (3:6a9e)
 ReplaceTileBlock: ; ee9e (3:6e9e)
 	call GetPredefRegisters
 	ld hl, wOverworldMap
-	ld a, [W_CURMAPWIDTH]
+	ld a, [wCurMapWidth]
 	add $6
 	ld e, a
 	ld d, $0
@@ -3145,7 +3148,7 @@ ReplaceTileBlock: ; ee9e (3:6e9e)
 	ret c ; return if the replaced tile block is above the map view in memory
 
 RedrawMapView: ; eedc (3:6edc)
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	inc a
 	ret z
 	ld a, [H_AUTOBGTRANSFERENABLED]
@@ -3156,7 +3159,7 @@ RedrawMapView: ; eedc (3:6edc)
 	ld [H_AUTOBGTRANSFERENABLED], a
 	ld [hTilesetType], a ; no flower/water BG tile animations
 	call LoadCurrentMapView
-	call GoPAL_SET_CF1C
+	call RunDefaultPaletteCommand
 	ld hl, wMapViewVRAMPointer
 	ld a, [hli]
 	ld h, [hl]
@@ -3184,7 +3187,7 @@ RedrawMapView: ; eedc (3:6edc)
 	add hl, de
 	dec a
 	jr nz, .calcWRAMAddrLoop
-	call CopyToScreenEdgeTiles
+	call CopyToRedrawRowOrColumnSrcTiles
 	pop hl
 	ld de, $20
 	ld a, [$ffbe]
@@ -3196,11 +3199,11 @@ RedrawMapView: ; eedc (3:6edc)
 	or $98
 	dec c
 	jr nz, .calcVRAMAddrLoop
-	ld [H_SCREENEDGEREDRAWADDR + 1], a
+	ld [hRedrawRowOrColumnDest + 1], a
 	ld a, l
-	ld [H_SCREENEDGEREDRAWADDR], a
-	ld a, REDRAWROW
-	ld [H_SCREENEDGEREDRAW], a
+	ld [hRedrawRowOrColumnDest], a
+	ld a, REDRAW_ROW
+	ld [hRedrawRowOrColumnMode], a
 	call DelayFrame
 	ld hl, $ffbe
 	inc [hl]
@@ -3226,16 +3229,16 @@ CompareHLWithBC: ; ef4e (3:6f4e)
 INCLUDE "engine/overworld/cut.asm"
 
 MarkTownVisitedAndLoadMissableObjects: ; f113 (3:7113)
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	cp ROUTE_1
 	jr nc, .notInTown
 	ld c, a
 	ld b, FLAG_SET
-	ld hl, W_TOWNVISITEDFLAG   ; mark town as visited (for flying)
+	ld hl, wTownVisitedFlag   ; mark town as visited (for flying)
 	predef FlagActionPredef
 .notInTown
 	ld hl, MapHSPointers
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	ld b, $0
 	ld c, a
 	add hl, bc
@@ -3268,11 +3271,11 @@ LoadMissableObjects: ; f132 (3:7132)
 	ld [H_DIVISOR], a
 	ld b, $2
 	call Divide                ; divide difference by 3, resulting in the global offset (number of missable items before ours)
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	ld b, a
 	ld a, [H_DIVIDEND+3]
 	ld c, a                    ; store global offset in c
-	ld de, W_MISSABLEOBJECTLIST
+	ld de, wMissableObjectList
 	pop hl
 .writeMissableObjectsListLoop
 	ld a, [hli]
@@ -3295,8 +3298,8 @@ LoadMissableObjects: ; f132 (3:7132)
 	ret
 
 InitializeMissableObjectsFlags: ; f175 (3:7175)
-	ld hl, W_MISSABLEOBJECTFLAGS
-	ld bc, $20
+	ld hl, wMissableObjectFlags
+	ld bc, wMissableObjectFlagsEnd - wMissableObjectFlags
 	xor a
 	call FillMemory ; clear missable objects flags
 	ld hl, MapHS00
@@ -3311,7 +3314,7 @@ InitializeMissableObjectsFlags: ; f175 (3:7175)
 	ld a, [hl]
 	cp Hide
 	jr nz, .skip
-	ld hl, W_MISSABLEOBJECTFLAGS
+	ld hl, wMissableObjectFlags
 	ld a, [wMissableObjectCounter]
 	ld c, a
 	ld b, FLAG_SET
@@ -3329,7 +3332,7 @@ IsObjectHidden: ; f1a6 (3:71a6)
 	ld a, [H_CURRENTSPRITEOFFSET]
 	swap a
 	ld b, a
-	ld hl, W_MISSABLEOBJECTLIST
+	ld hl, wMissableObjectList
 .loop
 	ld a, [hli]
 	cp $ff
@@ -3339,7 +3342,7 @@ IsObjectHidden: ; f1a6 (3:71a6)
 	jr nz, .loop
 	ld c, a
 	ld b, FLAG_TEST
-	ld hl, W_MISSABLEOBJECTFLAGS
+	ld hl, wMissableObjectFlags
 	call MissableObjectFlagAction
 	ld a, c
 	and a
@@ -3354,7 +3357,7 @@ IsObjectHidden: ; f1a6 (3:71a6)
 ; [wMissableObjectIndex]: index of the missable object to be added (global index)
 ShowObject: ; f1c8 (3:71c8)
 ShowObject2:
-	ld hl, W_MISSABLEOBJECTFLAGS
+	ld hl, wMissableObjectFlags
 	ld a, [wMissableObjectIndex]
 	ld c, a
 	ld b, FLAG_RESET
@@ -3364,7 +3367,7 @@ ShowObject2:
 ; removes missable object (items, leg. pokemon, etc.) from the map
 ; [wMissableObjectIndex]: index of the missable object to be removed (global index)
 HideObject: ; f1d7 (3:71d7)
-	ld hl, W_MISSABLEOBJECTFLAGS
+	ld hl, wMissableObjectFlags
 	ld a, [wMissableObjectIndex]
 	ld c, a
 	ld b, FLAG_SET
@@ -3587,7 +3590,7 @@ _AddPartyMon: ; f2e5 (3:72e5)
 	ld d, h
 	ld e, l
 	ld hl, wPlayerName
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld a, [wMonDataLocation]
 	and a
@@ -3616,7 +3619,7 @@ _AddPartyMon: ; f2e5 (3:72e5)
 	ld a, [wcf91]
 	ld [wd0b5], a
 	call GetMonHeader
-	ld hl, W_MONHEADER
+	ld hl, wMonHeader
 	ld a, [hli]
 	ld [de], a ; species
 	inc de
@@ -3655,7 +3658,7 @@ _AddPartyMon: ; f2e5 (3:72e5)
 	pop hl
 	push hl
 
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	and a ; is this a wild mon caught in battle?
 	jr nz, .copyEnemyMonData
 
@@ -3710,7 +3713,7 @@ _AddPartyMon: ; f2e5 (3:72e5)
 	ld [de], a
 	inc de
 .copyMonTypesAndMoves
-	ld hl, W_MONHTYPES
+	ld hl, wMonHTypes
 	ld a, [hli]       ; type 1
 	ld [de], a
 	inc de
@@ -3719,7 +3722,7 @@ _AddPartyMon: ; f2e5 (3:72e5)
 	inc de
 	ld a, [hli]       ; catch rate (held item in gen 2)
 	ld [de], a
-	ld hl, W_MONHMOVES
+	ld hl, wMonHMoves
 	ld a, [hli]
 	inc de
 	push de
@@ -3748,7 +3751,7 @@ _AddPartyMon: ; f2e5 (3:72e5)
 	inc de
 	ld [de], a
 	push de
-	ld a, [W_CURENEMYLVL]
+	ld a, [wCurEnemyLVL]
 	ld d, a
 	callab CalcExperience
 	pop de
@@ -3773,10 +3776,10 @@ _AddPartyMon: ; f2e5 (3:72e5)
 	pop hl
 	call AddPartyMon_WriteMovePP
 	inc de
-	ld a, [W_CURENEMYLVL]
+	ld a, [wCurEnemyLVL]
 	ld [de], a
 	inc de
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	dec a
 	jr nz, .calcFreshStats
 	ld hl, wEnemyMonMaxHP
@@ -3808,7 +3811,7 @@ AddPartyMon_WriteMovePP: ; f476 (3:7476)
 	push de
 	push bc
 	ld hl, Moves
-	ld bc, $6
+	ld bc, MoveEnd - Moves
 	call AddNTimes
 	ld de, wcd6d
 	ld a, BANK(Moves)
@@ -3858,7 +3861,7 @@ _AddEnemyMonToPlayerParty: ; f49d (3:749d)
 	ld hl, wEnemyMonOT
 	ld a, [wWhichPokemon]
 	call SkipFixedLengthTextEntries
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData    ; write new mon's OT name (from an enemy mon)
 	ld hl, wPartyMonNicks
 	ld a, [wPartyCount]
@@ -3869,7 +3872,7 @@ _AddEnemyMonToPlayerParty: ; f49d (3:749d)
 	ld hl, wEnemyMonNicks
 	ld a, [wWhichPokemon]
 	call SkipFixedLengthTextEntries
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData    ; write new mon's nickname (from an enemy mon)
 	ld a, [wcf91]
 	ld [wd11e], a
@@ -3896,7 +3899,7 @@ _MoveMon: ; f51e (3:751e)
 	cp PARTY_TO_DAYCARE
 	ld hl, wDayCareMon
 	jr z, .asm_f575
-	ld hl, W_NUMINBOX
+	ld hl, wNumInBox
 	ld a, [hl]
 	cp MONS_PER_BOX
 	jr nz, .partyOrBoxNotFull
@@ -3931,7 +3934,7 @@ _MoveMon: ; f51e (3:751e)
 	jr nz, .skipToNewMonEntry
 	ld hl, wBoxMons
 	ld bc, wBoxMon2 - wBoxMon1 ; $21
-	ld a, [W_NUMINBOX]
+	ld a, [wNumInBox]
 .skipToNewMonEntry
 	dec a
 	call AddNTimes
@@ -3974,14 +3977,14 @@ _MoveMon: ; f51e (3:751e)
 .asm_f5b4
 	ld a, [wMoveMonType]
 	cp PARTY_TO_DAYCARE
-	ld de, W_DAYCAREMONOT
+	ld de, wDayCareMonOT
 	jr z, .asm_f5d3
 	dec a
 	ld hl, wPartyMonOT
 	ld a, [wPartyCount]
 	jr nz, .asm_f5cd
 	ld hl, wBoxMonOT
-	ld a, [W_NUMINBOX]
+	ld a, [wNumInBox]
 .asm_f5cd
 	dec a
 	call SkipFixedLengthTextEntries
@@ -3992,7 +3995,7 @@ _MoveMon: ; f51e (3:751e)
 	ld a, [wMoveMonType]
 	and a
 	jr z, .asm_f5e6
-	ld hl, W_DAYCAREMONOT
+	ld hl, wDayCareMonOT
 	cp DAYCARE_TO_PARTY
 	jr z, .asm_f5ec
 	ld hl, wPartyMonOT
@@ -4000,18 +4003,18 @@ _MoveMon: ; f51e (3:751e)
 	ld a, [wWhichPokemon]
 	call SkipFixedLengthTextEntries
 .asm_f5ec
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld a, [wMoveMonType]
 	cp PARTY_TO_DAYCARE
-	ld de, W_DAYCAREMONNAME
+	ld de, wDayCareMonName
 	jr z, .asm_f611
 	dec a
 	ld hl, wPartyMonNicks
 	ld a, [wPartyCount]
 	jr nz, .asm_f60b
 	ld hl, wBoxMonNicks
-	ld a, [W_NUMINBOX]
+	ld a, [wNumInBox]
 .asm_f60b
 	dec a
 	call SkipFixedLengthTextEntries
@@ -4022,7 +4025,7 @@ _MoveMon: ; f51e (3:751e)
 	ld a, [wMoveMonType]
 	and a
 	jr z, .asm_f624
-	ld hl, W_DAYCAREMONNAME
+	ld hl, wDayCareMonName
 	cp DAYCARE_TO_PARTY
 	jr z, .asm_f62a
 	ld hl, wPartyMonNicks
@@ -4030,7 +4033,7 @@ _MoveMon: ; f51e (3:751e)
 	ld a, [wWhichPokemon]
 	call SkipFixedLengthTextEntries
 .asm_f62a
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	pop hl
 	ld a, [wMoveMonType]
@@ -4045,7 +4048,7 @@ _MoveMon: ; f51e (3:751e)
 	call LoadMonData
 	callba CalcLevelFromExperience
 	ld a, d
-	ld [W_CURENEMYLVL], a
+	ld [wCurEnemyLVL], a
 	pop hl
 	ld bc, wBoxMon2 - wBoxMon1
 	add hl, bc
@@ -4173,7 +4176,7 @@ HealParty:
 	push bc
 
 	ld hl, Moves
-	ld bc, 6
+	ld bc, MoveEnd - Moves
 	call AddNTimes
 	ld de, wcd6d
 	ld a, BANK(Moves)
@@ -4467,7 +4470,7 @@ InitPlayerData2:
 
 	ld hl, wPartyCount
 	call InitializeEmptyList
-	ld hl, W_NUMINBOX
+	ld hl, wNumInBox
 	call InitializeEmptyList
 	ld hl, wNumBagItems
 	call InitializeEmptyList
@@ -4485,7 +4488,7 @@ START_MONEY EQU $3000
 
 	ld [wMonDataLocation], a
 
-	ld hl, W_OBTAINEDBADGES
+	ld hl, wObtainedBadges
 	ld [hli], a
 
 	ld [hl], a
@@ -4494,8 +4497,8 @@ START_MONEY EQU $3000
 	ld [hli], a
 	ld [hl], a
 
-	ld hl, W_GAMEPROGRESSFLAGS
-	ld bc, $c8
+	ld hl, wGameProgressFlags
+	ld bc, wGameProgressFlagsEnd - wGameProgressFlags
 	call FillMemory ; clear all game progress flags
 
 	jp InitializeMissableObjectsFlags
@@ -4508,21 +4511,23 @@ InitializeEmptyList:
 	ret
 
 
-IsItemInBag_: ; f8a5 (3:78a5)
+GetQuantityOfItemInBag: ; f8a5 (3:78a5)
+; In: b = item ID
+; Out: b = how many of that item are in the bag
 	call GetPredefRegisters
 	ld hl, wNumBagItems
-.asm_f8ab
+.loop
 	inc hl
 	ld a, [hli]
 	cp $ff
-	jr z, .asm_f8b7
+	jr z, .notInBag
 	cp b
-	jr nz, .asm_f8ab
+	jr nz, .loop
 	ld a, [hl]
 	ld b, a
 	ret
-.asm_f8b7
-	ld b, $0
+.notInBag
+	ld b, 0
 	ret
 
 FindPathToPlayer: ; f8ba (3:78ba)
@@ -4767,17 +4772,26 @@ SECTION "Graphics", ROMX, BANK[GFX]
 
 PokemonLogoGraphics:            INCBIN "gfx/pokemon_logo.2bpp"
 FontGraphics:                   INCBIN "gfx/font.1bpp"
+FontGraphicsEnd:
 ABTiles:                        INCBIN "gfx/AB.2bpp"
 HpBarAndStatusGraphics:         INCBIN "gfx/hp_bar_and_status.2bpp"
+HpBarAndStatusGraphicsEnd:
 BattleHudTiles1:                INCBIN "gfx/battle_hud1.1bpp"
+BattleHudTiles1End:
 BattleHudTiles2:                INCBIN "gfx/battle_hud2.1bpp"
 BattleHudTiles3:                INCBIN "gfx/battle_hud3.1bpp"
+BattleHudTiles3End:
 NintendoCopyrightLogoGraphics:  INCBIN "gfx/copyright.2bpp"
 GamefreakLogoGraphics:          INCBIN "gfx/gamefreak.2bpp"
+GamefreakLogoGraphicsEnd:
 TextBoxGraphics:                INCBIN "gfx/text_box.2bpp"
+TextBoxGraphicsEnd:
 PokedexTileGraphics:            INCBIN "gfx/pokedex.2bpp"
+PokedexTileGraphicsEnd:
 WorldMapTileGraphics:           INCBIN "gfx/town_map.2bpp"
+WorldMapTileGraphicsEnd:
 PlayerCharacterTitleGraphics:   INCBIN "gfx/player_title.2bpp"
+PlayerCharacterTitleGraphicsEnd:
 
 
 SECTION "Battle (bank 4)", ROMX, BANK[$4]
@@ -5337,6 +5351,7 @@ SECTION "Battle (bank B)", ROMX, BANK[$B]
 INCLUDE "engine/battle/display_effectiveness.asm"
 
 TrainerInfoTextBoxTileGraphics:  INCBIN "gfx/trainer_info.2bpp"
+TrainerInfoTextBoxTileGraphicsEnd:
 BlankLeaderNames:                INCBIN "gfx/blank_leader_names.2bpp"
 CircleTile:                      INCBIN "gfx/circle_tile.2bpp"
 BadgeNumbersTileGraphics:        INCBIN "gfx/badge_numbers.2bpp"
@@ -5498,10 +5513,12 @@ INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
 TradingAnimationGraphics:
 	INCBIN "gfx/game_boy.2bpp"
 	INCBIN "gfx/link_cable.2bpp"
+TradingAnimationGraphicsEnd:
 
 TradingAnimationGraphics2:
 ; Pokeball traveling through the link cable.
 	INCBIN "gfx/trade2.2bpp"
+TradingAnimationGraphics2End:
 
 INCLUDE "engine/evos_moves.asm"
 INCLUDE "engine/battle/moveEffects/heal_effect.asm"
@@ -6487,6 +6504,7 @@ ENDC
 IF DEF(_BLUE)
 	INCBIN "gfx/blue/blueversion.1bpp" ; 8 tiles
 ENDC
+Version_GFXEnd:
 
 Dojo_GFX:
 Gym_GFX:           INCBIN "gfx/tilesets/gym.2bpp"

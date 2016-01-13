@@ -3,13 +3,13 @@ SilphCo7Script: ; 51b61 (14:5b61)
 	call EnableAutoTextBoxDrawing
 	ld hl, SilphCo7TrainerHeaders
 	ld de, SilphCo7ScriptPointers
-	ld a, [W_SILPHCO7CURSCRIPT]
+	ld a, [wSilphCo7CurScript]
 	call ExecuteCurMapScriptInTable
-	ld [W_SILPHCO7CURSCRIPT], a
+	ld [wSilphCo7CurScript], a
 	ret
 
 SilphCo7Script_51b77: ; 51b77 (14:5b77)
-	ld hl, wd126
+	ld hl, wCurrentMapScriptFlags
 	bit 5, [hl]
 	res 5, [hl]
 	ret z
@@ -106,8 +106,8 @@ SilphCo7Text_51c0c: ; 51c0c (14:5c0c)
 	ld [wJoyIgnore], a
 
 SilphCo7Text_51c10: ; 51c10 (14:5c10)
-	ld [W_SILPHCO7CURSCRIPT], a
-	ld [W_CURMAPSCRIPT], a
+	ld [wSilphCo7CurScript], a
+	ld [wCurMapScript], a
 	ret
 
 SilphCo7ScriptPointers: ; 51c17 (14:5c17)
@@ -131,7 +131,7 @@ SilphCo7Script0: ; 51c23 (14:5c23)
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, $ff
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	ld c, BANK(Music_MeetRival)
 	ld a, MUSIC_MEET_RIVAL
@@ -183,9 +183,9 @@ SilphCo7Script3: ; 51c82 (14:5c82)
 	ld hl, SilphCo7Text14
 	ld de, SilphCo7Text_51ecd
 	call SaveEndBattleTextPointers
-	ld a, SONY2 + $c8
-	ld [W_CUROPPONENT], a
-	ld a, [W_RIVALSTARTER]
+	ld a, OPP_SONY2
+	ld [wCurOpponent], a
+	ld a, [wRivalStarter]
 	cp STARTER2
 	jr nz, .asm_51cb6
 	ld a, $7
@@ -198,12 +198,12 @@ SilphCo7Script3: ; 51c82 (14:5c82)
 .asm_51cbe
 	ld a, $9
 .asm_51cc0
-	ld [W_TRAINERNO], a
+	ld [wTrainerNo], a
 	ld a, $4
 	jp SilphCo7Text_51c10
 
 SilphCo7Script4: ; 51cc8 (14:5cc8)
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	cp $ff
 	jp z, SilphCo7Text_51c0c
 	ld a, $f0
@@ -220,7 +220,7 @@ SilphCo7Script4: ; 51cc8 (14:5cc8)
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $ff
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	callba Music_RivalAlternateStart
 	ld de, MovementData_51d1d

@@ -1,5 +1,5 @@
 RocketHideoutElevatorScript: ; 45710 (11:5710)
-	ld hl, wd126
+	ld hl, wCurrentMapScriptFlags
 	bit 5, [hl]
 	res 5, [hl]
 	push hl
@@ -35,14 +35,16 @@ RocketHideoutElevatorScript_45741: ; 45741 (11:5741)
 	ld hl, RocketHideoutElavatorFloors
 	call LoadItemList
 	ld hl, RocketHideoutElevatorWarpMaps
-	ld de, wcc5b
-	ld bc, $0006
+	ld de, wElevatorWarpMaps
+	ld bc, RocketHideoutElevatorWarpMapsEnd - RocketHideoutElevatorWarpMaps
 	call CopyData
 	ret
 
 RocketHideoutElavatorFloors: ; 45754 (11:5754)
 	db $03 ; num elements in list
-	db $55, $54, $61 ; "B1F", "B2F", "B4F"
+	db FLOOR_B1F
+	db FLOOR_B2F
+	db FLOOR_B4F
 	db $FF ; terminator
 
 RocketHideoutElevatorWarpMaps: ; 45759 (11:5759)
@@ -52,6 +54,7 @@ RocketHideoutElevatorWarpMaps: ; 45759 (11:5759)
 	db $04, ROCKET_HIDEOUT_1
 	db $04, ROCKET_HIDEOUT_2
 	db $02, ROCKET_HIDEOUT_4
+RocketHideoutElevatorWarpMapsEnd:
 
 RocketHideoutElevatorScript_4575f: ; 4575f (11:575f)
 	call Delay3

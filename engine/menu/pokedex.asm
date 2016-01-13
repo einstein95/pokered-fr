@@ -12,8 +12,8 @@ ShowPokedexMenu: ; 40000 (10:4000)
 	ld [wd11e],a
 	ld [hJoy7],a
 .setUpGraphics
-	ld b,$08
-	call GoPAL_SET
+	ld b, SET_PAL_GENERIC
+	call RunPaletteCommand
 	callab LoadPokedexTilePatterns
 .doPokemonListMenu
 	ld hl,wTopMenuItemY
@@ -27,7 +27,7 @@ ShowPokedexMenu: ; 40000 (10:4000)
 	inc hl
 	ld a,6
 	ld [hli],a ; max menu item ID
-	ld [hl],%00110011 ; menu watched keys (Left, Right, B button, A  button)
+	ld [hl],D_LEFT | D_RIGHT | B_BUTTON | A_BUTTON
 	call HandlePokedexListMenu
 	jr c,.goToSideMenu ; if the player chose a pokemon from the list
 .exitPokedex
@@ -41,7 +41,7 @@ ShowPokedexMenu: ; 40000 (10:4000)
 	pop af
 	ld [wListScrollOffset],a
 	call GBPalWhiteOutWithDelay3
-	call GoPAL_SET_CF1C
+	call RunDefaultPaletteCommand
 	jp ReloadMapData
 .goToSideMenu
 	call HandlePokedexSideMenu
@@ -88,6 +88,7 @@ HandlePokedexSideMenu: ; 4006d (10:406d)
 	inc hl
 	ld a,3
 	ld [hli],a ; max menu item ID
+	;ld a, A_BUTTON | B_BUTTON
 	ld [hli],a ; menu watched keys (A button and B button)
 	xor a
 	ld [hli],a ; old menu item ID
@@ -169,14 +170,14 @@ HandlePokedexListMenu: ; 40111 (10:4111)
 	ld hl,wPokedexSeen
 	ld b,wPokedexSeenEnd - wPokedexSeen
 	call CountSetBits
-	ld de,wd11e
+	ld de, wNumSetBits
 	coord hl, 16, 3
 	lb bc, 1, 3
 	call PrintNumber ; print number of seen pokemon
 	ld hl,wPokedexOwned
 	ld b,wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
-	ld de,wd11e
+	ld de, wNumSetBits
 	coord hl, 16, 6
 	lb bc, 1, 3
 	call PrintNumber ; print number of owned pokemon
@@ -397,14 +398,14 @@ ShowPokedexDataInternal: ; 402e2 (10:42e2)
 	ld hl,wd72c
 	set 1,[hl]
 	ld a,$33 ; 3/7 volume
-	ld [$ff24],a
+	ld [rNR50],a
 	call GBPalWhiteOut ; zero all palettes
 	call ClearScreen
 	ld a,[wd11e] ; pokemon ID
 	ld [wcf91],a
 	push af
-	ld b,04
-	call GoPAL_SET
+	ld b, SET_PAL_POKEDEX
+	call RunPaletteCommand
 	pop af
 	ld [wd11e],a
 	ld a,[hTilesetType]
@@ -560,13 +561,13 @@ ShowPokedexDataInternal: ; 402e2 (10:42e2)
 	ld [hTilesetType],a
 	call GBPalWhiteOut
 	call ClearScreen
-	call GoPAL_SET_CF1C
+	call RunDefaultPaletteCommand
 	call LoadTextBoxTilePatterns
 	call GBPalNormal
 	ld hl,wd72c
 	res 1,[hl]
 	ld a,$77 ; max volume
-	ld [$ff24],a
+	ld [rNR50],a
 	ret
 
 HeightWeightText: ; 40448 (10:4448)

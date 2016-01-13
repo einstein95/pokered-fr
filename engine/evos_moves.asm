@@ -105,7 +105,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	cp b ; is the mon's level greater than the evolution requirement?
 	jp c, .nextEvoEntry2 ; if so, go the next evolution entry
 .doEvolution
-	ld [W_CURENEMYLVL], a
+	ld [wCurEnemyLVL], a
 	ld a, 1
 	ld [wEvolutionOccurred], a
 	push hl
@@ -163,10 +163,10 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld hl, BaseStats
 	ld bc, MonBaseStatsEnd - MonBaseStats
 	call AddNTimes
-	ld de, W_MONHEADER
+	ld de, wMonHeader
 	call CopyData
 	ld a, [wd0b5]
-	ld [W_MONHDEXNUM], a
+	ld [wMonHIndex], a
 	pop af
 	ld [wd11e], a
 	ld hl, wLoadedMonHPExp - 1
@@ -210,7 +210,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	call LearnMoveFromLevelUp
 	pop hl
 	predef SetPartyMonTypes
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	and a
 	call z, Evolution_ReloadTilesetTilePatterns
 	predef IndexToPokedex
@@ -249,7 +249,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld a, [wLinkState]
 	cp LINK_STATE_TRADING
 	ret z
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	and a
 	ret nz
 	ld a, [wEvolutionOccurred]
@@ -257,12 +257,12 @@ Evolution_PartyMonLoop: ; loop over party mons
 	call nz, PlayDefaultMusic
 	ret
 
-; checks if the evolved mon's name is different from the standard name (i.e. it has a nickname)
-; if so, rename it to is evolved form's standard name
 RenameEvolvedMon: ; 3aef7 (e:6ef7)
+; Renames the mon to its new, evolved form's standard name unless it had a
+; nickname, in which case the nickname is kept.
 	ld a, [wd0b5]
 	push af
-	ld a, [W_MONHDEXNUM]
+	ld a, [wMonHIndex]
 	ld [wd0b5], a
 	call GetName
 	pop af
@@ -275,10 +275,10 @@ RenameEvolvedMon: ; 3aef7 (e:6ef7)
 	cp [hl]
 	inc hl
 	ret nz
-	cp $50
+	cp "@"
 	jr nz, .compareNamesLoop
 	ld a, [wWhichPokemon]
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	ld hl, wPartyMonNicks
 	call AddNTimes
 	push hl
@@ -340,7 +340,7 @@ LearnMoveFromLevelUp: ; 3af5b (e:6f5b)
 	and a ; have we reached the end of the learn set?
 	jr z, .done ; if we've reached the end of the learn set, jump
 	ld b, a ; level the move is learnt at
-	ld a, [W_CURENEMYLVL]
+	ld a, [wCurEnemyLVL]
 	cp b ; is the move learnt at the mon's current level?
 	ld a, [hli] ; move ID
 	jr nz, .learnSetLoop
@@ -375,7 +375,7 @@ LearnMoveFromLevelUp: ; 3af5b (e:6f5b)
 	ld [wd11e], a
 	ret
 
-; writes the moves a mon has at level [W_CURENEMYLVL] to [de]
+; writes the moves a mon has at level [wCurEnemyLVL] to [de]
 ; move slots are being filled up sequentially and shifted if all slots are full
 WriteMonMoves: ; 3afb8 (e:6fb8)
 	call GetPredefRegisters
@@ -407,7 +407,7 @@ WriteMonMoves: ; 3afb8 (e:6fb8)
 	and a
 	jp z, .done       ; end of list
 	ld b, a
-	ld a, [W_CURENEMYLVL]
+	ld a, [wCurEnemyLVL]
 	cp b
 	jp c, .done       ; mon level < move level (assumption: learnset is sorted by level)
 	ld a, [wLearningMovesFromDayCare]
@@ -479,7 +479,7 @@ WriteMonMoves: ; 3afb8 (e:6fb8)
 	push hl
 	dec a
 	ld hl, Moves
-	ld bc, 6
+	ld bc, MoveEnd - Moves
 	call AddNTimes
 	ld de, wBuffer
 	ld a, BANK(Moves)

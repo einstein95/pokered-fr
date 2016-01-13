@@ -71,7 +71,7 @@ StatusScreen: ; 12953 (4:6953)
 ; mon is in a box or daycare
 	ld a, [wLoadedMonBoxLevel]
 	ld [wLoadedMonLevel], a
-	ld [W_CURENEMYLVL], a
+	ld [wCurEnemyLVL], a
 	ld hl, wLoadedMonHPExp - 1
 	ld de, wLoadedMonStats
 	ld b, $1
@@ -80,7 +80,7 @@ StatusScreen: ; 12953 (4:6953)
 	ld hl, wd72c
 	set 1, [hl]
 	ld a, $33
-	ld [$ff24], a ; Reduce the volume
+	ld [rNR50], a ; Reduce the volume
 	call GBPalWhiteOutWithDelay3
 	call ClearScreen
 	call UpdateSprites
@@ -99,7 +99,7 @@ StatusScreen: ; 12953 (4:6953)
 	call CopyVideoDataDouble ; ─┘
 	ld de, PTile
 	ld hl, vChars2 + $720
-	lb bc, BANK(PTile), $01
+	lb bc, BANK(PTile), (PTileEnd - PTile) / $8
 	call CopyVideoDataDouble ; P (for PP), inline
 	ld a, [hTilesetType]
 	push af
@@ -121,10 +121,10 @@ StatusScreen: ; 12953 (4:6953)
 	call PlaceString ; "TYPE1/"
 	coord hl, 11, 3
 	predef DrawHP
-	ld hl, wcf25
+	ld hl, wStatusScreenHPBarColor
 	call GetHealthBarColor
-	ld b, $3
-	call GoPAL_SET ; SGB palette
+	ld b, SET_PAL_STATUS_SCREEN
+	call RunPaletteCommand
 	coord hl, 16, 6
 	ld de, wLoadedMonStatus
 	call PrintStatusCondition
@@ -138,7 +138,7 @@ StatusScreen: ; 12953 (4:6953)
 	call PlaceString ; "STATUS/"
 	coord hl, 14, 2
 	call PrintLevel ; Pokémon level
-	ld a, [W_MONHDEXNUM]
+	ld a, [wMonHIndex]
 	ld [wd11e], a
 	ld [wd0b5], a
 	predef IndexToPokedex
@@ -196,13 +196,13 @@ OTPointers: ; 12a95 (4:6a95)
 	dw wPartyMonOT
 	dw wEnemyMonOT
 	dw wBoxMonOT
-	dw W_DAYCAREMONOT
+	dw wDayCareMonOT
 
 NamePointers2: ; 12a9d (4:6a9d)
 	dw wPartyMonNicks
 	dw wEnemyMonNicks
 	dw wBoxMonNicks
-	dw W_DAYCAREMONNAME
+	dw wDayCareMonName
 
 Type1Text: ; 12aa5 (4:6aa5)
 	db "TYPE1/", $4e
@@ -242,6 +242,7 @@ DrawLineBox: ; 0x12ac7
 
 PTile: ; 12adc (4:6adc) ; This is a single 1bpp "P" tile
 	INCBIN "gfx/p_tile.1bpp"
+PTileEnd:
 
 PrintStatsBox: ; 12ae4 (4:6ae4)
 	ld a, d
@@ -371,7 +372,7 @@ StatusScreen2: ; 12b57 (4:6b57)
 	call PrintNumber
 	ld a, "/"
 	ld [hli], a
-	ld de, wd11e
+	ld de, wMaxPP
 	lb bc, 1, 2
 	call PrintNumber
 	pop hl
@@ -416,7 +417,7 @@ StatusScreen2: ; 12b57 (4:6b57)
 	call StatusScreen_ClearName
 	coord hl, 9, 1
 	call StatusScreen_ClearName
-	ld a, [W_MONHDEXNUM]
+	ld a, [wMonHIndex]
 	ld [wd11e], a
 	call GetMonName
 	coord hl, 9, 1
@@ -430,7 +431,7 @@ StatusScreen2: ; 12b57 (4:6b57)
 	ld hl, wd72c
 	res 1, [hl]
 	ld a, $77
-	ld [$ff24], a
+	ld [rNR50], a
 	call GBPalWhiteOut
 	jp ClearScreen
 

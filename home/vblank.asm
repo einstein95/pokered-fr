@@ -22,7 +22,7 @@ VBlank::
 
 	call AutoBgMapTransfer
 	call VBlankCopyBgMap
-	call RedrawExposedScreenEdge
+	call RedrawRowOrColumn
 	call VBlankCopy
 	call VBlankCopyDouble
 	call UpdateMovingBgTiles
@@ -38,21 +38,21 @@ VBlank::
 
 	ld a, [H_VBLANKOCCURRED]
 	and a
-	jr z, .vblanked
+	jr z, .skipZeroing
 	xor a
 	ld [H_VBLANKOCCURRED], a
-.vblanked
 
+.skipZeroing
 	ld a, [H_FRAMECOUNTER]
 	and a
-	jr z, .decced
+	jr z, .skipDec
 	dec a
 	ld [H_FRAMECOUNTER], a
-.decced
 
-	call Func_28cb
+.skipDec
+	call FadeOutAudio
 
-	ld a, [wc0ef] ; music ROM bank
+	ld a, [wAudioROMBank] ; music ROM bank
 	ld [H_LOADEDROMBANK], a
 	ld [MBC1RomBank], a
 
@@ -74,7 +74,7 @@ VBlank::
 
 	callba TrackPlayTime ; keep track of time played
 
-	ld a, [$fff9]
+	ld a, [hDisableJoypadPolling]
 	and a
 	call z, ReadJoypad
 

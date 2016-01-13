@@ -51,7 +51,7 @@ HiddenItemBagFullText: ; 76794 (1d:6794)
 
 HiddenCoins: ; 76799 (1d:6799)
 	ld b, COIN_CASE
-	predef IsItemInBag_
+	predef GetQuantityOfItemInBag
 	ld a, b
 	and a
 	ret z
@@ -135,7 +135,7 @@ FindHiddenItemOrCoinsIndex: ; 76857 (1d:6857)
 	ld d, a
 	ld a, [wHiddenObjectX]
 	ld e, a
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	ld b, a
 	ld c, -1
 .loop

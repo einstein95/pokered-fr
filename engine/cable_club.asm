@@ -57,8 +57,8 @@ CableClub_DoBattleOrTradeAgain: ; 5345
 	ld [hli], a
 	dec b
 	jr nz, .zeroPlayerDataPatchListLoop
-	ld hl, W_GRASSRATE
-	ld bc, W_TRAINERHEADERPTR - W_GRASSRATE
+	ld hl, wGrassRate
+	ld bc, wTrainerHeaderPtr - wGrassRate
 .zeroEnemyPartyLoop
 	xor a
 	ld [hli], a
@@ -176,7 +176,7 @@ CableClub_DoBattleOrTradeAgain: ; 5345
 	jr z, .findStartOfEnemyNameLoop
 	dec hl
 	ld de, wLinkEnemyTrainerName
-	ld c, 11
+	ld c, NAME_LENGTH
 .copyEnemyNameLoop
 	ld a, [hli]
 	cp SERIAL_NO_DATA_BYTE
@@ -186,7 +186,7 @@ CableClub_DoBattleOrTradeAgain: ; 5345
 	dec c
 	jr nz, .copyEnemyNameLoop
 	ld de, wEnemyPartyCount
-	ld bc, W_TRAINERHEADERPTR - wEnemyPartyCount
+	ld bc, wTrainerHeaderPtr - wEnemyPartyCount
 .copyEnemyPartyLoop
 	ld a, [hli]
 	cp SERIAL_NO_DATA_BYTE
@@ -256,9 +256,9 @@ CableClub_DoBattleOrTradeAgain: ; 5345
 	dec c
 	jr nz, .unpatchEnemyMonsLoop
 	ld a, wEnemyMonOT % $100
-	ld [wcf8d], a
+	ld [wUnusedCF8D], a
 	ld a, wEnemyMonOT / $100
-	ld [wcf8e], a
+	ld [wUnusedCF8D + 1], a
 	xor a
 	ld [wTradeCenterPointerTableIndex], a
 	ld a, $ff
@@ -274,11 +274,11 @@ CableClub_DoBattleOrTradeAgain: ; 5345
 	jr nz, .asm_5506
 	ld a, LINK_STATE_BATTLING
 	ld [wLinkState], a
-	ld a, SONY1 + $c8
-	ld [W_CUROPPONENT], a
+	ld a, OPP_SONY1
+	ld [wCurOpponent], a
 	call ClearScreen
 	call Delay3
-	ld hl, W_OPTIONS
+	ld hl, wOptions
 	res 7, [hl]
 	predef InitOpponent
 	predef HealParty
@@ -598,7 +598,7 @@ ReturnToCableClubRoom: ; 577d (1:577d)
 TradeCenter_DrawCancelBox:
 	coord hl, 11, 15
 	ld a, $7e
-	ld bc, 2 * 20 + 9
+	ld bc, 2 * SCREEN_WIDTH + 9
 	call FillMemory
 	coord hl, 0, 15
 	ld b, 1
@@ -614,7 +614,7 @@ CancelTextString:
 TradeCenter_PlaceSelectedEnemyMonMenuCursor:
 	ld a, [wSerialSyncAndExchangeNybbleReceiveData]
 	coord hl, 1, 9
-	ld bc, 20
+	ld bc, SCREEN_WIDTH
 	call AddNTimes
 	ld [hl], $ec ; cursor
 	ret
@@ -698,7 +698,7 @@ TradeCenter_Trade:
 	call GetMonName
 	ld hl, wcd6d
 	ld de, wNameOfPlayerMonToBeTraded
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld a, [wTradingWhichEnemyMon]
 	ld hl, wEnemyPartyMons
@@ -756,7 +756,7 @@ TradeCenter_Trade:
 	ld hl, wPartyMonOT
 	call SkipFixedLengthTextEntries
 	ld de, wTradedPlayerMonOT
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld hl, wPartyMon1Species
 	ld a, [wTradingWhichPlayerMon]
@@ -772,7 +772,7 @@ TradeCenter_Trade:
 	ld hl, wEnemyMonOT
 	call SkipFixedLengthTextEntries
 	ld de, wTradedEnemyMonOT
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld hl, wEnemyMons
 	ld a, [wTradingWhichEnemyMon]
@@ -824,19 +824,19 @@ TradeCenter_Trade:
 	add hl, bc
 	ld a, [hl]
 	ld [wTradedEnemyMonSpecies], a
-	ld a, $a
-	ld [wMusicHeaderPointer], a
+	ld a, 10
+	ld [wAudioFadeOutControl], a
 	ld a, $2
-	ld [wc0f0], a
+	ld [wAudioSavedROMBank], a
 	ld a, MUSIC_SAFARI_ZONE
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	ld c, 100
 	call DelayFrames
 	call ClearScreen
 	call LoadHpBarAndStatusTilePatterns
 	xor a
-	ld [wcc5b], a
+	ld [wUnusedCC5B], a
 	ld a, [hSerialConnectionStatus]
 	cp USING_EXTERNAL_CLOCK
 	jr z, .usingExternalClock
@@ -900,27 +900,27 @@ CableClub_Run: ; 5a5f (1:5a5f)
 	call CableClub_DoBattleOrTrade
 	ld hl, Club_GFX
 	ld a, h
-	ld [W_TILESETGFXPTR + 1], a
+	ld [wTileSetGFXPtr + 1], a
 	ld a, l
-	ld [W_TILESETGFXPTR], a
+	ld [wTileSetGFXPtr], a
 	ld a, Bank(Club_GFX)
-	ld [W_TILESETBANK], a
+	ld [wTileSetBank], a
 	ld hl, Club_Coll
 	ld a, h
-	ld [W_TILESETCOLLISIONPTR + 1], a
+	ld [wTileSetCollisionPtr + 1], a
 	ld a, l
-	ld [W_TILESETCOLLISIONPTR], a
+	ld [wTileSetCollisionPtr], a
 	xor a
-	ld [W_GRASSRATE], a
+	ld [wGrassRate], a
 	inc a ; LINK_STATE_IN_CABLE_CLUB
 	ld [wLinkState], a
 	ld [$ffb5], a
-	ld a, $a
-	ld [wMusicHeaderPointer], a
+	ld a, 10
+	ld [wAudioFadeOutControl], a
 	ld a, BANK(Music_Celadon)
-	ld [wc0f0], a
+	ld [wAudioSavedROMBank], a
 	ld a, MUSIC_CELADON
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	jp PlaySound
 
 EmptyFunc3: ; 5aaf (1:5aaf)

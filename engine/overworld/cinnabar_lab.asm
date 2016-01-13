@@ -5,14 +5,14 @@ GiveFossilToCinnabarLab: ; 61006 (18:5006)
 	ld [wCurrentMenuItem], a
 	ld a, A_BUTTON | B_BUTTON
 	ld [wMenuWatchedKeys], a
-	ld a, [wcd37]
+	ld a, [wFilteredBagItemsCount]
 	dec a
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
 	ld a, 1
 	ld [wTopMenuItemX], a
-	ld a, [wcd37]
+	ld a, [wFilteredBagItemsCount]
 	dec a
 	ld bc, 2
 	ld hl, 3
@@ -29,9 +29,9 @@ GiveFossilToCinnabarLab: ; 61006 (18:5006)
 	call HandleMenuInput
 	bit 1, a ; pressed B?
 	jr nz, .cancelledGivingFossil
-	ld hl, wcc5b
+	ld hl, wFilteredBagItems
 	ld a, [wCurrentMenuItem]
-	ld d, $0
+	ld d, 0
 	ld e, a
 	add hl, de
 	ld a, [hl]
@@ -48,9 +48,9 @@ GiveFossilToCinnabarLab: ; 61006 (18:5006)
 .choseDomeFossil
 	ld b, KABUTO
 .fossilSelected
-	ld [W_FOSSILITEM], a
+	ld [wFossilItem], a
 	ld a, b
-	ld [W_FOSSILMON], a
+	ld [wFossilMon], a
 	call LoadFossilItemAndMonName
 	ld hl, LabFossil_610ae
 	call PrintText
@@ -60,7 +60,7 @@ GiveFossilToCinnabarLab: ; 61006 (18:5006)
 	jr nz, .cancelledGivingFossil
 	ld hl, LabFossil_610b3
 	call PrintText
-	ld a, [W_FOSSILITEM]
+	ld a, [wFossilItem]
 	ld [hItemToRemoveID], a
 	callba RemoveItemByID
 	ld hl, LabFossil_610b8
@@ -90,9 +90,9 @@ LabFossil_610bd: ; 610bd (18:50bd)
 
 PrintFossilsInBag: ; 610c2 (18:50c2)
 ; Prints each fossil in the player's bag on a separate line in the menu.
-	ld hl, wcc5b
+	ld hl, wFilteredBagItems
 	xor a
-	ld [hFossilCounter], a
+	ld [hItemCounter], a
 .loop
 	ld a, [hli]
 	cp $ff
@@ -101,23 +101,23 @@ PrintFossilsInBag: ; 610c2 (18:50c2)
 	ld [wd11e], a
 	call GetItemName
 	coord hl, 2, 2
-	ld a, [hFossilCounter]
+	ld a, [hItemCounter]
 	ld bc, SCREEN_WIDTH * 2
 	call AddNTimes
 	ld de, wcd6d
 	call PlaceString
-	ld hl, hFossilCounter
+	ld hl, hItemCounter
 	inc [hl]
 	pop hl
 	jr .loop
 
 ; loads the names of the fossil item and the resulting mon
 LoadFossilItemAndMonName: ; 610eb (18:50eb)
-	ld a, [W_FOSSILMON]
+	ld a, [wFossilMon]
 	ld [wd11e], a
 	call GetMonName
 	call CopyStringToCF4B
-	ld a, [W_FOSSILITEM]
+	ld a, [wFossilItem]
 	ld [wd11e], a
 	call GetItemName
 	ret

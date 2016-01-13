@@ -2,7 +2,7 @@ AskName: ; 64eb (1:64eb)
 	call SaveScreenTilesToBuffer1
 	call GetPredefRegisters
 	push hl
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	dec a
 	coord hl, 0, 0
 	ld b, 4
@@ -30,7 +30,7 @@ AskName: ; 64eb (1:64eb)
 	ld a, NAME_MON_SCREEN
 	ld [wNamingScreenType], a
 	call DisplayNamingScreen
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	and a
 	jr nz, .inBattle
 	call ReloadMapSpriteTilePatterns
@@ -46,7 +46,7 @@ AskName: ; 64eb (1:64eb)
 	ld d, h
 	ld e, l
 	ld hl, wcd6d
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	jp CopyData
 
 DoYouWantToNicknameText: ; 0x6557
@@ -67,13 +67,13 @@ DisplayNameRaterScreen: ; 655c (1:655c)
 	cp "@"
 	jr z, .playerCancelled
 	ld hl, wPartyMonNicks
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	ld a, [wWhichPokemon]
 	call AddNTimes
 	ld e, l
 	ld d, h
 	ld hl, wBuffer
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	and a
 	ret
@@ -88,8 +88,8 @@ DisplayNamingScreen: ; 6596 (1:6596)
 	call GBPalWhiteOutWithDelay3
 	call ClearScreen
 	call UpdateSprites
-	ld b, $8
-	call GoPAL_SET
+	ld b, SET_PAL_GENERIC
+	call RunPaletteCommand
 	call LoadHpBarAndStatusTilePatterns
 	call LoadEDTile
 	callba LoadMonPartySpriteGfx
@@ -158,18 +158,18 @@ DisplayNamingScreen: ; 6596 (1:6596)
 .submitNickname
 	pop de
 	ld hl, wcf4b
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	call GBPalWhiteOutWithDelay3
 	call ClearScreen
 	call ClearSprites
-	call GoPAL_SET_CF1C
+	call RunDefaultPaletteCommand
 	call GBPalNormal
 	xor a
-	ld [W_SUBANIMTRANSFORM], a
+	ld [wAnimCounter], a
 	ld hl, wd730
 	res 6, [hl]
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	and a
 	jp z, LoadTextBoxTilePatterns
 	jpab LoadHudTilePatterns
@@ -326,11 +326,14 @@ DisplayNamingScreen: ; 6596 (1:6596)
 LoadEDTile: ; 675b (1:675b)
 	ld de, ED_Tile
 	ld hl, vFont + $700
-	ld bc, $1
+	ld bc, (ED_TileEnd - ED_Tile) / $8
+	; to fix the graphical bug on poor emulators
+	;lb bc, BANK(ED_Tile), (ED_TileEnd - ED_Tile) / $8
 	jp CopyVideoDataDouble
 
 ED_Tile: ; 6767 (1:6767)
 	INCBIN "gfx/ED_tile.1bpp"
+ED_TileEnd:
 
 PrintAlphabet: ; 676f (1:676f)
 	xor a

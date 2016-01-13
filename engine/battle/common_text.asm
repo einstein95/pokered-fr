@@ -1,8 +1,8 @@
 PrintBeginningBattleText: ; 58d99 (16:4d99)
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	dec a
 	jr nz, .trainerBattle
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	cp POKEMONTOWER_3
 	jr c, .notPokemonTower
 	cp LAVENDER_HOUSE_1
@@ -11,7 +11,7 @@ PrintBeginningBattleText: ; 58d99 (16:4d99)
 	ld a, [wEnemyMonSpecies2]
 	call PlayCry
 	ld hl, WildMonAppearedText
-	ld a, [W_MOVEMISSED]
+	ld a, [wMoveMissed]
 	and a
 	jr z, .notFishing
 	ld hl, HookedMonAttackedText
@@ -61,9 +61,9 @@ PrintBeginningBattleText: ; 58d99 (16:4d99)
 
 .playSFX
 	xor a
-	ld [wc0f1], a
+	ld [wFrequencyModifier], a
 	ld a, $80
-	ld [wc0f2], a
+	ld [wTempoModifier], a
 	ld a, SFX_SILPH_SCOPE
 	call PlaySound
 	jp WaitForSoundToFinish

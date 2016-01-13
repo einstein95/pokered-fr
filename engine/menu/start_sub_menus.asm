@@ -57,7 +57,7 @@ StartMenu_Pokemon: ; 130a9 (4:70a9)
 	inc hl
 	ld a,b
 	ld [hli],a ; max menu item ID
-	ld a,%00000011 ; A button, B button
+	ld a,A_BUTTON | B_BUTTON
 	ld [hli],a ; menu watched keys
 	xor a
 	ld [hl],a
@@ -117,7 +117,7 @@ StartMenu_Pokemon: ; 130a9 (4:70a9)
 	ld a,[hli]
 	ld h,[hl]
 	ld l,a
-	ld a,[W_OBTAINEDBADGES] ; badges obtained
+	ld a,[wObtainedBadges] ; badges obtained
 	jp [hl]
 .outOfBattleMovePointers
 	dw .cut
@@ -160,7 +160,7 @@ StartMenu_Pokemon: ; 130a9 (4:70a9)
 .surf
 	bit 4,a ; does the player have the Soul Badge?
 	jp z,.newBadgeRequired
-	callba CheckForForcedBikeSurf
+	callba IsSurfingAllowed
 	ld hl,wd728
 	bit 1,[hl]
 	res 1,[hl]
@@ -297,7 +297,7 @@ ErasePartyMenuCursors: ; 132ed (4:72ed)
 
 ItemMenuLoop: ; 132fc (4:72fc)
 	call LoadScreenTilesFromBuffer2DisableBGTransfer ; restore saved screen
-	call GoPAL_SET_CF1C
+	call RunDefaultPaletteCommand
 
 StartMenu_Item: ; 13302 (4:7302)
 	ld a,[wLinkState]
@@ -354,7 +354,7 @@ StartMenu_Item: ; 13302 (4:7302)
 	inc hl
 	inc a ; a = 1
 	ld [hli],a ; max menu item ID
-	ld a,%00000011 ; A button, B button
+	ld a,A_BUTTON | B_BUTTON
 	ld [hli],a ; menu watched keys
 	xor a
 	ld [hl],a ; old menu item id
@@ -506,14 +506,14 @@ StartMenu_TrainerInfo: ; 13460 (4:7460)
 	ld [hTilesetType],a
 	call DrawTrainerInfo
 	predef DrawBadges ; draw badges
-	ld b,$0d
-	call GoPAL_SET
+	ld b, SET_PAL_TRAINER_CARD
+	call RunPaletteCommand
 	call GBPalNormal
 	call WaitForTextScrollButtonPress ; wait for button press
 	call GBPalWhiteOut
 	call LoadFontTilePatterns
 	call LoadScreenTilesFromBuffer2 ; restore saved screen
-	call GoPAL_SET_CF1C
+	call RunDefaultPaletteCommand
 	call ReloadMapData
 	call LoadGBPal
 	pop af
@@ -601,17 +601,17 @@ DrawTrainerInfo: ; 1349a (4:749a)
 	ld c,$e3
 	call PrintBCDNumber
 	coord hl, 9, 6
-	ld de,W_PLAYTIMEHOURS + 1 ; hours
+	ld de,wPlayTimeHours ; hours
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
 	ld [hl],$d6 ; colon tile ID
 	inc hl
-	ld de,W_PLAYTIMEMINUTES + 1 ; minutes
+	ld de,wPlayTimeMinutes ; minutes
 	lb bc, LEADING_ZEROES | 1, 2
 	jp PrintNumber
 
 TrainerInfo_FarCopyData: ; 1357f (4:757f)
-	ld a,$0b
+	ld a,BANK(TrainerInfoTextBoxTileGraphics)
 	jp FarCopyData2
 
 TrainerInfo_NameMoneyTimeText: ; 13584 (4:7584)
@@ -813,36 +813,36 @@ SwitchPartyMon_InitVarOrSwapData: ; 13653 (4:7653)
 	call SkipFixedLengthTextEntries
 	push hl
 	ld de, wSwitchPartyMonTempBuffer
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld hl, wPartyMonOT
 	ld a, [wMenuItemToSwap]
 	call SkipFixedLengthTextEntries
 	pop de
 	push hl
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	pop de
 	ld hl, wSwitchPartyMonTempBuffer
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld hl, wPartyMonNicks
 	ld a, [wCurrentMenuItem]
 	call SkipFixedLengthTextEntries
 	push hl
 	ld de, wSwitchPartyMonTempBuffer
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld hl, wPartyMonNicks
 	ld a, [wMenuItemToSwap]
 	call SkipFixedLengthTextEntries
 	pop de
 	push hl
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	pop de
 	ld hl, wSwitchPartyMonTempBuffer
-	ld bc, 11
+	ld bc, NAME_LENGTH
 	call CopyData
 	ld a, [wMenuItemToSwap]
 	ld [wSwappedMenuItem], a

@@ -20,7 +20,7 @@ AnimateHallOfFame: ; 701a0 (1c:41a0)
 	xor a
 	ld [wUpdateSpritesEnabled], a
 	ld [hTilesetType], a
-	ld [W_SPRITEFLIPPED], a
+	ld [wSpriteFlipped], a
 	ld [wLetterPrintingDelayFlags], a ; no delay
 	ld [wHoFMonOrPlayer], a ; mon
 	inc a
@@ -104,7 +104,7 @@ HoFShowMonOrPlayer: ; 70278 (1c:4278)
 	ld [wcf91], a
 	ld [wd0b5], a
 	ld [wBattleMonSpecies2], a
-	ld [wcf1d], a
+	ld [wWholeScreenPaletteMonSpecies], a
 	ld a, [wHoFMonOrPlayer]
 	and a
 	jr z, .showMon
@@ -117,9 +117,9 @@ HoFShowMonOrPlayer: ; 70278 (1c:4278)
 	call LoadFrontSpriteByMonIndex
 	predef LoadMonBackPic
 .next1
-	ld b, $b
-	ld c, $0
-	call GoPAL_SET
+	ld b, SET_PAL_POKEMON_WHOLE_SCREEN
+	ld c, 0
+	call RunPaletteCommand
 	ld a, %11100100
 	ld [rBGP], a
 	ld c, $31 ; back pic
@@ -186,8 +186,8 @@ HoFLoadPlayerPics: ; 7033e (1c:433e)
 	ld de, RedPicFront
 	ld a, BANK(RedPicFront)
 	call UncompressSpriteFromDE
-	ld hl, S_SPRITEBUFFER1
-	ld de, S_SPRITEBUFFER0
+	ld hl, sSpriteBuffer1
+	ld de, sSpriteBuffer0
 	ld bc, $310
 	call CopyData
 	ld de, vFrontPic
@@ -224,12 +224,12 @@ HoFDisplayPlayerStats: ; 70377 (1c:4377)
 	ld de, HoFPlayTimeText
 	call PlaceString
 	coord hl, 5, 7
-	ld de, W_PLAYTIMEHOURS + 1
+	ld de, wPlayTimeHours
 	lb bc, 1, 3
 	call PrintNumber
 	ld [hl], $6d
 	inc hl
-	ld de, W_PLAYTIMEMINUTES + 1
+	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber
 	coord hl, 1, 9
@@ -243,7 +243,7 @@ HoFDisplayPlayerStats: ; 70377 (1c:4377)
 	call HoFPrintTextAndDelay
 	ld hl, DexRatingText
 	call HoFPrintTextAndDelay
-	ld hl, wcc5d
+	ld hl, wDexRatingText
 
 HoFPrintTextAndDelay: ; 703e2 (1c:43e2)
 	call PrintText
@@ -276,13 +276,13 @@ HoFRecordMonInfo: ; 70404 (1c:4404)
 	ld e, l
 	ld d, h
 	ld hl, wcd6d
-	ld bc, $b
+	ld bc, NAME_LENGTH
 	jp CopyData
 
 HoFFadeOutScreenAndMusic: ; 70423 (1c:4423)
-	ld a, $a
-	ld [wcfc8], a
-	ld [wcfc9], a
+	ld a, 10
+	ld [wAudioFadeOutCounterReloadValue], a
+	ld [wAudioFadeOutCounter], a
 	ld a, $ff
-	ld [wMusicHeaderPointer], a
+	ld [wAudioFadeOutControl], a
 	jp GBFadeOutToWhite

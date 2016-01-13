@@ -20,11 +20,11 @@ MainMenu: ; 5af2 (1:5af2)
 	ld [hli],a
 	ld [hli],a
 	ld [hl],a
-	ld [W_ANIMATIONID],a
+	ld [wDefaultMap],a
 	ld hl,wd72e
 	res 6,[hl]
 	call ClearScreen
-	call GoPAL_SET_CF1C
+	call RunDefaultPaletteCommand
 	call LoadTextBoxTilePatterns
 	call LoadFontTilePatterns
 	ld hl,wd730
@@ -61,7 +61,7 @@ MainMenu: ; 5af2 (1:5af2)
 	ld [wTopMenuItemX],a
 	inc a
 	ld [wTopMenuItemY],a
-	ld a,$B
+	ld a,A_BUTTON | B_BUTTON | START
 	ld [wMenuWatchedKeys],a
 	ld a,[wSaveFileStatus]
 	ld [wMaxMenuItem],a
@@ -90,7 +90,7 @@ MainMenu: ; 5af2 (1:5af2)
 	jp .mainMenuLoop
 .choseContinue
 	call DisplayContinueGameInfo
-	ld hl,wd126
+	ld hl,wCurrentMapScriptFlags
 	set 5,[hl]
 .inputLoop
 	xor a
@@ -114,7 +114,7 @@ MainMenu: ; 5af2 (1:5af2)
 	ld a,[wNumHoFTeams]
 	and a
 	jp z,SpecialEnterMap
-	ld a,[W_CURMAP] ; map ID
+	ld a,[wCurMap] ; map ID
 	cp a,HALL_OF_FAME
 	jp nz,SpecialEnterMap
 	xor a
@@ -128,7 +128,7 @@ InitOptions: ; 5bff (1:5bff)
 	ld a,1 ; no delay
 	ld [wLetterPrintingDelayFlags],a
 	ld a,3 ; medium speed
-	ld [W_OPTIONS],a
+	ld [wOptions],a
 	ret
 
 LinkMenu: ; 5c0a (1:5c0a)
@@ -150,7 +150,7 @@ LinkMenu: ; 5c0a (1:5c0a)
 	ld de, CableClubOptionsText
 	call PlaceString
 	xor a
-	ld [wcd37], a
+	ld [wUnusedCD37], a
 	ld [wd72d], a
 	ld hl, wTopMenuItemY
 	ld a, $7
@@ -163,7 +163,8 @@ LinkMenu: ; 5c0a (1:5c0a)
 	ld a, $2
 	ld [hli], a
 	inc a
-	ld [hli], a
+	; ld a, A_BUTTON | B_BUTTON
+	ld [hli], a ; wMenuWatchedKeys
 	xor a
 	ld [hl], a
 .waitForInputLoop
@@ -268,7 +269,7 @@ LinkMenu: ; 5c0a (1:5c0a)
 	call DelayFrames
 	ld hl, wd732
 	res 1, [hl]
-	ld a, [W_ANIMATIONID]
+	ld a, [wDefaultMap]
 	ld [wDestinationMap], a
 	call SpecialWarpIn
 	ld c, 20
@@ -391,11 +392,11 @@ PrintSaveScreenText: ; 5def (1:5def)
 
 PrintNumBadges: ; 5e2f (1:5e2f)
 	push hl
-	ld hl, W_OBTAINEDBADGES
+	ld hl, wObtainedBadges
 	ld b, $1
 	call CountSetBits
 	pop hl
-	ld de, wd11e
+	ld de, wNumSetBits
 	lb bc, 1, 2
 	jp PrintNumber
 
@@ -405,17 +406,17 @@ PrintNumOwnedMons: ; 5e42 (1:5e42)
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	pop hl
-	ld de, wd11e
+	ld de, wNumSetBits
 	lb bc, 1, 3
 	jp PrintNumber
 
 PrintPlayTime: ; 5e55 (1:5e55)
-	ld de, W_PLAYTIMEHOURS + 1
+	ld de, wPlayTimeHours
 	lb bc, 1, 3
 	call PrintNumber
 	ld [hl], $6d
 	inc hl
-	ld de, W_PLAYTIMEMINUTES + 1
+	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | 1, 2
 	jp PrintNumber
 
@@ -625,13 +626,13 @@ SetOptionsFromCursorPositions: ; 601f (1:601f)
 	res 6,d
 .storeOptions
 	ld a,d
-	ld [W_OPTIONS],a
+	ld [wOptions],a
 	ret
 
 ; reads the options variable and places menu cursors in the correct positions within the options menu
 SetCursorPositionsFromOptions: ; 604c (1:604c)
 	ld hl,TextSpeedOptionData + 1
-	ld a,[W_OPTIONS]
+	ld a,[wOptions]
 	ld c,a
 	and a,$3f
 	push bc
@@ -689,7 +690,7 @@ CheckForPlayerNameInSRAM: ; 609e (1:609e)
 	ld a, $1
 	ld [MBC1SRamBankingMode], a
 	ld [MBC1SRamBank], a
-	ld b, $b
+	ld b, NAME_LENGTH
 	ld hl, sPlayerName
 .loop
 	ld a, [hli]

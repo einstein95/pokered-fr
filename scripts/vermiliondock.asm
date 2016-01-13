@@ -40,7 +40,7 @@ VermilionDock_1db9b: ; 1db9b (7:5b9b)
 	SetEventForceReuseHL EVENT_SS_ANNE_LEFT
 	ld a, $ff
 	ld [wJoyIgnore], a
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	ld c, BANK(Music_Surfing)
 	ld a, MUSIC_SURFING
@@ -53,8 +53,8 @@ VermilionDock_1db9b: ; 1db9b (7:5b9b)
 	ld b, $9c
 	call CopyScreenTileBufferToVRAM
 	coord hl, 0, 10
-	ld bc, $0078
-	ld a, $14
+	ld bc, SCREEN_WIDTH * 6
+	ld a, $14 ; water tile
 	call FillMemory
 	ld a, 1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -106,7 +106,7 @@ VermilionDock_1db9b: ; 1db9b (7:5b9b)
 	xor a
 	ld [rWY], a
 	ld [hWY], a
-	call VermilionDock_1dc94
+	call VermilionDock_EraseSSAnne
 	ld a, $90
 	ld [hWY], a
 	ld a, $1
@@ -178,21 +178,29 @@ VermilionDock_1dc7c: ; 1dc7c (7:5c7c)
 	jr z, .asm_1dc8e
 	ret
 
-VermilionDock_1dc94: ; 1dc94 (7:5c94)
-	ld hl, wcc5b
-	ld bc, $00b4
-	ld a, $14
+VermilionDock_EraseSSAnne: ; 1dc94 (7:5c94)
+; Fill the area the S.S. Anne occupies in BG map 0 with water tiles.
+	ld hl, wVermilionDockTileMapBuffer
+	ld bc, (5 * BG_MAP_WIDTH) + SCREEN_WIDTH
+	ld a, $14 ; water tile
 	call FillMemory
-	ld hl, vBGMap0 + 10 * 32
-	ld de, wcc5b
-	ld bc, $000c
+	ld hl, vBGMap0 + 10 * BG_MAP_WIDTH
+	ld de, wVermilionDockTileMapBuffer
+	ld bc, (6 * BG_MAP_WIDTH) / 16
 	call CopyVideoData
-	ld hl, wOverworldMap + 10 + 7 * VERMILION_DOCK_WIDTH ; 10, 7
-	ld a, $d
+
+; Replace the blocks of the lower half of the ship with water blocks. This
+; leaves the upper half alone, but that doesn't matter because replacing any of
+; the blocks is unnecessary because the blocks the ship occupies are south of
+; the player and won't be redrawn when the player automatically walks north and
+; exits the map. This code could be removed without affecting anything.
+	overworldMapCoord hl, 5, 2, VERMILION_DOCK_WIDTH
+	ld a, $d ; water block
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hl], a
+
 	ld a, SFX_SS_ANNE_HORN
 	call PlaySound
 	ld c, 120

@@ -182,7 +182,9 @@ hJoy5        EQU $FFB5
 hJoy6        EQU $FFB6
 hJoy7        EQU $FFB7
 
-H_LOADEDROMBANK     EQU $FFB8
+H_LOADEDROMBANK EQU $FFB8
+
+hSavedROMBank EQU $FFB9
 
 ; is automatic background transfer during V-blank enabled?
 ; if nonzero, yes
@@ -240,12 +242,12 @@ H_VBCOPYDOUBLEDEST EQU $FFCE
 ; 00 = no redraw
 ; 01 = redraw column
 ; 02 = redraw row
-H_SCREENEDGEREDRAW EQU $FFD0
+hRedrawRowOrColumnMode EQU $FFD0
 
-REDRAWCOL EQU 1
-REDRAWROW EQU 2
+REDRAW_COL EQU 1
+REDRAW_ROW EQU 2
 
-H_SCREENEDGEREDRAWADDR EQU $FFD1
+hRedrawRowOrColumnDest EQU $FFD1
 
 hRandomAdd EQU $FFD3
 hRandomSub EQU $FFD4
@@ -267,11 +269,24 @@ hMovingBGTilesCounter1 EQU $FFD8
 
 H_CURRENTSPRITEOFFSET EQU $FFDA ; multiple of $10
 
-hFossilCounter EQU $FFDB
+hItemCounter EQU $FFDB
 
 hGymGateIndex EQU $FFDB
 
 hGymTrashCanRandNumMask EQU $FFDB
+
+hDexRatingNumMonsSeen  EQU $FFDB
+hDexRatingNumMonsOwned EQU $FFDC
+
+; $00 = bag full
+; $01 = got item
+; $80 = didn't meet required number of owned mons
+; $FF = player cancelled
+hOaksAideResult       EQU $FFDB
+
+hOaksAideRequirement  EQU $FFDB ; required number of owned mons
+hOaksAideRewardItem   EQU $FFDC
+hOaksAideNumMonsOwned EQU $FFDD
 
 hItemToRemoveID    EQU $FFDB
 hItemToRemoveIndex EQU $FFDC
@@ -301,6 +316,8 @@ H_WHOSETURN EQU $FFF3 ; 0 on player’s turn, 1 on enemy’s turn
 hFlags_0xFFF6 EQU $FFF6
 
 hFieldMoveMonMenuTopMenuItemX EQU $FFF7
+
+hDisableJoypadPolling EQU $FFF9
 
 hJoyInput EQU $FFF8
 

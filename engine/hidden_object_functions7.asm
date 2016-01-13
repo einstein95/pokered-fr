@@ -19,8 +19,8 @@ DisplayOakLabRightPoster: ; 1e965 (7:6965)
 	ld hl, wPokedexOwned
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
-	ld a, [wd11e]
-	cp $2
+	ld a, [wNumSetBits]
+	cp 2
 	tx_pre_id SaveOptionText
 	jr c, .ownThreeOrMoreMon
 	tx_pre_id StrengthsAndWeaknessesText
@@ -38,7 +38,7 @@ StrengthsAndWeaknessesText: ; 1e983 (7:6983)
 SafariZoneCheck: ; 1e988 (7:6988)
 	CheckEventHL EVENT_IN_SAFARI_ZONE ; if we are not in the Safari Zone,
 	jr z, SafariZoneGameStillGoing ; don't bother printing game over text
-	ld a, [W_NUMSAFARIBALLS]
+	ld a, [wNumSafariBalls]
 	and a
 	jr z, SafariZoneGameOver
 	jr SafariZoneGameStillGoing
@@ -63,14 +63,14 @@ SafariZoneGameStillGoing: ; 1e9ab (7:69ab)
 SafariZoneGameOver: ; 1e9b0 (7:69b0)
 	call EnableAutoTextBoxDrawing
 	xor a
-	ld [wMusicHeaderPointer], a
+	ld [wAudioFadeOutControl], a
 	dec a
 	call PlaySound
 	ld c, BANK(SFX_Safari_Zone_PA)
 	ld a, SFX_SAFARI_ZONE_PA
 	call PlayMusic
 .asm_1e9c2
-	ld a, [wc02a]
+	ld a, [wChannelSoundIDs + CH4]
 	cp $b9
 	jr nz, .asm_1e9c2
 	ld a, TEXT_SAFARI_GAME_OVER
@@ -83,7 +83,7 @@ SafariZoneGameOver: ; 1e9b0 (7:69b0)
 	ld a, $3
 	ld [wDestinationWarpID], a
 	ld a, $5
-	ld [W_SAFARIZONEENTRANCECURSCRIPT], a
+	ld [wSafariZoneEntranceCurScript], a
 	SetEvent EVENT_SAFARI_GAME_OVER
 	ld a, 1
 	ld [wSafariZoneGameOver], a
@@ -97,7 +97,7 @@ PrintSafariGameOverText: ; 1e9ed (7:69ed)
 
 SafariGameOverText: ; 1e9f7 (7:69f7)
 	TX_ASM
-	ld a, [W_NUMSAFARIBALLS]
+	ld a, [wNumSafariBalls]
 	and a
 	jr z, .asm_1ea04
 	ld hl, TimesUpText
@@ -147,7 +147,7 @@ CinnabarGymQuiz: ; 1ea25 (7:6a25)
 	ld h, [hl]
 	ld l, a
 	call PrintText
-	ld a, $1
+	ld a, 1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	call CinnabarGymQuiz_1ea92
 	jp TextScriptEnd
@@ -199,7 +199,7 @@ CinnabarGymQuiz_1ea92: ; 1ea92 (7:6a92)
 	ld a, [wCurrentMenuItem]
 	cp c
 	jr nz, .wrongAnswer
-	ld hl, wd126
+	ld hl, wCurrentMapScriptFlags
 	set 5, [hl]
 	ld a, [hGymGateIndex]
 	ld [$ffe0], a
@@ -374,7 +374,7 @@ BillsHouseInitiatedText: ; 1ebe2 (7:6be2)
 	db $06
 	TX_ASM
 	ld a, $ff
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	ld c, 16
 	call DelayFrames
@@ -391,23 +391,23 @@ BillsHousePokemonList: ; 1ec05 (7:6c05)
 	ld hl, BillsHousePokemonListText1
 	call PrintText
 	xor a
-	ld [W_ANIMATIONID], a
+	ld [wMenuItemOffset], a ; not used
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	ld a, $3
+	ld a, A_BUTTON | B_BUTTON
 	ld [wMenuWatchedKeys], a
-	ld a, $4
+	ld a, 4
 	ld [wMaxMenuItem], a
-	ld a, $2
+	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, $1
+	ld a, 1
 	ld [wTopMenuItemX], a
-.asm_1ec2d
+.billsPokemonLoop
 	ld hl, wd730
 	set 6, [hl]
 	coord hl, 0, 0
-	ld b, $a
-	ld c, $9
+	ld b, 10
+	ld c, 9
 	call TextBoxBorder
 	coord hl, 2, 2
 	ld de, BillsMonListText
@@ -416,24 +416,24 @@ BillsHousePokemonList: ; 1ec05 (7:6c05)
 	call PrintText
 	call SaveScreenTilesToBuffer2
 	call HandleMenuInput
-	bit 1, a
-	jr nz, .asm_1ec74
+	bit 1, a ; pressed b
+	jr nz, .cancel
 	ld a, [wCurrentMenuItem]
 	add EEVEE
 	cp EEVEE
-	jr z, .asm_1ec6c
+	jr z, .displayPokedex
 	cp FLAREON
-	jr z, .asm_1ec6c
+	jr z, .displayPokedex
 	cp JOLTEON
-	jr z, .asm_1ec6c
+	jr z, .displayPokedex
 	cp VAPOREON
-	jr z, .asm_1ec6c
-	jr .asm_1ec74
-.asm_1ec6c
+	jr z, .displayPokedex
+	jr .cancel
+.displayPokedex
 	call DisplayPokedex
 	call LoadScreenTilesFromBuffer2
-	jr .asm_1ec2d
-.asm_1ec74
+	jr .billsPokemonLoop
+.cancel
 	ld hl, wd730
 	res 6, [hl]
 	call LoadScreenTilesFromBuffer2

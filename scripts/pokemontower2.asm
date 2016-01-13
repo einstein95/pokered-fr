@@ -1,14 +1,14 @@
 PokemonTower2Script: ; 604f2 (18:44f2)
 	call EnableAutoTextBoxDrawing
 	ld hl, PokemonTower2ScriptPointers
-	ld a, [W_POKEMONTOWER2CURSCRIPT]
+	ld a, [wPokemonTower2CurScript]
 	jp CallFunctionInTable
 
 PokemonTower2Script_604fe: ; 604fe (18:44fe)
 	xor a
 	ld [wJoyIgnore], a
-	ld [W_POKEMONTOWER2CURSCRIPT], a
-	ld [W_CURMAPSCRIPT], a
+	ld [wPokemonTower2CurScript], a
+	ld [wCurMapScript], a
 	ret
 
 PokemonTower2ScriptPointers: ; 60509 (18:4509)
@@ -23,7 +23,7 @@ PokemonTower2Script0: ; 6050f (18:450f)
 	call ArePlayerCoordsInArray
 	ret nc
 	ld a, $ff
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	ld c, BANK(Music_MeetRival)
 	ld a, MUSIC_MEET_RIVAL
@@ -59,7 +59,7 @@ CoordsData_6055e: ; 6055e (18:455e)
 	db $0F ; isn't this supposed to end in $ff?
 
 PokemonTower2Script1: ; 60563 (18:4563)
-	ld a, [W_ISINBATTLE]
+	ld a, [wIsInBattle]
 	cp $ff
 	jp z, PokemonTower2Script_604fe
 	ld a, $f0
@@ -77,12 +77,12 @@ PokemonTower2Script1: ; 60563 (18:4563)
 	ld [H_SPRITEINDEX], a
 	call MoveSprite
 	ld a, $ff
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	callba Music_RivalAlternateStart
 	ld a, $2
-	ld [W_POKEMONTOWER2CURSCRIPT], a
-	ld [W_CURMAPSCRIPT], a
+	ld [wPokemonTower2CurScript], a
+	ld [wCurMapScript], a
 	ret
 
 MovementData_605a9: ; 605a9 (18:45a9)
@@ -118,8 +118,8 @@ PokemonTower2Script2: ; 605bb (18:45bb)
 	ld [wJoyIgnore], a
 	call PlayDefaultMusic
 	ld a, $0
-	ld [W_POKEMONTOWER2CURSCRIPT], a
-	ld [W_CURMAPSCRIPT], a
+	ld [wPokemonTower2CurScript], a
+	ld [wCurMapScript], a
 	ret
 
 PokemonTower2TextPointers: ; 605db (18:45db)
@@ -142,11 +142,11 @@ PokemonTower2Text1: ; 605df (18:45df)
 	ld hl, PokemonTower2Text_60632
 	ld de, PokemonTower2Text_60637
 	call SaveEndBattleTextPointers
-	ld a, SONY2 + $c8
-	ld [W_CUROPPONENT], a
+	ld a, OPP_SONY2
+	ld [wCurOpponent], a
 
 	; select which team to use during the encounter
-	ld a, [W_RIVALSTARTER]
+	ld a, [wRivalStarter]
 	cp STARTER2
 	jr nz, .NotSquirtle
 	ld a, $4
@@ -159,11 +159,11 @@ PokemonTower2Text1: ; 605df (18:45df)
 .Charmander
 	ld a, $6
 .done
-	ld [W_TRAINERNO], a
+	ld [wTrainerNo], a
 
 	ld a, $1
-	ld [W_POKEMONTOWER2CURSCRIPT], a
-	ld [W_CURMAPSCRIPT], a
+	ld [wPokemonTower2CurScript], a
+	ld [wCurMapScript], a
 .asm_41852
 	jp TextScriptEnd
 

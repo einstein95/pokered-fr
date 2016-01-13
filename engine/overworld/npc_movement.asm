@@ -52,7 +52,7 @@ PalletMovementScriptPointerTable: ; 1a442 (6:6442)
 	dw PalletMovementScript_Done
 
 PalletMovementScript_OakMoveLeft: ; 1a44c (6:644c)
-	ld a, [W_XCOORD]
+	ld a, [wXCoord]
 	sub $a
 	ld [wNumStepsToTake], a
 	jr z, .playerOnLeftTile
@@ -79,7 +79,7 @@ PalletMovementScript_OakMoveLeft: ; 1a44c (6:644c)
 	ld a, $3
 	ld [wNPCMovementScriptFunctionNum], a
 .done
-	ld hl, W_FLAGS_D733
+	ld hl, wFlags_D733
 	set 1, [hl]
 	ld a, $fc
 	ld [wJoyIgnore], a
@@ -163,10 +163,10 @@ PewterMuseumGuyMovementScriptPointerTable: ; 1a510 (6:6510)
 
 PewterMovementScript_WalkToMuseum: ; 1a514 (6:6514)
 	ld a, BANK(Music_MuseumGuy)
-	ld [wc0ef], a
-	ld [wc0f0], a
+	ld [wAudioROMBank], a
+	ld [wAudioSavedROMBank], a
 	ld a, MUSIC_MUSEUM_GUY
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	ld a, [wSpriteIndex]
 	swap a
@@ -219,10 +219,10 @@ PewterGymGuyMovementScriptPointerTable: ; 1a57d (6:657d)
 
 PewterMovementScript_WalkToGym: ; 1a581 (6:6581)
 	ld a, BANK(Music_MuseumGuy)
-	ld [wc0ef], a
-	ld [wc0f0], a
+	ld [wAudioROMBank], a
+	ld [wAudioSavedROMBank], a
 	ld a, MUSIC_MUSEUM_GUY
-	ld [wc0ee], a
+	ld [wNewSoundID], a
 	call PlaySound
 	ld a, [wSpriteIndex]
 	swap a
@@ -267,7 +267,7 @@ RLEList_PewterGymGuy: ; 1a5da (6:65da)
 	db $FF
 
 FreezeEnemyTrainerSprite: ; 1a5e7 (6:65e7)
-	ld a, [W_CURMAP]
+	ld a, [wCurMap]
 	cp POKEMONTOWER_7
 	ret z ; the Rockets on Pokemon Tower 7F leave after battling, so don't freeze them
 	ld hl, RivalIDs
@@ -286,7 +286,7 @@ FreezeEnemyTrainerSprite: ; 1a5e7 (6:65e7)
 	jp SetSpriteMovementBytesToFF
 
 RivalIDs: ; 1a605 (6:6605)
-	db SONY1 + $c8
-	db SONY2 + $c8
-	db SONY3 + $c8
+	db OPP_SONY1
+	db OPP_SONY2
+	db OPP_SONY3
 	db $ff
