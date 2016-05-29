@@ -176,7 +176,7 @@ PrintWaitingText:
 	jp DelayFrames
 
 WaitingText:
-	db "Waiting...!@"
+	db "UN MOMENT…@"
 
 
 _UpdateSprites: ; 4c34 (1:4c34)
@@ -1130,22 +1130,22 @@ DrawStartMenu: ; 710b (1:710b)
 	ret
 
 StartMenuPokedexText: ; 718f (1:718f)
-	db "POKéDEX@"
+	db "#DEX@"
 
 StartMenuPokemonText: ; 7197 (1:7197)
-	db "POKéMON@"
+	db "#MON@"
 
 StartMenuItemText: ; 719f (1:719f)
-	db "ITEM@"
+	db "OBJET@"
 
 StartMenuSaveText: ; 71a4 (1:71a4)
-	db "SAVE@"
+	db "SAUVER@"
 
 StartMenuResetText: ; 71a9 (1:71a9)
-	db "RESET@"
+	db "QUITTER@"
 
 StartMenuExitText: ; 71af (1:71af)
-	db "EXIT@"
+	db "RETOUR@"
 
 StartMenuOptionText: ; 71b4 (1:71b4)
 	db "OPTION@"
@@ -1324,7 +1324,7 @@ TextBoxCoordTable: ; 7391 (1:7391)
 TextBoxTextAndCoordTable: ; 73b0 (1:73b0)
 	db JP_MOCHIMONO_MENU_TEMPLATE
 	db 0,0,14,17   ; text box coordinates
-	dw JapaneseMochimonoText
+	dw BuySellQuitText ; JapaneseMochimonoText
 	db 3,0   ; text coordinates
 
 	db USE_TOSS_MENU_TEMPLATE
@@ -1334,12 +1334,12 @@ TextBoxTextAndCoordTable: ; 73b0 (1:73b0)
 
 	db JP_SAVE_MESSAGE_MENU_TEMPLATE
 	db 0,0,7,5     ; text box coordinates
-	dw JapaneseSaveMessageText
+	dw BuySellQuitText ; JapaneseSaveMessageText
 	db 2,2   ; text coordinates
 
 	db JP_SPEED_OPTIONS_MENU_TEMPLATE
 	db 0,6,5,10    ; text box coordinates
-	dw JapaneseSpeedOptionsText
+	dw BuySellQuitText ; JapaneseSpeedOptionsText
 	db 2,7   ; text coordinates
 
 	db BATTLE_MENU_TEMPLATE
@@ -1369,66 +1369,42 @@ TextBoxTextAndCoordTable: ; 73b0 (1:73b0)
 
 	db JP_AH_MENU_TEMPLATE
 	db 7,6,11,10   ; text box coordinates
-	dw JapaneseAhText
+	dw BuySellQuitText ; JapaneseAhText
 	db 8,8   ; text coordinates
 
 	db JP_POKEDEX_MENU_TEMPLATE
 	db 11,8,19,17  ; text box coordinates
-	dw JapanesePokedexMenu
+	dw BuySellQuitText ; JapanesePokedexMenu
 	db 12,10 ; text coordinates
 
 ; note that there is no terminator
 
 BuySellQuitText: ; 7413 (1:7413)
-	db   "BUY"
-	next "SELL"
-	next "QUIT@@"
+	db   "@ACHETER"
+	next "VENDRE"
+	next "SALUT!@"
 
 UseTossText: ; 7422 (1:7422)
-	db   "USE"
-	next "TOSS@"
-
-JapaneseSaveMessageText: ; 742b (1:742b)
-	db   "きろく"
-	next "メッセージ@"
-
-JapaneseSpeedOptionsText: ; 7435 (1:7435)
-	db   "はやい"
-	next "おそい@"
+	db   "UTIL."
+	next "JETER@"
 
 MoneyText: ; 743d (1:743d)
-	db "MONEY@"
-
-JapaneseMochimonoText: ; 7443 (1:7443)
-	db "もちもの@"
-
-JapaneseMainMenuText: ; 7448 (1:7448)
-	db   "つづきから"
-	next "さいしょから@"
+	db "ARG.@"
 
 BattleMenuText: ; 7455 (1:7455)
-	db   "FIGHT ",$E1,$E2
-	next "ITEM  RUN@"
+	db   "ATTAQ ",$e1,$e2
+	next "OBJET FUITE@"
 
 SafariZoneBattleMenuText: ; 7468 (1:7468)
-	db   "BALL×       BAIT"
-	next "THROW ROCK  RUN@"
+	db   "BALL×      APPAT"
+	next "CAILLOU    FUITE@"
 
 SwitchStatsCancelText: ; 7489 (1:7489)
-	db   "SWITCH"
+	db   "ORDRE"
 	next "STATS"
-	next "CANCEL@"
+	next "RETOUR@"
 
-JapaneseAhText: ; 749d (1:749d)
-	db "アッ!@"
-
-JapanesePokedexMenu: ; 74a1 (1:74a1)
-	db   "データをみる"
-	next "なきごえ"
-	next "ぶんぷをみる"
-	next "キャンセル@"
-
-DisplayMoneyBox: ; 74ba (1:74ba)
+DisplayMoneyBox: ; 7519 (1:7519)
 	ld hl, wd730
 	set 6, [hl]
 	ld a, MONEY_BOX_TEMPLATE
@@ -1440,13 +1416,16 @@ DisplayMoneyBox: ; 74ba (1:74ba)
 	call ClearScreenArea
 	coord hl, 12, 1
 	ld de, wPlayerMoney
-	ld c, $a3
 	call PrintBCDNumber
 	ld hl, wd730
+	ld de, $D34C
+	ld c, $83
+	call PrintBCDNumber
+	ld hl, $D735
 	res 6, [hl]
 	ret
 
-CurrencyString: ; 74e2 (1:74e2)
+CurrencyString: ; 754a (1:754a)
 	db "      ¥@"
 
 DoBuySellQuitMenu: ; 74ea (1:74ea)
@@ -1701,20 +1680,20 @@ TwoOptionMenuStrings: ; 7671 (1:7671)
 	db 4,3,0
 	dw .NoYesMenu
 
-.NoYesMenu ; 7699 (1:3699)
-	db "NO",$4E,"YES@"
-.YesNoMenu ; 76a0 (1:36a0)
-	db "YES",$4E,"NO@"
 .NorthWestMenu ; 76a7 (1:36a7)
 	db "NORTH",$4E,"WEST@"
 .SouthEastMenu ; 76b2 (1:36b2)
 	db "SOUTH",$4E,"EAST@"
 .NorthEastMenu ; 76bd (1:36bd)
 	db "NORTH",$4E,"EAST@"
+.NoYesMenu ; 7699 (1:3699)
+	db "NON",$4E,"OUI@"
+.YesNoMenu ; 76a0 (1:36a0)
+	db "OUI",$4E,"NON@"
 .TradeCancelMenu ; 76c8 (1:36c8)
-	db "TRADE",$4E,"CANCEL@"
+	db "ECHANGE",$4E,"RETOUR@"
 .HealCancelMenu ; 76d5 (1:36d5)
-	db "HEAL",$4E,"CANCEL@"
+	db "SOIN",$4E,"RETOUR@"
 
 DisplayFieldMoveMonMenu: ; 76e1 (1:76e1)
 	xor a
@@ -1837,20 +1816,20 @@ DisplayFieldMoveMonMenu: ; 76e1 (1:76e1)
 	jp PlaceString
 
 FieldMoveNames: ; 778d (1:778d)
-	db "CUT@"
-	db "FLY@"
+	db "COUPE@"
+	db "VOL@"
 	db "@"
 	db "SURF@"
-	db "STRENGTH@"
+	db "FORCE@"
 	db "FLASH@"
-	db "DIG@"
+	db "TUNNEL@"
 	db "TELEPORT@"
-	db "SOFTBOILED@"
+	db "E-COQUE@"
 
 PokemonMenuEntries: ; 77c2 (1:77c2)
 	db   "STATS"
-	next "SWITCH"
-	next "CANCEL@"
+	next "ORDRE"
+	next "RETOUR@"
 
 GetMonFieldMoves: ; 77d6 (1:77d6)
 	ld a, [wWhichPokemon]

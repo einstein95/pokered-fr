@@ -329,16 +329,16 @@ SpecialEnterMap: ; 5d5f (1:5d5f)
 	jp EnterMap
 
 ContinueText: ; 5d7e (1:5d7e)
-	db "CONTINUE", $4e
+	db "CONTINUER", $4e
 
 NewGameText: ; 5d87 (1:5d87)
-	db "NEW GAME", $4e
-	db "OPTION@"
+	db "NOUVEAU JEU", $4e
+	db "OPTIONS@"
 
 CableClubOptionsText: ; 5d97 (1:5d97)
-	db "TRADE CENTER", $4e
-	db "COLOSSEUM",    $4e
-	db "CANCEL@"
+	db "CENTRE TROC", $4e
+	db "COLISEE",    $4e
+	db "RETOUR@"
 
 DisplayContinueGameInfo: ; 5db5 (1:5db5)
 	xor a
@@ -421,10 +421,10 @@ PrintPlayTime: ; 5e55 (1:5e55)
 	jp PrintNumber
 
 SaveScreenInfoText: ; 5e6a (1:5e6a)
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   "JOUEUR"
+	next "BADGES        "
+	next "#DEX       "
+	next "TEMPS@"
 
 DisplayOptionMenu: ; 5e8a (1:5e8a)
 	coord hl, 0, 0
@@ -578,20 +578,20 @@ DisplayOptionMenu: ; 5e8a (1:5e8a)
 	ld [wOptionsTextSpeedCursorX],a ; text speed cursor X coordinate
 	jp .eraseOldMenuCursor
 
-TextSpeedOptionText: ; 5fc0 (1:5fc0)
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+TextSpeedOptionText: ; 6058 (1:6058)
+	db   "VIT. TEXTE"
+	next " 3     2      1   @"
 
 BattleAnimationOptionText: ; 5fde (1:5fde)
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
+	db   "ANIMATION COMBAT"
+	next " OUI      NON@"
 
 BattleStyleOptionText: ; 5ffd (1:5ffd)
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   "STYLE COMBAT"
+	next " CHOIX    DEFINI@"
 
 OptionMenuCancelText: ; 6018 (1:6018)
-	db "CANCEL@"
+	db "RETOUR@"
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions: ; 601f (1:601f)

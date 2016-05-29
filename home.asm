@@ -490,11 +490,9 @@ PrintStatusCondition:: ; 14e1 (0:14e1)
 	pop de
 	jr nz,PrintStatusConditionNotFainted
 ; if the pokemon's HP is 0, print "FNT"
-	ld a,"F"
+	ld a,"K"
 	ld [hli],a
-	ld a,"N"
-	ld [hli],a
-	ld [hl],"T"
+	ld [hl],"O"
 	and a
 	ret
 PrintStatusConditionNotFainted: ; 14f6
@@ -1264,13 +1262,25 @@ PokemonFaintedText:: ; 2aa4 (0:2aa4)
 	TX_FAR _PokemonFaintedText
 	db "@"
 
-DisplayPlayerBlackedOutText:: ; 2aa9 (0:2aa9)
+DisplayPlayerBlackedOutText:: ; 2aa5 (0:2aa5)
 	ld hl,PlayerBlackedOutText
 	call PrintText
 	ld a,[wd732]
 	res 5,a ; reset forced to use bike bit
 	ld [wd732],a
+	ld a,[wd732]
+	bit 7,a
+	jr z,.didnotblackoutinsafari
+	xor a
+	ld [wNumSafariBalls],a
+	ld [wSafariSteps],a
+	ld [wSafariSteps+1],a
+	ld [wd732],a
+	ld [wcf0d],a
+	ld [wSafariZoneEntranceCurScript],a
+.didnotblackoutinsafari
 	jp HoldTextDisplayOpen
+
 
 PlayerBlackedOutText:: ; 2aba (0:2aba)
 	TX_FAR _PlayerBlackedOutText
@@ -1580,6 +1590,8 @@ DisplayChooseQuantityMenu:: ; 2d57 (0:2d57)
 	ld a,[wListMenuID]
 	cp a,PRICEDITEMLISTMENU
 	jr nz,.printInitialQuantity
+	ld a,"¥"
+	ld [$C47A],a
 	coord hl, 8, 10
 .printInitialQuantity
 	ld de,InitialQuantityText
@@ -1790,6 +1802,7 @@ PrintListMenuEntries:: ; 2e5a (0:2e5a)
 	add hl,bc
 	ld c,$a3 ; no leading zeroes, right-aligned, print currency symbol, 3 bytes
 	call PrintBCDNumber
+	ld [hl], $F0
 .skipPrintingItemPrice
 	ld a,[wListMenuID]
 	and a
@@ -1893,7 +1906,7 @@ PrintListMenuEntries:: ; 2e5a (0:2e5a)
 	jp PlaceString
 
 ListMenuCancelText:: ; 2f97 (0:2f97)
-	db "CANCEL@"
+	db "RETOUR@"
 
 GetMonName:: ; 2f9e (0:2f9e)
 	push hl
@@ -2000,9 +2013,9 @@ GetMachineName:: ; 2ff3 (0:2ff3)
 	ret
 
 TechnicalPrefix:: ; 303c (0:303c)
-	db "TM"
+	db "CT"
 HiddenPrefix:: ; 303e (0:303e)
-	db "HM"
+	db "CS"
 
 ; sets carry if item is HM, clears carry if item is not HM
 ; Input: a = item ID

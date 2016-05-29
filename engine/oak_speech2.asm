@@ -184,38 +184,38 @@ DisplayIntroNameTextBox: ; 6a6c (1:6a6c)
 	ld [wMaxMenuItem], a
 	jp HandleMenuInput
 
-.namestring ; 6aa3 (1:6aa3)
-	db "NAME@"
+.namestring ; 6b40 (1:6b40)
+	db "─NOM@"
 
 IF DEF(_RED)
 DefaultNamesPlayer: ; 6aa8 (1:6aa8)
-	db   "NEW NAME"
+	db   "NOM:"
 	next "RED"
-	next "ASH"
-	next "JACK"
+	next "SACHA"
+	next "PAUL"
 	db   "@"
 
 DefaultNamesRival: ; 6abe (1:6abe)
-	db   "NEW NAME"
+	db   "NOM:"
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "REGIS"
+	next "JEAN"
 	db   "@"
 ENDC
 
 IF DEF(_BLUE)
 DefaultNamesPlayer: ; 6aa8 (1:6aa8)
-	db   "NEW NAME"
+	db   "NOM:"
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "REGIS"
+	next "JEAN"
 	db   "@"
 
 DefaultNamesRival: ; 6abe (1:6abe)
-	db   "NEW NAME"
+	db   "NOM:"
 	next "RED"
-	next "ASH"
-	next "JACK"
+	next "SACHA"
+	next "PAUL"
 	db   "@"
 ENDC
 
@@ -245,15 +245,15 @@ GetDefaultName: ; 6ad6 (1:6ad6)
 
 IF DEF(_RED)
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
-	db "NEW NAME@RED@ASH@JACK@"
+	db "NOM:@RED@SACHA@PAUL@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
-	db "NEW NAME@BLUE@GARY@JOHN@"
+	db "NOM:@BLUE@REGIS@JEAN@"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
-	db "NEW NAME@BLUE@GARY@JOHN@"
+	db "NOM:@BLUE@REGIS@JEAN@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
-	db "NEW NAME@RED@ASH@JACK@"
+	db "NOM:@RED@SACHA@PAUL@"
 ENDC
 
 TextTerminator_6b20: ; 6b20 (1:6b20)

@@ -323,13 +323,16 @@ DisplayNamingScreen: ; 6596 (1:6596)
 	ld [wTopMenuItemX], a
 	jp EraseMenuCursor
 
-LoadEDTile: ; 675b (1:675b)
-	ld de, ED_Tile
-	ld hl, vFont + $700
-	ld bc, (ED_TileEnd - ED_Tile) / $8
+LoadEDTile: ; 67f6 (1:67f6)
+	call DisableLCD
+	ld de, vFont + $700
+	ld hl, ED_Tile
+	ld bc, (ED_TileEnd - ED_Tile)
 	; to fix the graphical bug on poor emulators
-	;lb bc, BANK(ED_Tile), (ED_TileEnd - ED_Tile) / $8
-	jp CopyVideoDataDouble
+	;lb bc, BANK(ED_Tile), (ED_TileEnd - ED_Tile)
+	ld a,$01
+	call FarCopyDataDouble
+	jp EnableLCD
 
 ED_Tile: ; 6767 (1:6767)
 	INCBIN "gfx/ED_tile.1bpp"
@@ -365,13 +368,13 @@ PrintAlphabet: ; 676f (1:676f)
 	ld [H_AUTOBGTRANSFERENABLED], a
 	jp Delay3
 
-LowerCaseAlphabet: ; 679e (1:679e)
-	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥UPPER CASE@"
+LowerCaseAlphabet: ; 6841 (1:6841)
+	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥MAJUSCULES@"
 
-UpperCaseAlphabet: ; 67d6 (1:67d6)
-	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥lower case@"
+UpperCaseAlphabet: ; 6879 (1:6879)
+	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥minuscules@"
 
-PrintNicknameAndUnderscores: ; 680e (1:680e)
+PrintNicknameAndUnderscores: ; 68b1 (1:68b1)
 	call CalcStringLength
 	ld a, c
 	ld [wNamingScreenNameLength], a
@@ -467,15 +470,15 @@ CalcStringLength: ; 68eb (1:68eb)
 	inc c
 	jr .loop
 
-PrintNamingText: ; 68f8 (1:68f8)
+PrintNamingText: ; 699b (1:699b)
 	coord hl, 0, 1
 	ld a, [wNamingScreenType]
 	ld de, YourTextString
 	and a
-	jr z, .notNickname
+	jr z, .placeString
 	ld de, RivalsTextString
 	dec a
-	jr z, .notNickname
+	jr z, .placeString
 	ld a, [wcf91]
 	ld [wMonPartySpriteSpecies], a
 	push af
@@ -485,28 +488,21 @@ PrintNamingText: ; 68f8 (1:68f8)
 	call GetMonName
 	coord hl, 4, 1
 	call PlaceString
-	ld hl, $1
-	add hl, bc
-	ld [hl], $c9
-	coord hl, 1, 3
-	ld de, NicknameTextString
+	ld hl, $C3DD
+	ld de, $69F2
 	jr .placeString
-.notNickname
-	call PlaceString
-	ld l, c
-	ld h, b
-	ld de, NameTextString
+
 .placeString
 	jp PlaceString
 
 YourTextString: ; 693f (1:693f)
-	db "YOUR @"
+	db "VOTRE NOM?@"
 
 RivalsTextString: ; 6945 (1:6945)
-	db "RIVAL's @"
+	db "NOM DU RIVAL?@"
 
 NameTextString: ; 694d (1:694d)
-	db "NAME?@"
+	db "NOM?@"
 
 NicknameTextString: ; 6953 (1:6953)
-	db "NICKNAME?@"
+	db "SURNOM?@"

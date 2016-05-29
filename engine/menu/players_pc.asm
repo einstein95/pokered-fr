@@ -1,6 +1,4 @@
 PlayerPC: ; 78e6 (1:78e6)
-	ld hl, wd730
-	set 6, [hl]
 	ld a, ITEM_NAME
 	ld [wNameListType], a
 	call SaveScreenTilesToBuffer1
@@ -15,6 +13,8 @@ PlayerPC: ; 78e6 (1:78e6)
 	call PlaySound
 	ld hl, TurnedOnPC2Text
 	call PrintText
+	ld hl, wd730
+	set 6, [hl]
 
 PlayerPCMenu: ; 790c (1:790c)
 	ld a, [wParentMenuItem]
@@ -240,11 +240,11 @@ PlayerPCToss: ; 7a8f (1:7a8f)
 	call TossItem ; disallows tossing key items
 	jp .loop
 
-PlayersPCMenuEntries: ; 7af5 (1:7af5)
-	db   "WITHDRAW ITEM"
-	next "DEPOSIT ITEM"
-	next "TOSS ITEM"
-	next "LOG OFF@"
+PlayersPCMenuEntries: ; 7b5f (1:7b5f)
+	db   "RETIRER OBJET"
+	next "STOCKER OBJET"
+	next "JETER OBJET"
+	next "DECONNEXION@"
 
 TurnedOnPC2Text: ; 7b22 (1:7b22)
 	TX_FAR _TurnedOnPC2Text

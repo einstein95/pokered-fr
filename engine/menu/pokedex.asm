@@ -355,19 +355,19 @@ DrawPokedexVerticalLine: ; 4028e (10:428e)
 	ret
 
 PokedexSeenText: ; 4029d (10:429d)
-	db "SEEN@"
+	db "VUS@"
 
 PokedexOwnText: ; 402a2 (10:42a2)
-	db "OWN@"
+	db "PRIS@"
 
 PokedexContentsText: ; 402a6 (10:42a6)
-	db "CONTENTS@"
+	db "SOMMAIRE@"
 
 PokedexMenuItemsText: ; 402af (10:42af)
-	db   "DATA"
-	next "CRY"
-	next "AREA"
-	next "QUIT@"
+	db   "INFO"
+	next "CRI"
+	next "ZONE"
+	next "RET@"
 
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:
@@ -493,23 +493,34 @@ ShowPokedexDataInternal: ; 402e2 (10:42e2)
 	jp z,.waitForButtonPress ; if the pokemon has not been owned, don't print the height, weight, or description
 	inc de ; de = address of feet (height)
 	ld a,[de] ; reads feet, but a is overwritten without being used
+	push af
 	coord hl, 12, 6
 	lb bc, 1, 2
 	call PrintNumber ; print feet (height)
-	ld a,$60 ; feet symbol tile (one tick)
-	ld [hl],a
+	ld hl, $C426
+	pop af
+	cp $a
+	jr nc, .func_43d7
+	ld [hl], $F6
+.func_43d7
+	inc hl
+	ld a, [hli]
+	ldd [hl], a
+	ld [hl], $F2
+	inc de
 	inc de
 	inc de ; de = address of inches (height)
-	coord hl, 15, 6
-	lb bc, LEADING_ZEROES | 1, 2
-	call PrintNumber ; print inches (height)
-	ld a,$61 ; inches symbol tile (two ticks)
-	ld [hl],a
-; now print the weight (note that weight is stored in tenths of pounds internally)
-	inc de
-	inc de
-	inc de ; de = address of upper byte of weight
 	push de
+;	coord hl, 15, 6
+;	lb bc, LEADING_ZEROES | 1, 2
+;	call PrintNumber ; print inches (height)
+;	ld a,$61 ; inches symbol tile (two ticks)
+;	ld [hl],a
+; now print the weight (note that weight is stored in tenths of pounds internally)
+;	inc de
+;	inc de
+;	inc de ; de = address of upper byte of weight
+;	push de
 ; put weight in big-endian order at hDexWeight
 	ld hl,hDexWeight
 	ld a,[hl] ; save existing value of [hDexWeight]
@@ -568,7 +579,7 @@ ShowPokedexDataInternal: ; 402e2 (10:42e2)
 	ret
 
 HeightWeightText: ; 40448 (10:4448)
-	db "HT  ?",$60,"??",$61,$4E,"WT   ???lb@"
+	db   "TAI  ???",$60,$4e,"PDS  ???",$61,$62,"@"
 
 ; XXX does anything point to this?
 PokeText: ; 4045d (10:445d)

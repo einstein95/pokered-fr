@@ -47,7 +47,7 @@ $(red_obj): %_red.o: %.asm $$(%_dep)
 $(blue_obj): %_blue.o: %.asm $$(%_dep)
 	rgbasm -D "_BLUE" -h -o $@ $*.asm
 
-dmg_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03
+dmg_opt  = -jsv -k 01 -l 0x33 -m 0x1B -p 0 -r 03
 red_opt  = $(dmg_opt) -t "POKEMON RED"
 blue_opt = $(dmg_opt) -t "POKEMON BLUE"
 
