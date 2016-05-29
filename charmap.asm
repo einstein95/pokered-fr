@@ -226,17 +226,12 @@ charmap "w", $B6
 charmap "x", $B7
 charmap "y", $B8
 charmap "z", $B9
-charmap "é", $BA
-charmap "'d", $BB
-charmap "'l", $BC
-charmap "'s", $BD
-charmap "'t", $BE
-charmap "'v", $BF
-
+charmap "é", $BC
+charmap "n'", $D9
 charmap "'", $E0
 
 charmap "-", $E3
-charmap "'r", $E4
+charmap "+", $E4
 charmap "'m", $E5
 charmap "?", $E6
 charmap "!", $E7

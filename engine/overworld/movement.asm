@@ -444,6 +444,7 @@ InitializeSpriteStatus:
 	ld a, $8
 	ld [hli], a   ; $c2x2: set Y displacement to 8
 	ld [hl], a    ; $c2x3: set X displacement to 8
+	call InitializeSpriteScreenPosition ; could have done fallthrough here
 	ret
 
 ; calculates the spprite's scrren position form its map position and the player position
@@ -456,7 +457,7 @@ InitializeSpriteScreenPosition:
 	ld b, a
 	ld a, [hl]      ; c2x4 (Y position + 4)
 	sub b           ; relative to player position
-	swap a          ; * 16
+	call Func_515D
 	sub $4          ; - 4
 	dec h
 	ld [hli], a     ; c1x4 (screen Y position)
@@ -465,9 +466,21 @@ InitializeSpriteScreenPosition:
 	ld b, a
 	ld a, [hli]     ; c2x6 (X position + 4)
 	sub b           ; relative to player position
-	swap a          ; * 16
+	call Func_515D
 	dec h
 	ld [hl], a      ; c1x6 (screen X position)
+	ret
+
+Func_515D: ; 515D (1:515D)
+	jr nc, .asm_5166
+	cpl
+	inc a
+	swap a
+	cpl
+	inc a
+	ret
+.asm_5166
+	swap a
 	ret
 
 ; tests if sprite is off screen or otherwise unable to do anything

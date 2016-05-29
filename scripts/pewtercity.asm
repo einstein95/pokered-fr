@@ -277,6 +277,8 @@ PewterCityText_19431:
 
 PewterCityText5:
 	TX_ASM
+	ld a,$FC
+	ld [$CD6B],a
 	ld hl, PewterCityText_1945d
 	call PrintText
 	xor a

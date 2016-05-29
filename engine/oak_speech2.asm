@@ -185,37 +185,37 @@ DisplayIntroNameTextBox:
 	jp HandleMenuInput
 
 .namestring
-	db "NAME@"
+	db "─NOM@"
 
 IF DEF(_RED)
 DefaultNamesPlayer:
-	db   "NEW NAME"
+	db   "NOM:"
 	next "RED"
-	next "ASH"
-	next "JACK"
+	next "SACHA"
+	next "PAUL"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
+	db   "NOM:"
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "REGIS"
+	next "JEAN"
 	db   "@"
 ENDC
 
 IF DEF(_BLUE)
 DefaultNamesPlayer:
-	db   "NEW NAME"
+	db   "NOM:"
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "REGIS"
+	next "JEAN"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
+	db   "NOM:"
 	next "RED"
-	next "ASH"
-	next "JACK"
+	next "SACHA"
+	next "PAUL"
 	db   "@"
 ENDC
 
@@ -244,28 +244,29 @@ GetDefaultName:
 	jp CopyData
 
 IF DEF(_RED)
+<<<<<<< 25c27785aa83a12330ea58e1e35b2fec90dd84f4
 DefaultNamesPlayerList:
 	db "NEW NAME@"
 	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db "SACHA@"
+	db "PAUL@"
 DefaultNamesRivalList:
 	db "NEW NAME@"
 	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db "REGIS@"
+	db "JEAN@"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db "NEW NAME@"
 	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db "REGIS@"
+	db "JEAN@"
 DefaultNamesRivalList:
 	db "NEW NAME@"
 	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db "SACHA@"
+	db "PAUL@"
 ENDC
 
 TextTerminator_6b20:

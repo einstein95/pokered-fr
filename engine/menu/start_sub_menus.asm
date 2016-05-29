@@ -598,8 +598,9 @@ DrawTrainerInfo:
 	call PlaceString
 	coord hl, 8, 4
 	ld de,wPlayerMoney
-	ld c,$e3
+	ld c,$c3
 	call PrintBCDNumber
+	ld [hl],$f0
 	coord hl, 9, 6
 	ld de,wPlayTimeHours ; hours
 	lb bc, LEFT_ALIGN | 1, 3
@@ -615,9 +616,9 @@ TrainerInfo_FarCopyData:
 	jp FarCopyData2
 
 TrainerInfo_NameMoneyTimeText:
-	db   "NAME/"
-	next "MONEY/"
-	next "TIME/@"
+	db   "NOM/"
+	next "ARG./"
+	next "TEMPS/@"
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:

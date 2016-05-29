@@ -289,10 +289,10 @@ PrintStat:
 	ret
 
 StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "FOR"
+	next "DEF"
+	next "VIT"
+	next "SPE@"
 
 StatusScreen2:
 	ld a, [hTilesetType]
@@ -463,8 +463,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "EXP POINTS"
-	next "LEVEL UP@"
+	db   "PTS EXP."
+	next "PROCH.NIV.@"
 
 StatusScreen_ClearName:
 	ld bc, 10
@@ -478,4 +478,14 @@ StatusScreen_PrintPP:
 	add hl, de
 	dec c
 	jr nz, StatusScreen_PrintPP
+	ret
+
+func_6cd5: ; 12cd5 (4:6cd5)
+	ld a, $80
+	ld [hli],a
+	ld a, $8F
+	ldd [hl], a
+	add hl, de
+	dec c
+	jr nz, func_6cd5
 	ret
