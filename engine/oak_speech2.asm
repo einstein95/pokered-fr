@@ -244,26 +244,25 @@ GetDefaultName:
 	jp CopyData
 
 IF DEF(_RED)
-<<<<<<< 25c27785aa83a12330ea58e1e35b2fec90dd84f4
 DefaultNamesPlayerList:
-	db "NEW NAME@"
+	db "NOM:@"
 	db "RED@"
 	db "SACHA@"
 	db "PAUL@"
 DefaultNamesRivalList:
-	db "NEW NAME@"
+	db "NOM:@"
 	db "BLUE@"
 	db "REGIS@"
 	db "JEAN@"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
-	db "NEW NAME@"
+	db "NOM:@"
 	db "BLUE@"
 	db "REGIS@"
 	db "JEAN@"
 DefaultNamesRivalList:
-	db "NEW NAME@"
+	db "NOM:@"
 	db "RED@"
 	db "SACHA@"
 	db "PAUL@"
