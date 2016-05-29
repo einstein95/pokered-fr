@@ -245,15 +245,27 @@ GetDefaultName: ; 6ad6 (1:6ad6)
 
 IF DEF(_RED)
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
-	db "NOM:@RED@SACHA@PAUL@"
+	db "NOM:@"
+	db "RED@"
+	db "SACHA@"
+	db "PAUL@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
-	db "NOM:@BLUE@REGIS@JEAN@"
+	db "NOM:@"
+	db "BLUE@"
+	db "REGIS@"
+	db "JEAN@"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
-	db "NOM:@BLUE@REGIS@JEAN@"
+	db "NOM:@"
+	db "BLUE@"
+	db "REGIS@"
+	db "JEAN@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
-	db "NOM:@RED@SACHA@PAUL@"
+	db "NOM:@"
+	db "RED@"
+	db "SACHA@"
+	db "PAUL@"
 ENDC
 
 TextTerminator_6b20: ; 6b20 (1:6b20)
