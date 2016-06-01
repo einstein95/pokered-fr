@@ -47,26 +47,31 @@ CreditsTextPointers: ; 742c3 (1d:42c3)
 	dw CredSaOota
 	dw CredYoshikawa
 	dw CredToOota
-	dw CredUSStaff
-	dw CredUSCoord
-	dw CredTilden
+	dw CredEUStaff
+	dw CredEUCoord
+	dw CredMoyse
+	dw CredPfitzner
+	dw CredKraft
 	dw CredKawakami
-	dw CredHiNakamura
-	dw CredGiese
-	dw CredOsborne
+	dw CredEdasawa
+	dw CredUesugi
+	dw CredYoshimura
 	dw CredTrans
-	dw CredOgasawara
-	dw CredIwata
+	dw CredBardakoff
+	dw CredFleury
+	dw CredNakamichi
 	dw CredIzushi
 	dw CredHarada
 	dw CredMurakawa
 	dw CredFukui
-	dw CredClub
-	dw CredPAAD
+	dw CredNoEProdTest
+	dw CredZehAndHugo
+	dw CredNoAProdTest
+	dw CredHudsonAndBuechele
 
 CredVersion: ; 74343 (1d:4343) ; this 1 byte difference makes all bank addresses offset by 1 in the blue version
 IF DEF(_RED)
-	db -8, "RED VERSION STAFF@"
+	db -6, "VERSION ROUGE@"
 ENDC
 IF DEF(_BLUE)
 	db -8, "BLUE VERSION STAFF@"
@@ -165,26 +170,32 @@ CredYoshikawa: ; 7461f (1d:461f)
 	db -6, "RENA YOSHIKAWA@"
 CredToOota: ; 7462f (1d:462f)
 	db -6, "TOMOMICHI OOTA@"
-CredUSStaff: ; 7463f (1d:463f)
-	db -7, "US VERSION STAFF@"
-CredUSCoord: ; 74651 (1d:4651)
-	db -7, "US COORDINATION@"
-CredTilden: ; 74662 (1d:4662)
-	db -5, "GAIL TILDEN@"
+CredEUStaff: ; 7463f (1d:463f)
+	db -6, "EQUIPE EUROPE@"
+CredEUCoord: ; 74651 (1d:4651)
+	db -9, "COORDINATION EUROPE@"
+CredMoyse: ; 74662 (1d:4662)
+	db -7, "CLAUDE M. MOYSE@"
+CredPfitzner: ;  (1d:)
+	db -7, "MARKUS PFITZNER@"
+CredKraft: ;  (1d:)
+	db -6, "JOHN D. KRAFT@"
 CredKawakami: ; 7466f (1d:466f)
 	db -6, "NAOKO KAWAKAMI@"
-CredHiNakamura: ; 7467f (1d:467f)
-	db -6, "HIRO NAKAMURA@"
-CredGiese: ; 7468e (1d:468e)
-	db -6, "WILLIAM GIESE@"
-CredOsborne: ; 7469d (1d:469d)
-	db -5, "SARA OSBORNE@"
+CredEdasawa: ; 7467f (1d:467f)
+	db -6, "YUSUKE EDASAWA@"
+CredUesugi: ; 7468e (1d:468e)
+	db -5, "HIRO UESUGI@"
+CredYoshimura: ; 7469d (1d:469d)
+	db -7, "KAMON YOSHIMURA@"
 CredTrans: ; 746ab (1d:46ab)
-	db -7, "TEXT TRANSLATION@"
-CredOgasawara: ; 746bd (1d:46bd)
-	db -6, "NOB OGASAWARA@"
-CredIwata: ; 746cc (1d:46cc)
-	db -5, "SATORU IWATA@"
+	db -7, "TEXTES FRANCAIS@"
+CredBardakoff: ; 746bd (1d:46bd)
+	db -7, "JULIEN BARDAKOFF@"
+CredFleury: ; 746cc (1d:46cc)
+	db -9, "JEAN-BAPTISTE FLEURY@"
+CredNakamichi: ;  (1d:)
+	db -7, "KIMIKO NAKAMICHI@"
 CredIzushi: ; 746da (1d:46da)
 	db -7, "TAKEHIRO IZUSHI@"
 CredHarada: ; 746eb (1d:46eb)
@@ -193,7 +204,11 @@ CredMurakawa: ; 746fc (1d:46fc)
 	db -7, "TERUKI MURAKAWA@"
 CredFukui: ; 7470d (1d:470d)
 	db -5, "KOHTA FUKUI@"
-CredClub: ; 7471a (1d:471a)
-	db -9, "NCL SUPER MARIO CLUB@"
-CredPAAD: ; 74730 (1d:4730)
-	db -5, "PAAD TESTING@"
+CredNoEProdTest: ; 7471a (1d:471a)
+	db -9, "NOE PRODUCT TESTING@"
+CredZehAndHugo: ; 74730 (1d:4730)
+	db -8, "KAI ZEH & MP.HUGO@"
+CredNoAProdTest: ;  (1d:)
+	db -9, "NOA PRODUCT TESTING@"
+CredHudsonAndBuechele: ;  (1d:)
+	db -9, "K.HUDSON&T.BUECHELE@"

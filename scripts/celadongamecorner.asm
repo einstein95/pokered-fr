@@ -505,13 +505,13 @@ CeladonGameCornerScript_48f1e: ; 48f1e (12:4f1e)
 	ret
 
 GameCornerMoneyText: ; 48f7a (12:4f7a)
-	db "MONEY@"
+	db "ARG.@"
 
 GameCornerCoinText: ; 48f80 (12:4f80)
-	db "COIN@"
+	db "JETONS@"
 
 GameCornerBlankText1: ; 48f85 (12:4f85)
-	db "       @"
+	db "      ¥@"
 
 GameCornerBlankText2: ; 48f8d (12:4f8d)
 	db "       @"

@@ -92,7 +92,7 @@ AnimateHallOfFame: ; 701a0 (1c:41a0)
 	ret
 
 HallOfFameText: ; 7026b (1c:426b)
-	db "HALL OF FAME@"
+	db "CELEBRITE@"
 
 HoFShowMonOrPlayer: ; 70278 (1c:4278)
 	call ClearScreen
@@ -178,7 +178,7 @@ HoFDisplayMonInfo: ; 702f0 (1c:42f0)
 	jp PlayCry
 
 HoFMonInfoText: ; 70329 (1c:4329)
-	db   "LEVEL/"
+	db   "NIVEAU/"
 	next "TYPE1/"
 	next "TYPE2/@"
 
@@ -239,6 +239,7 @@ HoFDisplayPlayerStats: ; 70377 (1c:4377)
 	ld de, wPlayerMoney
 	ld c, $a3
 	call PrintBCDNumber
+	ld [hl], $F0
 	ld hl, DexSeenOwnedText
 	call HoFPrintTextAndDelay
 	ld hl, DexRatingText
@@ -251,10 +252,10 @@ HoFPrintTextAndDelay: ; 703e2 (1c:43e2)
 	jp DelayFrames
 
 HoFPlayTimeText: ; 703ea (1c:43ea)
-	db "PLAY TIME@"
+	db "DUREE JEU@"
 
 HoFMoneyText: ; 703f4 (1c:43f4)
-	db "MONEY@"
+	db "ARGENT@"
 
 DexSeenOwnedText: ; 703fa (1c:43fa)
 	TX_FAR _DexSeenOwnedText

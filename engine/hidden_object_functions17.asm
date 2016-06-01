@@ -151,10 +151,10 @@ LinkCableHelpText2: ; 5dca3 (17:5ca3)
 	db "@"
 
 HowToLinkText: ; 5dca8 (17:5ca8)
-	db   "HOW TO LINK"
-	next "COLOSSEUM"
-	next "TRADE CENTER"
-	next "STOP READING@"
+	db   "CABLE LINK"
+	next "COLISEE"
+	next "CENTRE TROC"
+	next "NE PLUS LIRE@"
 
 LinkCableInfoTexts: ; 5dcd8 (17:5cd8)
 	dw LinkCableInfoText1
@@ -268,14 +268,14 @@ ViridianSchoolBlackboardText2: ; 5dda7 (17:5da7)
 	db "@"
 
 StatusAilmentText1: ; 5ddac (17:5dac)
-	db   " SLP"
+	db   " SOM"
 	next " PSN"
 	next " PAR@"
 
 StatusAilmentText2: ; 5ddbb (17:5dbb)
-	db   " BRN"
-	next " FRZ"
-	next " QUIT@@"
+	db   " BRU"
+	next " GEL"
+	next " RET@"
 
 ViridianBlackboardStatusPointers: ; 5ddcc (17:5ddc)
 	dw ViridianBlackboardSleepText

@@ -1,26 +1,26 @@
 MapNames: ; 71473 (1c:5473)
 PalletTownName: ; 71473 (1c:5473)
-	db "PALLET TOWN@"
+	db "BOURG PALETTE@"
 ViridianCityName: ; 7147f (1c:547f)
-	db "VIRIDIAN CITY@"
+	db "JADIELLE@"
 PewterCityName: ; 7148d (1c:548d)
-	db "PEWTER CITY@"
+	db "ARGENTA@"
 CeruleanCityName: ; 71499 (1c:5499)
-	db "CERULEAN CITY@"
+	db "AZURIA@"
 LavenderTownName: ; 714a7 (1c:54a7)
-	db "LAVENDER TOWN@"
+	db "LAVANVILLE@"
 VermilionCityName: ; 714b5 (1c:54b5)
-	db "VERMILION CITY@"
+	db "CARMIN SUR MER@"
 CeladonCityName: ; 714c4 (1c:54c4)
-	db "CELADON CITY@"
+	db "CELADOPOLE@"
 FuchsiaCityName: ; 714d1 (1c:54d1)
-	db "FUCHSIA CITY@"
+	db "PARMANIE@"
 CinnabarIslandName: ; 714de (1c:54de)
-	db "CINNABAR ISLAND@"
+	db "CRAMOIS'ILE@"
 IndigoPlateauName: ; 714ee (1c:54ee)
-	db "INDIGO PLATEAU@"
+	db "PLATEAU INDIGO@"
 SaffronCityName: ; 714fd (1c:54fd)
-	db "SAFFRON CITY@"
+	db "SAFRANIA@"
 Route1Name: ; 7150a (1c:550a)
 	db "ROUTE 1@"
 Route2Name: ; 71512 (1c:5512)
@@ -58,11 +58,11 @@ Route17Name: ; 71591 (1c:5591)
 Route18Name: ; 7159a (1c:559a)
 	db "ROUTE 18@"
 Route19Name: ; 715a3 (1c:55a3)
-	db "SEA ROUTE 19@"
+	db "CHENAL 19@"
 Route20Name: ; 715b0 (1c:55b0)
-	db "SEA ROUTE 20@"
+	db "CHENAL 20@"
 Route21Name: ; 715bd (1c:55bd)
-	db "SEA ROUTE 21@"
+	db "CHENAL 21@"
 Route22Name: ; 715ca (1c:55ca)
 	db "ROUTE 22@"
 Route23Name: ; 715d3 (1c:55d3)
@@ -72,36 +72,36 @@ Route24Name: ; 715dc (1c:55dc)
 Route25Name: ; 715e5 (1c:55e5)
 	db "ROUTE 25@"
 ViridianForestName: ; 715ee (1c:55ee)
-	db "VIRIDIAN FOREST@"
+	db "FORET DE JADE@"
 MountMoonName: ; 715fe (1c:55fe)
-	db "MT.MOON@"
+	db "MONT SELENITE@"
 RockTunnelName: ; 71606 (1c:5606)
-	db "ROCK TUNNEL@"
+	db "GROTTE@"
 SeaCottageName: ; 71612 (1c:5612)
-	db "SEA COTTAGE@"
+	db "VILLA@"
 SSAnneName: ; 7161e (1c:561e)
-	db "S.S.ANNE@"
+	db "L'OCEANE@"
 PokemonLeagueName: ; 71627 (1c:5627)
-	db "#MON LEAGUE@"
+	db "LIGUE #MON@"
 UndergroundPathName: ; 71633 (1c:5633)
-	db "UNDERGROUND PATH@"
+	db "SOUTERRAIN@"
 PokemonTowerName: ; 71644 (1c:5644)
-	db "#MON TOWER@"
+	db "TOUR #MON@"
 SeafoamIslandsName: ; 7164f (1c:564f)
-	db "SEAFOAM ISLANDS@"
+	db "ILES ECUME@"
 VictoryRoadName: ; 7165f (1c:565f)
-	db "VICTORY ROAD@"
+	db "ROUTE VICTOIRE@"
 DiglettsCaveName: ; 7166c (1c:566c)
-	db "DIGLETT's CAVE@"
+	db "CAVE TAUPIQUEUR@"
 RocketHQName: ; 7167a (1c:567a)
-	db "ROCKET HQ@"
+	db "REPAIRE ROCKET@"
 SilphCoName: ; 71684 (1c:5684)
-	db "SILPH CO.@"
+	db "SYLPHE SARL@"
 PokemonMansionName: ; 7168e (1c:568e)
-	db $4a," MANSION@"
+	db "MANOIR ",$4a,"@"
 SafariZoneName: ; 71698 (1c:5698)
-	db "SAFARI ZONE@"
+	db "PARC SAFARI@"
 CeruleanCaveName: ; 716a4 (1c:56a4)
-	db "CERULEAN CAVE@"
+	db "GROTTE INCONNUE@"
 PowerPlantName: ; 716b2 (1c:56b2)
-	db "POWER PLANT@"
+	db "CENTRALE@"
