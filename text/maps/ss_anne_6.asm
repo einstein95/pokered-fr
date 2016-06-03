@@ -1,69 +1,77 @@
 _SSAnne6Text1::
-	text "You, mon petit!"
-	line "We're busy here!"
-	cont "Out of the way!"
+	text "Hé! Le mouflet,"
+	line "y'en a qui bossent"
+
+	para "dur ici!"
+	line "Alors dégage!"
 	done
 
 _SSAnne6Text2::
-	text "I saw an odd ball"
-	line "in the trash."
+	text "J'ai vu une Ball"
+	line "bizarre dans la"
+	cont "poubelle..."
 	done
 
 _SSAnne6Text3::
-	text "I'm so busy I'm"
-	line "getting dizzy!"
+	text "J'ai trop de"
+	line "boulot! J'en ai"
+	cont "des vertiges!"
 	done
 
 _SSAnne6Text4::
-	text "Hum-de-hum-de-"
-	line "ho..."
+	text "Pourquoi?"
+	line "Pourquoi moi?"
 
-	para "I peel spuds"
-	line "every day!"
-	cont "Hum-hum..."
+	para "J'suis tout"
+	line "l'temps d'corvée"
+	cont "d'patates..."
 	done
 
 _SSAnne6Text5::
-	text "Did you hear about"
-	line "SNORLAX?"
+	text "Tu connais"
+	line "RONFLEX?"
 
-	para "All it does is"
-	line "eat and sleep!"
+	para "Il passe ses"
+	line "journées à manger"
+	cont "et à pioncer!"
 	done
 
 _SSAnne6Text6::
-	text "Snivel...Sniff..."
+	text "Sniff... "
+	line "...sniff..."
 
-	para "I only get to"
-	line "peel onions..."
-	cont "Snivel..."
+	para "J'épluche"
+	line "des oignons..."
 	done
 
 _SSAnne6Text_61807::
-	text "Er-hem! Indeed I"
-	line "am le CHEF!"
+	text "Hm, hm! Je suis"
+	line "le chef cuistot!"
 
-	para "Le main course is"
+	para "Voilà le menu:"
 	prompt
 
 _SSAnne6Text_6180c::
-	text "Salmon du Salad!"
+	text "Salade de saumon!"
 
-	para "Les guests may"
-	line "gripe it's fish"
-	cont "again, however!"
+	para "Pour ceux qui ne"
+	line "sont pas contents"
+	cont "c'est la même"
+	cont "chose!"
 	done
 
 _SSAnne6Text_61811::
-	text "Eels au Barbecue!"
+	text "Pâté d'anguilles!"
 
-	para "Les guests will"
-	line "mutiny, I fear."
+	para "De quoi donner"
+	line "des envies de"
+	cont "mutinerie!"
 	done
 
 _SSAnne6Text_61816::
-	text "Prime Beef Steak!"
+	text "Côtes de boeuf!"
 
-	para "But, have I enough"
-	line "fillets du beef?"
+	para "Mais je crois"
+	line "que je n'ai plus"
+	cont "de viande?!"
 	done

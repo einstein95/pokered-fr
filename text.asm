@@ -26,13 +26,13 @@ _CardKeySuccessText1::
 
 _CardKeySuccessText2::
 	text ""
-	line "The CARD KEY"
-	cont "opened the door!"
+	line "La CARTE MAGN. a"
+	cont "ouvert la porte!"
 	done
 
 _CardKeyFailText::
-	text "Darn! It needs a"
-	line "CARD KEY!"
+	text "Zut! Il faut une"
+	line "CARTE MAGN.!"
 	done
 
 _TrainerNameText::
@@ -40,17 +40,18 @@ _TrainerNameText::
 	text ": @@"
 
 _NoNibbleText::
-	text "Not even a nibble!"
+	text "Même pas une"
+	line "touche..."
 	prompt
 
 _NothingHereText::
-	text "Looks like there's"
-	line "nothing here."
+	text "On dirait qu'il"
+	line "n'y a rien ici."
 	prompt
 
 _ItsABiteText::
 	text "Oh!"
-	line "It's a bite!"
+	line "Ca mord!!!"
 	prompt
 
 _ExclamationText::
@@ -58,110 +59,120 @@ _ExclamationText::
 	done
 
 _GroundRoseText::
-	text "Ground rose up"
-	line "somewhere!"
+	text "Le sol s'est levé"
+	line "dans le coin!"
 	done
 
 _BoulderText::
-	text "This requires"
-	line "STRENGTH to move!"
+	text "Sans FORCE, ça"
+	line "ne bougera pas!"
 	done
 
 _MartSignText::
-	text "All your item"
-	line "needs fulfilled!"
-	cont "#MON MART"
+	text "Faites le plein"
+	line "d'objets!"
+	para "BOUTIQUE PKMN"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	text "Soignez vos"
+	line "#MON!"
+	para "CENTRE PKMN"
 	done
 
 _FoundItemText::
+<<<<<<< cef6459db617ad0863c856831ebcb9d745c43ddf
 	text "<PLAYER> found"
+=======
+	text $52, " obtient..."
+>>>>>>> More text, filled out charmap.asm
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _NoMoreRoomForItemText::
-	text "No more room for"
-	line "items!"
+	text "Votre inventaire"
+	line "est plein!"
 	done
 
 _OaksAideHiText::
-	text "Hi! Remember me?"
-	line "I'm PROF.OAK's"
-	cont "AIDE!"
+	text "Salut! Tu te"
+	line "rappelles? Je"
+	cont "suis l'assistant"
+	cont "du Prof. Chen!"
 
-	para "If you caught @"
+	para "Si tu attrapes "
+	line "@"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text ""
-	line "kinds of #MON,"
-	cont "I'm supposed to"
-	cont "give you an"
+	text " #MON"
+	cont "différents, je"
+	cont "suis censé"
+	cont "t'offrir..."
 	cont "@"
 	TX_RAM wOaksAideRewardItemName
 	text "!"
 
-	para "So, <PLAYER>! Have"
-	line "you caught at"
-	cont "least @"
+	para "Alors <PLAYER>,"
+	line "as-tu attrapé au"
+	cont "moins @"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds of"
-	cont "#MON?"
+	text " #MON"
+	cont "différents?"
 	done
 
 _OaksAideUhOhText::
-	text "Let's see..."
-	line "Uh-oh! You have"
-	cont "caught only @"
+	text "Voyons voir..."
+	line "Oh! Tu n'as"
+	cont "attrapé que @"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
 	text ""
-	cont "kinds of #MON!"
+	cont "#MON!"
 
-	para "You need @"
+	para "Il t'en faut @"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds"
-	line "if you want the"
+	text ""
+	line "différents pour"
+	cont "mériter..."
 	cont "@"
 	TX_RAM wOaksAideRewardItemName
 	text "."
 	done
 
 _OaksAideComeBackText::
-	text "Oh. I see."
+	text "Dans ce cas..."
 
-	para "When you get @"
+	para "Reviens quand tu"
+	line "auras @"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text ""
-	line "kinds, come back"
-	cont "for @"
+	text " #MON"
+	cont "différents pour"
+	cont "obtenir"
+	cont "@"
 	TX_RAM wOaksAideRewardItemName
 	text "."
 	done
 
 _OaksAideHereYouGoText::
-	text "Great! You have"
-	line "caught @"
+	text "Super! Tu as"
+	line "@"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
-	text " kinds "
-	cont "of #MON!"
-	cont "Congratulations!"
+	text " #MON"
+	cont "différents!"
+	cont "Félicitations!"
 
-	para "Here you go!"
+	para "Voici ta"
+	line "récompense!"
 	prompt
 
 _OaksAideGotItemText::
-	text "<PLAYER> got the"
+	text "<PLAYER> obtient"
 	line "@"
 	TX_RAM wOaksAideRewardItemName
 	text "!@@"
 
 _OaksAideNoRoomText::
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for the"
+	text "Oh! Tu n'as plus"
+	line "de place pour"
 	cont "@"
 	TX_RAM wOaksAideRewardItemName
 	text "."
@@ -249,7 +260,7 @@ _AIBattleUseItemText::
 	prompt
 
 _TradeWentToText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " went"
 	line "to @"
 	TX_RAM wGrassRate
@@ -259,7 +270,7 @@ _TradeWentToText::
 _TradeForText::
 	text "For <PLAYER>'s"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text ","
 	done
 
@@ -301,7 +312,7 @@ _TradeWillTradeText::
 _TradeforText::
 	text "for <PLAYER>'s"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "."
 	done
 
@@ -337,7 +348,7 @@ _OneMoreGoSlotMachineText::
 _LinedUpText::
 	text " lined up!"
 	line "Scored @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " coins!"
 	done
 
@@ -1310,7 +1321,7 @@ _InsteadText::
 	cont "@@"
 
 _CF4BText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "@"
 
 _ExclamationPoint1Text::
@@ -1761,7 +1772,7 @@ _DepositWhichMonText::
 	done
 
 _MonWasStoredText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " was"
 	line "stored in Box @"
 	TX_RAM wBoxNumString
@@ -1779,11 +1790,11 @@ _BoxFullText::
 	prompt
 
 _MonIsTakenOutText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " is"
 	line "taken out."
 	cont "Got @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "."
 	prompt
 
@@ -1808,19 +1819,19 @@ _ReleaseWhichMonText::
 _OnceReleasedText::
 	text "Once released,"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " is"
 	cont "gone forever. OK?"
 	done
 
 _MonWasReleasedText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " was"
 	line "released outside."
 	cont "Bye @"
 
 _CF4BExclamationText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!"
 	prompt
 
@@ -2035,7 +2046,7 @@ _ChooseABoxText::
 	line "<pkmn> BOX.@@"
 
 _EvolvedText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " evolved"
 	done
 
@@ -2048,14 +2059,14 @@ _IntoText::
 
 _StoppedEvolvingText::
 	text "Huh? @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text ""
 	line "stopped evolving!"
 	prompt
 
 _IsEvolvingText::
 	text "What? @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text ""
 	line "is evolving!"
 	done
@@ -2098,7 +2109,7 @@ _FireDefrostedText::
 _MonsStatsRoseText::
 	text "<USER>'s"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "@@"
 
 _GreatlyRoseText::
@@ -2111,7 +2122,7 @@ _RoseText::
 _MonsStatsFellText::
 	text "<TARGET>'s"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "@@"
 
 _GreatlyFellText::
@@ -2456,7 +2467,7 @@ _PokemartBuyingGreetingText::
 	done
 
 _PokemartTellBuyPriceText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "?"
 	line "That will be"
 	cont "¥@"
@@ -2514,7 +2525,7 @@ _LearnedMove1Text::
 	TX_RAM wLearnMoveMonName
 	text " learned"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _WhichMoveToForgetText::
@@ -2525,7 +2536,7 @@ _WhichMoveToForgetText::
 _AbandonLearningText::
 	text "Abandon learning"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "?"
 	done
 
@@ -2534,7 +2545,7 @@ _DidNotLearnText::
 	text ""
 	line "did not learn"
 	cont "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!"
 	prompt
 
@@ -2543,7 +2554,7 @@ _TryingToLearnText::
 	text " is"
 	line "trying to learn"
 	cont "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!"
 
 	para "But, @"
@@ -2555,7 +2566,7 @@ _TryingToLearnText::
 	para "Delete an older"
 	line "move to make room"
 	cont "for @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "?"
 	done
 
@@ -2735,7 +2746,7 @@ _SetToBoxText::
 	text " was"
 	cont "sent to #MON"
 	cont "BOX @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " on PC!"
 	done
 
@@ -2834,7 +2845,7 @@ _VitaminStatRoseText::
 	TX_RAM wcd6d
 	text "'s"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " rose."
 	prompt
 
@@ -2899,13 +2910,13 @@ _RestorePPWhichTechniqueText::
 	done
 
 _PPMaxedOutText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "'s PP"
 	line "is maxed out."
 	prompt
 
 _PPIncreasedText::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "'s PP"
 	line "increased."
 	prompt
@@ -2925,11 +2936,11 @@ _BootedUpHMText::
 _TeachMachineMoveText::
 	text "It contained"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!"
 
 	para "Teach @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text ""
 	line "to a #MON?"
 	done
@@ -2939,12 +2950,12 @@ _MonCannotLearnMachineMoveText::
 	text " is not"
 	line "compatible with"
 	cont "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "."
 
 	para "It can't learn"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "."
 	prompt
 
@@ -2998,7 +3009,7 @@ _ItemUseText001::
 	text "<PLAYER> used@@"
 
 _ItemUseText002::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!"
 	done
 
@@ -3006,7 +3017,7 @@ _GotOnBicycleText1::
 	text "<PLAYER> got on the@@"
 
 _GotOnBicycleText2::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!"
 	prompt
 
@@ -3015,7 +3026,7 @@ _GotOffBicycleText1::
 
 _GotOffBicycleText2::
 	text "the @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "."
 	prompt
 
@@ -3029,7 +3040,7 @@ _ThrewAwayItemText::
 _IsItOKToTossItemText::
 	text "Is it OK to toss"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "?"
 	prompt
 
@@ -3042,7 +3053,7 @@ _AlreadyKnowsText::
 	TX_RAM wcd6d
 	text " knows"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!"
 	prompt
 

@@ -113,7 +113,7 @@ LeaguePCShowMon:
 	jpba HoFDisplayMonInfo
 
 HallOfFameNoText:
-	db "HALL OF FAME No   @"
+	db " CELEBRITE No.    @"
 
 AccessedHoFPCText:
 	TX_FAR _AccessedHoFPCText

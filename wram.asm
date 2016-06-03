@@ -1435,7 +1435,9 @@ wcf4b:: ds 2 ; storage buffer for various strings
 wGainBoostedExp:: ; cf4d
 	ds 1
 
-	ds 17
+	ds 2
+
+wcf50:: ds 15 ; storage buffer for various strings
 
 wGymCityName:: ; cf5f
 	ds 17

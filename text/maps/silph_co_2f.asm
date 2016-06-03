@@ -1,96 +1,103 @@
 _SilphCo2Text_59ded::
-	text "Eeek!"
-	line "No! Stop! Help!"
+	text "Au secours!"
+	line "A l'aide!"
 
-	para "Oh, you're not"
-	line "with TEAM ROCKET."
-	cont "I thought..."
-	cont "I'm sorry. Here,"
-	cont "please take this!"
+	para "Quoi? Tu n'es pas"
+	line "de la TEAM?"
+	cont "Tant mieux!"
+	cont "Tiens prends ça!"
 	prompt
 
 _ReceivedTM36Text::
-	text $52, " got"
+	text $52, " obtient"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _TM36ExplanationText::
-	text "TM36 is"
-	line "SELFDESTRUCT!"
+	text "Voici la CT36:"
+	line "DESTRUCTION!"
 
-	para "It's powerful, but"
-	line "the #MON that"
-	cont "uses it faints!"
-	cont "Be careful."
+	para "C'est une attaque"
+	line "très puissante!"
+	cont "Mais elle mettra"
+	cont "K.O. le #MON"
+	cont "qui l'utilise!!!"
 	done
 
 _TM36NoRoomText::
-	text "You don't have any"
-	line "room for this."
+	text "Plus de place"
+	line "pour cet objet!!!"
 	done
 
 _SilphCo2BattleText1::
-	text "Help! I'm a SILPH"
-	line "employee."
+	text "A l'aide! Je suis"
+	line "un employé de la"
+	cont "SYLPHE SARL!"
 	done
 
 _SilphCo2EndBattleText1::
-	text "How"
-	line "did you know I"
-	cont "was a ROCKET?"
+	text "???"
+	line "Comment t'as su"
+	cont "que j'étais de"
+	cont "La TEAM ROCKET?"
 	prompt
 
 _SilphCo2AfterBattleText1::
-	text "I work for both"
-	line "SILPH and TEAM"
-	cont "ROCKET!"
+	text "Je travaille pour"
+	line "la SYLPHE SARL et"
+	cont "la TEAM ROCKET!"
 	done
 
 _SilphCo2BattleText2::
-	text "It's off limits"
-	line "here! Go home!"
+	text "Hophop! Zone"
+	line "privée, dégage!"
 	done
 
 _SilphCo2EndBattleText2::
-	text "You're"
-	line "good."
+	text "OK."
+	line "J'suis battu!"
 	prompt
 
 _SilphCo2AfterBattleText2::
-	text "Can you solve the"
-	line "maze in here?"
+	text "Trouve la"
+	line "sortie du"
+	cont "Labyrinthe!"
 	done
 
 _SilphCo2BattleText3::
-	text "No kids are"
-	line "allowed in here!"
+	text "Hé! Pas de"
+	line "mioches ici!"
 	done
 
 _SilphCo2EndBattleText3::
-	text "Tough!"
+	text "La vache!"
+	line "Balèze le p'tit!"
 	prompt
 
 _SilphCo2AfterBattleText3::
-	text "Diamond shaped"
-	line "tiles are"
-	cont "teleport blocks!"
+	text "Les dalles en"
+	line "forme de diamant"
+	cont "sont des"
+	cont "téléporteurs!"
 
-	para "They're hi-tech"
-	line "transporters!"
+	para "C'est de la super"
+	line "technologie!"
 	done
 
 _SilphCo2BattleText4::
-	text "Hey kid! What are"
-	line "you doing here?"
+	text "Hé, p'tite tête!"
+	line "Qu'est-ce tu"
+	cont "fais là?"
 	done
 
 _SilphCo2EndBattleText4::
-	text "I goofed!"
+	text "Oups,"
+	line "j'ai perdu!"
 	prompt
 
 _SilphCo2AfterBattleText4::
-	text "SILPH CO. will"
-	line "be merged with"
-	cont "TEAM ROCKET!"
+	text "La SYLPHE SARL et"
+	line "la TEAM ROCKET"
+	cont "vont fusionner!"
 	done
