@@ -85,15 +85,16 @@ VendingMachineText1: ; 74f99 (1d:4f99)
 	db "@"
 
 DrinkText: ; 74f9e (1d:4f9e)
-	db   "FRESH WATER"
-	next "SODA POP"
-	next "LEMONADE"
-	next "CANCEL@"
+	db   "EAU FRAICHE"
+	next "SODA COOL"
+	next "LIMONADE"
+	next "RETOUR@"
 
 DrinkPriceText: ; 74fc3 (1d:4fc3)
-	db   "¥200"
-	next "¥300"
-	next "¥350",$4E,"@"
+	db   "200¥"
+	next "300¥"
+	next "350¥"
+	next "@"
 
 VendingMachineText4: ; 74fd3 (1d:4fd3)
 	TX_FAR _VendingMachineText4

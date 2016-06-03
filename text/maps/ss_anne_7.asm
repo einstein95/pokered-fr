@@ -1,63 +1,67 @@
 _SSAnne7RubText::
-	text "CAPTAIN: Ooargh..."
-	line "I feel hideous..."
-	cont "Urrp! Seasick..."
+	text "CAPITAINE: Blorf."
+	line "J'suis pas bien."
+	cont "Beurp..."
 
-	para $52, " rubbed"
-	line "the CAPTAIN's"
-	cont "back!"
+	para $52, " masse"
+	line "le dos du"
+	cont "CAPITAINE!"
 
-	para "Rub-rub..."
-	line "Rub-rub...@@"
+	para "Scratch..."
+	line "Scratch...@@"
 
 _ReceivingHM01Text::
-	text "CAPTAIN: Whew!"
-	line "Thank you! I"
-	cont "feel much better!"
+	text "CAPITAINE: Merci"
+	line "moussaillon!"
+	cont "Ca va beaucoup"
+	cont "mieux..."
 
-	para "You want to see"
-	line "my CUT technique?"
+	para "Mille sabords!"
+	line "Tu veux voir"
+	cont "la technique"
+	cont "COUPE?"
 
-	para "I could show you"
-	line "if I wasn't ill..."
+	para "Je pourrais te la"
+	line "montrer, mais"
+	cont "j'suis malade."
 
-	para "I know! You can"
-	line "have this!"
+	para "Je sais!"
+	line "Prends ça!"
 
-	para "Teach it to your"
-	line "#MON and you"
-	cont "can see it CUT"
-	cont "any time!"
+	para "C'est la technique"
+	line "COUPE."
+	cont "Enseigne-la à"
+	cont "tes #MON!"
 	prompt
 
 _ReceivedHM01Text::
-	text $52, " got"
+	text $52, " obtient"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _SSAnne7Text_61932::
-	text "CAPTAIN: Whew!"
+	text "CAPITAINE: Haaaa!"
 
-	para "Now that I'm not"
-	line "sick any more, I"
-	cont "guess it's time."
+	para "Maintenant que"
+	line "je suis guéri, on"
+	cont "va lever l'ancre!"
 	done
 
 _HM01NoRoomText::
-	text "Oh no! You have"
-	line "no room for this!"
+	text "Ha zut! Tu n'as"
+	line "plus de place"
+	cont "pour cet objet!"
 	done
 
 _SSAnne7Text2::
-	text "Yuck! Shouldn't"
-	line "have looked!"
+	text "Quoi?!?"
+	line "Il a mangé ça???"
 	done
 
 _SSAnne7Text3::
-	text "How to Conquer"
-	line "Seasickness..."
-	cont "The CAPTAIN's"
-	cont "reading this!"
+	text "Comment guérir"
+	line "le mal de mer..."
+	cont "Le CAPITAINE lit"
+	cont "ce manuel!"
 	done
-

@@ -11,7 +11,7 @@ ViridianGymScript: ; 748a3 (1d:48a3)
 	ret
 
 Gym8CityName: ; 748bf (1d:48bf)
-	db "VIRIDIAN CITY@"
+	db "JADIELLE@"
 Gym8LeaderName: ; 748cd (1d:48cd)
 	db "GIOVANNI@"
 

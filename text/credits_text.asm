@@ -207,8 +207,8 @@ CredFukui: ; 7470d (1d:470d)
 CredNoEProdTest: ; 7471a (1d:471a)
 	db -9, "NOE PRODUCT TESTING@"
 CredZehAndHugo: ; 74730 (1d:4730)
-	db -8, "KAI ZEH & MP.HUGO@"
+	db -8, "KAI ZEH + MP.HUGO@"
 CredNoAProdTest: ;  (1d:)
 	db -9, "NOA PRODUCT TESTING@"
 CredHudsonAndBuechele: ;  (1d:)
-	db -9, "K.HUDSON&T.BUECHELE@"
+	db -9, "K.HUDSON+T.BUECHELE@"

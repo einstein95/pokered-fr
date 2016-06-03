@@ -113,7 +113,7 @@ LeaguePCShowMon: ; 76610 (1d:6610)
 	jpba HoFDisplayMonInfo
 
 HallOfFameNoText: ; 76670 (1d:6670)
-	db "HALL OF FAME No   @"
+	db " CELEBRITE No.    @"
 
 AccessedHoFPCText: ; 76683 (1d:6683)
 	TX_FAR _AccessedHoFPCText
