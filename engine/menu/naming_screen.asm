@@ -39,7 +39,7 @@ AskName:
 	pop hl
 	pop af
 	ld [wUpdateSpritesEnabled], a
-	ld a, [wcf4b]
+	ld a, [wcf50]
 	cp "@"
 	ret nz
 .declinedNickname
@@ -63,7 +63,7 @@ DisplayNameRaterScreen:
 	call GBPalWhiteOutWithDelay3
 	call RestoreScreenTilesAndReloadTilePatterns
 	call LoadGBPal
-	ld a, [wcf4b]
+	ld a, [wcf50]
 	cp "@"
 	jr z, .playerCancelled
 	ld hl, wPartyMonNicks
@@ -109,7 +109,7 @@ DisplayNamingScreen:
 	ld a, 7
 	ld [wMaxMenuItem], a
 	ld a, "@"
-	ld [wcf4b], a
+	ld [wcf50], a
 	xor a
 	ld hl, wNamingScreenSubmitName
 	ld [hli], a
@@ -157,7 +157,7 @@ DisplayNamingScreen:
 
 .submitNickname
 	pop de
-	ld hl, wcf4b
+	ld hl, wcf50
 	ld bc, NAME_LENGTH
 	call CopyData
 	call GBPalWhiteOutWithDelay3
@@ -368,23 +368,13 @@ PrintAlphabet:
 	ld [H_AUTOBGTRANSFERENABLED], a
 	jp Delay3
 
-<<<<<<< 25c27785aa83a12330ea58e1e35b2fec90dd84f4
 LowerCaseAlphabet:
-	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥UPPER CASE@"
+	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥MAJUSCULES@"
 
 UpperCaseAlphabet:
-	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥lower case@"
+	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥minuscules@"
 
 PrintNicknameAndUnderscores:
-=======
-LowerCaseAlphabet: ; 6841 (1:6841)
-	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥MAJUSCULES@"
-
-UpperCaseAlphabet: ; 6879 (1:6879)
-	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥minuscules@"
-
-PrintNicknameAndUnderscores: ; 68b1 (1:68b1)
->>>>>>> Initial decompilation of FR Red
 	call CalcStringLength
 	ld a, c
 	ld [wNamingScreenNameLength], a
@@ -392,7 +382,7 @@ PrintNicknameAndUnderscores: ; 68b1 (1:68b1)
 	lb bc, 1, 10
 	call ClearScreenArea
 	coord hl, 10, 2
-	ld de, wcf4b
+	ld de, wcf50
 	call PlaceString
 	coord hl, 10, 3
 	ld a, [wNamingScreenType]
@@ -468,9 +458,9 @@ Handakutens:
 	db "ハパ", "ヒピ", "フプ", "へぺ", "ホポ"
 	db $ff
 
-; calculates the length of the string at wcf4b and stores it in c
+; calculates the length of the string at wcf50 and stores it in c
 CalcStringLength:
-	ld hl, wcf4b
+	ld hl, wcf50
 	ld c, $0
 .loop
 	ld a, [hl]
@@ -480,11 +470,7 @@ CalcStringLength:
 	inc c
 	jr .loop
 
-<<<<<<< 25c27785aa83a12330ea58e1e35b2fec90dd84f4
 PrintNamingText:
-=======
-PrintNamingText: ; 699b (1:699b)
->>>>>>> Initial decompilation of FR Red
 	coord hl, 0, 1
 	ld a, [wNamingScreenType]
 	ld de, YourTextString

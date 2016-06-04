@@ -1,37 +1,40 @@
 _CinnabarIslandText8::
-	text "The door is"
-	line "locked..."
+	text "La porte est"
+	line "fermée..."
 	done
 
 _CinnabarIslandText1::
-	text "CINNABAR GYM's"
-	line "BLAINE is an odd"
-	cont "man who has lived"
-	cont "here for decades."
+	text "AUGUSTE,"
+	line "de l'ARENE de"
+	cont "CRAMOIS'ILE, vit"
+	cont "ici depuis des"
+	cont "lustres. Il est"
+	cont "aussi très"
+	cont "étrange..."
 	done
 
 _CinnabarIslandText2::
-	text "Scientists conduct"
-	line "experiments in"
-	cont "the burned out"
-	cont "building."
+	text "Des scientifiques"
+	line "font de drôles"
+	cont "d'expériences"
+	cont "dans l'coin."
 	done
 
 _CinnabarIslandText3::
-	text "CINNABAR ISLAND"
-	line "The Fiery Town of"
-	cont "Burning Desire"
+	text "CRAMOIS'ILE"
+	line "Vive comme les"
+	cont "flammes"
 	done
 
 _CinnabarIslandText6::
-	text "#MON LAB"
+	text "LABO #MON"
 	done
 
 _CinnabarIslandText7::
-	text "CINNABAR ISLAND"
-	line "#MON GYM"
-	cont "LEADER: BLAINE"
+	text "CRAMOIS'ILE"
+	line "ARENE #MON"
+	cont "CHAMPION: AUGUSTE"
 
-	para "The Hot-Headed"
-	line "Quiz Master!"
+	para "Le cerveau!"
+	line "Chaud! Chaud!"
 	done

@@ -48,7 +48,7 @@ _LavenderHouse1Text_1d94c::
 _ReceivedFluteText::
 	text $52, " received"
 	line "a @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _FluteExplanationText::

@@ -19,7 +19,7 @@ _FuchsiaHouse3Text_561c2::
 
 	para $52, " received"
 	line "a @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _FuchsiaHouse3Text_56212::

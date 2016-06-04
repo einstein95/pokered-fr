@@ -27,7 +27,7 @@ _FuchsiaGymText9::
 _ReceivedTM06Text::
 	text $52, " received"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _TM06ExplanationText::

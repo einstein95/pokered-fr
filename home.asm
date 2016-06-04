@@ -1533,7 +1533,7 @@ DisplayListMenuIDLoop::
 	call GetPartyMonName
 .storeChosenEntry ; store the menu entry that the player chose and return
 	ld de,wcd6d
-	call CopyStringToCF4B ; copy name to wcf4b
+	call CopyStringToCF50 ; copy name to wcf50
 	ld a,CHOSE_MENU_ITEM
 	ld [wMenuExitMethod],a
 	ld a,[wCurrentMenuItem]
@@ -3377,9 +3377,9 @@ GetItemPrice::
 	ld [MBC1RomBank], a
 	ret
 
-; copies a string from [de] to [wcf4b]
-CopyStringToCF4B::
-	ld hl, wcf4b
+; copies a string from [de] to [wcf50]
+CopyStringToCF50::
+	ld hl, wcf50
 	; fall through
 
 ; copies a string from [de] to [hl]
@@ -4553,7 +4553,7 @@ ReloadMapSpriteTilePatterns::
 
 GiveItem::
 ; Give player quantity c of item b,
-; and copy the item's name to wcf4b.
+; and copy the item's name to wcf50.
 ; Return carry on success.
 	ld a, b
 	ld [wd11e], a
@@ -4564,7 +4564,7 @@ GiveItem::
 	call AddItemToInventory
 	ret nc
 	call GetItemName
-	call CopyStringToCF4B
+	call CopyStringToCF50
 	scf
 	ret
 

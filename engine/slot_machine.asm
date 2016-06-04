@@ -445,7 +445,7 @@ SlotMachine_CheckForMatches:
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	ld de, wcf4b
+	ld de, wcf50
 	ld bc, 4
 	call CopyData
 	pop hl
