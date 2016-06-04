@@ -9,7 +9,7 @@ _TM35PreReceiveText::
 _ReceivedTM35Text::
 	text $52, " received "
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _TM35ExplanationText::

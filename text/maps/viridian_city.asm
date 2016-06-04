@@ -1,181 +1,190 @@
 _ViridianCityText1::
-	text "Those # BALLs"
-	line "at your waist!"
-	cont "You have #MON!"
+	text "Des # BALL!"
+	line "Mais... T'as des"
+	cont "#MON!"
 
-	para "It's great that"
-	line "you can carry and"
-	cont "use #MON any"
-	cont "time, anywhere!"
+	para "C'est cool de"
+	line "pouvoir s'en"
+	cont "servir quand on"
+	cont "veut, hein?"
 	done
 
 _ViridianCityText_19122::
-	text "This #MON GYM"
-	line "is always closed."
+	text "Cette ARENE"
+	line "#MON est"
+	cont "toujours fermée."
 
-	para "I wonder who the"
-	line "LEADER is?"
+	para "Mais qui en est"
+	line "le CHAMPION?"
 	done
 
 _ViridianCityText_19127::
-	text "VIRIDIAN GYM's"
-	line "LEADER returned!"
+	text "Le CHAMPION de"
+	line "l'ARENE de"
+	cont "JADIELLE est de"
+	cont "retour! Dingue!"
 	done
 
 _ViridianCityText_1914d::
-	text "You want to know"
-	line "about the 2 kinds"
-	cont "of caterpillar"
+	text "Tu veux tout"
+	line "savoir sur les 2"
+	cont "types de chenille"
 	cont "#MON?"
 	done
 
 _ViridianCityText_19152::
-	text "Oh, OK then!"
+	text "Bon. OK."
 	done
 
 _ViridianCityText_19157::
-	text "CATERPIE has no"
-	line "poison, but"
-	cont "WEEDLE does."
+	text "Contrairement à"
+	line "CHENIPAN, ASPICOT"
+	cont "est venimeux."
 
-	para "Watch out for its"
-	line "POISON STING!"
+	para "Attention à son"
+	line "DARD-VENIN!"
 	done
 
 _ViridianCityText_19175::
-	text "Oh Grandpa! Don't"
-	line "be so mean!"
-	cont "He hasn't had his"
-	cont "coffee yet."
+	text "Papinou! Tu vas"
+	line "t'lever, ouais?"
+	cont "T'as vidé la cave"
+	cont "ou quoi?"
 	done
 
 _ViridianCityText_1917a::
-	text "When I go shop in"
-	line "PEWTER CITY, I"
-	cont "have to take the"
-	cont "winding trail in"
-	cont "VIRIDIAN FOREST."
+	text "Je passe par la"
+	line "FORET DE JADE"
+	cont "pour faire mes"
+	cont "courses à"
+	cont "ARGENTA."
 	done
 
 _ViridianCityText_19191::
-	text "You can't go"
-	line "through here!"
+	text "Passage..."
+	line "INTERDIT!"
 
-	para "This is private"
-	line "property!"
+	para "Propriété privée!"
 	done
 
 _ViridianCityText_191ca::
-	text "Yawn!"
-	line "I must have dozed"
-	cont "off in the sun."
+	text "(Baiiiille)!"
+	line "J'ai dû dormir"
+	cont "dehors."
 
-	para "I had this dream"
-	line "about a DROWZEE"
-	cont "eating my dream."
-	cont "What's this?"
-	cont "Where did this TM"
-	cont "come from?"
+	para "J'ai rêvé qu'un"
+	line "SOPORIFIK"
+	cont "dévorait mes"
+	cont "rêves... Heu?"
+	cont "Qu'est-ce que"
+	cont "cette CT fait là?"
 
-	para "This is spooky!"
-	line "Here, you can"
-	cont "have this TM."
+	para "C'est dingue ça!"
+	line "Tiens... Elle est"
+	cont "pour toi."
 	prompt
 
 _ReceivedTM42Text::
-	text $52, " received"
-	line "TM42!@@"
+	text $52, " reçoit:"
+	line "CT42!@@"
 
 _TM42Explanation::
-	text "TM42 contains"
-	line "DREAM EATER..."
-	cont "...Snore..."
+	text "CT42 contient"
+	line "DEVOREVE..."
+	cont "...(pionce)..."
 	done
 
 _TM42NoRoomText::
-	text "You have too much"
-	line "stuff already."
+	text "Tu es trop"
+	line "chargé."
 	done
 
 _ViridianCityText_1920a::
-	text "Ahh, I've had my"
-	line "coffee now and I"
-	cont "feel great!"
+	text "Ahh... Un p'tit"
+	line "somme, un bon"
+	cont "café et hop! La"
+	cont "pêche pour la"
+	cont "journée!"
 
-	para "Sure you can go"
-	line "through!"
+	para "Mais bien sûr que"
+	line "tu peux passer!"
 
-	para "Are you in a"
-	line "hurry?"
+	para "Mais au fait..."
+	line "T'es pressé?"
 	done
 
 _ViridianCityText_1920f::
-	text "I see you're using"
-	line "a #DEX."
+	text "Je vois que tu as"
+	line "un #DEX."
 
-	para "When you catch a"
-	line "#MON, #DEX"
-	cont "is automatically"
-	cont "updated."
+	para "Capture un"
+	line "#MON et il"
+	cont "sera mis à jour"
+	cont "automatiquement."
 
-	para "What? Don't you"
-	line "know how to catch"
-	cont "#MON?"
+	para "Qu...QUOI?"
+	line "Tu ne sais pas"
+	cont "comment attraper"
+	cont "un #MON?"
 
-	para "I'll show you"
-	line "how to then."
+	para "J'vais t'montrer."
 	done
 
 _ViridianCityText_19214::
-	text "Time is money..."
-	line "Go along then."
+	text "Le temps, c'est"
+	line "d'l'argent. Va."
 	done
 
 _ViridianCityText_19219::
-	text "First, you need"
-	line "to weaken the"
-	cont "target #MON."
+	text "D'abord, il faut"
+	line "affaiblir le"
+	cont "#MON désiré."
 	done
 
 _ViridianCityText8::
-	text "VIRIDIAN CITY "
-	line "The Eternally"
-	cont "Green Paradise"
+	text "JADIELLE"
+	line "Verte comme"
+	cont "l'espérance"
 	done
 
 _ViridianCityText9::
-	text "TRAINER TIPS"
+	text "ASTUCE"
 
-	para "Catch #MON"
-	line "and expand your"
+	para "Capturez des"
+	line "#MON et"
+	cont "agrandissez votre"
 	cont "collection!"
 
-	para "The more you have,"
-	line "the easier it is"
-	cont "to fight!"
+	para "Plus vous en"
+	line "capturez, plus"
+	cont "les combats sont"
+	cont "faciles!"
 	done
 
 _ViridianCityText10::
-	text "TRAINER TIPS"
+	text "ASTUCE"
 
-	para "The battle moves"
-	line "of #MON are"
-	cont "limited by their"
-	cont "POWER POINTs, PP."
+	para "Les attaques sont"
+	line "limitées par des"
+	cont "PP (Points de"
+	cont "Pouvoir)."
 
-	para "To replenish PP,"
-	line "rest your tired"
-	cont "#MON at a"
-	cont "#MON CENTER!"
+	para "Pour disposer de"
+	line "tous vos PP,"
+	cont "faites soigner"
+	cont "vos #MON dans"
+	cont "un CENTRE"
+	cont "#MON!"
 	done
 
 _ViridianCityText13::
-	text "VIRIDIAN CITY"
-	line "#MON GYM"
+	text "ARENE #MON"
+	line "de JADIELLE"
 	done
 
 _ViridianCityText14::
-	text "The GYM's doors"
-	line "are locked..."
+	text "Les portes de"
+	line "l'ARENE sont"
+	cont "fermées..."
 	done
 

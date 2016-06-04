@@ -30,7 +30,7 @@ _Lab4Text_75dd5::
 	line "back to life!"
 
 	para "It was @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	db $0
 	line "like I think!"
 	prompt
@@ -43,7 +43,7 @@ _Lab4Text_610ae::
 
 	para "It is fossil of"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text ", a"
 	cont "#MON that is"
 	cont "already extinct!"

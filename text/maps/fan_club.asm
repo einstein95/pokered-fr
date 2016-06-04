@@ -85,7 +85,7 @@ FanClubChairStoryText::
 ReceivedBikeVoucherText::
 	text $52, " received"
 	line "a @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 ExplainBikeVoucherText::

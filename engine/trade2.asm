@@ -10,7 +10,7 @@ Trade_PrintPlayerMonInfoText: ; 42769 (10:6769)
 	lb bc, LEADING_ZEROES | 1, 3
 	call PrintNumber
 	coord hl, 5, 2
-	ld de,wcf4b
+	ld de,wcf50
 	call PlaceString
 	coord hl, 8, 4
 	ld de,wTradedPlayerMonOT

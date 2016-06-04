@@ -1,56 +1,62 @@
 _OakAppearsText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@@"
+	text "CHEN: Hé toi, là!"
+	line "Ne pars pas!@@"
 
 _OakWalksUpText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "CHEN: C'est super"
+	line "dangereux! Des"
+	cont "#MON sauvages"
+	cont "infestent les"
+	cont "hautes herbes!"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "Il te faut un"
+	line "#MON pour te"
+	cont "protéger..."
+	cont "J'ai trouvé!"
 
-	para "Here, come with"
-	line "me!"
+	para "Suis-moi!"
 	done
 
 _PalletTownText2::
-	text "I'm raising"
-	line "#MON too!"
+	text "J'élève des"
+	line "#MON, moi"
+	cont "aussi!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Une fois forts,"
+	line "ils pourront me"
+	cont "protéger!"
 	done
 
 _PalletTownText3::
-	text "Technology is"
-	line "incredible!"
+	text "Le progrès..."
+	line "C'est dément!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "On peut désormais"
+	line "stocker et même"
+	cont "retirer des"
+	cont "objets ou des"
+	cont "#MON via PC!"
 	done
 
 _PalletTownText4::
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "LABO #MON"
+	line "DU PROF. CHEN"
 	done
 
 _PalletTownText5::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "BOURG PALETTE"
+	line "Un monde de"
+	cont "couleurs s'ouvre"
+	cont "à vous!"
 	done
 
 _PalletTownText6::
-	text $52,"'s house "
+	text "Maison de"
+	line $52
 	done
 
 _PalletTownText7::
-	text $53,"'s house "
+	text "Maison de"
+	line $53
 	done
 

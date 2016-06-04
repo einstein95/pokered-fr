@@ -16,13 +16,13 @@ _CeladonMartRoofText_484f3::
 _CeladonMartRoofText_484f9::
 	text $52, " received"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _CeladonMartRoofText_484fe::
 	db $0
 	para "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " contains"
 	line "ICE BEAM!"
 
@@ -42,13 +42,13 @@ _CeladonMartRoofText_48504::
 _CeladonMartRoofText_4850a::
 	text $52, " received"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _CeladonMartRoofText_4850f::
 	db $0
 	para "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text " contains"
 	line "ROCK SLIDE!"
 
@@ -123,7 +123,7 @@ _VendingMachineText4::
 	done
 
 _VendingMachineText5::
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	db $0
 	line "popped out!"
 	done

@@ -14,7 +14,7 @@ _DaisyOfferMapText::
 _GotMapText::
 	text $52," got a"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _DaisyBagFullText::

@@ -116,7 +116,7 @@ LoadFossilItemAndMonName: ; 610eb (18:50eb)
 	ld a, [wFossilMon]
 	ld [wd11e], a
 	call GetMonName
-	call CopyStringToCF4B
+	call CopyStringToCF50
 	ld a, [wFossilItem]
 	ld [wd11e], a
 	call GetItemName

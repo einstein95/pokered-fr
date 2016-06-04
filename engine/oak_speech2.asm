@@ -15,7 +15,7 @@ ChoosePlayerName: ; 695d (1:695d)
 	xor a ; NAME_PLAYER_SCREEN
 	ld [wNamingScreenType], a
 	call DisplayNamingScreen
-	ld a, [wcf4b]
+	ld a, [wcf50]
 	cp "@"
 	jr z, .customName
 	call ClearScreen
@@ -48,7 +48,7 @@ ChooseRivalName: ; 69a4 (1:69a4)
 	ld a, NAME_RIVAL_SCREEN
 	ld [wNamingScreenType], a
 	call DisplayNamingScreen
-	ld a, [wcf4b]
+	ld a, [wcf50]
 	cp "@"
 	jr z, .customName
 	call ClearScreen

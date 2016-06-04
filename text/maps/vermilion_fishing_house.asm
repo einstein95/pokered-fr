@@ -18,7 +18,7 @@ _VermilionHouse2Text_560b6::
 
 	para $52, " received"
 	line "an @"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _VermilionHouse2Text_560bb::

@@ -2324,7 +2324,7 @@ UseBagItem:
 	ld a, [wcf91]
 	ld [wd11e], a
 	call GetItemName
-	call CopyStringToCF4B ; copy name
+	call CopyStringToCF50 ; copy name
 	xor a
 	ld [wPseudoItemID], a
 	call UseItem
@@ -3629,7 +3629,7 @@ CheckPlayerStatusConditions: ; 3d854 (f:5854)
 	ld a, RAGE
 	ld [wd11e], a
 	call GetMoveName
-	call CopyStringToCF4B
+	call CopyStringToCF50
 	xor a
 	ld [wPlayerMoveEffect], a
 	ld hl, PlayerCanExecuteMove
@@ -3831,7 +3831,7 @@ PrintMoveName: ; 3db48 (f:5b48)
 	ret
 
 _PrintMoveName: ; 3db4c (f:5b4c)
-	TX_FAR _CF4BText
+	TX_FAR _CF50Text
 	TX_ASM
 	ld hl, ExclamationPointPointerTable
 	ld a, [wd11e] ; exclamation point num
@@ -5214,7 +5214,7 @@ ReloadMoveData: ; 3e329 (f:6329)
 	call IncrementMovePP
 ; the follow two function calls are used to reload the move name
 	call GetMoveName
-	call CopyStringToCF4B
+	call CopyStringToCF50
 	ld a,$01
 	and a
 	ret
@@ -5715,7 +5715,7 @@ EnemyCanExecuteChargingMove: ; 3e70b (f:670b)
 	ld [wNameListType], a
 	call GetName
 	ld de, wcd6d
-	call CopyStringToCF4B
+	call CopyStringToCF50
 EnemyCanExecuteMove: ; 3e72b (f:672b)
 	xor a
 	ld [wMonIsDisobedient], a
@@ -6152,7 +6152,7 @@ CheckEnemyStatusConditions: ; 3e88f (f:688f)
 	ld a, RAGE
 	ld [wd11e], a
 	call GetMoveName
-	call CopyStringToCF4B
+	call CopyStringToCF50
 	xor a
 	ld [wEnemyMoveEffect], a
 	ld hl, EnemyCanExecuteMove
@@ -6194,7 +6194,7 @@ GetCurrentMove: ; 3eabe (f:6abe)
 	ld [wNameListType], a
 	call GetName
 	ld de, wcd6d
-	jp CopyStringToCF4B
+	jp CopyStringToCF50
 
 LoadEnemyMonData: ; 3eb01 (f:6b01)
 	ld a, [wLinkState]
@@ -7955,7 +7955,7 @@ PrintStatText: ; 3f688 (f:7688)
 	jr z, .asm_3f68d
 	jr .asm_3f690
 .asm_3f696
-	ld de, wcf4b
+	ld de, wcf50
 	ld bc, $a
 	jp CopyData
 
