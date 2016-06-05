@@ -1,42 +1,44 @@
 _DaisyInitialText::
-	text "Hi ",$52,"!"
-	line $53," is out at"
-	cont "Grandpa's lab."
+	text "Salut ",$52,"!"
+	line $53," est dans"
+	cont "le labo de pépé! "
 	done
 
 _DaisyOfferMapText::
-	text "Grandpa asked you"
-	line "to run an errand?"
-	cont "Here, this will"
-	cont "help you!"
+	text "Tu dois faire une"
+	line "course pour pépé?"
+	cont "Prends ceci,"
+	cont "ça peut servir!"
 	prompt
 
 _GotMapText::
-	text $52," got a"
+	text $52," obtient:"
 	line "@"
 	TX_RAM wcf50
 	text "!@@"
 
 _DaisyBagFullText::
-	text "You have too much"
-	line "stuff with you."
+	text "Votre inventaire"
+	line "est plein."
 	done
 
 _DaisyUseMapText::
-	text "Use the TOWN MAP"
-	line "to find out where"
-	cont "you are."
+	text "Utilise la CARTE"
+	line "pour connaître ta"
+	cont "position."
 	done
 
 _BluesHouseText2::
-	text "#MON are living"
-	line "things! If they"
-	cont "get tired, give"
-	cont "them a rest!"
+	text "Les #MON sont"
+	line "vivants! Une fois"
+	cont "fatigués, ils"
+	cont "doivent se"
+	cont "reposer!"
 	done
 
 _BluesHouseText3::
-	text "It's a big map!"
-	line "This is useful!"
+	text "C'est une carte!"
+	line "Ca peut être"
+	cont "utile!"
 	done
 
