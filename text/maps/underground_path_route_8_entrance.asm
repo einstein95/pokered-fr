@@ -1,6 +1,7 @@
 _UndergroundPathEntRoute8Text1::
-	text "The dept. store"
-	line "in CELADON has a"
-	cont "great selection!"
+	text "Le centre"
+	line "commercial de"
+	cont "CELADOPOLE est"
+	cont "gigantesque!"
 	done
 

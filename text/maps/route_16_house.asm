@@ -1,32 +1,33 @@
 _Route16HouseText3::
-	text "Oh, you found my"
-	line "secret retreat!"
+	text "Oh! Tu as trouvé"
+	line "ma cache secrète!"
 
-	para "Please don't tell"
-	line "anyone I'm here."
-	cont "I'll make it up"
-	cont "to you with this!"
+	para "Prends ceci."
+	line "En échange ne"
+	cont "dis à personne"
+	cont "que tu m'as vu!"
 	prompt
 
 _ReceivedHM02Text::
-	text $52, " received"
-	line "HM02!@@"
+	text $52," obtient:"
+	line "CS02!@@"
 
 _HM02ExplanationText::
-	text "HM02 is FLY."
-	line "It will take you"
-	cont "back to any town."
+	text "CS02: VOL."
+	line "Elle vous permet"
+	cont "de revenir dans"
+	cont "une ville."
 
-	para "Put it to good"
-	line "use!"
+	para "Bien pratique!"
 	done
 
 _HM02NoRoomText::
-	text "You don't have any"
-	line "room for this."
+	text "Votre inventaire"
+	line "est plein."
 	done
 
 _Route16HouseText_1e652::
-	text "FEAROW: Kyueen!"
+	text "RAPASDEPIC:"
+	line "Piiiiiik!"
 	done
 

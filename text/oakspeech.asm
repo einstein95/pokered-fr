@@ -1,56 +1,67 @@
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "Bien le bonjour!"
+	line "Bienvenue dans le"
+	cont "monde magique des"
+	cont "#MON!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "Mon nom est CHEN!"
+	line "Les gens souvent"
+	cont "m'appellent le"
+	cont "PROF #MON!"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@@"
+	text "Ce monde est"
+	line "peuplé de"
+	cont "créatures du nom"
+	cont "de #MON!@@"
 
 _OakSpeechText2B::
-	text $51,"For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	text ""
 
-	para "Myself..."
+	para "Pour certains,"
+	line "les #MON sont"
+	cont "des animaux"
+	cont "domestiques, pour"
+	cont "d'autres, ils"
+	cont "sont un moyen de"
+	cont "combattre."
 
-	para "I study #MON"
-	line "as a profession."
+	para "Pour ma part..."
+
+	para "L'étude des"
+	line "#MON est"
+	cont "ma profession."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "Tout d'abord,"
+	line "quel est ton nom?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "Voici mon petit-"
+	line "fils. Il est ton"
+	cont "rival depuis sa"
+	cont "toute jeunesse."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "...Heu..."
+	line "C'est quoi donc"
+	cont "son nom déjà?"
 	prompt
 
 _OakSpeechText3::
 	text $52,"!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "Ta quête des"
+	line "#MON est sur"
+	cont "le point de"
+	cont "commencer!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "Un tout nouveau"
+	line "monde de rêves,"
+	cont "d'aventures et"
+	cont "de #MON"
+	cont "t'attend! Dingue!"
 	done
 

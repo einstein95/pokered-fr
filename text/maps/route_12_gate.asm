@@ -1,5 +1,5 @@
 _Route12GateText1::
-	text "There's a lookout"
-	line "spot upstairs."
+	text "Il y a un beau"
+	line "panorama là-haut."
 	done
 

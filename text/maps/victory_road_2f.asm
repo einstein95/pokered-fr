@@ -1,86 +1,93 @@
 _MoltresBattleText::
-	text "Gyaoo!@@"
+	text "Yahoo!@@"
 
 _VictoryRoad2BattleText1::
-	text "VICTORY ROAD is"
-	line "the final test"
-	cont "for trainers!"
+	text "La ROUTE VICTOIRE"
+	line "est l'épreuve"
+	cont "finale de tout"
+	cont "dresseur!"
 	done
 
 _VictoryRoad2EndBattleText1::
-	text "Aiyah!"
+	text "Ouargh!"
 	prompt
 
 _VictoryRoad2AfterBattleText1::
-	text "If you get stuck,"
-	line "try moving some"
-	cont "boulders around!"
+	text "Si tu es bloqué,"
+	line "essaie de bouger"
+	cont "les rochers!"
 	done
 
 _VictoryRoad2BattleText2::
-	text "Ah, so you wish"
-	line "to challenge the"
-	cont "ELITE FOUR?"
+	text "Alors comme ça,"
+	line "tu cherches les"
+	cont "claques?"
 	done
 
 _VictoryRoad2EndBattleText2::
-	text "You"
-	line "got me!"
+	text "Argh!"
+	line "T'as gagné!"
 	prompt
 
 _VictoryRoad2AfterBattleText2::
-	text $53, " also came"
-	line "through here!"
+	text $53," est aussi"
+	line "arrivé ici!"
 	done
 
 _VictoryRoad2BattleText3::
-	text "Come on!"
-	line "I'll whip you!"
+	text "Allez, viens"
+	line "manger ta claque!"
 	done
 
 _VictoryRoad2EndBattleText3::
-	text "I got"
-	line "whipped!"
+	text "Beuh!"
+	line "J",$e0,"me suis pris" ; yet another one stopping 'm being converted to $E5
+	cont "une claque!"
 	prompt
 
 _VictoryRoad2AfterBattleText3::
-	text "You earned the"
-	line "right to be on"
-	cont "VICTORY ROAD!"
+	text "Tu as le droit de"
+	line "parcourir la"
+	cont "ROUTE VICTOIRE!"
 	done
 
 _VictoryRoad2BattleText4::
-	text "If you can get"
-	line "through here, you"
-	cont "can go meet the"
-	cont "ELITE FOUR!"
+	text "Si tu peux"
+	line "remporter ces"
+	cont "épreuves,"
+	cont "tu parviendras"
+	cont "jusqu'au CONSEIL"
+	cont "des 4!"
 	done
 
 _VictoryRoad2EndBattleText4::
-	text "No!"
-	line "Unbelievable!"
+	text "Ha!"
+	line "J'y crois pas!"
 	prompt
 
 _VictoryRoad2AfterBattleText4::
-	text "I can beat you"
-	line "when it comes to"
-	cont "knowledge about"
-	cont "#MON!"
+	text "En ce qui"
+	line "concerne les"
+	cont "#MON, j'suis"
+	cont "le plus fort!"
+	cont "... ... ..."
+	cont "Du mooooonde!"
 	done
 
 _VictoryRoad2BattleText5::
-	text "Is VICTORY ROAD"
-	line "too tough?"
+	text "La ROUTE de la"
+	line "VICTOIRE est une"
+	cont "étape difficile?"
 	done
 
 _VictoryRoad2EndBattleText5::
-	text "Well"
-	line "done!"
+	text "Bon..."
+	line "J'ai perdu, non?"
 	prompt
 
 _VictoryRoad2AfterBattleText5::
-	text "Many trainers give"
-	line "up the challenge"
-	cont "here."
+	text "De nombreux"
+	line "dresseurs ont"
+	cont "abandonné ici!"
 	done
 
