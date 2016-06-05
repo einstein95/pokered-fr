@@ -1,5 +1,5 @@
 _UndergroundPathEntRoute7Text1::
-	text "I heard a sleepy"
-	line "#MON appeared"
-	cont "near CELADON CITY."
+	text "Il y a un #MON"
+	line "endormi près de"
+	cont "CELADOPOLE."
 	done

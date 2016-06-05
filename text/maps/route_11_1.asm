@@ -1,133 +1,139 @@
 _Route11BattleText1::
-	text "Win, lose or draw!"
+	text "Tu veux gagner"
+	line "ou perdre?"
 	done
 
 _Route11EndBattleText1::
-	text "Atcha!"
-	line "Didn't go my way!"
+	text "OK."
+	line "T'as gagné!"
 	prompt
 
 _Route11AfterBattleText1::
-	text "#MON is life!"
-	line "And to live is to"
-	cont "gamble!"
+	text "Les #MON c'est"
+	line "la vie! Et la vie"
+	cont "c'est le jeu!"
 	done
 
 _Route11BattleText2::
-	text "Competition! I"
-	line "can't get enough!"
+	text "J'adore les"
+	line "défis!"
 	done
 
 _Route11EndBattleText2::
-	text "I had"
-	line "a chance!"
+	text "J'ai eu"
+	line "ma chance!"
 	prompt
 
 _Route11AfterBattleText2::
-	text "You can't be a"
-	line "coward in the"
-	cont "world of #MON!"
+	text "Dans le monde"
+	line "merveilleux des"
+	cont "#MON, y'a"
+	cont "pas de lâches!"
 	done
 
 _Route11BattleText3::
-	text "Let's go, but"
-	line "don't cheat!"
+	text "On y va!"
+	line "Mais triche pas!"
 	done
 
 _Route11EndBattleText3::
-	text "Huh?"
-	line "That's not right!"
+	text "Rha!"
+	line "C'est pas vrai!"
 	prompt
 
 _Route11AfterBattleText3::
-	text "I did my best! I"
-	line "have no regrets!"
+	text "J'ai fait de mon"
+	line "mieux! Pas ma"
+	cont "faute si j'suis"
+	cont "nul!"
 	done
 
 _Route11BattleText4::
-	text "Careful!"
-	line "I'm laying down"
-	cont "some cables!"
+	text "Attention!"
+	line "Je pose des"
+	cont "câbles!"
 	done
 
 _Route11EndBattleText4::
-	text "That"
-	line "was electric!"
+	text "J",$e0,"me" ; I'm wondering why I even have $e5 in charmap.asm
+	line "suis pris du jus!"
 	prompt
 
 _Route11AfterBattleText4::
-	text "Spread the word"
-	line "to save energy!"
+	text "Il faut"
+	line "économiser"
+	cont "l'énergie!"
 	done
 
 _Route11BattleText5::
-	text "I just became a"
-	line "trainer! But, I"
-	cont "think I can win!"
+	text "Je suis nouveau,"
+	line "mais j'en veux à"
+	cont "mort!"
 	done
 
 _Route11EndBattleText5::
-	text "My"
-	line "#MON couldn't!"
+	text "Mes"
+	line "#MON sont"
+	cont "nuls! Beuh..."
 	prompt
 
 _Route11AfterBattleText5::
-	text "What do you want?"
-	line "Leave me alone!"
+	text "Laisse-moi!"
 	done
 
 _Route11BattleText6::
-	text "Fwahaha! I have"
-	line "never lost!"
+	text "HAHAHA! J'ai"
+	line "jamais perdu!"
 	done
 
 _Route11EndBattleText6::
-	text "My"
-	line "first loss!"
+	text "Heu? Ma"
+	line "première défaite!"
 	prompt
 
 _Route11AfterBattleText6::
-	text "Luck of the draw!"
-	line "Just luck!"
+	text "Tu as la chance"
+	line "des débutants!"
 	done
 
 _Route11BattleText7::
-	text "I have never won"
-	line "before..."
+	text "Je n'ai jamais"
+	line "gagné..."
 	done
 
 _Route11EndBattleText7::
-	text "I saw"
-	line "this coming..."
+	text "Je m'y"
+	line "attendais..."
 	prompt
 
 _Route11AfterBattleText7::
-	text "It's just luck."
-	line "Luck of the draw."
+	text "J'suis maudit,"
+	line "je crois!"
 	done
 
 _Route11BattleText8::
-	text "I'm the best in"
-	line "my class!"
+	text "Je suis le plus"
+	line "fort de ma"
+	cont "classe!"
 	done
 
 _Route11EndBattleText8::
-	text "Darn!"
-	line "I need to make my"
-	cont "#MON stronger!"
+	text "Argh!"
+	line "Tu veux être le"
+	cont "chef de classe?"
 	prompt
 
 _Route11AfterBattleText8::
-	text "There's a fat"
-	line "#MON that"
-	cont "comes down from"
-	cont "the mountains."
+	text "Il y a un gros"
+	line "#MON qui"
+	cont "vient de la"
+	cont "montagne."
 
-	para "It's strong if"
-	line "you can get it."
+	para "Si t'es fort, tu"
+	line "peux l'attraper."
 	done
 
 _Route11BattleText9::
-	text "Watch out for"
-	line "live wires!"
+	text "Fais gaffe"
+	line "aux câbles!"
 	done

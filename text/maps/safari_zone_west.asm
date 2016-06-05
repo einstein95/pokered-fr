@@ -1,31 +1,32 @@
 _SafariZoneWestText5::
-	text "REST HOUSE"
+	text "ABRI"
 	done
 
 _SafariZoneWestText6::
-	text "REQUEST NOTICE"
+	text "AVIS"
 
-	para "Please find the"
-	line "SAFARI WARDEN's"
-	cont "lost GOLD TEETH."
-	cont "They're around"
-	cont "here somewhere."
+	para "Veuillez trouver"
+	line "la DENT D'OR du"
+	cont "GARDIEN. Explorez"
+	cont "les environs."
 
-	para "Reward offered!"
-	line "Contact: WARDEN"
+	para "Récompense"
+	line "assurée! "
+	cont "Contactez le"
+	cont "GARDIEN."
 	done
 
 _SafariZoneWestText7::
-	text "TRAINER TIPS"
+	text "ASTUCE"
 
-	para "Zone Exploration"
-	line "Campaign!"
+	para "Grand concours"
+	line "organisé:"
 
-	para "The Search for"
-	line "the SECRET HOUSE!"
+	para "Cherchez la"
+	line "CABANE SECRETE!"
 	done
 
 _SafariZoneWestText8::
-	text "AREA 3"
-	line "EAST: CENTER AREA"
+	text "PARC 3"
+	line "EST: PARC CENTRAL"
 	done

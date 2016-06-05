@@ -1,14 +1,15 @@
 _Route18GateText_49928::
-	text "You need a BICYCLE"
-	line "for CYCLING ROAD!"
+	text "Il faut un vélo"
+	line "pour aller sur la"
+	cont "PISTE CYCLABLE!"
 	done
 
 _Route18GateText_4992d::
-	text "CYCLING ROAD is"
-	line "all uphill from"
-	cont "here."
+	text "La descente de"
+	line "la PISTE CYCLABLE"
+	cont "commence ici."
 	done
 
 _Route18GateText_49932::
-	text "Excuse me!"
+	text "Halte!"
 	done

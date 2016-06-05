@@ -1,44 +1,42 @@
 _SecretHouseText_4a350::
-	text "Ah! Finally!"
+	text "Ah! Quand même!"
 
-	para "You're the first"
-	line "person to reach"
-	cont "the SECRET HOUSE!"
+	para "Tu es le premier"
+	line "à découvrir la"
+	cont "CABANE SECRETE!"
 
-	para "I was getting"
-	line "worried that no"
-	cont "one would win our"
-	cont "campaign prize."
+	para "J'avais peur que"
+	line "personne ne gagne"
+	cont "notre prix."
 
-	para "Congratulations!"
-	line "You have won!"
+	para "Félicitations!"
+	line "Tu as gagné!"
 	prompt
 
 _ReceivedHM03Text::
-	text $52, " received"
+	text $52, " obtient:"
 	line "@"
 	TX_RAM wcf50
 	text "!@@"
 
 _HM03ExplanationText::
-	text "HM03 is SURF!"
+	text "CS03 est SURF!"
 
-	para "#MON will be"
-	line "able to ferry you"
-	cont "across water!"
+	para "Un #MON pourra"
+	line "te faire naviguer"
+	cont "sur les flots!"
 
-	para "And, this HM isn't"
-	line "disposable! You"
-	cont "can use it over"
-	cont "and over!"
+	para "En plus, cette CS"
+	line "peut s'utiliser à"
+	cont "l'infini!"
 
-	para "You're super lucky"
-	line "for winning this"
-	cont "fabulous prize!"
+	para "T'en as de la"
+	line "chance, mon p'tit"
+	cont "bouchon!"
 	done
 
 _HM03NoRoomText::
-	text "You don't have"
-	line "room for this"
-	cont "fabulous prize!"
+	text "Heu... Tu n'as"
+	line "pas assez de"
+	cont "place!"
 	done

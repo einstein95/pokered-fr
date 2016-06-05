@@ -1,64 +1,65 @@
 _Route24Text_51510::
-	text "Congratulations!"
-	line "You beat our 5"
-	cont "contest trainers!@@"
+	text "Félicitations!"
+	line "Tu as battu les"
+	cont "5 dresseurs!@@"
 
 _Route24Text_51515::
-	db $0
-	para "You just earned a"
-	line "fabulous prize!"
+	text ""
+
+	para "Tu as gagné un"
+	line "fabuleux prix!"
 	prompt
 
 _Route24Text_5151a::
-	text $52, " received"
-	line "a @"
+	text $52," obtient:"
+	line "@"
 	TX_RAM wcf50
 	text "!@@"
 
 _Route24Text_51521::
-	text "You don't have"
-	line "any room!"
+	text "Votre inventaire"
+	line "est plein!"
 	done
 
 _Route24Text_51526::
-	text "By the way, would"
-	line "you like to join"
+	text "Veux-tu rejoindre"
+	line "les rangs de la"
 	cont "TEAM ROCKET?"
 
-	para "We're a group"
-	line "dedicated to evil"
-	cont "using #MON!"
+	para "Nous sommes des"
+	line "dresseurs de"
+	cont "#MON très"
+	cont "méchants!"
 
-	para "Want to join?"
+	para "Ca t'intéresse?"
 
-	para "Are you sure?"
+	para "T'es sûr?"
 
-	para "Come on, join us!"
+	para "Allez, viens!"
 
-	para "I'm telling you"
-	line "to join!"
+	para "Bon, je t'ai dit"
+	line "de venir avec"
+	cont "nous!"
 
-	para "OK, you need"
-	line "convincing!"
+	para "Je vois..."
 
-	para "I'll make you an"
-	line "offer you can't"
-	cont "refuse!"
+	para "Je vais me"
+	line "montrer plus"
+	cont "persuasif!"
 	done
 
 _Route24Text_5152b::
 	text "Arrgh!"
-	line "You are good!"
+	line "Tu es très fort!"
 	prompt
 
 _Route24Text_51530::
-	text "With your ability,"
-	line "you could become"
-	cont "a top leader in"
+	text "Tu pourrais vite"
+	line "devenir un chef"
+	cont "au sein de la"
 	cont "TEAM ROCKET!"
 	done
 
 _Route24BattleText1::
-	text "I saw your feat"
-	line "from the grass!"
+	text "Je t'ai vu!"
 	done

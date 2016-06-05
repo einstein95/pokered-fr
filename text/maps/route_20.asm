@@ -1,6 +1,7 @@
 _Route20BattleText1::
-	text "The water is"
-	line "shallow here."
+	text "La mer est peu"
+	line "profonde ici,"
+	cont "n'est-ce pas?"
 	done
 
 _Route20EndBattleText1::
@@ -8,149 +9,160 @@ _Route20EndBattleText1::
 	prompt
 
 _Route20AfterBattleText1::
-	text "I wish I could"
-	line "ride my #MON."
+	text "Ah, si je pouvais"
+	line "monter sur mes"
+	cont "#MON."
 	done
 
 _Route20BattleText2::
-	text "SEAFOAM is a"
-	line "quiet getaway!"
+	text "Les ILES ECUME"
+	line "sont tranquilles!"
 	done
 
 _Route20EndBattleText2::
-	text "Quit it!"
+	text "Nyann!"
 	prompt
 
 _Route20AfterBattleText2::
-	text "There's a huge"
-	line "cavern underneath"
-	cont "this island."
+	text "Il y a une grande"
+	line "caverne sous"
+	cont "cette île."
 	done
 
 _Route20BattleText3::
-	text "I love floating"
-	line "with the fishes!"
+	text "J'aime faire la"
+	line "planche avec"
+	cont "les poissons!"
 	done
 
 _Route20EndBattleText3::
-	text "Yowch!"
+	text "Glargh!"
 	prompt
 
 _Route20AfterBattleText3::
-	text "Want to float"
-	line "with me?"
+	text "Tu veux nager"
+	line "avec moi?"
 	done
 
 _Route20BattleText4::
-	text "Are you on"
-	line "vacation too?"
+	text "T'es en vacances"
+	line "toi aussi?"
 	done
 
 _Route20EndBattleText4::
-	text "No"
-	line "mercy at all!"
+	text "Non!"
+	line "Pas de pitié!"
 	prompt
 
 _Route20AfterBattleText4::
-	text "SEAFOAM used to"
-	line "be one island!"
+	text "Avant, ben, les"
+	line "ILES ECUMES ne"
+	cont "formaient qu'une"
+	cont "seule île!"
 	done
 
 _Route20BattleText5::
-	text "Check out my buff"
-	line "physique!"
+	text "Mate un peu mon"
+	line "corps de rêve!"
+	cont "C'est beau hein?"
+	cont "Fais un bisou."
 	done
 
 _Route20EndBattleText5::
-	text "Wimpy!"
+	text "Aïeu!"
 	prompt
 
 _Route20AfterBattleText5::
-	text "I should've been"
-	line "buffing up my"
-	cont "#MON, not me!"
+	text "J'aurais dû"
+	line "entraîner mes"
+	cont "#MON!"
 	done
 
 _Route20BattleText6::
-	text "Why are you"
-	line "riding a #MON?"
-	cont "Can't you swim?"
+	text "Ben, t'es sur un"
+	line "#MON, tu sais"
+	cont "pas nager?"
 	done
 
 _Route20EndBattleText6::
 	text "Ouch!"
-	line "Torpedoed!"
+	line "Je coule!"
 	prompt
 
 _Route20AfterBattleText6::
-	text "Riding a #MON"
-	line "sure looks fun!"
+	text "Surfer sur un"
+	line "#MON,"
+	cont "c'est cool!"
 	done
 
 _Route20BattleText7::
-	text "I rode my bird"
-	line "#MON here!"
+	text "Mes oiseaux"
+	line "#MON m'ont"
+	cont "déposé ici!"
 	done
 
 _Route20EndBattleText7::
-	text "Oh"
-	line "no!"
+	text "Oh!"
+	line "NOoOoOon!"
 	prompt
 
 _Route20AfterBattleText7::
-	text "My birds can't"
-	line "FLY me back!"
+	text "Mes oiseaux ne"
+	line "peuvent plus"
+	cont "voler!"
 	done
 
 _Route20BattleText8::
-	text "My boy friend gave"
-	line "me big pearls!"
+	text "Mon p'tit copain"
+	line "m'a offert des"
+	cont "perles sublimes!"
 	done
 
 _Route20EndBattleText8::
-	text "Don't"
-	line "touch my pearls!"
+	text "Non!"
+	line "Pas mes perles!"
 	prompt
 
 _Route20AfterBattleText8::
-	text "Will my pearls"
-	line "grow bigger"
-	cont "inside CLOYSTER?"
+	text "Et si je mettais"
+	line "mes perles dans"
+	cont "un CRUSTABRI?"
 	done
 
 _Route20BattleText9::
-	text "I swam here from"
-	line "CINNABAR ISLAND!"
+	text "J'ai nagé depuis"
+	line "la CRAMOIS'ILE!"
 	done
 
 _Route20EndBattleText9::
-	text "I'm"
-	line "so disappointed!"
+	text "!!!"
+	line "J'ai bu la tasse!"
 	prompt
 
 _Route20AfterBattleText9::
-	text "#MON have"
-	line "taken over an"
-	cont "abandoned mansion"
-	cont "on CINNABAR!"
+	text "Des #MON"
+	line "infestent un"
+	cont "vieux manoir de"
+	cont "la CRAMOIS'ILE!"
 	done
 
 _Route20BattleText10::
-	text "CINNABAR, in the"
-	line "west, has a LAB"
-	cont "for #MON."
+	text "Il y a un LABO"
+	line "#MON sur"
+	cont "la CRAMOIS'ILE."
 	done
 
 _Route20EndBattleText10::
-	text "Wait!"
+	text "Attends!"
 	prompt
 
 _Route20AfterBattleText10::
-	text "CINNABAR is a "
-	line "volcanic island!"
+	text "La CRAMOIS'ILE"
+	line "est une île"
+	cont "volcanique!"
 	done
 
 _Route20Text12::
 _Route20Text11::
-	text "SEAFOAM ISLANDS"
+	text "ILES ECUME"
 	done

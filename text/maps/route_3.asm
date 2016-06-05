@@ -1,145 +1,156 @@
 _Route3Text1::
-	text "Whew... I better"
-	line "take a rest..."
-	cont "Groan..."
+	text "Pfou...Je vais"
+	line "faire une halte."
+	cont "Moouarf..."
 
-	para "That tunnel from"
-	line "CERULEAN takes a"
-	cont "lot out of you!"
+	para "Ce tunnel"
+	line "d'AZURIA est"
+	cont "épuisant!"
 	done
 
 _Route3BattleText1::
-	text "Hey! I met you in"
-	line "VIRIDIAN FOREST!"
+	text "Hé! On s'est déjà"
+	line "vu dans la FORET"
+	cont "DE JADE!"
 	done
 
 _Route3EndBattleText1::
-	text "You"
-	line "beat me again!"
+	text "Ben,"
+	line "tu m'as encore"
+	cont "battu!"
 	prompt
 
 _Route3AfterBattleText1::
-	text "There are other"
-	line "kinds of #MON"
-	cont "than those found"
-	cont "in the forest!"
+	text "Il y a beaucoup"
+	line "de #MON"
+	cont "différents dans"
+	cont "la forêt!"
 	done
 
 _Route3BattleText2::
-	text "Hi! I like shorts!"
-	line "They're comfy and"
-	cont "easy to wear!"
+	text "Yahaa! J'adore"
+	line "les shorts! Viens"
+	cont "t'battre!"
 	done
 
 _Route3EndBattleText2::
-	text "I don't"
-	line "believe it!"
+	text "Nyahaa,"
+	line "tu m'as taillé"
+	cont "un short!"
 	prompt
 
 _Route3AfterBattleText2::
-	text "Are you storing"
-	line "your #MON on"
-	cont "PC? Each BOX can"
-	cont "hold 20 #MON!"
+	text "Pour ranger tes"
+	line "#MON,"
+	cont "utilise un PC."
+	cont "Chaque boîte"
+	cont "contient"
+	cont "20 #MON!"
 	done
 
 _Route3BattleText3::
-	text "You looked at me,"
-	line "didn't you?"
+	text "Tu veux ma"
+	line "photo?"
 	done
 
 _Route3EndBattleText3::
-	text "You're"
-	line "mean!"
+	text "Tiens,"
+	line "c'est ma photo!"
 	prompt
 
 _Route3AfterBattleText3::
-	text "Quit staring if"
-	line "you don't want to"
-	cont "fight!"
+	text "Baisse les yeux"
+	line "si tu veux éviter"
+	cont "la baston!"
 	done
 
 _Route3BattleText4::
-	text "Are you a trainer?"
-	line "Let's fight!"
+	text "T'es un dresseur?"
+	line "A l'attaque!"
 	done
 
 _Route3EndBattleText4::
-	text "If I"
-	line "had new #MON I"
-	cont "would've won!"
+	text "Avec"
+	line "d'autres #MON"
+	cont "j'aurais gagné!"
 	prompt
 
 _Route3AfterBattleText4::
-	text "If a #MON BOX"
-	line "on the PC gets"
-	cont "full, just switch"
-	cont "to another BOX!"
+	text "Quand l'une des"
+	line "boîtes de ton PC"
+	cont "est pleine,"
+	cont "active une autre"
+	cont "boîte!"
 	done
 
 _Route3BattleText5::
-	text "That look you"
-	line "gave me, it's so"
-	cont "intriguing!"
+	text "Dis donc beau"
+	line "ténébreux..."
+	cont "Tu veux qu'on"
+	cont "s'boxe?"
 	done
 
 _Route3EndBattleText5::
-	text "Be nice!"
+	text "Hmmm..."
+	line "Sois gentil!"
 	prompt
 
 _Route3AfterBattleText5::
-	text "Avoid fights by"
-	line "not letting"
-	cont "people see you!"
+	text "Evite les regards"
+	line "si tu ne veux"
+	cont "pas combattre!"
 	done
 
 _Route3BattleText6::
-	text "Hey! You're not"
-	line "wearing shorts!"
+	text "Hé! T'as pas de"
+	line "short! T'es nul!"
 	done
 
 _Route3EndBattleText6::
-	text "Lost!"
-	line "Lost! Lost!"
+	text "Perdu!"
+	line "Perdu, et perdu!"
 	prompt
 
 _Route3AfterBattleText6::
-	text "I always wear"
-	line "shorts, even in"
-	cont "winter!"
+	text "Je porte toujours"
+	line "des shorts, même"
+	cont "en hiver!"
 	done
 
 _Route3BattleText7::
-	text "You can fight my"
-	line "new #MON!"
+	text "Fais gaffe à mes"
+	line "nouveaux #MON!"
 	done
 
 _Route3EndBattleText7::
-	text "Done"
-	line "like dinner!"
+	text "Ben,"
+	line "y m'en faut"
+	cont "des nouveaux!"
 	prompt
 
 _Route3AfterBattleText7::
-	text "Trained #MON"
-	line "are stronger than"
-	cont "the wild ones!"
+	text "Les #MON"
+	line "domptés sont plus"
+	cont "forts que"
+	cont "les sauvages!"
 	done
 
 _Route3BattleText8::
-	text "Eek! Did you"
-	line "touch me?"
+	text "Hé! Tu m'as"
+	line "touchée là?"
 	done
 
 _Route3EndBattleText8::
-	text "That's it?"
+	text "OK!"
 	prompt
 
 _Route3AfterBattleText8::
-	text "ROUTE 4 is at the"
-	line "foot of MT.MOON."
+	text "La ROUTE 4"
+	line "est au pied du"
+	cont "MONT SELENITE."
 	done
 
 _Route3Text10::
-	text "ROUTE 3"
-	line "MT.MOON AHEAD"
+	text "ROUTE 3 vers le"
+	line "MONT SELENITE"
 	done

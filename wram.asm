@@ -1648,7 +1648,7 @@ wTrainerBaseMoney:: ; d046
 wMissableObjectCounter:: ; d048
 	ds 1
 
-	ds 1
+	ds 6
 
 wTrainerName:: ; d04a
 ; 13 bytes for the letters of the opposing trainer
@@ -3128,13 +3128,15 @@ wEventFlags:: ; d747
 wLinkEnemyTrainerName:: ; d887
 ; linked game's trainer name
 
-wGrassRate:: ; d887
+;	ds 5
+
+wGrassRate:: ; d88c
 	ds 1
 
 wGrassMons:: ; d888
 	;ds 20
 
-	ds 11
+	ds 6
 ; Overload wGrassMons
 wSerialEnemyDataBlock:: ; d893
 	ds 9

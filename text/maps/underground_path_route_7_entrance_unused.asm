@@ -1,35 +1,38 @@
 _UGPathRoute7EntranceUnusedText_5d773::
-	text "I want to shop at"
-	line "the dept. store"
-	cont "in CELADON but..."
+	text "Je veux aller au"
+	line "centre commercial"
+	cont "de CELADOPOLE..."
 
-	para "There are so many"
-	line "rough looking"
-	cont "people there."
+	para "Mais, c'est plein"
+	line "de vilains voyous"
+	cont "là-bas."
 	done
 
 _UGPathRoute7EntranceUnusedText_5d778::
-	text "TEAM ROCKET had a"
-	line "secret hideout in"
-	cont "CELADON CITY?"
+	text "La TEAM ROCKET"
+	line "possède un abri"
+	cont "secret dans"
+	cont "CELADOPOLE!"
 	done
 
 _UGPathRoute7EntranceUnusedText_5d77d::
-	text "You're here to"
-	line "shop in CELADON?"
+	text "Tu veux acheter"
+	line "plein de trucs?"
 
-	para "Just step outside"
-	line "and head west!"
+	para "Sors d'ici et va"
+	line "vers l'ouest!"
 	done
 
 _UGPathRoute7EntranceUnusedText_5d782::
-	text "The UNDERGROUND"
-	line "PATH goes beneath"
-	cont "SAFFRON and leads"
-	cont "to LAVENDER."
+	text "Le SOUTERRAIN"
+	line "passe sous"
+	cont "SAFRANIA et"
+	cont "débouche sur"
+	cont "LAVANVILLE."
 
-	para "If you're heading"
-	line "to CERULEAN, go"
-	cont "to the building"
-	cont "across the road."
+	para "Pour aller à"
+	line "AZURIA, va dans"
+	cont "la maison de"
+	cont "l'autre côté"
+	cont "de la rue."
 	done

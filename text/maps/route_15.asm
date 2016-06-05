@@ -1,171 +1,180 @@
 _Route15BattleText1::
-	text "Let me try out the"
-	line "#MON I just"
-	cont "got in a trade!"
+	text "Je vais tester"
+	line "les #MON que"
+	cont "j'ai échangé!"
 	done
 
 _Route15EndBattleText1::
-	text "Not"
-	line "good enough!"
+	text "Oh!"
+	line "Perdu!"
 	prompt
 
 _Route15AfterBattleText1::
-	text "You can't change"
-	line "the nickname of"
-	cont "any #MON you"
-	cont "get in a trade."
+	text "Tu ne peux pas"
+	line "renommer un"
+	cont "#MON échangé."
 
-	para "Only the Original"
-	line "Trainer can."
+	para "Seul son dresseur"
+	line "peut le faire."
 	done
 
 _Route15BattleText2::
-	text "You look gentle,"
-	line "so I think I can"
-	cont "beat you!"
+	text "T'as l'air niais,"
+	line "je dois pouvoir"
+	cont "te battre!"
 	done
 
 _Route15EndBattleText2::
-	text "No,"
-	line "wrong!"
+	text "!!!"
+	line "Pas trop niais!"
 	prompt
 
 _Route15AfterBattleText2::
-	text "I'm afraid of"
-	line "BIKERs, they look"
-	cont "so ugly and mean!"
+	text "Les MOTARDS me"
+	line "font peur, ils"
+	cont "sont si méchants!"
 	done
 
 _Route15BattleText3::
-	text "When I whistle, I"
-	line "can summon bird"
-	cont "#MON!"
+	text "Je peux appeler"
+	line "des #MON"
+	cont "oiseaux rien"
+	cont "qu'en sifflant!"
 	done
 
 _Route15EndBattleText3::
-	text "Ow!"
-	line "That's tragic!"
+	text "Ho!"
+	line "Quelle horreur!"
 	prompt
 
 _Route15AfterBattleText3::
-	text "Maybe I'm not cut"
-	line "out for battles."
+	text "Je ne suis pas"
+	line "doué pour les"
+	cont "bastons."
 	done
 
 _Route15BattleText4::
-	text "Hmm? My birds are"
-	line "shivering! You're"
-	cont "good, aren't you?"
+	text "Hmm? Mes oiseaux"
+	line "ont peur! Tu es"
+	cont "fort, toi?"
 	done
 
 _Route15EndBattleText4::
-	text "Just"
-	line "as I thought!"
+	text "..."
+	line "T'es effrayant!"
 	prompt
 
 _Route15AfterBattleText4::
-	text "Did you know moves"
-	line "like EARTHQUAKE"
-	cont "don't have any"
-	cont "effect on birds?"
+	text "Les attaques"
+	line "comme SEISME"
+	cont "ne font rien aux"
+	cont "oiseaux. "
+	cont "Tu l'savais?"
 	done
 
 _Route15BattleText5::
-	text "Oh, you're a"
-	line "little cutie!"
+	text "Oh! T'es un p'tit"
+	line "jeunot!"
 	done
 
 _Route15EndBattleText5::
-	text "You looked"
-	line "so cute too!"
+	text "T'étais"
+	line "mignon, pourtant!"
 	prompt
 
 _Route15AfterBattleText5::
-	text "I forgive you!"
-	line "I can take it!"
+	text "Je te pardonne!"
+	line "T'es trop mignon!"
 	done
 
 _Route15BattleText6::
-	text "I raise #MON"
-	line "because I live"
-	cont "alone!"
+	text "J'ai des #MON"
+	line "parce que je vis"
+	cont "toute seule!"
 	done
 
 _Route15EndBattleText6::
-	text "I didn't"
-	line "ask for this!"
+	text "Hé, mais,"
+	line "j'suis gentille!"
 	prompt
 
 _Route15AfterBattleText6::
-	text "I just like going"
-	line "home to be with"
-	cont "my #MON!"
+	text "Je rentre chez"
+	line "moi pour être"
+	cont "avec mes #MON!"
 	done
 
 _Route15BattleText7::
-	text "Hey kid! C'mon!"
-	line "I just got these!"
+	text "Hé, l'mouflet!"
+	line "Regarde ça!"
 	done
 
 _Route15EndBattleText7::
-	text "Why"
-	line "not?"
+	text "Bon,"
+	line "ben, t'as vu!"
 	prompt
 
 _Route15AfterBattleText7::
-	text "You only live"
-	line "once, so I live"
-	cont "as an outlaw!"
-	cont "TEAM ROCKET RULES!"
+	text "On ne vit qu'une"
+	line "fois! C'est pour"
+	cont "ça que je suis"
+	cont "méchant, nyark!"
 	done
 
 _Route15BattleText8::
-	text "Fork over all your"
-	line "cash when you"
-	cont "lose to me, kid!"
+	text "La bourse"
+	line "ou la vie!"
 	done
 
 _Route15EndBattleText8::
-	text "That"
-	line "can't be true!"
+	text "Tiens,"
+	line "voilà ma bourse!"
 	prompt
 
 _Route15AfterBattleText8::
-	text "I was just joking"
-	line "about the money!"
+	text "Heu..."
+	line "Je plaisantais!"
 	done
 
 _Route15BattleText9::
-	text "What's cool?"
-	line "Trading #MON!"
+	text "Quoi? Echanger"
+	line "des #MON"
+	cont "c'est cool?"
 	done
 
 _Route15EndBattleText9::
-	text "I"
-	line "said trade!"
+	text "Hé!"
+	line "Je parlais"
+	cont "d'échanges, pas"
+	cont "de bastons!"
 	prompt
 
 _Route15AfterBattleText9::
-	text "I trade #MON"
-	line "with my friends!"
+	text "J'échange des"
+	line "#MON avec"
+	cont "mes amis!"
 	done
 
 _Route15BattleText10::
-	text "Want to play with"
-	line "my #MON?"
+	text "Je veux me"
+	line "battre avec mes"
+	cont "#MON!"
 	done
 
 _Route15EndBattleText10::
-	text "I was"
-	line "too impatient!"
+	text "..."
+	line "Je vais attendre"
+	cont "un peu!"
 	prompt
 
 _Route15AfterBattleText10::
-	text "I'll go train with"
-	line "weaker people.@@"
+	text "Je vais me battre"
+	line "avec des"
+	cont "dresseurs moins"
+	cont "forts!@@"
 
 _Route15Text12::
 	text "ROUTE 15"
-	line "West to FUCHSIA"
-	cont "CITY"
+	line "PARMANIE"
+	cont "à l'Ouest"
 	done
