@@ -1,22 +1,25 @@
 _CeladonMart2Text3::
-	text "SUPER REPEL keeps"
-	line "weak #MON at"
-	cont "bay..."
+	text "Le SUPEREPOUSSE"
+	line "tient les faibles"
+	cont "#MON à"
+	cont "l'écart..."
 
-	para "Hmm, it's a more"
-	line "powerful REPEL!"
+	para "C'est un REPOUSSE"
+	line "plus puissant!"
 	done
 
 _CeladonMart2Text4::
-	text "For long outings,"
-	line "you should buy"
-	cont "REVIVE."
+	text "Equipe-toi de"
+	line "RAPPELS avant"
+	cont "de partir à"
+	cont "l'aventure."
 	done
 
 _CeladonMart2Text5::
-	text "Top Grade Items"
-	line "for Trainers!"
+	text "Les objets de"
+	line "premier choix!"
 
-	para "2F: TRAINER'S"
-	line "    MARKET"
+	para "1er: MARCHE DES"
+	line "DRESSEURS"
 	done
+

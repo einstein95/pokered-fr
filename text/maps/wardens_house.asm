@@ -1,84 +1,88 @@
 _WardenGibberishText1::
-	text "WARDEN: Hif fuff"
-	line "hefifoo!"
+	text "GARDIEN: Hif fuff"
+	line "hefifou!"
 
-	para "Ha lof ha feef ee"
+	para "Ha fof ha fif eu"
 	line "hafahi ho. Heff"
-	cont "hee fwee!"
+	cont "hi fwi!"
 	done
 
 _WardenGibberishText2::
-	text "Ah howhee ho hoo!"
+	text "Ah hahee ho hoo!"
 	line "Eef ee hafahi ho!"
 	done
 
 _WardenGibberishText3::
-	text "Ha? He ohay heh"
-	line "ha hoo ee haheh!"
+	text "Ha? Hai fou heh"
+	line "ha hoo ih haheh!"
 	done
 
 _WardenTeethText1::
-	text $52, " gave the"
-	line "GOLD TEETH to the"
-	cont "WARDEN!@@"
+	text $52," donne la"
+	line "DENT D'OR au"
+	cont "GARDIEN!@@"
 
 _WardenTeethText2::
-	db $0
-	para "The WARDEN popped"
-	line "in his teeth!"
+	text ""
+
+	para "Le GARDIEN peut"
+	line "remettre son"
+	cont "dentier!"
 	prompt
 
 _WardenThankYouText::
-	text "WARDEN: Thanks,"
-	line "kid! No one could"
-	cont "understand a word"
-	cont "that I said."
+	text "GARDIEN: Merci,"
+	line "gamin! C'est un"
+	cont "peu dur de me"
+	cont "faire comprendre."
 
-	para "I couldn't work"
-	line "that way."
-	cont "Let me give you"
-	cont "something for"
-	cont "your trouble."
+	para "J'pouvais plus"
+	line "travailler!"
+	cont "Quelle horreur!"
+	cont "Tiens, voilà pour"
+	cont "te remercier."
 	prompt
 
 _ReceivedHM04Text::
-	text $52, " received"
+	text $52," reçoit"
 	line "@"
 	TX_RAM wcf50
 	text "!@@"
 
 _HM04ExplanationText::
-	text "WARDEN: HM04"
-	line "teaches STRENGTH!"
+	text "GARDIEN: CS04..."
+	line "FORCE!"
 
-	para "It lets #MON"
-	line "move boulders"
-	cont "when you're out-"
-	cont "side of battle."
+	para "Tes #MON"
+	line "pourront déplacer"
+	cont "des rochers."
 
-	para "Oh yes, did you"
-	line "find SECRET HOUSE"
-	cont "in SAFARI ZONE?"
+	para "Au fait, as-tu"
+	line "trouvé la CABANE"
+	cont "SECRETE dans le"
+	cont "PARC SAFARI?"
 
-	para "If you do, you"
-	line "win an HM!"
+	para "Trouve-la et"
+	line "gagne une CS!"
 
-	para "I hear it's the"
-	line "rare SURF HM."
+	para "On raconte que"
+	line "cette CS est... "
+	cont "SURF!"
 	done
 
 _HM04NoRoomText::
-	text "Your pack is"
-	line "stuffed full!"
+	text "Ton sac est"
+	line "plein!"
 	done
 
 _FuchsiaHouse2Text_75176::
-	text "#MON photos"
-	line "and fossils."
+	text "Photos et"
+	line "fossiles de"
+	cont "#MON."
 	done
 
 _FuchsiaHouse2Text_7517b::
-	text "Old #MON"
-	line "merchandise."
+	text "Tout plein de"
+	line "trucs #MON!"
 	done
 

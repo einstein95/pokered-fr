@@ -1,4 +1,4 @@
 _CeladonMansion4Text1::
-	text "I KNOW EVERYTHING!"
+	text "JE SAIS TOUT!"
 	done
 

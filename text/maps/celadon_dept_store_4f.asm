@@ -1,26 +1,29 @@
 _CeladonMart4Text2::
-	text "I'm getting a"
-	line "# DOLL for my"
-	cont "girl friend!"
+	text "J'offre une belle"
+	line "#poupée à ma"
+	cont "copine!"
 	done
 
 _CeladonMart4Text3::
-	text "I heard something"
-	line "useful."
+	text "Ecoute donc..."
 
-	para "You can run from"
-	line "wild #MON by"
-	cont "distracting them"
-	cont "with a # DOLL!"
+	para "Tu peux fuir face"
+	line "aux #MON"
+	cont "sauvages en les"
+	cont "occupant avec une"
+	cont "#POUPEE!"
 	done
 
 _CeladonMart4Text4::
-	text "Express yourself"
-	line "with gifts!"
+	text "Un cadeau..."
+	line "L'amour..."
+	cont "La vie!"
 
-	para "4F: WISEMAN GIFTS"
+	para "3ème: CADEAUX"
 
-	para "Evolution Special!"
-	line "Element STONEs on"
-	cont "sale now!"
+	para "Vive les"
+	line "évolutions!"
+	cont "Les PIERRES sont"
+	cont "en vente!"
 	done
+
