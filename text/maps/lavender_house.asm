@@ -1,24 +1,25 @@
 _LavenderHouse2Text1::
-	text "CUBONE: Kyarugoo!@@"
+	text "OSSELAIT: Lailaii!@@"
 
 _LavenderHouse2Text_1d9dc::
-	text "I hate those"
-	line "horrible ROCKETs!"
+	text "Je déteste ces"
+	line "méchants ROCKET!"
 
-	para "That poor CUBONE's"
-	line "mother..."
+	para "La pauvre mère de"
+	line "OSSELAIT..."
 
-	para "It was killed"
-	line "trying to escape"
-	cont "from TEAM ROCKET!"
+	para "Elle est morte en"
+	line "essayant"
+	cont "d'échapper à la"
+	cont "TEAM ROCKET!"
 	done
 
 _LavenderHouse2Text_1d9e1::
-	text "The GHOST of"
-	line "#MON TOWER is"
-	cont "gone!"
+	text "Le SPECTRE de"
+	line "la TOUR #MON"
+	cont "est parti!"
 
-	para "Someone must have"
-	line "soothed its"
-	cont "restless soul!"
+	para "Quelqu'un a dû"
+	line "apaiser son âme"
+	cont "tourmentée!"
 	done

@@ -1,70 +1,75 @@
 _BikeShopText_1d810::
-	text "Hi! Welcome to"
-	line "our BIKE SHOP."
+	text "Bienvenue au"
+	line "CYCLES A GOGO."
 
-	para "Have we got just"
-	line "the BIKE for you!"
+	para "Nous avons"
+	line "justement une"
+	cont "belle bicyclette!"
 	prompt
 
 _BikeShopText_1d815::
-	text "It's a cool BIKE!"
-	line "Do you want it?"
+	text "C'est un super"
+	line "vélo, le veux-tu?"
 	done
 
 _BikeShopCantAffordText::
-	text "Sorry! You can't"
-	line "afford it!"
+	text "Oh! Tu n'as pas"
+	line "assez d'argent!"
 	prompt
 
 _BikeShopText_1d81f::
-	text "Oh, that's..."
+	text "Oh! Mais c'est..."
 
-	para "A BIKE VOUCHER!"
+	para "Un BON pour"
+	line "une BICYCLETTE!"
 
-	para "OK! Here you go!"
+	para "OK! Voilà ta"
+	line "BICYCLETTE!"
 	prompt
 
 _BikeShopText_1d824::
-	text "<PLAYER> exchanged"
-	line "the BIKE VOUCHER"
-	cont "for a BICYCLE.@@"
+	text "<PLAYER> échange"
+	line "le BON contre"
+	cont "une BICYCLETTE.@@"
 
 _BikeShopComeAgainText::
-	text "Come back again"
-	line "some time!"
+	text "Reviens quand tu"
+	line "veux!"
 	done
 
 _BikeShopText_1d82f::
-	text "How do you like"
-	line "your new BICYCLE?"
+	text "Comment se porte"
+	line "ta BICYCLETTE?"
 
-	para "You can take it"
-	line "on CYCLING ROAD"
-	cont "and in caves!"
+	para "Tu peux aller sur"
+	line "la PISTE CYCLABLE"
+	cont "et dans les"
+	cont "GROTTES!"
 	done
 
 _BikeShopText_1d834::
-	text "You better make"
-	line "room for this!"
+	text "Ton inventaire"
+	line "est plein!"
 	done
 
 _BikeShopText_1d843::
-	text "A plain city BIKE"
-	line "is good enough"
-	cont "for me!"
+	text "Un VELO de ville,"
+	line "c'est ce qu'il y"
+	cont "a de mieux!"
 
-	para "You can't put a"
-	line "shopping basket"
-	cont "on an MTB!"
+	para "Il n'y a pas de"
+	line "porte-bagages sur"
+	cont "un VTT!"
 	done
 
 _BikeShopText_1d85c::
-	text "These BIKEs are"
-	line "cool, but they're"
-	cont "way expensive!"
+	text "Ces VELOS sont"
+	line "super mais ils"
+	cont "sont très chers!"
 	done
 
 _BikeShopText_1d861::
-	text "Wow. Your BIKE is"
-	line "really cool!"
+	text "Waou! "
+	line "Ta BICYCLETTE est"
+	cont "super cool!"
 	done

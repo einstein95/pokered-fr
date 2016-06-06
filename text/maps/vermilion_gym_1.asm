@@ -1,21 +1,27 @@
 _VermilionGymText_5cb6d::
-	text "Hey, kid! What do"
-	line "you think you're"
-	cont "doing here?"
+	text "Hé, gamin!"
+	line "Tu fais quoi là?"
 
-	para "You won't live"
-	line "long in combat!"
-	cont "That's for sure!"
+	para "Tu ne résisterais"
+	line "pas longtemps"
+	cont "en temps de"
+	cont "guerre!"
 
-	para "I tell you kid,"
-	line "electric #MON"
-	cont "saved me during"
-	cont "the war!"
+	para "Je vais te dire,"
+	line "mes #MON"
+	cont "électriques m'ont"
+	cont "sauvé la vie!"
+	cont "Et ouais!"
 
-	para "They zapped my"
-	line "enemies into"
-	cont "paralysis!"
+	para "Ils ont paralysé"
+	line "mes ennemis avec"
+	cont "leurs éclairs!"
+	cont "Une vraie"
+	cont "boucherie!"
 
-	para "The same as I'll"
-	line "do to you!"
+	para "Y va t'arriver la"
+	line "même chose!"
+	cont "Compte tes dents!"
+	cont "Tu vas morfler!"
 	done
+
