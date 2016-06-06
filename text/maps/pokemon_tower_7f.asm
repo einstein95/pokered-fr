@@ -1,78 +1,91 @@
 _TowerRescueFujiText::
-	text "MR.FUJI: Heh? You"
-	line "came to save me?"
+	text "MR.FUJI: Hé? Tu"
+	line "es venu me"
+	cont "sauver?"
 
-	para "Thank you. But, I"
-	line "came here of my"
-	cont "own free will."
+	para "Merci! Mais je"
+	line "suis venu ici de"
+	cont "mon plein gré."
 
-	para "I came to calm"
-	line "the soul of"
-	cont "CUBONE's mother."
+	para "Je voulais"
+	line "apaiser l'esprit"
+	cont "de la mère de"
+	cont "OSSELAIT."
 
-	para "I think MAROWAK's"
-	line "spirit has gone"
-	cont "to the afterlife."
+	para "Je pense que"
+	line "l'esprit de"
+	cont "OSSATUEUR s'en"
+	cont "est allé vers"
+	cont "les cieux."
 
-	para "I must thank you"
-	line "for your kind"
-	cont "concern!"
+	para "Je dois te"
+	line "remercier pour"
+	cont "cet acte noble!"
 
-	para "Follow me to my"
-	line "home, #MON"
-	cont "HOUSE at the foot"
-	cont "of this tower."
+	para "Viens avec moi"
+	line "dans ma maison,"
+	cont "la MAISON #MON"
+	cont "au pied de cette"
+	cont "tour."
 	done
 
 _PokemonTower7BattleText1::
-	text "What do you want?"
-	line "Why are you here?"
+	text "Que veux-tu?"
+	line "Que cherches-tu?"
 	done
 
 _PokemonTower7EndBattleText1::
-	text "I give up!"
+	text "Rhaaaa!"
+	line "J'abandonne!"
 	prompt
 
 _PokemonTower7AfterBattleText1::
-	text "I'm not going to"
-	line "forget this!"
+	text "Je ne t'oublierai"
+	line "pas!"
 	done
 
 _PokemonTower7BattleText2::
-	text "This old guy came"
-	line "and complained"
-	cont "about us harming"
-	cont "useless #MON!"
+	text "Ce vieil homme"
+	line "est venu nous"
+	cont "demander de ne"
+	cont "plus troubler les"
+	cont "gentils #MON!"
 
-	para "We're talking it"
-	line "over as adults!"
+	para "Mais c'est une"
+	line "conversation"
+	cont "d'adultes, petit!"
+	cont "Dégage!"
 	done
 
 _PokemonTower7EndBattleText2::
-	text "Please!"
-	line "No more!"
+	text "Argh!"
+	line "Assez!"
 	prompt
 
 _PokemonTower7AfterBattleText2::
-	text "#MON are only"
-	line "good for making"
-	cont "money!"
+	text "Les #MON ne"
+	line "servent qu'à"
+	cont "gagner de"
+	cont "l'argent!"
 
-	para "Stay out of our"
-	line "business!"
+	para "Reste en dehors"
+	line "de nos affaires!"
 	done
 
 _PokemonTower7BattleText3::
-	text "You're not saving"
-	line "anyone, kid!"
+	text "Y'a personne à"
+	line "sauver ici!"
 	done
 
 _PokemonTower7EndBattleText3::
-	text "Don't"
-	line "fight us ROCKETs!"
+	text "Hmm!"
+	line "N'affronte pas la"
+	cont "TEAM ROCKET!"
 	prompt
 
 _PokemonTower7AfterBattleText3::
-	text "You're not getting"
-	line "away with this!"
+	text "Tu ne t'en"
+	line "sortiras pas"
+	cont "comme ça!"
 	done
+

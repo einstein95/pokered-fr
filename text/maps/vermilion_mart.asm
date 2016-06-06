@@ -1,23 +1,30 @@
 _VermilionMartText2::
-	text "There are evil"
-	line "people who will"
-	cont "use #MON for"
-	cont "criminal acts."
+	text "Il y en a, des"
+	line "très méchants,"
+	cont "qui utilisent les"
+	cont "#MON pour"
+	cont "voler les autres"
+	cont "dresseurs."
 
-	para "TEAM ROCKET"
-	line "traffics in rare"
-	cont "#MON."
+	para "La TEAM ROCKET"
+	line "fait du trafic de"
+	cont "#MON rares."
 
-	para "They also abandon"
-	line "#MON that they"
-	cont "consider not to"
-	cont "be popular or"
-	cont "useful."
+	para "Ils abandonnent"
+	line "sur le bord de la"
+	cont "route les #MON"
+	cont "trop faibles!"
+	cont "Ouais, y sont"
+	cont "comme ça chez les"
+	cont "ROCKET."
 	done
 
 _VermilionMartText3::
-	text "I think #MON"
-	line "can be good or"
-	cont "evil. It depends"
-	cont "on the trainer."
+	text "Les #MON"
+	line "peuvent être"
+	cont "gentils ou"
+	cont "méchants, cela"
+	cont "dépend de leur"
+	cont "maître."
 	done
+
