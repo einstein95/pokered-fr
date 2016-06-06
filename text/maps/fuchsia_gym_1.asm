@@ -1,26 +1,29 @@
 _KogaBeforeBattleText::
-	text "KOGA: Fwahahaha!"
+	text "KOGA: Gwahahaha!"
 
-	para "A mere child like"
-	line "you dares to"
-	cont "challenge me?"
+	para "Un nain ose me"
+	line "défier? Moi, le"
+	cont "grand le beau le"
+	cont "terrible KOGA?"
 
-	para "Very well, I"
-	line "shall show you"
-	cont "true terror as a"
-	cont "ninja master!"
+	para "Par l'enfer,"
+	line "par le sang,"
+	cont "par l'acier,"
+	cont "j'vais gagner!"
 
-	para "You shall feel"
-	line "the despair of"
-	cont "poison and sleep"
-	cont "techniques!"
+	para "Puisse la poigne"
+	line "de mes poisons"
+	cont "pétrifier de peur"
+	cont "la paix et tes"
+	cont "petits #MON!"
 	done
 
 _KogaAfterBattleText::
-	text "Humph!"
-	line "You have proven"
-	cont "your worth!"
+	text "Gwaha...heu?"
+	line "Tu as prouvé ta"
+	cont "valeur!"
 
-	para "Here! Take the"
-	line "SOULBADGE!"
+	para "Ouvre ta mimine"
+	line "car voici..."
+	cont "le BADGE AME!"
 	prompt

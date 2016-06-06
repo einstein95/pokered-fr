@@ -1,66 +1,66 @@
 _ProgrammerText::
-	text "Me? I'm the"
-	line "programmer!"
+	text "Moi? Chuis un"
+	line "programmeur!"
 	done
 
 _GraphicArtistText::
-	text "I'm the graphic"
-	line "artist!"
-	cont "I drew you!"
+	text "Je fais tous les"
+	line "graphismes!"
+	cont "Je t'ai dessiné!"
 	done
 
 _WriterText::
-	text "I wrote the story!"
-	line "Isn't ERIKA cute?"
+	text "J'ai écrit"
+	line "l'histoire!"
+	cont "ERIKA est belle!"
 
-	para "I like MISTY a"
-	line "lot too!"
+	para "ONDINE aussi,"
+	line "non?"
 
-	para "Oh, and SABRINA,"
-	line "I like her!"
+	para "Et puis MORGANE!"
+	line "Elle est mimi!"
 	done
 
 _GameDesignerText::
-	text "Is that right?"
+	text "Yagwahabwa!"
 
-	para "I'm the game"
+	para "Je suis le"
 	line "designer!"
 
-	para "Filling up your"
-	line "#DEX is tough,"
-	cont "but don't quit!"
+	para "Remplir ton"
+	line "#DEX est"
+	cont "difficile, hein?"
 
-	para "When you finish,"
-	line "come tell me!"
+	para "Complète-le et"
+	line "reviens me voir!"
 	done
 
 _CompletedDexText::
-	text "Wow! Excellent!"
-	line "You completed"
-	cont "your #DEX!"
-	cont "Congratulations!"
+	text "Woah! Génial!"
+	line "Tu as complété"
+	cont "ton #DEX!"
+	cont "Félicitations!"
 	cont "...@@"
 
 _CeladonMansion3Text5::
-	text "It's the game"
-	line "program! Messing"
-	cont "with it could bug"
-	cont "out the game!"
+	text "Le programme"
+	line "du jeu! Si tu y"
+	cont "touches, tout va"
+	cont "planter!"
 	done
 
 _CeladonMansion3Text6::
-	text "Someone's playing"
-	line "a game instead of"
-	cont "working!"
+	text "Quelqu'un joue au"
+	line "lieu de bosser!"
 	done
 
 _CeladonMansion3Text7::
-	text "It's the script!"
-	line "Better not look"
-	cont "at the ending!"
+	text "Le script du jeu!"
+	line "Surtout ne pas"
+	cont "lire la fin!"
 	done
 
 _CeladonMansion3Text8::
 	text "GAME FREAK"
-	line "Development Room"
+	line "Développement"
 	done
