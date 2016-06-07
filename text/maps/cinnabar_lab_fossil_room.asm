@@ -1,78 +1,85 @@
 _Lab4Text_75dc6::
-	text "Hiya!"
+	text "Salut!"
 
-	para "I am important"
-	line "doctor!"
+	para "Je suis un"
+	line "scientifique très"
+	cont "sérieux!"
 
-	para "I study here rare"
-	line "#MON fossils!"
+	para "J'étudie les"
+	line "fossiles anciens"
+	cont "de #MON!"
 
-	para "You! Have you a"
-	line "fossil for me?"
+	para "Toi! Là!"
+	line "T'aurais pas un"
+	cont "fossile pour moi?"
 	prompt
 
 _Lab4Text_75dcb::
-	text "No! Is too bad!"
+	text "Non? C'est bien"
+	line "dommage!"
 	done
 
 _Lab4Text_75dd0::
-	text "I take a little"
-	line "time!"
+	text "Ca va prendre du"
+	line "temps!"
 
-	para "You go for walk a"
-	line "little while!"
+	para "Va te promener"
+	line "pendant que je"
+	cont "bosse!"
 	done
 
 _Lab4Text_75dd5::
-	text "Where were you?"
+	text "Ben alors! Où"
+	line "étais-tu passé?"
 
-	para "Your fossil is"
-	line "back to life!"
+	para "Ton fossile est"
+	line "VIVANT!"
 
-	para "It was @"
+	para "Il ressemble à un"
+	line "@"
 	TX_RAM wcf50
-	db $0
-	line "like I think!"
+	text "!"
 	prompt
 
 _Lab4Text_610ae::
-	text "Oh! That is"
+	text "Oh! C'est un"
 	line "@"
 	TX_RAM wcd6d
 	text "!"
 
-	para "It is fossil of"
-	line "@"
+	para "C'est un fossile"
+	line "de @"
 	TX_RAM wcf50
-	text ", a"
-	cont "#MON that is"
-	cont "already extinct!"
+	text ","
+	cont "un #MON qui a"
+	cont "disparu!"
 
-	para "My Resurrection"
-	line "Machine will make"
-	cont "that #MON live"
-	cont "again!"
+	para "Ma machine à"
+	line "réanimer va faire"
+	cont "revivre cet"
+	cont "ancien #MON!"
 	done
 
 _Lab4Text_610b3::
-	text "So! You hurry and"
-	line "give me that!"
+	text "Tu te grouilles,"
+	line "file-moi ça!"
 
-	para $52, " handed"
-	line "over @"
+	para $52," donne:"
+	line "@"
 	TX_RAM wcd6d
 	text "!"
 	prompt
 
 _Lab4Text_610b8::
-	text "I take a little"
-	line "time!"
+	text "Ca va prendre un"
+	line "peu de temps!"
 
-	para "You go for walk a"
-	line "little while!"
+	para "Traîne pas dans"
+	line "mes pattes, va"
+	cont "faire un tour!"
 	done
 
 _Lab4Text_610bd::
-	text "Aiyah! You come"
-	line "again!"
+	text "Argayahhaha!"
+	line "Tu reviendras!"
 	done

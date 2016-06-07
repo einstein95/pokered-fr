@@ -1,25 +1,36 @@
 _IndigoPlateauLobbyText2::
-	text "Yo! Champ in"
-	line "making!"
+	text "Salut! Champion"
+	line "en herbe!"
 
-	para "At #MON LEAGUE,"
-	line "you have to face"
-	cont "the ELITE FOUR in"
-	cont "succession."
+	para "Tu vas devoir"
+	line "affronter le"
+	cont "CONSEIL des 4"
+	cont "dans l'ordre pour"
+	cont "triompher de la"
+	cont "LIGUE #MON."
 
-	para "If you lose, you"
-	line "have to start all"
-	cont "over again! This"
-	cont "is it! Go for it!"
+	para "Si tu perds,"
+	line "d'abord tu auras"
+	cont "honte, et ensuite"
+	cont "tu devras tout"
+	cont "recommencer!"
+	cont "Alors fais bien"
+	cont "attention et..."
+	cont "Ecrase-les!"
 	done
 
 _IndigoPlateauLobbyText3::
-	text "From here on, you"
-	line "face the ELITE"
-	cont "FOUR one by one!"
+	text "A partir d'ici,"
+	line "tu affronteras"
+	cont "les quatre"
+	cont "membres du...."
+	cont "CONSEIL des 4!"
 
-	para "If you win, a"
-	line "door opens to the"
-	cont "next trainer!"
-	cont "Good luck!"
+	para "Remporte la"
+	line "victoire et une"
+	cont "porte s'ouvrira"
+	cont "vers le prochain"
+	cont "dresseur. Bonne"
+	cont "chance, petit!"
 	done
+
