@@ -1,10 +1,15 @@
 _CinnabarMartText2::
-	text "Don't they have X"
-	line "ATTACK? It's good"
-	cont "for battles!"
+	text "Ils n'ont pas de"
+	line "ATTAQUE +? C'est"
+	cont "vachement balèze"
+	cont "dans les bastons!"
 	done
 
 _CinnabarMartText3::
-	text "It never hurts to"
-	line "have extra items!"
+	text "Ca fait pas de"
+	line "mal d'être plein"
+	cont "d'objets! Ca fait"
+	cont "même plutôt du"
+	cont "bien!"
 	done
+

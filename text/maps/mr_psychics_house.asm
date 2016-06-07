@@ -1,26 +1,27 @@
 _TM29PreReceiveText::
-	text "...Wait! Don't"
-	line "say a word!"
+	text "...Chut! Pas un"
+	line "mot!"
 
-	para "You wanted this!"
+	para "Tu veux ça?"
 	prompt
 
 _ReceivedTM29Text::
-	text $52, " received"
+	text $52," obtient:"
 	line "@"
 	TX_RAM wcf50
 	text "!@@"
 
 _TM29ExplanationText::
-	text "TM29 is PSYCHIC!"
+	text "CT29: PSYKO!"
 
-	para "It can lower the"
-	line "target's SPECIAL"
-	cont "abilities."
+	para "Cette attaque"
+	line "diminue le"
+	cont "SPECIAL de la"
+	cont "cible."
 	done
 
 _TM29NoRoomText::
-	text "Where do you plan"
-	line "to put this?"
+	text "Ton inventaire"
+	line "est plein!"
 	done
 
