@@ -150,11 +150,19 @@ LinkCableHelpText2:
 	TX_FAR _LinkCableHelpText2
 	db "@"
 
+<<<<<<< HEAD
 HowToLinkText:
 	db   "HOW TO LINK"
 	next "COLOSSEUM"
 	next "TRADE CENTER"
 	next "STOP READING@"
+=======
+HowToLinkText: ; 5dca8 (17:5ca8)
+	db   "CABLE LINK"
+	next "COLISEE"
+	next "CENTRE TROC"
+	next "NE PLUS LIRE@"
+>>>>>>> 6c2df7c2aea94b0e5a5532293aae9a25d64a8050
 
 LinkCableInfoTexts:
 	dw LinkCableInfoText1
@@ -268,14 +276,14 @@ ViridianSchoolBlackboardText2:
 	db "@"
 
 StatusAilmentText1:
-	db   " SLP"
+	db   " SOM"
 	next " PSN"
 	next " PAR@"
 
 StatusAilmentText2:
-	db   " BRN"
-	next " FRZ"
-	next " QUIT@@"
+	db   " BRU"
+	next " GEL"
+	next " RET@"
 
 ViridianBlackboardStatusPointers:
 	dw ViridianBlackboardSleepText

@@ -17,10 +17,10 @@ SaffronGymScript:
 	jp LoadGymLeaderAndCityName
 
 Gym6CityName:
-	db "SAFFRON CITY@"
+	db "SAFRANIA@"
 
 Gym6LeaderName:
-	db "SABRINA@"
+	db "MORGANE@"
 
 SaffronGymText_5d048:
 	xor a

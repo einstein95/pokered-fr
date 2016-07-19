@@ -81,11 +81,7 @@ _PokeCenterSignText::
 	done
 
 _FoundItemText::
-<<<<<<< cef6459db617ad0863c856831ebcb9d745c43ddf
-	text "<PLAYER> found"
-=======
-	text $52, " obtient..."
->>>>>>> More text, filled out charmap.asm
+	text "<PLAYER> obtient..."
 	line "@"
 	TX_RAM wcf50
 	text "!@@"

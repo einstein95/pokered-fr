@@ -1,26 +1,26 @@
 MapNames:
 PalletTownName:
-	db "PALLET TOWN@"
+	db "BOURG PALETTE@"
 ViridianCityName:
-	db "VIRIDIAN CITY@"
+	db "JADIELLE@"
 PewterCityName:
-	db "PEWTER CITY@"
+	db "ARGENTA@"
 CeruleanCityName:
-	db "CERULEAN CITY@"
+	db "AZURIA@"
 LavenderTownName:
-	db "LAVENDER TOWN@"
+	db "LAVANVILLE@"
 VermilionCityName:
-	db "VERMILION CITY@"
+	db "CARMIN SUR MER@"
 CeladonCityName:
-	db "CELADON CITY@"
+	db "CELADOPOLE@"
 FuchsiaCityName:
-	db "FUCHSIA CITY@"
+	db "PARMANIE@"
 CinnabarIslandName:
-	db "CINNABAR ISLAND@"
+	db "CRAMOIS'ILE@"
 IndigoPlateauName:
-	db "INDIGO PLATEAU@"
+	db "PLATEAU INDIGO@"
 SaffronCityName:
-	db "SAFFRON CITY@"
+	db "SAFRANIA@"
 Route1Name:
 	db "ROUTE 1@"
 Route2Name:
@@ -58,11 +58,11 @@ Route17Name:
 Route18Name:
 	db "ROUTE 18@"
 Route19Name:
-	db "SEA ROUTE 19@"
+	db "CHENAL 19@"
 Route20Name:
-	db "SEA ROUTE 20@"
+	db "CHENAL 20@"
 Route21Name:
-	db "SEA ROUTE 21@"
+	db "CHENAL 21@"
 Route22Name:
 	db "ROUTE 22@"
 Route23Name:
@@ -72,36 +72,36 @@ Route24Name:
 Route25Name:
 	db "ROUTE 25@"
 ViridianForestName:
-	db "VIRIDIAN FOREST@"
+	db "FORET DE JADE@"
 MountMoonName:
-	db "MT.MOON@"
+	db "MONT SELENITE@"
 RockTunnelName:
-	db "ROCK TUNNEL@"
+	db "GROTTE@"
 SeaCottageName:
-	db "SEA COTTAGE@"
+	db "VILLA@"
 SSAnneName:
-	db "S.S.ANNE@"
+	db "L'OCEANE@"
 PokemonLeagueName:
-	db "#MON LEAGUE@"
+	db "LIGUE #MON@"
 UndergroundPathName:
-	db "UNDERGROUND PATH@"
+	db "SOUTERRAIN@"
 PokemonTowerName:
-	db "#MON TOWER@"
+	db "TOUR #MON@"
 SeafoamIslandsName:
-	db "SEAFOAM ISLANDS@"
+	db "ILES ECUME@"
 VictoryRoadName:
-	db "VICTORY ROAD@"
+	db "ROUTE VICTOIRE@"
 DiglettsCaveName:
-	db "DIGLETT's CAVE@"
+	db "CAVE TAUPIQUEUR@"
 RocketHQName:
-	db "ROCKET HQ@"
+	db "REPAIRE ROCKET@"
 SilphCoName:
-	db "SILPH CO.@"
+	db "SYLPHE SARL@"
 PokemonMansionName:
-	db $4a," MANSION@"
+	db "MANOIR ",$4a,"@"
 SafariZoneName:
-	db "SAFARI ZONE@"
+	db "PARC SAFARI@"
 CeruleanCaveName:
-	db "CERULEAN CAVE@"
+	db "GROTTE INCONNUE@"
 PowerPlantName:
-	db "POWER PLANT@"
+	db "CENTRALE@"
