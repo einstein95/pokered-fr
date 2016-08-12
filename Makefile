@@ -1,4 +1,4 @@
-PYTHON := python2
+PYTHON := python
 MD5 := md5sum -c --quiet
 
 2bpp     := $(PYTHON) extras/pokemontools/gfx.py 2bpp
