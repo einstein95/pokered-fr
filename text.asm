@@ -359,10 +359,10 @@ _YeahText::
 _DexSeenOwnedText::
 	text "#DEX   Vus:@"
 	TX_NUM wDexRatingNumMonsSeen, 1, 3
-	text ""
+	text " "
 	line "         Pris:@"
 	TX_NUM wDexRatingNumMonsOwned, 1, 3
-	text ""
+	text " "
 	done
 
 _DexRatingText::
@@ -1358,7 +1358,7 @@ _CantMoveText::
 _MoveIsDisabledText::
 	TX_RAM wcd6d
 	text " de"
-	text "<USER>"
+	line "<USER>"
 	cont "a disparu!"
 	prompt
 
@@ -2178,7 +2178,7 @@ _FrozenText::
 
 _FireDefrostedText::
 	text "Le feu dégèle"
-	text "<TARGET>!"
+	line "<TARGET>!"
 	prompt
 
 _MonsStatsRoseText::
@@ -2271,7 +2271,7 @@ _MimicLearnedMoveText::
 _MoveWasDisabledText::
 	TX_RAM wcd6d
 	text " de"
-	text "<TARGET>"
+	line "<TARGET>"
 	cont "a disparu!"
 	prompt
 
