@@ -4774,7 +4774,8 @@ Unk9Graphic:                    INCBIN "gfx/unk_9.2bpp"
 Unk9GraphicEnd:
 TextBoxGraphics:                INCBIN "gfx/text_box.2bpp"
 TextBoxGraphicsEnd:
-PokedexTileGraphics:            INCBIN "gfx/pokedex.2bpp"
+PokedexTileGraphics:            INCBIN "gfx/pokedex.2bpp",$10,$110
+	db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 PokedexTileGraphicsEnd:
 WorldMapTileGraphics:           INCBIN "gfx/town_map.2bpp"
 WorldMapTileGraphicsEnd:

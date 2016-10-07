@@ -246,12 +246,12 @@ Credits:
 	pop de
 	ld de, TheEndGfx
 	ld hl, vChars2 + $600
-	lb bc, BANK(TheEndGfx), (TheEndGfxEnd - TheEndGfx) / $10
+	lb bc, BANK(TheEndGfx), (TheEndGfxEnd - TheEndGfx) / $0C
 	call CopyVideoData
-	coord hl, 4, 8
+	coord hl, 7, 8
 	ld de, TheEndTextString
 	call PlaceString
-	coord hl, 4, 9
+	coord hl, 7, 9
 	inc de
 	call PlaceString
 	jp FadeInCreditsText

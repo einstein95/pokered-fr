@@ -1403,7 +1403,7 @@ _ExclamationPoint5Text::
 
 _AttackMissedText::
 	text "L'attaque de"
-	text "<USER>"
+	line "<USER>"
 	cont "a échoué!"
 	prompt
 
@@ -1474,7 +1474,7 @@ _SubstituteBrokeText::
 
 _BuildingRageText::
 	text "La FRENESIE de"
-	text "<USER>"
+	line "<USER>"
 	cont "s'intensifie!"
 	prompt
 

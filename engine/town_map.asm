@@ -118,9 +118,9 @@ LoadTownMap_Nest:
 	push hl
 	call DisplayWildLocations
 	call GetMonName
-	coord hl, 1, 0
+	coord hl, 8, 0
 	call PlaceString
-	ld hl, $C381
+	coord hl, 1, 0
 	ld de, MonsNestText
 	call PlaceString
 	call WaitForTextScrollButtonPress
@@ -243,7 +243,7 @@ LoadTownMap_Fly:
 	jr .pressedDown
 
 ToText:
-	db "To@"
+	db " ‘@"
 
 BuildFlyLocationsList:
 	ld hl, wFlyLocationsList - 1

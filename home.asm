@@ -1265,14 +1265,14 @@ DisplayPlayerBlackedOutText::
 	ld a,[wd732]
 	res 5,a ; reset forced to use bike bit
 	ld [wd732],a
-	ld a,[wd732]
+	ld a,[wd795]
 	bit 7,a
 	jr z,.didnotblackoutinsafari
 	xor a
 	ld [wNumSafariBalls],a
 	ld [wSafariSteps],a
 	ld [wSafariSteps+1],a
-	ld [wd732],a
+	ld [wd795],a
 	ld [wcf0d],a
 	ld [wSafariZoneEntranceCurScript],a
 .didnotblackoutinsafari
@@ -1671,7 +1671,7 @@ DisplayChooseQuantityMenu::
 	ld de,SpacesBetweenQuantityAndPriceText
 	call PlaceString
 	ld de,hMoney ; total price
-	ld c,$a3
+	ld c,$83
 	call PrintBCDNumber
 	coord hl, 9, 10
 .printQuantity
@@ -1796,7 +1796,7 @@ PrintListMenuEntries::
 	pop hl
 	ld bc, SCREEN_WIDTH + 5 ; 1 row down and 5 columns right
 	add hl,bc
-	ld c,$a3 ; no leading zeroes, right-aligned, print currency symbol, 3 bytes
+	ld c,$83 ; no leading zeroes, right-aligned, print currency symbol, 3 bytes
 	call PrintBCDNumber
 	ld [hl], $F0
 .skipPrintingItemPrice

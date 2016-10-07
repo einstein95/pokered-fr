@@ -427,7 +427,7 @@ DisplayChangeBoxMenu:
 	ld [wMaxMenuItem], a
 	ld a, 1
 	ld [wTopMenuItemY], a
-	ld a, 12
+	ld a, 10
 	ld [wTopMenuItemX], a
 	xor a
 	ld [wMenuWatchMovingOutOfBounds], a
@@ -437,18 +437,18 @@ DisplayChangeBoxMenu:
 	ld [wLastMenuItem], a
 	coord hl, 0, 0
 	ld b, 2
-	ld c, 9
+	ld c, 7
 	call TextBoxBorder
 	ld hl, ChooseABoxText
 	call PrintText
-	coord hl, 11, 0
+	coord hl, 9, 0
 	ld b, 12
-	ld c, 7
+	ld c, 9
 	call TextBoxBorder
 	ld hl, hFlags_0xFFF6
 	set 2, [hl]
 	ld de, BoxNames
-	coord hl, 13, 1
+	coord hl, 11, 1
 	call PlaceString
 	ld hl, hFlags_0xFFF6
 	res 2, [hl]
@@ -457,14 +457,14 @@ DisplayChangeBoxMenu:
 	cp 9
 	jr c, .singleDigitBoxNum
 	sub 9
-	coord hl, 8, 2
+	coord hl, 6, 2
 	ld [hl], "1"
 	add "0"
 	jr .next
 .singleDigitBoxNum
 	add "1"
 .next
-	Coorda 9, 2
+	Coorda 7, 2
 	coord hl, 1, 2
 	ld de, BoxNoText
 	call PlaceString
