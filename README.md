@@ -1,14 +1,12 @@
-# Pokémon Red and Blue [![Build Status][ci-badge]][ci]
+# Pokémon: Version Rouge and Bleue [![Build Status][ci-badge]][ci]
 
-This is a disassembly of Pokémon Red and Blue.
+This is a disassembly of Pokémon: Version Rouge and Bleue.
 
 It builds the following ROMs:
 
-- Pokemon Red (UE) [S][!].gb `sha1: ea9bcae617fdf159b045185467ae58b2e4a48b9a`
-- Pokemon Blue (UE) [S][!].gb `sha1: d7037c83e1ae5b39bde3c30787637ba1d4c48ce2`
-- BLUEMONS.GB (debug build) `sha1: 5b1456177671b79b263c614ea0e7cc9ac542e9c4`
-- dmgapae0.e69.patch `sha1: 0fb5f743696adfe1dbb2e062111f08f9bc5a293a`
-- dmgapee0.e68.patch `sha1: ed4be94dc29c64271942c87f2157bca9ca1019c7`
+* Pokemon - Version Rouge (F) [S].gb  `sha1: 47a7622fa30e6402a3891fe65b3a930bf9bd7aec`
+* Pokemon - Version Bleue (F) [S].gb  `sha1: 47faa910d0e073c600665bf9c83b6bd17babdf8a`
+* pokeblue_debug.gbc (debug build) `sha1: a46b07c821b0df992237071490d681cdd61e8d1a`
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
@@ -22,6 +20,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
 Other disassembly projects:
 
+- [**Pokémon Red & Blue**][pokered]
 - [**Pokémon Yellow**][pokeyellow]
 - [**Pokémon Gold/Silver**][pokegold]
 - [**Pokémon Crystal**][pokecrystal]
@@ -31,6 +30,7 @@ Other disassembly projects:
 - [**Pokémon FireRed**][pokefirered]
 - [**Pokémon Emerald**][pokeemerald]
 
+[pokered]: https://github.com/pret/pokered
 [pokeyellow]: https://github.com/pret/pokeyellow
 [pokegold]: https://github.com/pret/pokegold
 [pokecrystal]: https://github.com/pret/pokecrystal
@@ -44,5 +44,5 @@ Other disassembly projects:
 [symbols]: https://github.com/pret/pokered/tree/symbols
 [discord]: https://discord.gg/d5dubZ3
 [irc]: https://web.libera.chat/?#pret
-[ci]: https://github.com/pret/pokered/actions
-[ci-badge]: https://github.com/pret/pokered/actions/workflows/main.yml/badge.svg
+[ci]: https://github.com/einstein95/pokered-fr/actions
+[ci-badge]: https://github.com/einstein95/pokered-fr/actions/workflows/main.yml/badge.svg

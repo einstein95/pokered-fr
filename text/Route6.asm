@@ -1,97 +1,99 @@
 _Route6BattleText1::
-	text "Who's there?"
-	line "Quit listening in"
-	cont "on us!"
+	text "Qui est là?"
+	line "Arrête de nous"
+	cont "espionner!"
 	done
 
 _Route6EndBattleText1::
-	text "I"
-	line "just can't win!"
+	text "..."
+	line "J'suis nul!"
 	prompt
 
 _Route6AfterBattleText1::
-	text "Whisper..."
-	line "whisper..."
+	text "Soupirs..."
+	line "Gros soupirs..."
 	done
 
 _Route6BattleText2::
-	text "Excuse me! This"
-	line "is a private"
-	cont "conversation!"
+	text "Heu, c'est une"
+	line "conversation"
+	cont "privée, DEGAGE!"
 	done
 
 _Route6EndBattleText2::
-	text "Ugh!"
-	line "I hate losing!"
+	text "Non!"
+	line "Pas bon perdre!"
 	prompt
 
 _Route6BattleText3::
-	text "There aren't many"
-	line "bugs out here."
+	text "C'est plein"
+	line "d'insectes, ici."
 	done
 
 _Route6EndBattleText3::
-	text "No!"
-	line "You're kidding!"
+	text "Non!"
+	line "C'est une blague!"
 	prompt
 
 _Route6AfterBattleText3::
-	text "I like bugs, so"
-	line "I'm going back to"
-	cont "VIRIDIAN FOREST."
+	text "Les insectes"
+	line "j'aime ça, je"
+	cont "retourne dans la"
+	cont "FORET DE JADE."
 	done
 
 _Route6BattleText4::
-	text "Huh? You want"
-	line "to talk to me?"
+	text "Hein? Tu veux"
+	line "me causer?"
 	done
 
 _Route6EndBattleText4::
-	text "I"
-	line "didn't start it!"
+	text "..."
+	line "J'ai rien fait!"
 	prompt
 
 _Route6AfterBattleText4::
-	text "I should carry"
-	line "more #MON with"
-	cont "me for safety."
+	text "Il me faut plus"
+	line "de #MON"
+	cont "pour me protéger."
 	done
 
 _Route6BattleText5::
-	text "Me? Well, OK."
-	line "I'll play!"
+	text "Qui ça? Moi?"
+	line "Ok. Attaque!"
 	done
 
 _Route6EndBattleText5::
-	text "Just"
-	line "didn't work!"
+	text "Ho."
+	line "Pas glop!"
 	prompt
 
 _Route6AfterBattleText5::
-	text "I want to get"
-	line "stronger! What's"
-	cont "your secret?"
+	text "Je veux être"
+	line "forte! Comme toi!"
+	cont "C'est quoi ton"
+	cont "secret?"
 	done
 
 _Route6BattleText6::
-	text "I've never seen"
-	line "you around!"
-	cont "Are you good?"
+	text "J't'ai jamais"
+	line "vu dans le coin!"
+	cont "T'es puissant?"
 	done
 
 _Route6EndBattleText6::
-	text "You"
-	line "are too good!"
+	text "Whaa!"
+	line "Trop puissant!"
 	prompt
 
 _Route6AfterBattleText6::
-	text "Are my #MON"
-	line "weak? Or, am I"
-	cont "just bad?"
+	text "Mes #MON sont"
+	line "nuls ou je suis"
+	cont "très mauvais?"
 	done
 
 _Route6Text7::
-	text "UNDERGROUND PATH"
-	line "CERULEAN CITY -"
-	cont "VERMILION CITY"
+	text "SOUTERRAIN"
+	line "AZURIA -"
+	cont "CARMIN SUR MER"
 	done

@@ -49,30 +49,35 @@ CreditsTextPointers:
 	dw CredSaOota
 	dw CredYoshikawa
 	dw CredToOota
-	dw CredUSStaff
-	dw CredUSCoord
-	dw CredTilden
+	dw CredEUStaff
+	dw CredEUCoord
+	dw CredMoyse
+	dw CredPfitzner
+	dw CredKraft
 	dw CredKawakami
-	dw CredHiNakamura
-	dw CredGiese
-	dw CredOsborne
+	dw CredEdasawa
+	dw CredUesugi
+	dw CredYoshimura
 	dw CredTrans
-	dw CredOgasawara
-	dw CredIwata
+	dw CredBardakoff
+	dw CredFleury
+	dw CredNakamichi
 	dw CredIzushi
 	dw CredHarada
 	dw CredMurakawa
 	dw CredFukui
-	dw CredClub
-	dw CredPAAD
+	dw CredNoEProdTest
+	dw CredZehAndHugo
+	dw CredNoAProdTest
+	dw CredHudsonAndBuechele
 	assert_table_length NUM_CRED_STRINGS
 
 CredVersion:
 IF DEF(_RED)
-	db -8, "RED VERSION STAFF@"
+	db -6, "VERSION ROUGE@"
 ENDC
 IF DEF(_BLUE)
-	db -8, "BLUE VERSION STAFF@"
+	db -6, "VERSION BLEUE@"
 ENDC
 CredTajiri:
 	db -6, "SATOSHI TAJIRI@"
@@ -168,26 +173,32 @@ CredYoshikawa:
 	db -6, "RENA YOSHIKAWA@"
 CredToOota:
 	db -6, "TOMOMICHI OOTA@"
-CredUSStaff:
-	db -7, "US VERSION STAFF@"
-CredUSCoord:
-	db -7, "US COORDINATION@"
-CredTilden:
-	db -5, "GAIL TILDEN@"
+CredEUStaff:
+	db -6, "EQUIPE EUROPE@"
+CredEUCoord:
+	db -9, "COORDINATION EUROPE@"
+CredMoyse:
+	db -7, "CLAUDE M. MOYSE@"
+CredPfitzner:
+	db -7, "MARKUS PFITZNER@"
+CredKraft:
+	db -6, "JOHN D. KRAFT@"
 CredKawakami:
 	db -6, "NAOKO KAWAKAMI@"
-CredHiNakamura:
-	db -6, "HIRO NAKAMURA@"
-CredGiese:
-	db -6, "WILLIAM GIESE@"
-CredOsborne:
-	db -5, "SARA OSBORNE@"
+CredEdasawa:
+	db -6, "YUSUKE EDASAWA@"
+CredUesugi:
+	db -5, "HIRO UESUGI@"
+CredYoshimura:
+	db -7, "KAMON YOSHIMURA@"
 CredTrans:
-	db -7, "TEXT TRANSLATION@"
-CredOgasawara:
-	db -6, "NOB OGASAWARA@"
-CredIwata:
-	db -5, "SATORU IWATA@"
+	db -7, "TEXTES FRANCAIS@"
+CredBardakoff:
+	db -7, "JULIEN BARDAKOFF@"
+CredFleury:
+	db -9, "JEAN-BAPTISTE FLEURY@"
+CredNakamichi:
+	db -7, "KIMIKO NAKAMICHI@"
 CredIzushi:
 	db -7, "TAKEHIRO IZUSHI@"
 CredHarada:
@@ -196,7 +207,11 @@ CredMurakawa:
 	db -7, "TERUKI MURAKAWA@"
 CredFukui:
 	db -5, "KOHTA FUKUI@"
-CredClub:
-	db -9, "NCL SUPER MARIO CLUB@"
-CredPAAD:
-	db -5, "PAAD TESTING@"
+CredNoEProdTest:
+	db -9, "NOE PRODUCT TESTING@"
+CredZehAndHugo:
+	db -8, "KAI ZEH + MP.HUGO@"
+CredNoAProdTest:
+	db -9, "NOA PRODUCT TESTING@"
+CredHudsonAndBuechele:
+	db -9, "K.HUDSON+T.BUECHELE@"

@@ -1,46 +1,49 @@
 _SilphCo3Text_59ff9::
-	text "I work for SILPH."
-	line "What should I do?"
+	text "Je travaille pour"
+	line "la SYLPHE SARL."
+	cont "Que faire d'autre?"
 	done
 
 _SilphCo3Text_59ffe::
-	text "<PLAYER>! You and"
-	line "your #MON"
-	cont "saved us!"
+	text "<PLAYER>! Toi et"
+	line "tes #MON,"
+	cont "vous nous avez"
+	cont "sauvés!"
 	done
 
 _SilphCo3BattleText1::
-	text "Quit messing with"
-	line "us, kid!"
+	text "T'occupe pas de"
+	line "nos affaires!"
 	done
 
 _SilphCo3EndBattleText1::
-	text "I give"
-	line "up!"
+	text "Yaha!"
+	line "T'es trop fort!"
 	prompt
 
 _SilphCo3AfterBattleText1::
-	text "A hint? You can"
-	line "open doors with a"
-	cont "CARD KEY!"
+	text "Tu peux ouvrir"
+	line "les portes avec"
+	cont "la CARTE MAGN.!"
 	done
 
 _SilphCo3BattleText2::
-	text "I support TEAM"
-	line "ROCKET more than"
-	cont "I support SILPH!"
+	text "Je préfère"
+	line "la TEAM ROCKET à"
+	cont "la SYLPHE SARL!!!"
 	done
 
 _SilphCo3EndBattleText2::
-	text "You"
-	line "really got me!"
+	text "!!!"
+	line "Tu m'as eu!"
 	prompt
 
 _SilphCo3AfterBattleText2::
-	text "Humph..."
+	text "Hmmm..."
 
-	para "TEAM ROCKET said"
-	line "that if I helped"
-	cont "them, they'd let"
-	cont "me study #MON!"
+	para "J'aide la TEAM"
+	line "ROCKET et ils"
+	cont "me laissent"
+	cont "étudier les"
+	cont "#MON!"
 	done

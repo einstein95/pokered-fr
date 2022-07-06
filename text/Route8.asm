@@ -1,154 +1,164 @@
 _Route8BattleText1::
-	text "You look good at"
-	line "#MON, but"
-	cont "how's your chem?"
+	text "T'es un bon avec"
+	line "tes #MON."
+	cont "Mais les maths,"
+	cont "tu connais?"
 	done
 
 _Route8EndBattleText1::
-	text "Ow!"
-	line "Meltdown!"
+	text "Ouch!"
+	line "2 plus 2... 7?"
 	prompt
 
 _Route8AfterBattleText1::
-	text "I am better at"
-	line "school than this!"
+	text "Je suis meilleur"
+	line "à l'école!"
 	done
 
 _Route8BattleText2::
-	text "All right! Let's"
-	line "roll the dice!"
+	text "Le sort en est"
+	line "jeté!"
 	done
 
 _Route8EndBattleText2::
-	text "Drat!"
-	line "Came up short!"
+	text "Haaa!"
+	line "Le hasard..."
 	prompt
 
 _Route8AfterBattleText2::
-	text "Lady Luck's not"
-	line "with me today!"
+	text "Dame chance n'est"
+	line "pas avec moi!"
 	done
 
 _Route8BattleText3::
-	text "You need strategy"
-	line "to win at this!"
+	text "Il te faut une"
+	line "bonne stratégie!"
 	done
 
 _Route8EndBattleText3::
-	text "It's"
-	line "not logical!"
+	text "Hé!"
+	line "Pas logique!"
 	prompt
 
 _Route8AfterBattleText3::
-	text "Go with GRIMER"
-	line "first...and..."
-	cont "...and...then..."
+	text "D'abord TADMORV"
+	line "et après..."
+	cont "Et puis..."
 	done
 
 _Route8BattleText4::
-	text "I like NIDORAN, so"
-	line "I collect them!"
+	text "Moi, j'aime les"
+	line "NIDORAN! Yaha!"
 	done
 
 _Route8EndBattleText4::
-	text "Why? Why??"
+	text "Hein?"
 	prompt
 
 _Route8AfterBattleText4::
-	text "When #MON grow"
-	line "up they get ugly!"
-	cont "They shouldn't"
-	cont "evolve!"
+	text "Quand un #MON"
+	line "grandit, il est"
+	cont "gros et moche."
+	cont "Je les préfère"
+	cont "tout petits!"
 	done
 
 _Route8BattleText5::
-	text "School is fun, but"
-	line "so are #MON."
+	text "L'école c'est"
+	line "cool, les #MON"
+	cont "c'est mieux!"
 	done
 
 _Route8EndBattleText5::
-	text "I'll"
-	line "stay with school."
+	text "Ben..."
+	line "L'école c'est"
+	cont "plus facile!"
 	prompt
 
 _Route8AfterBattleText5::
-	text "We're stuck here"
-	line "because of the"
-	cont "gates at SAFFRON."
+	text "On est bloqué"
+	line "ici, aux portes"
+	cont "de SAFRANIA."
 	done
 
 _Route8BattleText6::
-	text "MEOWTH is so cute,"
-	line "meow, meow, meow!"
+	text "MIAOUSS est si"
+	line "mignon. Miaou!"
 	done
 
 _Route8EndBattleText6::
-	text "Meow!"
+	text "Miaou!"
 	prompt
 
 _Route8AfterBattleText6::
-	text "I think PIDGEY"
-	line "and RATTATA"
-	cont "are cute too!"
+	text "Je trouve que"
+	line "ROUCOOL et"
+	cont "RATTATA sont trop"
+	cont "cool!"
 	done
 
 _Route8BattleText7::
-	text "We must look"
-	line "silly standing"
-	cont "here like this!"
+	text "Je sais, on a"
+	line "l'air idiot"
+	cont "debout!"
 	done
 
 _Route8EndBattleText7::
-	text "Look what"
-	line "you did!"
+	text "Ben..."
+	line "C'est malin ça!"
 	prompt
 
 _Route8AfterBattleText7::
-	text "SAFFRON's gate"
-	line "keeper won't let"
-	cont "us through."
-	cont "He's so mean!"
+	text "Le gardien de la"
+	line "porte de SAFRANIA"
+	cont "ne nous laissera"
+	cont "pas passer!"
 	done
 
 _Route8BattleText8::
-	text "I'm a rambling,"
-	line "gambling dude!"
+	text "Je suis un"
+	line "joueur errant!"
 	done
 
 _Route8EndBattleText8::
-	text "Missed"
-	line "the big score!"
+	text "J'ai"
+	line "raté le jackpot!"
 	prompt
 
 _Route8AfterBattleText8::
-	text "Gambling and"
-	line "#MON are like"
-	cont "eating peanuts!"
-	cont "Just can't stop!"
+	text "Le jeu et les"
+	line "#MON, c'est"
+	cont "comme les"
+	cont "cacahuètes."
+	cont "Tu commences et"
+	cont "tu peux plus"
+	cont "t'arrêter! Fou!"
 	done
 
 _Route8BattleText9::
-	text "What's a cute,"
-	line "round and fluffy"
-	cont "#MON?"
+	text "Qu'il est mimi,"
+	line "gentil et trognon"
+	cont "ce #MON!"
+	cont "Il est à qui?"
+	cont "Hein? A qui?"
 	done
 
 _Route8EndBattleText9::
-	text "Stop!"
+	text "Arrête!"
 
-	para "Don't be so mean"
-	line "to my CLEFAIRY!"
+	para "T'es pas gentil"
+	line "avec MELOFEE!"
 	prompt
 
 _Route8AfterBattleText9::
-	text "I heard that"
-	line "CLEFAIRY evolves"
-	cont "when it's exposed"
-	cont "to a MOON STONE."
+	text "Il paraît que"
+	line "MELOFEE peut"
+	cont "évoluer grâce à "
+	cont "une PIERRE LUNE."
 	done
 
 _Route8Text10::
-	text "UNDERGROUND PATH"
-	line "CELADON CITY -"
-	cont "LAVENDER TOWN"
+	text "SOUTERRAIN"
+	line "CELADOPOLE -"
+	cont "LAVANVILLE"
 	done

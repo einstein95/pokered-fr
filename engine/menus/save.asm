@@ -174,7 +174,7 @@ SaveSAV:
 	jp DelayFrames
 
 NowSavingString:
-	db "Now saving...@"
+	db "Sauvegarde...@"
 
 SaveSAVConfirm:
 	call PrintText
@@ -430,7 +430,7 @@ DisplayChangeBoxMenu:
 	ld [wMaxMenuItem], a
 	ld a, 1
 	ld [wTopMenuItemY], a
-	ld a, 12
+	ld a, 10
 	ld [wTopMenuItemX], a
 	xor a
 	ld [wMenuWatchMovingOutOfBounds], a
@@ -440,18 +440,18 @@ DisplayChangeBoxMenu:
 	ld [wLastMenuItem], a
 	hlcoord 0, 0
 	ld b, 2
-	ld c, 9
+	ld c, 7
 	call TextBoxBorder
 	ld hl, ChooseABoxText
 	call PrintText
-	hlcoord 11, 0
+	hlcoord 9, 0
 	ld b, 12
-	ld c, 7
+	ld c, 9
 	call TextBoxBorder
 	ld hl, hUILayoutFlags
 	set 2, [hl]
 	ld de, BoxNames
-	hlcoord 13, 1
+	hlcoord 11, 1
 	call PlaceString
 	ld hl, hUILayoutFlags
 	res 2, [hl]
@@ -460,14 +460,14 @@ DisplayChangeBoxMenu:
 	cp 9
 	jr c, .singleDigitBoxNum
 	sub 9
-	hlcoord 8, 2
+	hlcoord 6, 2
 	ld [hl], "1"
 	add "0"
 	jr .next
 .singleDigitBoxNum
 	add "1"
 .next
-	ldcoord_a 9, 2
+	ldcoord_a 7, 2
 	hlcoord 1, 2
 	ld de, BoxNoText
 	call PlaceString
@@ -497,21 +497,21 @@ ChooseABoxText:
 	text_end
 
 BoxNames:
-	db   "BOX 1"
-	next "BOX 2"
-	next "BOX 3"
-	next "BOX 4"
-	next "BOX 5"
-	next "BOX 6"
-	next "BOX 7"
-	next "BOX 8"
-	next "BOX 9"
-	next "BOX10"
-	next "BOX11"
-	next "BOX12@"
+	db   "BOITE 1"
+	next "BOITE 2"
+	next "BOITE 3"
+	next "BOITE 4"
+	next "BOITE 5"
+	next "BOITE 6"
+	next "BOITE 7"
+	next "BOITE 8"
+	next "BOITE 9"
+	next "BOITE10"
+	next "BOITE11"
+	next "BOITE12@"
 
 BoxNoText:
-	db "BOX No.@"
+	db "BOITE@"
 
 EmptyAllSRAMBoxes:
 ; marks all boxes in SRAM as empty (initialisation for the first time the

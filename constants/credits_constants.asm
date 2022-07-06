@@ -48,22 +48,27 @@
 	const CRED_SA_OOTA        ; $2D
 	const CRED_YOSHIKAWA      ; $2E
 	const CRED_TO_OOTA        ; $2F
-	const CRED_US_STAFF       ; $30
-	const CRED_US_COORD       ; $31
-	const CRED_TILDEN         ; $32
-	const CRED_KAWAKAMI       ; $33
-	const CRED_HI_NAKAMURA    ; $34
-	const CRED_GIESE          ; $35
-	const CRED_OSBORNE        ; $36
-	const CRED_TRANS          ; $37
-	const CRED_OGASAWARA      ; $38
-	const CRED_IWATA          ; $39
-	const CRED_IZUSHI         ; $3A
-	const CRED_HARADA         ; $3B
-	const CRED_MURAKAWA       ; $3C
-	const CRED_FUKUI          ; $3D
-	const CRED_CLUB           ; $3E
-	const CRED_PAAD           ; $3F
+	const CRED_EU_STAFF       ; $30
+	const CRED_EU_COORD       ; $31
+	const CRED_MOYSE          ; $32
+	const CRED_PFITZNER       ; $33
+	const CRED_KRAFT          ; $34
+	const CRED_KAWAKAMI       ; $35
+	const CRED_EDASAWA        ; $36
+	const CRED_UESUGI         ; $37
+	const CRED_YOSHIMURA      ; $38
+	const CRED_TRANS          ; $39
+	const CRED_BARDAKOFF      ; $3A
+	const CRED_FLEURY         ; $3B
+	const CRED_NAKAMICHI      ; $3C
+	const CRED_IZUSHI         ; $3D
+	const CRED_HARADA         ; $3E
+	const CRED_MURAKAWA       ; $3F
+	const CRED_FUKUI          ; $40
+	const CRED_NOEPRODTEST    ; $41
+	const CRED_ZEHHUGO        ; $42
+	const CRED_NOAPRODTEST    ; $43
+	const CRED_HUDSONBUECHELE ; $44
 DEF NUM_CRED_STRINGS EQU const_value
 
 	const_def -1, -1

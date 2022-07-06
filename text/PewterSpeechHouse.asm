@@ -1,19 +1,26 @@
 _PewterHouse2Text1::
-	text "#MON learn new"
-	line "techniques as"
-	cont "they grow!"
+	text "Un #MON"
+	line "apprend des"
+	cont "attaques en"
+	cont "gagnant des"
+	cont "niveaux!"
 
-	para "But, some moves"
-	line "must be taught by"
-	cont "the trainer!"
+	para "Mais certaines"
+	line "attaques ne"
+	cont "sont enseignées"
+	cont "que par les"
+	cont "dresseurs!"
 	done
 
 _PewterHouse2Text2::
-	text "#MON become"
-	line "easier to catch"
-	cont "when they are"
-	cont "hurt or asleep!"
+	text "Les #MON sont"
+	line "plus faciles à"
+	cont "capturer une fois"
+	cont "endormis ou"
+	cont "blessés!"
 
-	para "But, it's not a"
-	line "sure thing!"
+	para "Mais attraper un"
+	line "#MON, c'est"
+	cont "jamais du tout"
+	cont "cuit!"
 	done

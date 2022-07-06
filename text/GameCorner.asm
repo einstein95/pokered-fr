@@ -1,190 +1,198 @@
 _CeladonGameCornerText1::
-	text "Welcome!"
+	text "Bienvenue!"
 
-	para "You can exchange"
-	line "your coins for"
-	cont "fabulous prizes"
-	cont "next door."
+	para "Echangez vos"
+	line "jetons contre des"
+	cont "prix à côté."
 	done
 
 _CeladonGameCornerText_48d22::
-	text "Welcome to ROCKET"
-	line "GAME CORNER!"
+	text "Bienvenue au"
+	line "CASINO ROCKET!"
 
-	para "Do you need some"
-	line "game coins?"
+	para "Désirez-vous des"
+	line "jetons?"
 
-	para "It's ¥1000 for 50"
-	line "coins. Would you"
-	cont "like some?"
+	para "¥1000 pour 50"
+	line "jetons. OK?"
 	done
 
 _CeladonGameCornerText_48d27::
-	text "Thanks! Here are"
-	line "your 50 coins!"
+	text "Merci! Voici vos"
+	line "50 jetons!"
 	done
 
 _CeladonGameCornerText_48d2c::
-	text "No? Please come"
-	line "play sometime!"
+	text "Non?"
+	line "Ben pourquoi?"
 	done
 
 _CeladonGameCornerText_48d31::
-	text "You can't afford"
-	line "the coins!"
+	text "Pas d'sous."
+	line "Pas d'jetons."
 	done
 
 _CeladonGameCornerText_48d36::
-	text "Oops! Your COIN"
-	line "CASE is full."
+	text "Oups! Votre BOITE"
+	line "est pleine."
 	done
 
 _CeladonGameCornerText_48d3b::
-	text "You don't have a"
-	line "COIN CASE!"
+	text "Il vous faut une"
+	line "BOITE JETON!"
 	done
 
 _CeladonGameCornerText3::
-	text "Keep this quiet."
+	text "Ecoute donc ça..."
 
-	para "It's rumored that"
-	line "this place is run"
-	cont "by TEAM ROCKET."
+	para "On raconte que"
+	line "ce tripot est"
+	cont "tenu par la TEAM"
+	cont "ROCKET."
 	done
 
 _CeladonGameCornerText4::
-	text "I think these"
-	line "machines have"
-	cont "different odds."
+	text "Ces machines ont"
+	line "des mécanismes"
+	cont "différents... "
+	cont "Ca c'est sûr!"
 	done
 
 _CeladonGameCornerText_48d9c::
-	text "Kid, do you want"
-	line "to play?"
+	text "Petit..."
+	line "Tu veux jouer?"
 	prompt
 
 _Received10CoinsText::
-	text "<PLAYER> received"
-	line "10 coins!@"
+	text "<PLAYER> reçoit"
+	line "10 jetons!@"
 	text_end
 
 _CeladonGameCornerText_48da7::
-	text "You don't need my"
-	line "coins!"
+	text "T'as pas besoin"
+	line "d'mes jetons!"
 	done
 
 _CeladonGameCornerText_48dac::
-	text "Wins seem to come"
-	line "and go."
+	text "La chance..."
+	line "Ca craint."
 	done
 
 _CeladonGameCornerText6::
-	text "I'm having a"
-	line "wonderful time!"
+	text "Ce que j'peux"
+	line "m'éclater! Yaaa!"
 	done
 
 _CeladonGameCornerText_48dca::
-	text "Hey!"
+	text "Hé toi!"
 
-	para "You have better"
-	line "things to do,"
-	cont "champ in making!"
+	para "Sacré toi, va..."
+	line "Une vraie graine"
+	cont "de champion!"
 
-	para "CELADON GYM's"
-	line "LEADER is ERIKA!"
-	cont "She uses grass-"
-	cont "type #MON!"
+	para "ERIKA est la"
+	line "CHAMPIONNE de"
+	cont "l'ARENE de"
+	cont "CELADOPOLE! Elle"
+	cont "utilise des"
+	cont "#MON des"
+	cont "plantes!"
 
-	para "She might appear"
-	line "docile, but don't"
-	cont "be fooled!"
+	para "Elle te semblera"
+	line "douce et tout ça,"
+	cont "mais...c'est un"
+	cont "piège!"
 	done
 
 _CeladonGameCornerText_48dcf::
-	text "They offer rare"
-	line "#MON that can"
-	cont "be exchanged for"
-	cont "your coins."
+	text "De très rares"
+	line "#MON sont à"
+	cont "échanger contre"
+	cont "des jetons."
 
-	para "But, I just can't"
-	line "seem to win!"
+	para "Mais c'est trop"
+	line "dur de gagner!"
 	done
 
 _CeladonGameCornerText8::
-	text "Games are scary!"
-	line "It's so easy to"
-	cont "get hooked!"
+	text "Jouer! Jouer!"
+	line "Encore jouer!"
+	cont "Jouer et jouer!"
+	cont "Jouer encore! Ga."
 	done
 
 _CeladonGameCornerText_48e26::
-	text "What's up? Want"
-	line "some coins?"
+	text "Quoi ça? Tu veux"
+	line "des jetons?"
 	prompt
 
 _Received20CoinsText::
-	text "<PLAYER> received"
-	line "20 coins!@"
+	text "<PLAYER> reçoit"
+	line "20 jetons!@"
 	text_end
 
 _CeladonGameCornerText_48e31::
-	text "You have lots of"
-	line "coins!"
+	text "T'en as des"
+	line "jetons, toi!"
 	done
 
 _CeladonGameCornerText_48e36::
-	text "Darn! I need more"
-	line "coins for the"
-	cont "#MON I want!"
+	text "Méga-mince!"
+	line "Y m'faut des"
+	cont "jetons pour"
+	cont "acheter un joli"
+	cont "#MON!"
 	done
 
 _CeladonGameCornerText_48e88::
-	text "Hey, what? You're"
-	line "throwing me off!"
-	cont "Here are some"
-	cont "coins, shoo!"
+	text "Hein? Des jetons?"
+	line "En voilà! Mais..."
+	cont "Comment dire..."
+	cont "Dégage!"
 	prompt
 
 _CeladonGameCornerText_48e8d::
-	text "<PLAYER> received"
-	line "20 coins!@"
+	text "<PLAYER> reçoit"
+	line "20 jetons!@"
 	text_end
 
 _CeladonGameCornerText_48e93::
-	text "You've got your"
-	line "own coins!"
+	text "T'as tes jetons?"
+	line "Alors va jouer..."
 	done
 
 _CeladonGameCornerText_48e98::
-	text "The trick is to"
-	line "watch the reels"
-	cont "closely!"
+	text "Le truc c'est de"
+	line "regarder l'écran"
+	cont "comme un dingue!"
 	done
 
 _CeladonGameCornerText_48ece::
-	text "I'm guarding this"
+	text "Je surveille le"
 	line "poster!"
-	cont "Go away, or else!"
+	cont "Bouge de là!"
 	done
 
 _CeladonGameCornerText_48ed3::
-	text "Dang!"
+	text "Grââ!"
 	prompt
 
 _CeladonGameCornerText_48ed8::
-	text "Our hideout might"
-	line "be discovered! I"
-	cont "better tell BOSS!"
+	text "Not' cachette va"
+	line "être découverte!"
+	cont "J'va prév'nir eul"
+	cont "CHEF!"
 	done
 
 _CeladonGameCornerText_48f09::
-	text "Hey!"
+	text "Oh!"
 
-	para "A switch behind"
-	line "the poster!?"
-	cont "Let's push it!@"
+	para "Un bouton secret"
+	line "sur le poster!?"
+	cont "Allez, hop!@"
 	text_end
 
 _CeladonGameCornerText_48f19::
-	text "Oops! Forgot the"
-	line "COIN CASE!"
+	text "Oups! Pas de"
+	line "BOITE JETON!"
 	done

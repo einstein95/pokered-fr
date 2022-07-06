@@ -491,7 +491,7 @@ CeladonGameCornerScript_48f1e:
 	call PlaceString
 	hlcoord 12, 3
 	ld de, wPlayerMoney
-	ld c, 3 | MONEY_SIGN | LEADING_ZEROES
+	ld c, LEADING_ZEROES | 3
 	call PrintBCDNumber
 	hlcoord 12, 4
 	ld de, GameCornerCoinText
@@ -501,20 +501,20 @@ CeladonGameCornerScript_48f1e:
 	call PlaceString
 	hlcoord 15, 5
 	ld de, wPlayerCoins
-	ld c, $82
+	ld c, LEADING_ZEROES | 2
 	call PrintBCDNumber
 	ld hl, wd730
 	res 6, [hl]
 	ret
 
 GameCornerMoneyText:
-	db "MONEY@"
+	db "ARG.@"
 
 GameCornerCoinText:
-	db "COIN@"
+	db "JETONS@"
 
 GameCornerBlankText1:
-	db "       @"
+	db "      ¥@"
 
 GameCornerBlankText2:
 	db "       @"

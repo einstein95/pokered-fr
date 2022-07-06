@@ -448,6 +448,7 @@ InitializeSpriteStatus:
 	ld a, $8
 	ld [hli], a   ; [x#SPRITESTATEDATA2_YDISPLACEMENT] = 8
 	ld [hl], a    ; [x#SPRITESTATEDATA2_XDISPLACEMENT] = 8
+	call InitializeSpriteScreenPosition ; could have done fallthrough here
 	ret
 
 ; calculates the sprite's screen position from its map position and the player position
@@ -460,7 +461,7 @@ InitializeSpriteScreenPosition:
 	ld b, a
 	ld a, [hl]      ; x#SPRITESTATEDATA2_MAPY
 	sub b           ; relative to player position
-	swap a          ; * 16
+	call Func_515D
 	sub $4          ; - 4
 	dec h
 	ld [hli], a     ; [x#SPRITESTATEDATA1_YPIXELS]
@@ -469,9 +470,21 @@ InitializeSpriteScreenPosition:
 	ld b, a
 	ld a, [hli]     ; x#SPRITESTATEDATA2_MAPX
 	sub b           ; relative to player position
-	swap a          ; * 16
+	call Func_515D
 	dec h
 	ld [hl], a      ; [x#SPRITESTATEDATA1_XPIXELS]
+	ret
+
+Func_515D:
+	jr nc, .asm_5166
+	cpl
+	inc a
+	swap a
+	cpl
+	inc a
+	ret
+.asm_5166
+	swap a          ; * 16
 	ret
 
 ; tests if sprite is off screen or otherwise unable to do anything
@@ -704,7 +717,7 @@ GetTileSpriteStandsOn:
 	ld l, a
 	ld a, [hli]     ; x#SPRITESTATEDATA1_YPIXELS
 	add $4          ; align to 2*2 tile blocks (Y position is always off 4 pixels to the top)
-	and $f0         ; in case object is currently moving
+	and $f8         ; in case object is currently moving
 	srl a           ; screen Y tile * 4
 	ld c, a
 	ld b, $0

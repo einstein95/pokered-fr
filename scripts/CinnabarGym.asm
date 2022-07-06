@@ -24,10 +24,10 @@ CinnabarGymSetMapAndTiles:
 	jp LoadGymLeaderAndCityName
 
 .CityName:
-	db "CINNABAR ISLAND@"
+	db "CRAMOIS'ILE@"
 
 .LeaderName:
-	db "BLAINE@"
+	db "AUGUSTE@"
 
 CinnabarGymResetScripts:
 	xor a

@@ -1,97 +1,112 @@
 _CeruleanHouse2Text_74e77::
-	text "#MON BADGEs"
-	line "are owned only by"
-	cont "skilled trainers."
+	text "Les BADGES sont"
+	line "portés par des"
+	cont "dresseurs de haut"
+	cont "niveau."
 
-	para "I see you have"
-	line "at least one."
+	para "Mmm... Tu en as"
+	line "au moins un."
 
-	para "Those BADGEs have"
-	line "amazing secrets!"
+	para "Ces BADGES ont"
+	line "d'étranges"
+	cont "pouvoirs!"
 	prompt
 
 _CeruleanHouse2Text_74e7c::
-	text "Now then..."
+	text "Dis-moi..."
 
-	para "Which of the 8"
-	line "BADGEs should I"
-	cont "describe?"
+	para "Lequel des 8"
+	line "BADGES veux-tu"
+	cont "que je décrive?"
 	done
 
 _CeruleanHouse2Text_74e81::
-	text "Come visit me any"
-	line "time you wish."
+	text "Reviens me voir"
+	line "quand tu veux."
 	done
 
 _CeruleanHouse2Text_74e96::
-	text "The ATTACK of all"
-	line "#MON increases"
-	cont "a little bit."
+	text "L'ATTAQUE de tous"
+	line "tes #MON est"
+	cont "augmentée."
 
-	para "It also lets you"
-	line "use FLASH any"
-	cont "time you desire."
+	para "Il permet aussi"
+	line "d'utiliser la CS"
+	cont "FLASH."
 	prompt
 
 _CeruleanHouse2Text_74e9b::
-	text "#MON up to L30"
-	line "will obey you."
+	text "Les #MON d'un"
+	line "niveau inférieur"
+	cont "à 30 t'obéiront."
 
-	para "Any higher, they"
-	line "become unruly!"
+	para "S'ils sont d'un"
+	line "niveau supérieur,"
+	cont "ils seront"
+	cont "incontrôlables!"
 
-	para "It also lets you"
-	line "use CUT outside"
-	cont "of battle."
+	para "Tu pourras aussi"
+	line "utiliser la CS"
+	cont "COUPE en-dehors"
+	cont "des combats."
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "The SPEED of all"
-	line "#MON increases"
-	cont "a little bit."
+	text "La VITESSE de"
+	line "tous tes #MON"
+	cont "sera un peu"
+	cont "augmentée."
 
-	para "It also lets you"
-	line "use FLY outside"
-	cont "of battle."
+	para "Tu pourras aussi"
+	line "utiliser la CS"
+	cont "VOL en-dehors des"
+	cont "combats."
 	prompt
 
 _CeruleanHouse2Text_74ea5::
-	text "#MON up to L50"
-	line "will obey you."
+	text "Les #MON"
+	line "jusqu'au niveau"
+	cont "50 t'obéiront."
 
-	para "Any higher, they"
-	line "become unruly!"
+	para "Ceux d'un niveau"
+	line "supérieur seront"
+	cont "incontrôlables!"
 
-	para "It also lets you"
-	line "use STRENGTH out-"
-	cont "side of battle."
+	para "Tu pourras aussi"
+	line "utiliser la CS"
+	cont "FORCE."
 	prompt
 
 _CeruleanHouse2Text_74eaa::
-	text "The DEFENSE of all"
-	line "#MON increases"
-	cont "a little bit."
+	text "La DEFENSE de"
+	line "tous tes #MON"
+	cont "sera augmentée."
 
-	para "It also lets you"
-	line "use SURF outside"
-	cont "of battle."
+	para "Tu pourras aussi"
+	line "utiliser la CS"
+	cont "SURF en-dehors"
+	cont "des combats."
 	prompt
 
 _CeruleanHouse2Text_74eaf::
-	text "#MON up to L70"
-	line "will obey you."
+	text "Les #MON de"
+	line "niveau 70 ou"
+	cont "moins t'obéiront."
 
-	para "Any higher, they"
-	line "become unruly!"
+	para "S'ils sont d'un"
+	line "niveau supérieur,"
+	cont "ils seront"
+	cont "incontrôlables!"
 	prompt
 
 _CeruleanHouse2Text_74eb4::
-	text "Your #MON's"
-	line "SPECIAL abilities"
-	cont "increase a bit."
+	text "Le SPECIAL de tes"
+	line "#MON sera un"
+	cont "peu augmenté."
 	prompt
 
 _CeruleanHouse2Text_74eb9::
-	text "All #MON will"
-	line "obey you!"
+	text "Tous les #MON"
+	line "obéiront à tes"
+	cont "ordres!"
 	prompt

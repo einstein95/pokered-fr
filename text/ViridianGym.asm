@@ -1,240 +1,261 @@
 _GiovanniPreBattleText::
-	text "Fwahahaha! This is"
-	line "my hideout!"
+	text "Fwahaha! Te voici"
+	line "dans mon repaire!"
 
-	para "I planned to"
-	line "resurrect TEAM"
-	cont "ROCKET here!"
+	para "Je voulais"
+	line "reformer la TEAM"
+	cont "ROCKET ici!"
 
-	para "But, you have"
-	line "caught me again!"
-	cont "So be it! This"
-	cont "time, I'm not"
-	cont "holding back!"
+	para "Mais tu as encore"
+	line "tout fait rater!"
+	cont "Je suis furieux"
+	cont "et ça sent pas"
+	cont "bon pour toi!"
 
-	para "Once more, you"
-	line "shall face"
-	cont "GIOVANNI, the"
-	cont "greatest trainer!"
+	para "Une fois de plus"
+	line "tu oses me"
+	cont "défier, moi, le"
+	cont "grand GIOVANNI!"
+	cont "Mais aujourd'hui,"
+	cont "tu vas déguster!"
 	done
 
 _ReceivedEarthBadgeText::
-	text "Ha!"
-	line "That was a truly"
-	cont "intense fight!"
-	cont "You have won!"
-	cont "As proof, here is"
-	cont "the EARTHBADGE!@"
+	text "Ah!"
+	line "Voilà ce que"
+	cont "j'appelle du"
+	cont "combat! Tu as"
+	cont "gagné! En"
+	cont "récompense voici"
+	cont "le BADGE TERRE!@"
 	text_end
 
 _GiovanniPostBattleAdviceText::
-	text "Having lost, I"
-	line "cannot face my"
-	cont "underlings!"
-	cont "TEAM ROCKET is"
-	cont "finished forever!"
+	text "OK, j'ai perdu!"
+	line "Je ne suis pas"
+	cont "digne d'être le"
+	cont "chef de la TEAM"
+	cont "ROCKET! Ainsi,"
+	cont "son existence"
+	cont "s'achève avec ma"
+	cont "défaite!"
 
-	para "I will dedicate my"
-	line "life to the study"
-	cont "of #MON!"
+	para "Je vais me"
+	line "retirer, loin, en"
+	cont "ermite, pour"
+	cont "étudier les"
+	cont "#MON!"
 
-	para "Let us meet again"
-	line "some day!"
-	cont "Farewell!@"
+	para "Un jour, nos"
+	line "chemins se"
+	cont "croiseront à"
+	cont "nouveau! Adieu!@"
 	text_end
 
 _GiovanniEarthBadgeInfoText::
-	text "The EARTHBADGE"
-	line "makes #MON of"
-	cont "any level obey!"
+	text "Grâce au BADGE"
+	line "TERRE tous les"
+	cont "#MON obéiront"
+	cont "à tes ordres!"
 
-	para "It is evidence of"
-	line "your mastery as a"
-	cont "#MON trainer!"
+	para "Il est le"
+	line "témoignage de ta"
+	cont "grande maîtrise"
+	cont "des #MON!"
 
-	para "With it, you can"
-	line "enter the #MON"
-	cont "LEAGUE!"
+	para "Tu pourras ainsi"
+	line "accéder à la"
+	cont "LIGUE #MON!"
 
-	para "It is my gift for"
-	line "your #MON"
-	cont "LEAGUE challenge!"
+	para "C'est un cadeau"
+	line "que je te fais."
+	cont "Va maintenant,"
+	cont "et deviens le"
+	cont "plus grand des"
+	cont "dresseurs!"
 	done
 
 _ReceivedTM27Text::
-	text "<PLAYER> received"
-	line "TM27!@"
+	text "<PLAYER> reçoit"
+	line "CT27!@"
 	text_end
 
 _TM27ExplanationText::
 	text_start
 
-	para "TM27 is FISSURE!"
-	line "It will take out"
-	cont "#MON with just"
-	cont "one hit!"
+	para "CT27: ABIME!"
+	line "Cette attaque"
+	cont "peut mettre hors"
+	cont "combat un #MON"
+	cont "en un seul coup!"
 
-	para "I made it when I"
-	line "ran the GYM here,"
-	cont "too long ago..."
+	para "Je l'ai inventée"
+	line "il y a bien"
+	cont "longtemps..."
 	done
 
 _TM27NoRoomText::
-	text "You do not have"
-	line "space for this!"
+	text "Votre inventaire"
+	line "est plein!"
 	done
 
 _ViridianGymBattleText1::
-	text "Heh! You must be"
-	line "running out of"
-	cont "steam by now!"
+	text "Hé! Tu dois être"
+	line "crevé, non? "
 	done
 
 _ViridianGymEndBattleText1::
-	text "I"
-	line "ran out of gas!"
+	text "Ha!"
+	line "J'suis essoufflé!"
 	prompt
 
 _ViridianGymAfterBattleText1::
-	text "You need power to"
-	line "keep up with our"
-	cont "GYM LEADER!"
+	text "Il faut que tu"
+	line "sois fort pour te"
+	cont "mesurer au..."
+	cont "CHAMPION!"
 	done
 
 _ViridianGymBattleText2::
-	text "Rrrroar! I'm"
-	line "working myself"
-	cont "into a rage!"
+	text "Groaar!"
+	line "Colère! Viens"
+	cont "te battre!"
 	done
 
 _ViridianGymEndBattleText2::
-	text "Wargh!"
+	text "Rargh!"
 	prompt
 
 _ViridianGymAfterBattleText2::
-	text "I'm still not"
-	line "worthy!"
+	text "Grouargh!"
 	done
 
 _ViridianGymBattleText3::
-	text "#MON and I, we"
-	line "make wonderful"
-	cont "music together!"
+	text "Avec mes #MON"
+	line "je fais de la"
+	cont "jolie musique!"
 	done
 
 _ViridianGymEndBattleText3::
-	text "You are in"
-	line "perfect harmony!"
+	text "Tu es"
+	line "très fort!"
 	prompt
 
 _ViridianGymAfterBattleText3::
-	text "Do you know the"
-	line "identity of our"
-	cont "GYM LEADER?"
+	text "Sais-tu qui est"
+	line "notre CHAMPION?"
 	done
 
 _ViridianGymBattleText4::
-	text "Karate is the"
-	line "ultimate form of"
-	cont "martial arts!"
+	text "Le Karaté est"
+	line "l'art martial"
+	cont "ultime!"
 	done
 
 _ViridianGymEndBattleText4::
-	text "Atcho!"
+	text "Yaha!"
 	prompt
 
 _ViridianGymAfterBattleText4::
-	text "If my #MON"
-	line "were as good at"
-	cont "Karate as I..."
+	text "Mes #MON sont"
+	line "des karatékas..."
 	done
 
 _ViridianGymBattleText5::
-	text "The truly talented"
-	line "win with style!"
+	text "Je vais t'écraser"
+	line "avec style et"
+	cont "élégance!"
 	done
 
 _ViridianGymEndBattleText5::
-	text "I"
-	line "lost my grip!"
+	text "..."
+	line "Tout perdu!"
 	prompt
 
 _ViridianGymAfterBattleText5::
-	text "The LEADER will"
-	line "scold me!"
+	text "Le CHAMPION va"
+	line "me taper dessus!"
 	done
 
 _ViridianGymBattleText6::
-	text "I'm the KARATE"
-	line "KING! Your fate"
-	cont "rests with me!"
+	text "J'suis le ROI du"
+	line "KARATE! Ton"
+	cont "destin repose"
+	cont "entre mes mains!"
 	done
 
 _ViridianGymEndBattleText6::
-	text "Ayah!"
+	text "Yaah!"
 	prompt
 
 _ViridianGymAfterBattleText6::
-	text "#MON LEAGUE?"
-	line "You? Don't get"
-	cont "cocky!"
+	text "La LIGUE #MON?"
+	line "Toi? Hahahahah!!!"
+	cont "T'es un rigolo!"
 	done
 
 _ViridianGymBattleText7::
-	text "Your #MON will"
-	line "cower at the"
-	cont "crack of my whip!"
+	text "Tes #MON vont"
+	line "se courber sous"
+	cont "mes coups de"
+	cont "fouet!"
 	done
 
 _ViridianGymEndBattleText7::
-	text "Yowch!"
-	line "Whiplash!"
+	text "Aïee!"
 	prompt
 
 _ViridianGymAfterBattleText7::
-	text "Wait! I was just"
-	line "careless!"
+	text "Attends! Je ne"
+	line "faisais pas"
+	cont "attention!"
 	done
 
 _ViridianGymBattleText8::
-	text "VIRIDIAN GYM was"
-	line "closed for a long"
-	cont "time, but now our"
-	cont "LEADER is back!"
+	text "L'ARENE de"
+	line "JADIELLE était"
+	cont "fermée depuis"
+	cont "longtemps, mais"
+	cont "le CHAMPION est"
+	cont "enfin revenu!"
 	done
 
 _ViridianGymEndBattleText8::
-	text "I"
-	line "was beaten?"
+	text "!!!"
+	line "Défaite!"
 	prompt
 
 _ViridianGymAfterBattleText8::
-	text "You can go onto"
-	line "#MON LEAGUE"
-	cont "only by defeating"
-	cont "our GYM LEADER!"
+	text "Tu ne pourras"
+	line "accéder à la"
+	cont "LIGUE #MON"
+	cont "seulement en"
+	cont "battant notre"
+	cont "CHAMPION!"
 	done
 
 _ViridianGymGuidePreBattleText::
-	text "Yo! Champ in"
-	line "making!"
+	text "Salut! Champion"
+	line "en herbe!"
 
-	para "Even I don't know"
-	line "VIRIDIAN LEADER's"
-	cont "identity!"
+	para "Même moi, je ne"
+	line "sais pas qui est"
+	cont "le CHAMPION de"
+	cont "JADIELLE!"
 
-	para "This will be the"
-	line "toughest of all"
-	cont "the GYM LEADERs!"
+	para "Le combat qui"
+	line "t'attend sera le"
+	cont "plus dur de tous!"
 
-	para "I heard that the"
-	line "trainers here"
-	cont "like ground-type"
-	cont "#MON!"
+	para "Le dresseur de"
+	line "cette ARENE aime"
+	cont "les #MON du"
+	cont "type SOL!"
 	done
 
 _ViridianGymGuidePostBattleText::
-	text "Blow me away!"
-	line "GIOVANNI was the"
-	cont "GYM LEADER here?"
+	text "Quoi?! C'était"
+	line "GIOVANNI le"
+	cont "CHAMPION?"
+	cont "Ben ça alors!"
 	done

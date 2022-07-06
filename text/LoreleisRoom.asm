@@ -1,42 +1,41 @@
 _LoreleiBeforeBattleText::
-	text "Welcome to"
-	line "#MON LEAGUE!"
+	text "Bienvenue à la"
+	line "LIGUE #MON!"
 
-	para "I am LORELEI of"
-	line "the ELITE FOUR!"
+	para "Je zuis OLGA du"
+	line "CONZEIL des 4!"
 
-	para "No one can best"
-	line "me when it comes"
-	cont "to icy #MON!"
+	para "Je zuis la"
+	line "maîtrezze des"
+	cont "#MON de glaze!"
 
-	para "Freezing moves"
-	line "are powerful!"
+	para "Et la glaze..."
+	line "Z'est drop fort!"
 
-	para "Your #MON will"
-	line "be at my mercy"
-	cont "when they are"
-	cont "frozen solid!"
+	para "Tes #MON"
+	line "zeront à ma merzi"
+	cont "une fois gelés!"
 
-	para "Hahaha!"
-	line "Are you ready?"
+	para "Ach! Ach! Ach!"
+	line "Z'est parti!"
 	done
 
 _LoreleiEndBattleText::
-	text "How"
-	line "dare you!"
+	text "Comment"
+	line "as-tu ozé?"
 	prompt
 
 _LoreleiAfterBattleText::
-	text "You're better"
-	line "than I thought!"
-	cont "Go on ahead!"
+	text "Tu es fort."
+	line "Z'est bien."
 
-	para "You only got a"
-	line "taste of #MON"
-	cont "LEAGUE power!"
+	para "Mais la LIGUE"
+	line "#MON te"
+	cont "rézerve d'autres"
+	cont "zurprizes!"
 	done
 
 _LoreleiDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "Une voix:"
+	line "Ne fuis pas!"
 	done

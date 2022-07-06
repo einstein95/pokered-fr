@@ -59,7 +59,12 @@ ENDM
 
 ; [FPA 010 Begin]
 	vc_const "C"
+	vc_const "V"
+	; "<SPACE>" is necessary since spaces separate template command arguments
+	charmap "<SPACE>", " "
+	vc_const "<SPACE>"
 	vc_const ROCK_SLIDE
+	vc_const HAZE
 
 ; [FPA 010 End]
 	vc_const SELFDESTRUCT

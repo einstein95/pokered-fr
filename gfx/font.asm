@@ -18,10 +18,13 @@ NintendoCopyrightLogoGraphics: INCBIN "gfx/splash/copyright.2bpp"
 GamefreakLogoGraphics: INCBIN "gfx/title/gamefreak_inc.2bpp"
 GamefreakLogoGraphicsEnd:
 
+Unk9Graphic: INCBIN "gfx/unk_9.2bpp"
+Unk9GraphicEnd:
+
 TextBoxGraphics:: INCBIN "gfx/font/font_extra.2bpp"
 TextBoxGraphicsEnd::
 
-PokedexTileGraphics: INCBIN "gfx/pokedex/pokedex.2bpp"
+PokedexTileGraphics: INCBIN "gfx/pokedex/pokedex.2bpp",$10,$120
 PokedexTileGraphicsEnd:
 
 WorldMapTileGraphics: INCBIN "gfx/town_map/town_map.2bpp"

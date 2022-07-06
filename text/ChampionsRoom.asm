@@ -1,146 +1,162 @@
 _GaryChampionIntroText::
-	text "<RIVAL>: Hey!"
+	text "<RIVAL>:"
+	line "Bonjour minable."
 
-	para "I was looking"
-	line "forward to seeing"
-	cont "you, <PLAYER>!"
+	para "Je t'attends"
+	line "depuis une bonne"
+	cont "plombe, <PLAYER>!"
 
-	para "My rival should"
-	line "be strong to keep"
-	cont "me sharp!"
+	para "Ton devoir en"
+	line "tant que rival"
+	cont "est d'entraîner"
+	cont "mes #MON."
 
-	para "While working on"
-	line "#DEX, I looked"
-	cont "all over for"
-	cont "powerful #MON!"
+	para "En améliorant mon"
+	line "#DEX, j'ai"
+	cont "recherché les"
+	cont "#MON sur-"
+	cont "puissants!"
 
-	para "Not only that, I"
-	line "assembled teams"
-	cont "that would beat"
-	cont "any #MON type!"
+	para "J'ai ainsi créé"
+	line "l'équipe ultime,"
+	cont "efficace contre"
+	cont "tous les types de"
+	cont "#MON!"
 
-	para "And now!"
+	para "Ca t'épate, hein?"
 
-	para "I'm the #MON"
-	line "LEAGUE champion!"
+	para "Je suis le"
+	line "champion #MON!"
 
-	para "<PLAYER>! Do you"
-	line "know what that"
-	cont "means?"
+	para "Tu sais c'que ça"
+	line "veut dire?"
 
-	para "I'll tell you!"
+	para "Ecoute ça,"
+	line "minable!"
 
-	para "I am the most"
-	line "powerful trainer"
-	cont "in the world!"
+	para "Je suis le"
+	line "dresseur le plus"
+	cont "puissant du"
+	cont "monde! Yaaa!"
 	done
 
 _GaryDefeatedText::
-	text "NO!"
-	line "That can't be!"
-	cont "You beat my best!"
+	text "NOoOoON!"
+	line "IMPOSSIBLE!!!"
+	cont "Mon équipe de"
+	cont "rêve est fichue!"
 
-	para "After all that"
-	line "work to become"
-	cont "LEAGUE champ?"
+	para "Après en avoir"
+	line "tant bavé je me"
+	cont "fais battre?"
+	cont "Et par toi?"
 
-	para "My reign is over"
-	line "already?"
-	cont "It's not fair!"
+	para "Ma gloire... "
+	line "Où qu'elle est?"
+	cont "C'est pas juste!"
 	prompt
 
 _GaryVictoryText::
 	text "Hahaha!"
-	line "I won, I won!"
+	line "J'ai gagné!"
+	cont "Nya na nana na!"
 
-	para "I'm too good for"
-	line "you, <PLAYER>!"
+	para "J'suis trop fort!"
+	line "T'es trop nul!"
 
-	para "You did well to"
-	line "even reach me,"
-	cont "<RIVAL>, the"
-	cont "#MON genius!"
+	para "Comment t'as fait"
+	line "pour arriver"
+	cont "jusqu'ici?"
 
-	para "Nice try, loser!"
-	line "Hahaha!"
+	para "Minable!"
+	line "T'entends?"
+	cont "Minable!"
 	prompt
 
 _GaryText_76103::
-	text "Why?"
-	line "Why did I lose?"
+	text "Qu...Comm...Hein?"
+	line "Moi? Pourquoi?"
+	cont "WHAAAAAAAAAAA!"
 
-	para "I never made any"
-	line "mistakes raising"
-	cont "my #MON..."
+	para "J'ai entraîné mes"
+	line "#MON à la"
+	cont "perfection..."
 
-	para "Darn it! You're"
-	line "the new #MON"
-	cont "LEAGUE champion!"
+	para "Et zut alors!"
+	line "Tu es le nouveau"
+	cont "champion #MON!"
 
-	para "Although I don't"
-	line "like to admit it."
+	para "Alors ça..."
+	line "Ca me la coupe."
 	done
 
 _GaryText2::
-	text "OAK: <PLAYER>!"
+	text "CHEN: <PLAYER>!"
 	done
 
 _GaryText_76120::
-	text "OAK: So, you won!"
-	line "Congratulations!"
-	cont "You're the new"
-	cont "#MON LEAGUE"
-	cont "champion!"
+	text "CHEN: Tu as gagné!"
+	line "Félicitations!"
+	cont "Tu es le nouveau"
+	cont "champion de la"
+	cont "LIGUE #MON!"
 
-	para "You've grown up so"
-	line "much since you"
-	cont "first left with"
-	cont "@"
+	para "Tu as tant changé"
+	line "depuis ton départ"
+	cont "avec @"
 	text_ram wcd6d
 	text "!"
 
-	para "<PLAYER>, you have"
-	line "come of age!"
+	para "<PLAYER>, tu es"
+	line "grand maintenant!"
 	done
 
 _GaryText_76125::
-	text "OAK: <RIVAL>! I'm"
-	line "disappointed!"
+	text "CHEN: <RIVAL>!"
+	line "Je suis... déçu!"
 
-	para "I came when I"
-	line "heard you beat"
-	cont "the ELITE FOUR!"
+	para "Apprenant que tu"
+	line "avais vaincu le"
+	cont "CONSEIL des 4, je"
+	cont "suis venu en"
+	cont "vitesse!"
 
-	para "But, when I got"
-	line "here, you had"
-	cont "already lost!"
+	para "Mais le temps"
+	line "d'arriver jusqu'"
+	cont "ici, tu avais"
+	cont "déjà perdu..."
+	cont "C'est dingue!"
 
-	para "<RIVAL>! Do you"
-	line "understand why"
-	cont "you lost?"
+	para "<RIVAL>! As-tu"
+	line "compris pourquoi"
+	cont "ton équipe s'est"
+	cont "fait moucher?"
 
-	para "You have forgotten"
-	line "to treat your"
-	cont "#MON with"
-	cont "trust and love!"
+	para "Tu as oublié de"
+	line "traiter tes"
+	cont "#MON avec"
+	cont "amour!"
 
-	para "Without them, you"
-	line "will never become"
-	cont "a champ again!"
+	para "Et oui mon p'tit"
+	line "bonhomme."
+	cont "C'est comme ça et"
+	cont "pis c'est tout!"
 	done
 
 _GaryText_7612a::
-	text "OAK: <PLAYER>!"
+	text "CHEN: <PLAYER>!"
 
-	para "You understand"
-	line "that your victory"
-	cont "was not just your"
-	cont "own doing!"
+	para "Cette victoire..."
+	line "Tu ne la dois pas"
+	cont "entièrement à tes"
+	cont "qualités!"
 
-	para "The bond you share"
-	line "with your #MON"
-	cont "is marvelous!"
+	para "Tu as tant baigné"
+	line "d'amour tes chers"
+	cont "petits #MON!"
 
-	para "<PLAYER>!"
-	line "Come with me!"
+	para "Et ça... "
+	line "C'est bien. "
+	cont "<PLAYER>!"
+	cont "Suis-moi!"
 	done

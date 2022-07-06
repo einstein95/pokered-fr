@@ -1,64 +1,66 @@
 _LavenderTownText_4413c::
-	text "Do you believe in"
-	line "GHOSTs?"
+	text "Crois-tu aux"
+	line "SPECTRES?"
 	done
 
 _LavenderTownText_44141::
-	text "Really? So there"
-	line "are believers..."
+	text "Vraiment? Il en"
+	line "faut..."
 	done
 
 _LavenderTownText_44146::
-	text "Hahaha, I guess"
-	line "not."
+	text "T'as raison."
 
-	para "That white hand"
-	line "on your shoulder,"
-	cont "it's not real."
+	para "La main toute"
+	line "blanche sur ton"
+	cont "épaule est fausse"
+	cont "alors..."
 	done
 
 _LavenderTownText2::
-	text "This town is known"
-	line "as the grave site"
-	cont "of #MON."
+	text "Cette ville est"
+	line "le cimetière des"
+	cont "#MON."
 
-	para "Memorial services"
-	line "are held in"
-	cont "#MON TOWER."
+	para "La TOUR #MON"
+	line "est le lieu de"
+	cont "recueillement."
 	done
 
 _LavenderTownText3::
-	text "GHOSTs appeared"
-	line "in #MON TOWER."
+	text "Des SPECTRES sont"
+	line "apparus dans la"
+	cont "TOUR #MON."
 
-	para "I think they're"
-	line "the spirits of"
-	cont "#MON that the"
-	cont "ROCKETs killed."
+	para "Ils doivent être"
+	line "les esprits des"
+	cont "#MON tués par"
+	cont "la ROCKET."
 	done
 
 _LavenderTownText4::
-	text "LAVENDER TOWN"
-	line "The Noble Purple"
-	cont "Town"
+	text "LAVANVILLE"
+	line "Le pourpre de"
+	cont "la noblesse"
 	done
 
 _LavenderTownText5::
-	text "New SILPH SCOPE!"
+	text "Tout nouveau"
+	line "SCOPE SYLPHE!"
 
-	para "Make the Invisible"
-	line "Plain to See!"
+	para "Voir l'invisible!"
 
-	para "SILPH CO."
+	para "SYLPHE SARL"
 	done
 
 _LavenderTownText8::
-	text "LAVENDER VOLUNTEER"
-	line "#MON HOUSE"
+	text "BENEVOLAT DE"
+	line "LAVANVILLE"
+	cont "MAISON #MON"
 	done
 
 _LavenderTownText9::
-	text "May the Souls of"
-	line "#MON Rest Easy"
-	cont "#MON TOWER"
+	text "Paix à l'âme des"
+	line "#MON"
+	cont "TOUR #MON"
 	done

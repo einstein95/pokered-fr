@@ -1,74 +1,79 @@
 _RocketHideout4Text_4557a::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+	text "Hmm! Tu me"
+	line "surprends. T'es"
+	cont "dans le genre"
+	cont "PENIBLE!"
 	done
 
 _RocketHideout4Text_4557f::
-	text "WHAT!"
-	line "This cannot be!"
+	text "QUOI!"
+	line "Damnation!"
 	prompt
 
 _RocketHideout4Text_45584::
-	text "I see that you"
-	line "raise #MON"
-	cont "with utmost care."
+	text "Tu élèves tes"
+	line "#MON trop"
+	cont "soigneusement."
 
-	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
+	para "Un gosse comme"
+	line "toi ne peut"
+	cont "comprendre mes"
+	cont "plans!"
 
-	para "I shall step"
-	line "aside this time!"
+	para "Tu as gagné cette"
+	line "bataille, mais"
+	cont "pas la guerre..."
 
-	para "I hope we meet"
-	line "again..."
+	para "On se retrouvera,"
+	line "et cette fois..."
 	done
 
 _RocketHideout4BattleText2::
-	text "I know you! You"
-	line "ruined our plans"
-	cont "at MT.MOON!"
+	text "Je te reconnais!"
+	line "Tu as ruiné nos"
+	cont "plans sur le"
+	cont "MONT SELENITE!"
 	done
 
 _RocketHideout4EndBattleText2::
-	text "Burned"
-	line "again!"
+	text "Enfer!"
+	line "Et encore enfer!"
 	prompt
 
 _RocketHide4AfterBattleText2::
-	text "Do you have"
-	line "something against"
+	text "Je comprends pas,"
+	line "t'aimes pas la"
 	cont "TEAM ROCKET?"
 	done
 
 _RocketHideout4BattleText3::
-	text "How can you not"
-	line "see the beauty of"
-	cont "our evil?"
+	text "Tu ne trouves pas"
+	line "que nos plans"
+	cont "maléfiques sont"
+	cont "super cool?"
 	done
 
 _RocketHideout4EndBattleText3::
-	text "Ayaya!"
+	text "Ayayargh!"
 	prompt
 
 _RocketHide4AfterBattleText3::
-	text "BOSS! I'm sorry I"
-	line "failed you!"
+	text "CHEF! Pardon!"
+	line "J'ai échoué..."
 	done
 
 _RocketHideout4BattleText4::
-	text "The elevator"
-	line "doesn't work? Who"
-	cont "has the LIFT KEY?"
+	text "L'ascenseur ne"
+	line "marche pas? Il"
+	cont "faut la CLE ASC.!"
 	done
 
 _RocketHideout4EndBattleText4::
-	text "No!"
+	text "Argh!"
 	prompt
 
 _RocketHideout4Text_455ec::
-	text "Oh no! I dropped"
-	line "the LIFT KEY!"
+	text "Mince! J'ai"
+	line "perdu la "
+	cont "CLE ASC.!"
 	done

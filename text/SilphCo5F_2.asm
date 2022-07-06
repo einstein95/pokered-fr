@@ -1,55 +1,59 @@
 _SilphCo5EndBattleText4::
-	text "Oh"
-	line "goodness!"
+	text "Non!"
+	line "Mon Dieu!"
 	prompt
 
 _SilphCo5AfterBattleText4::
-	text "You're only on 5F."
-	line "It's a long way"
-	cont "to my BOSS!"
+	text "Tu n'es qu'au"
+	line "4ème étage!"
+	cont "Le chef est"
+	cont "encore loin!"
 	done
 
 _SilphCo5BattleText5::
-	text "Show TEAM ROCKET"
-	line "a little respect!"
+	text "Cause mieux"
+	line "à la grande"
+	cont "TEAM ROCKET!"
 	done
 
 _SilphCo5EndBattleText5::
-	text "Cough..."
-	line "Cough..."
+	text "Kheu..."
+	line "Kheu..."
 	prompt
 
 _SilphCo5AfterBattleText5::
-	text "Which reminds me."
+	text "Ce qui me"
+	line "rappelle..."
 
-	para "KOFFING evolves"
-	line "into WEEZING!"
+	para "SMOGO évolue en"
+	line "SMOGOGO!"
 	done
 
 _SilphCo5Text9::
-	text "It's a #MON"
-	line "REPORT!"
+	text "C'est un RAPPORT"
+	line "sur les #MON!"
 
-	para "#MON LAB"
-	line "created PORYGON,"
-	cont "the first virtual"
-	cont "reality #MON."
+	para "PORYGON:"
+	line "#MON virtuel,"
+	cont "créé par le"
+	cont "LABO #MON!"
 	done
 
 _SilphCo5Text10::
-	text "It's a #MON"
-	line "REPORT!"
+	text "C'est un RAPPORT"
+	line "sur les #MON!"
 
-	para "Over 160 #MON"
-	line "techniques have"
-	cont "been confirmed."
+	para "Il existe 160"
+	line "attaques pour"
+	cont "les #MON!"
 	done
 
 _SilphCo5Text11::
-	text "It's a #MON"
-	line "REPORT!"
+	text "C'est un RAPPORT"
+	line "sur les #MON!"
 
-	para "4 #MON evolve"
-	line "only when traded"
-	cont "by link-cable."
+	para "4 #MON"
+	line "n'évoluent que"
+	cont "s'ils sont"
+	cont "échangés!"
 	done

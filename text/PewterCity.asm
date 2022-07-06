@@ -1,117 +1,127 @@
 _PewterCityText1::
-	text "It's rumored that"
-	line "CLEFAIRYs came"
-	cont "from the moon!"
+	text "On raconte que"
+	line "les MELOFEE sont"
+	cont "les habitants de"
+	cont "la lune!"
 
-	para "They appeared "
-	line "after MOON STONE"
-	cont "fell on MT.MOON."
+	para "Ils sont apparus"
+	line "après la chute de"
+	cont "la PIERRE LUNE"
+	cont "sur le MONT"
+	cont "SELENITE."
 	done
 
 _PewterCityText2::
-	text "There aren't many"
-	line "serious #MON"
-	cont "trainers here!"
+	text "Il y a de très"
+	line "bons dresseurs"
+	cont "par ici!"
 
-	para "They're all like"
-	line "BUG CATCHERs,"
-	cont "but PEWTER GYM's"
-	cont "BROCK is totally"
-	cont "into it!"
+	para "Ils sont SCOUTS"
+	line "pour la plupart"
+	cont "mais PIERRE de"
+	cont "l'ARENE d'ARGENTA"
+	cont "est terrible!"
 	done
 
 _PewterCityText_193f1::
-	text "Did you check out"
-	line "the MUSEUM?"
+	text "Es-tu allé au"
+	line "MUSEE?"
 	done
 
 _PewterCityText_193f6::
-	text "Weren't those"
-	line "fossils from MT."
-	cont "MOON amazing?"
+	text "Les fossiles du"
+	line "MONT SELENITE"
+	cont "sont beaux, hein?"
 	done
 
 _PewterCityText_193fb::
-	text "Really?"
-	line "You absolutely"
-	cont "have to go!"
+	text "Non?"
+	line "Mais il faut y"
+	cont "aller, voyons!"
 	done
 
 _PewterCityText13::
-	text "It's right here!"
-	line "You have to pay"
-	cont "to get in, but"
-	cont "it's worth it!"
-	cont "See you around!"
+	text "C'est par là!"
+	line "L'entrée est"
+	cont "payante mais ça"
+	cont "vaut l'coup!"
 	done
 
 _PewterCityText_19427::
 	text "Psssst!"
-	line "Do you know what"
-	cont "I'm doing?"
+	line "Tu sais c'que"
+	cont "j'fais?"
 	done
 
 _PewterCityText_1942c::
-	text "That's right!"
-	line "It's hard work!"
+	text "Ah bon?"
+	line "OK."
 	done
 
 _PewterCityText_19431::
-	text "I'm spraying REPEL"
-	line "to keep #MON"
-	cont "out of my garden!"
+	text "Je vaporise du"
+	line "REPOUSSE pour"
+	cont "éloigner les"
+	cont "#MON de mon"
+	cont "bô jardin!"
 	done
 
 _PewterCityText_1945d::
-	text "You're a trainer"
-	line "right? BROCK's"
-	cont "looking for new"
-	cont "challengers!"
-	cont "Follow me!"
+	text "T'es un dresseur?"
+	line "PIERRE cherche un"
+	cont "adversaire!"
+	cont "Suis-moi!"
 	done
 
 _PewterCityText14::
-	text "If you have the"
-	line "right stuff, go"
-	cont "take on BROCK!"
+	text "Si t'es fort..."
+	line "T'as pas tort..."
+	cont "Alors..."
+	cont "Bats PIERRE..."
+	cont "Ou t'es mort!"
 	done
 
 _PewterCityText6::
-	text "TRAINER TIPS"
+	text "ASTUCE"
 
-	para "Any #MON that"
-	line "takes part in"
-	cont "battle, however"
-	cont "short, earns EXP!"
+	para "Chaque #MON"
+	line "prenant part au"
+	cont "combat, même pen-"
+	cont "dant une seconde,"
+	cont "gagne de l'EXP!"
 	done
 
 _PewterCityText7::
-	text "NOTICE!"
+	text "AVIS!"
 
-	para "Thieves have been"
-	line "stealing #MON"
-	cont "fossils at MT."
-	cont "MOON! Please call"
-	cont "PEWTER POLICE"
-	cont "with any info!"
+	para "On nous signale"
+	line "des voleurs de"
+	cont "fossiles de"
+	cont "#MON sur le"
+	cont "MONT SELENITE."
+	cont "N'hésitez pas à"
+	cont "contacter la"
+	cont "POLICE d'ARGENTA!"
 	done
 
 _PewterCityText10::
-	text "PEWTER MUSEUM"
-	line "OF SCIENCE"
+	text "MUSEE DES"
+	line "SCIENCES"
+	cont "d'ARGENTA"
 	done
 
 _PewterCityText11::
-	text "PEWTER CITY"
-	line "#MON GYM"
-	cont "LEADER: BROCK"
+	text "ARENE #MON"
+	line "d'ARGENTA"
+	cont "CHAMPION: PIERRE"
 
-	para "The Rock Solid"
-	line "#MON Trainer!"
+	para "L'dresseur dur"
+	line "comme la pierre!"
+	cont "Bonne blague."
 	done
 
 _PewterCityText12::
-	text "PEWTER CITY"
-	line "A Stone Gray"
-	cont "City"
+	text "ARGENTA"
+	line "Le mat et le gris"
+	cont "de la roche."
 	done

@@ -4,13 +4,13 @@ _CardKeySuccessText1::
 
 _CardKeySuccessText2::
 	text_start
-	line "The CARD KEY"
-	cont "opened the door!"
+	line "La CARTE MAGN. a"
+	cont "ouvert la porte!"
 	done
 
 _CardKeyFailText::
-	text "Darn! It needs a"
-	line "CARD KEY!"
+	text "Zut! Il faut une"
+	line "CARTE MAGN.!"
 	done
 
 _TrainerNameText::
@@ -19,17 +19,18 @@ _TrainerNameText::
 	text_end
 
 _NoNibbleText::
-	text "Not even a nibble!"
+	text "Même pas une"
+	line "touche..."
 	prompt
 
 _NothingHereText::
-	text "Looks like there's"
-	line "nothing here."
+	text "On dirait qu'il"
+	line "n'y a rien ici."
 	prompt
 
 _ItsABiteText::
 	text "Oh!"
-	line "It's a bite!"
+	line "Ca mord!!!"
 	prompt
 
 _ExclamationText::
@@ -37,112 +38,118 @@ _ExclamationText::
 	done
 
 _GroundRoseText::
-	text "Ground rose up"
-	line "somewhere!"
+	text "Le sol s'est levé"
+	line "dans le coin!"
 	done
 
 _BoulderText::
-	text "This requires"
-	line "STRENGTH to move!"
+	text "Sans FORCE, ça"
+	line "ne bougera pas!"
 	done
 
 _MartSignText::
-	text "All your item"
-	line "needs fulfilled!"
-	cont "#MON MART"
+	text "Faites le plein"
+	line "d'objets!"
+	para "BOUTIQUE PKMN"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	text "Soignez vos"
+	line "#MON!"
+	para "CENTRE PKMN"
 	done
 
 _FoundItemText::
-	text "<PLAYER> found"
+	text "<PLAYER> obtient..."
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
 _NoMoreRoomForItemText::
-	text "No more room for"
-	line "items!"
+	text "Votre inventaire"
+	line "est plein!"
 	done
 
 _OaksAideHiText::
-	text "Hi! Remember me?"
-	line "I'm PROF.OAK's"
-	cont "AIDE!"
+	text "Salut! Tu te"
+	line "rappelles? Je"
+	cont "suis l'assistant"
+	cont "du Prof. Chen!"
 
-	para "If you caught @"
+	para "Si tu attrapes "
+	line "@"
 	text_decimal hOaksAideRequirement, 1, 3
-	text_start
-	line "kinds of #MON,"
-	cont "I'm supposed to"
-	cont "give you an"
+	text " #MON"
+	cont "différents, je"
+	cont "suis censé"
+	cont "t'offrir..."
 	cont "@"
 	text_ram wOaksAideRewardItemName
 	text "!"
 
-	para "So, <PLAYER>! Have"
-	line "you caught at"
-	cont "least @"
+	para "Alors <PLAYER>,"
+	line "as-tu attrapé au"
+	cont "moins @"
 	text_decimal hOaksAideRequirement, 1, 3
-	text " kinds of"
-	cont "#MON?"
+	text " #MON"
+	cont "différents?"
 	done
 
 _OaksAideUhOhText::
-	text "Let's see..."
-	line "Uh-oh! You have"
-	cont "caught only @"
+	text "Voyons voir..."
+	line "Oh! Tu n'as"
+	cont "attrapé que @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text_start
-	cont "kinds of #MON!"
+	cont "#MON!"
 
-	para "You need @"
+	para "Il t'en faut @"
 	text_decimal hOaksAideRequirement, 1, 3
-	text " kinds"
-	line "if you want the"
+	text_start
+	line "différents pour"
+	cont "mériter..."
 	cont "@"
 	text_ram wOaksAideRewardItemName
 	text "."
 	done
 
 _OaksAideComeBackText::
-	text "Oh. I see."
+	text "Dans ce cas..."
 
-	para "When you get @"
+	para "Reviens quand tu"
+	line "auras @"
 	text_decimal hOaksAideRequirement, 1, 3
-	text_start
-	line "kinds, come back"
-	cont "for @"
+	text " #MON"
+	cont "différents pour"
+	cont "obtenir"
+	cont "@"
 	text_ram wOaksAideRewardItemName
 	text "."
 	done
 
 _OaksAideHereYouGoText::
-	text "Great! You have"
-	line "caught @"
+	text "Super! Tu as"
+	line "@"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
-	text " kinds "
-	cont "of #MON!"
-	cont "Congratulations!"
+	text " #MON"
+	cont "différents!"
+	cont "Félicitations!"
 
-	para "Here you go!"
+	para "Voici ta"
+	line "récompense!"
 	prompt
 
 _OaksAideGotItemText::
-	text "<PLAYER> got the"
+	text "<PLAYER> obtient"
 	line "@"
 	text_ram wOaksAideRewardItemName
 	text "!@"
 	text_end
 
 _OaksAideNoRoomText::
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for the"
+	text "Oh! Tu n'as plus"
+	line "de place pour"
 	cont "@"
 	text_ram wOaksAideRewardItemName
 	text "."

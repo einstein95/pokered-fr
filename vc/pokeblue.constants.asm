@@ -51,6 +51,7 @@ ENDM
 
 ; [FPA 008 Begin]
 	vc_const "R"
+	vc_const "V"
 	vc_const REFLECT
 
 ; [FPA 009 Begin]
@@ -67,3 +68,9 @@ ENDM
 ; [FPA 012 Begin]
 	vc_const "C"
 	vc_const ROCK_SLIDE
+
+; [FPA 40 Begin]
+	vc_const HAZE
+	; "<SPACE>" is necessary since spaces separate template command arguments
+	charmap "<SPACE>", " "
+	vc_const "<SPACE>"

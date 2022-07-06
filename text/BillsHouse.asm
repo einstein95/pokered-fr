@@ -1,88 +1,89 @@
 _BillsHouseText_1e865::
-	text "Hiya! I'm a"
+	text "Yhah! Je suis un"
 	line "#MON..."
-	cont "...No I'm not!"
+	cont "..."
+	cont "heu...NON!"
 
-	para "Call me BILL!"
-	line "I'm a true blue"
-	cont "#MANIAC! Hey!"
-	cont "What's with that"
-	cont "skeptical look?"
+	para "Appelle-moi LEO!"
+	line "Je suis un vrai"
+	cont "#MANIAC!"
+	cont "Tu ne me crois"
+	cont "pas?"
 
-	para "I'm not joshing"
-	line "you, I screwed up"
-	cont "an experiment and"
-	cont "got combined with"
-	cont "a #MON!"
+	para "Mais c'est vrai!"
+	line "J'ai raté une"
+	cont "expérience et me"
+	cont "voilà changé en"
+	cont "#MON!"
 
-	para "So, how about it?"
-	line "Help me out here!"
+	para "Tu me crois"
+	line "maintenant?"
+	cont "Tu m'aides alors?"
 	done
 
 _BillsHouseText_1e86a::
-	text "When I'm in the"
-	line "TELEPORTER, go to"
-	cont "my PC and run the"
-	cont "Cell Separation"
-	cont "System!"
+	text "Je vais dans le"
+	line "TELEPORTEUR."
+	cont "Lance vite le"
+	cont "programme sur mon"
+	cont "PC!"
 	done
 
 _BillsHouseText_1e86f::
-	text "No!? Come on, you"
-	line "gotta help a guy"
-	cont "in deep trouble!"
+	text "Non!? Hé, mais tu"
+	line "dois m'aider, je"
+	cont "suis un mec cool!"
 
-	para "What do you say,"
-	line "chief? Please?"
-	cont "OK? All right!"
+	para "Bon, que veux-tu"
+	line "en échange, mon"
+	cont "doux seigneur?"
 	prompt
 
 _BillThankYouText::
-	text "BILL: Yeehah!"
-	line "Thanks, bud! I"
-	cont "owe you one!"
+	text "LEO: Yahoo!"
+	line "Merci, mec!"
+	cont "Je t'en dois une!"
 
-	para "So, did you come"
-	line "to see my #MON"
-	cont "collection?"
-	cont "You didn't?"
-	cont "That's a bummer."
+	para "Bon, tu es venu"
+	line "pour voir ma"
+	cont "collection de"
+	cont "#MON?"
+	cont "Non? Tu rigoles!"
 
-	para "I've got to thank"
-	line "you... Oh here,"
-	cont "maybe this'll do."
+	para "Bon, ben,"
+	line "prends ça en"
+	cont "remerciement!"
 	prompt
 
 _SSTicketReceivedText::
-	text "<PLAYER> received"
-	line "an @"
+	text "<PLAYER> obtient:"
+	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
 _SSTicketNoRoomText::
-	text "You've got too"
-	line "much stuff, bud!"
+	text "Ton inventaire"
+	line "est plein, mec!"
 	done
 
 _BillsHouseText_1e8cb::
-	text "That cruise ship,"
-	line "S.S.ANNE, is in"
-	cont "VERMILION CITY."
-	cont "Its passengers"
-	cont "are all trainers!"
+	text "L'OCEANE, le"
+	line "bateau, est à"
+	cont "CARMIN. Les"
+	cont "passagers sont"
+	cont "des dresseurs!"
 
-	para "They invited me"
-	line "to their party,"
-	cont "but I can't stand"
-	cont "fancy do's. Why"
-	cont "don't you go"
-	cont "instead of me?"
+	para "Je suis invité à"
+	line "leur fête mais je"
+	cont "ne supporte pas"
+	cont "ces mariolles!"
+	cont "Vas-y à ma place."
 	done
 
 _BillsHouseText_1e8da::
-	text "BILL: Look, bud,"
-	line "just check out"
-	cont "some of my rare"
-	cont "#MON on my PC!"
+	text "LEO: Hé, regarde"
+	line "un peu ma collec'."
+	cont "J'ai des #MON"
+	cont "très rares!"
 	done

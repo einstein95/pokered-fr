@@ -554,16 +554,16 @@ wEnemyMonSpeedMod:: db
 wEnemyMonSpecialMod:: db
 wEnemyMonAccuracyMod:: db
 wEnemyMonEvasionMod:: db
-	ds 2
 wEnemyMonStatModsEnd::
 
+	ds 1
 NEXTU
 	ds 30
 wEngagedTrainerClass:: db
 wEngagedTrainerSet:: db
 ENDU
 
-	ds 1
+	ds 2
 
 wNPCMovementDirections2Index::
 wUnusedCD37::
@@ -956,6 +956,8 @@ wAIItem:: db
 wUsedItemOnWhichPokemon:: db
 ENDU
 
+	ds 5
+
 ; sound ID during battle animations
 wAnimSoundID:: db
 
@@ -1046,15 +1048,19 @@ wPartyMenuBlkPacket:: ds $30
 
 NEXTU
 	ds 29
-; storage buffer for various strings
-wStringBuffer:: ds 20
 
+; storage buffer for various strings
+wStringBuffer::  ds 19
 NEXTU
 	ds 29
+
 ; the total amount of exp a mon gained
-wExpAmountGained:: dw
+wExpAmountGained::  dw
+
 wGainBoostedExp:: db
 ENDU
+
+	ds 1
 
 wGymCityName:: ds 17
 
@@ -2213,7 +2219,7 @@ wSecondLockTrashCanIndex:: db
 
 wEventFlags:: flag_array NUM_EVENTS
 
-
+wSafariZoneEntranceCurScript::
 UNION
 wGrassRate:: db
 wGrassMons:: ds 10 * 2
@@ -2255,7 +2261,6 @@ wEnemyMon{d:n}Nick:: ds NAME_LENGTH
 ENDR
 
 ENDU
-
 
 wTrainerHeaderPtr:: dw
 

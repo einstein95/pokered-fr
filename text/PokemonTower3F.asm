@@ -4,14 +4,14 @@ _PokemonTower3BattleText1::
 	done
 
 _PokemonTower3EndBattleText1::
-	text "Hwa!"
-	line "I'm saved!"
+	text "Ha!"
+	line "Je suis sauvée!"
 	prompt
 
 _PokemonTower3AfterBattleText1::
-	text "The GHOSTs can be"
-	line "identified by the"
-	cont "SILPH SCOPE."
+	text "Un SPECTRE est"
+	line "identifiable avec"
+	cont "un SCOPE SYLPHE."
 	done
 
 _PokemonTower3BattleText2::
@@ -21,25 +21,27 @@ _PokemonTower3BattleText2::
 
 _PokemonTower3EndBattleText2::
 	text "Hmm?"
-	line "What am I doing?"
+	line "Qu'est-ce que je"
+	cont "fais là?"
 	prompt
 
 _PokemonTower3AfterBattleText2::
-	text "Sorry! I was"
-	line "possessed!"
+	text "Pardon! J'étais"
+	line "possédée!"
 	done
 
 _PokemonTower3BattleText3::
-	text "Be gone!"
-	line "Evil spirit!"
+	text "VADE RETRO!"
+	line "Esprit infernal!"
 	done
 
 _PokemonTower3EndBattleText3::
-	text "Whew!"
-	line "The spirit left!"
+	text "Pfiou!"
+	line "L'esprit s'en est"
+	cont "allé!"
 	prompt
 
 _PokemonTower3AfterBattleText3::
-	text "My friends were"
-	line "possessed too!"
+	text "Mes amies étaient"
+	line "aussi possédées!"
 	done

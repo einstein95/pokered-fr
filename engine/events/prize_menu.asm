@@ -129,18 +129,15 @@ GetPrizeMenuId:
 ; put prices on the right side of the textbox
 	ld de, wPrize1Price
 	hlcoord 13, 5
-; reg. c:
-; [low nybble] number of bytes
-; [bits 765 = %100] space-padding (not zero-padding)
-	ld c, (1 << 7 | 2)
+	ld c, LEADING_ZEROES | 2
 	call PrintBCDNumber
 	ld de, wPrize2Price
 	hlcoord 13, 7
-	ld c, (1 << 7 | 2)
+	ld c, LEADING_ZEROES | 2
 	call PrintBCDNumber
 	ld de, wPrize3Price
 	hlcoord 13, 9
-	ld c, (1 << 7 | 2)
+	ld c, LEADING_ZEROES | 2
 	jp PrintBCDNumber
 
 INCLUDE "data/events/prizes.asm"
@@ -151,7 +148,7 @@ PrintPrizePrice:
 	ld c, 7
 	call TextBoxBorder
 	call UpdateSprites
-	hlcoord 12, 0
+	hlcoord 13, 0
 	ld de, .CoinString
 	call PlaceString
 	hlcoord 13, 1
@@ -159,12 +156,12 @@ PrintPrizePrice:
 	call PlaceString
 	hlcoord 13, 1
 	ld de, wPlayerCoins
-	ld c, %10000010
+	ld c, LEADING_ZEROES | 2
 	call PrintBCDNumber
 	ret
 
 .CoinString:
-	db "COIN@"
+	db "JETONS@"
 
 .SixSpacesString:
 	db "      @"

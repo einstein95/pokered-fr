@@ -199,6 +199,16 @@ DisplayPlayerBlackedOutText::
 	ld a, [wd732]
 	res 5, a ; reset forced to use bike bit
 	ld [wd732], a
+	CheckEvent EVENT_IN_SAFARI_ZONE
+	jr z, .didnotblackoutinsafari
+	xor a
+	ld [wNumSafariBalls], a
+	ld [wSafariSteps], a
+	ld [wSafariSteps+1], a
+	ld [wEventFlags + 73], a ; clear all Safari Zone flags
+	ld [wcf0d], a
+	ld [wSafariZoneGateCurScript], a
+.didnotblackoutinsafari
 	jp HoldTextDisplayOpen
 
 PlayerBlackedOutText::

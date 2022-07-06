@@ -1,9 +1,11 @@
 _CeruleanHouse1Text1::
-	text "My husband likes"
-	line "trading #MON."
+	text "Mon mari aime"
+	line "les échanges de"
+	cont "#MON."
 
-	para "If you are a"
-	line "collector, would"
-	cont "you please trade"
-	cont "with him?"
+	para "Si tu aimes"
+	line "collectionner,"
+	cont "fais des échanges"
+	cont "avec lui, OK?"
 	done
+

@@ -281,6 +281,8 @@ PewterCityText_19431:
 
 PewterCityText5:
 	text_asm
+	ld a,$FC
+	ld [wJoyIgnore],a
 	ld hl, PewterCityText_1945d
 	call PrintText
 	xor a

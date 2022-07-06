@@ -1,40 +1,45 @@
 _Route11GateUpstairsText_494a3::
-	text "There are items on"
-	line "the ground that"
-	cont "can't be seen."
+	text "Il y a des objets"
+	line "invisibles sur"
+	cont "le sol."
 
-	para "ITEMFINDER will"
-	line "detect an item"
-	cont "close to you."
+	para "Un CHERCH'OBJET "
+	line "pourra les"
+	cont "détecter."
 
-	para "It can't pinpoint"
-	line "it, so you have"
-	cont "to look yourself!"
+	para "Mais il faudra"
+	line "tout de même les"
+	cont "trouver toi-même!"
 	done
 
 _BinocularsSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
 
-	para "A big #MON is"
-	line "asleep on a road!"
+	para "Un énorme"
+	line "#MON dort"
+	cont "sur la route!"
 	done
 
 _BinocularsNoSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
 
-	para "It's a beautiful"
-	line "view!"
+	para "C'est très beau!"
+	line "... "
+	cont "Bon! On y va?"
 	done
 
 _Route11GateUpstairsText_494d5::
-	text "Looked into the"
-	line "binoculars."
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
 
-	para "The only way to"
-	line "get from CERULEAN"
-	cont "CITY to LAVENDER"
-	cont "is by way of the"
-	cont "ROCK TUNNEL."
+	para "Il n'y a qu'un"
+	line "seul chemin pour"
+	cont "aller de AZURIA"
+	cont "à LAVANVILLE:"
+	cont "la GROTTE!"
 	done

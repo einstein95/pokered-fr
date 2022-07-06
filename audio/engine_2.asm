@@ -1065,8 +1065,10 @@ Audio2_IsCry:
 	jr z, .no
 	jr c, .yes
 .no
-	scf
-	ccf
+; Fixes bug where if the low health alarm is active, you are able
+; to skip cries instantly
+	ld a, [wLowHealthAlarm]
+	rla
 	ret
 .yes
 	scf

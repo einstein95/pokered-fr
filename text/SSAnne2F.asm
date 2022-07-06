@@ -1,63 +1,71 @@
 _SSAnne2Text1::
-	text "This ship, she is"
-	line "a luxury liner"
-	cont "for trainers!"
+	text "Ce luxueux bateau"
+	line "accueille tous"
+	cont "les dresseurs!"
 
-	para "At every port, we"
-	line "hold parties with"
-	cont "invited trainers!"
+	para "Dans chaque port"
+	line "nous organisons"
+	cont "une fête pour"
+	cont "les dresseurs!"
 	done
 
 _SSAnneRivalBeforeBattleText::
-	text "<RIVAL>: Bonjour!"
+	text "<RIVAL>: Salut!"
 	line "<PLAYER>!"
 
-	para "Imagine seeing"
-	line "you here!"
+	para "Toi! Ici!"
+	line "Sans blague!"
 
-	para "<PLAYER>, were you"
-	line "really invited?"
+	para "<PLAYER>, as-tu"
+	line "vraiment été"
+	cont "invité?"
 
-	para "So how's your"
-	line "#DEX coming?"
+	para "Où en es-tu avec"
+	line "ton #DEX?"
 
-	para "I already caught"
-	line "40 kinds, pal!"
+	para "Moi, j'ai déjà"
+	line "attrapé 40"
+	cont "#MON! Minable!"
 
-	para "Different kinds"
-	line "are everywhere!"
+	para "Y'en a partout!"
 
-	para "Crawl around in"
-	line "grassy areas!"
+	para "Tu n'as qu'à ramper"
+	line "dans les hautes"
+	cont "herbes!"
 	done
 
 _SSAnneRivalDefeatedText::
-	text "Humph!"
+	text "Mouaff!"
 
-	para "At least you're"
-	line "raising your"
+	para "Au moins, tu"
+	line "t'occupes de tes"
 	cont "#MON!"
 	prompt
 
 _SSAnneRivalWonText::
-	text "<PLAYER>! What are"
-	line "you, seasick?"
+	text "<PLAYER>! Tu as"
+	line "le mal de mer?"
 
-	para "You should shape"
-	line "up, pal!"
+	para "Tu devrais te"
+	line "mettre au frais!"
+	cont "Minable!"
 	prompt
 
 _SSAnneRivalCaptainText::
-	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+	text "<RIVAL>: Il y"
+	line "a le maître de la"
+	cont "technique COUPE"
+	cont "à bord."
 
-	para "But, he was just a"
-	line "seasick, old man!"
+	para "Mais ce n'est"
+	line "qu'un vieil homme"
+	cont "malade et sénile!"
 
-	para "But, CUT itself is"
-	line "really useful!"
+	para "La technique"
+	line "COUPE est très"
+	cont "utile!"
 
-	para "You should go see"
-	line "him! Smell ya!"
+	para "Tu devrais le"
+	line "rencontrer!"
+	cont "Salut! Minable!"
 	done

@@ -1,44 +1,52 @@
 _AgathaBeforeBattleText::
-	text "I am AGATHA of"
-	line "the ELITE FOUR!"
+	text "Gnnn... Bonjour"
+	line "mon tout petit."
+	cont "Je suis AGATHA du"
+	cont "CONSEIL des 4!"
 
-	para "OAK's taken a lot"
-	line "of interest in"
-	cont "you, child!"
+	para "CHEN mise de"
+	line "grands espoirs"
+	cont "sur toi, fiston!"
 
-	para "That old duff was"
-	line "once tough and"
-	cont "handsome! That"
-	cont "was decades ago!"
+	para "Sais-tu que ce"
+	line "vieux machin"
+	cont "était jadis beau"
+	cont "garçon? Enfin..."
+	cont "Il y a très"
+	cont "longtemps!"
 
-	para "Now he just wants"
-	line "to fiddle with"
-	cont "his #DEX! He's"
-	cont "wrong! #MON"
-	cont "are for fighting!"
+	para "Il veut juste"
+	line "frimer avec son"
+	cont "#DEX! Mais"
+	cont "c'est débile! Les"
+	cont "#MON servent"
+	cont "à combattre!"
 
-	para "<PLAYER>! I'll show"
-	line "you how a real"
-	cont "trainer fights!"
+	para "<PLAYER>! Je vais"
+	line "te montrer"
+	cont "comment les"
+	cont "grands dresseurs"
+	cont "combattent!"
 	done
 
 _AgathaEndBattleText::
 	text "Oh ho!"
-	line "You're something"
-	cont "special, child!"
+	line "Tu es doué mon"
+	cont "petit!"
 	prompt
 
 _AgathaAfterBattleText::
-	text "You win! I see"
-	line "what the old duff"
-	cont "sees in you now!"
+	text "Mmmm... Je vois"
+	line "pourquoi le vieux"
+	cont "CHEN t'apprécie"
+	cont "autant!"
 
-	para "I have nothing"
-	line "else to say! Run"
-	cont "along now, child!"
+	para "Mes ombres ont"
+	line "perdu. Tu peux"
+	cont "passer."
 	done
 
 _AgathaDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "Une voix:"
+	line "Ne fuis pas!"
 	done

@@ -1,29 +1,31 @@
 _PokemonTower2Text_60c1f::
-	text "The GHOST was the"
-	line "restless soul of"
-	cont "CUBONE's mother!"
+	text "Le SPECTRE était"
+	line "l'esprit damné de"
+	cont "la mère de"
+	cont "OSSELAIT!"
 	done
 
 _PokemonTower2Text_60c24::
-	text "The mother's soul"
-	line "was calmed."
+	text "L'âme de la mère"
+	line "a été apaisée."
 
-	para "It departed to"
-	line "the afterlife!"
+	para "Elle est partie"
+	line "vers l'autre"
+	cont "monde!"
 	done
 
 _PokemonTower6BattleText1::
-	text "Give...me..."
-	line "blood..."
+	text "Ton...Sang..."
+	line "Donne..."
 	done
 
 _PokemonTower6EndBattleText1::
-	text "Groan!"
+	text "Grargh!"
 	prompt
 
 _PokemonTower6AfterBattleText1::
-	text "I feel anemic and"
-	line "weak..."
+	text "Je me sens"
+	line "faible..."
 	done
 
 _PokemonTower6BattleText2::
@@ -31,14 +33,14 @@ _PokemonTower6BattleText2::
 	done
 
 _PokemonTower6EndBattleText2::
-	text "Some-"
-	line "thing fell out!"
+	text "Haaa!"
+	line "Je me sens mieux!"
 	prompt
 
 _PokemonTower6AfterBattleText2::
-	text "Hair didn't fall"
-	line "out! It was an"
-	cont "evil spirit!"
+	text "J'étais sous"
+	line "l'emprise d'un"
+	cont "esprit!"
 	done
 
 _PokemonTower6BattleText3::
@@ -51,11 +53,11 @@ _PokemonTower6EndBattleText3::
 	prompt
 
 _PokemonTower6AfterBattleText3::
-	text "What's going on"
-	line "here?"
+	text "Mais qu'est-ce"
+	line "qui se passe ici?"
 	done
 
 _PokemonTower6Text6::
-	text "Be gone..."
-	line "Intruders..."
+	text "Fuis..."
+	line "Impudent..."
 	done
