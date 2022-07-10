@@ -18570,7 +18570,6 @@
 00:cf33 wPartyMenuBlkPacket
 00:cf50 wStringBuffer
 00:cf50 wExpAmountGained
-00:cf50 wcf4b
 00:cf52 wGainBoostedExp
 00:cf64 wGymCityName
 00:cf75 wGymLeaderName
