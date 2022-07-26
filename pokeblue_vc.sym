@@ -7534,8 +7534,8 @@
 10:42c1 IsPokemonBitSet
 10:42d0 ShowPokedexData
 10:42e1 ShowPokedexDataInternal
-10:43d7 ShowPokedexDataInternal.func_43d7
-10:4407 ShowPokedexDataInternal.next
+10:43d7 ShowPokedexDataInternal.heightNext
+10:4407 ShowPokedexDataInternal.weightNext
 10:4421 ShowPokedexDataInternal.waitForButtonPress
 10:4446 HeightWeightText
 10:445b PokeText
