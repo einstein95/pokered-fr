@@ -1,19 +1,19 @@
-_SafariZoneNorthText3::
+_SafariZoneNorthRestHouseSignText::
 	text "ABRI"
 	done
 
-_SafariZoneNorthText4::
+_SafariZoneNorthTrainerTips1Text::
 	text "ASTUCE"
 
 	para "La Cabane Secrète"
 	line "est tout droit!"
 	done
 
-_SafariZoneNorthText5::
+_SafariZoneNorthSignText::
 	text "PARC 2"
 	done
 
-_SafariZoneNorthText6::
+_SafariZoneNorthTrainerTips2Text::
 	text "ASTUCE"
 
 	para "Les #MON se"
@@ -25,7 +25,7 @@ _SafariZoneNorthText6::
 	cont "faire sortir."
 	done
 
-_SafariZoneNorthText7::
+_SafariZoneNorthTrainerTips3Text::
 	text "ASTUCE"
 
 	para "Découvrez la"

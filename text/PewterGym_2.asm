@@ -1,4 +1,4 @@
-_BrockPostBattleAdviceText::
+_PewterGymBrockPostBattleAdviceText::
 	text "Il y a plusieurs"
 	line "types de"
 	cont "dresseurs dans le"
@@ -14,12 +14,12 @@ _BrockPostBattleAdviceText::
 	cont "capacités."
 	done
 
-_BeforeReceivedTM34Text::
+_PewterGymBrockWaitTakeThisText::
 	text "Attends! Prends"
 	line "ça avec toi!"
 	done
 
-_ReceivedTM34Text::
+_PewterGymReceivedTM34Text::
 	text "<PLAYER> reçoit"
 	line "la CT34!@"
 	text_end
@@ -49,12 +49,12 @@ _TM34ExplanationText::
 	cont "le double!"
 	done
 
-_TM34NoRoomText::
+_PewterGymTM34NoRoomText::
 	text "Votre inventaire"
 	line "est plein!"
 	done
 
-_ReceivedBoulderBadgeText::
+_PewterGymBrockReceivedBoulderBadgeText::
 	text "Hmm..."
 	line "Beau combat."
 
@@ -67,7 +67,7 @@ _ReceivedBoulderBadgeText::
 	line "le BADGE ROCHE!@"
 	text_end
 
-_BrockBoulerBadgeInfoText::
+_PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
 	para "C'est un BADGE"
@@ -84,7 +84,7 @@ _BrockBoulerBadgeInfoText::
 	cont "utilisée!"
 	prompt
 
-_PewterGymBattleText1::
+_PewterGymCooltrainerMBattleText::
 	text "Une minute,"
 	line "gamin!"
 
@@ -94,14 +94,14 @@ _PewterGymBattleText1::
 	cont "m'affronter!"
 	done
 
-_PewterGymEndBattleText1::
+_PewterGymCooltrainerMEndBattleText::
 	text "Zut!"
 
 	para "J'aurais dû te"
 	line "laisser passer!"
 	prompt
 
-_PewterGymAfterBattleText1::
+_PewterGymCooltrainerMAfterBattleText::
 	text "Tu es fort..."
 	line "Mais pas autant"
 	cont "que PIERRE!"
@@ -140,7 +140,7 @@ _PewterGymGuideAdviceText::
 	cont "stratégie!"
 	done
 
-_PewterGymText_5c524::
+_PewterGymGuideFreeServiceText::
 	text "C'est gratuit,"
 	line "profites-en! "
 	prompt

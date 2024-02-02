@@ -1,12 +1,12 @@
-_PewterHouse1Text1::
+_PewterNidoranHouseNidoranText::
 	text "NIDORAN: Nidoni!@"
 	text_end
 
-_PewterHouse1Text2::
+_PewterNidoranHouseLittleBoyText::
 	text "NIDORAN, assis!"
 	done
 
-_PewterHouse1Text3::
+_PewterNidoranHouseMiddleAgedManText::
 	text "Notre #MON est"
 	line "un échangé, il"
 	cont "est difficile à"

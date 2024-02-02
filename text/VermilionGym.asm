@@ -1,4 +1,4 @@
-_LTSurgePreBattleText::
+_VermilionGymLTSurgePreBattleText::
 	text "Hé, gamin!"
 	line "Tu fais quoi là?"
 

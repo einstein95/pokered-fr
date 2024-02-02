@@ -327,9 +327,9 @@ LoadEDTile:
 	call DisableLCD
 	ld de, vFont tile $70
 	ld hl, ED_Tile
-	ld bc, (ED_TileEnd - ED_Tile)
-	; to fix the graphical bug on poor emulators
-	;lb bc, BANK(ED_Tile), (ED_TileEnd - ED_Tile) / $8
+	; BUG: BANK("Home") should be BANK(ED_Tile), although it coincidentally works as-is
+	;lb bc, BANK("Home"), (ED_TileEnd - ED_Tile) / $8
+	lb bc, BANK("Home"), (ED_TileEnd - ED_Tile)
 	ld a,$01
 	call FarCopyDataDouble
 	jp EnableLCD

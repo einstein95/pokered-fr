@@ -1,4 +1,4 @@
-_BrockPreBattleText::
+_PewterGymBrockPreBattleText::
 	text "Je suis PIERRE!"
 	line "Je suis le"
 	cont "CHAMPION"

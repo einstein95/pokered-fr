@@ -1,4 +1,4 @@
-_Route2HouseText1::
+_Route2TradeHouseScientistText::
 	text "Un #MON K.O."
 	line "ne peut se battre"
 	cont "mais il peut"

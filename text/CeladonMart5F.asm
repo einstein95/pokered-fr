@@ -1,4 +1,4 @@
-_CeladonMart5Text1::
+_CeladonMart5FGentlemanText::
 	text "Les accélérateurs"
 	line "de #MON sont"
 	cont "en vente ici."
@@ -13,7 +13,7 @@ _CeladonMart5Text1::
 	cont "VITESSE."
 	done
 
-_CeladonMart5Text2::
+_CeladonMart5FSailorText::
 	text "J'veux acheter un"
 	line "accélérateur de"
 	cont "#MON!"
@@ -26,6 +26,6 @@ _CeladonMart5Text2::
 	line "la DEFENSE!"
 	done
 
-_CeladonMart5Text5::
+_CeladonMart5FCurrentFloorSignText::
 	text "4ème: MEDICAMENTS"
 	done

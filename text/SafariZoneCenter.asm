@@ -1,8 +1,8 @@
-_SafariZoneCenterText2::
+_SafariZoneCenterRestHouseSignText::
 	text "ABRI"
 	done
 
-_SafariZoneCenterText3::
+_SafariZoneCenterTrainerTipsSignText::
 	text "ASTUCE"
 
 	para "Appuyez sur START"

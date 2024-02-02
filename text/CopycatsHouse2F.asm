@@ -1,4 +1,4 @@
-_CopycatsHouse2FText_5ccd4::
+_CopycatsHouse2FCopycatDoYouLikePokemonText::
 	text "<PLAYER>: Salut!"
 	line "tu aimes les"
 	cont "#MON?"
@@ -17,7 +17,7 @@ _CopycatsHouse2FText_5ccd4::
 	line "faire que ça!"
 	prompt
 
-_TM31PreReceiveText::
+_CopycatsHouse2FCopycatTM31PreReceiveText::
 	text "Whaaaaaa!"
 	line "Une #POUPEE!"
 
@@ -28,14 +28,14 @@ _TM31PreReceiveText::
 	line "en échange!"
 	prompt
 
-_ReceivedTM31Text::
+_CopycatsHouse2FCopycatReceivedTM31Text::
 	text "<PLAYER> obtient:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM31ExplanationText1::
+_CopycatsHouse2FCopycatTM31Explanation1Text::
 	text_start
 
 	para "CT31: COPIE!"
@@ -43,7 +43,8 @@ _TM31ExplanationText1::
 	para "Enseigne-la au"
 	line "bon #MON!@"
 	text_end
-_TM31ExplanationText2::
+
+_CopycatsHouse2FCopycatTM31Explanation2Text::
 	text "<PLAYER>: Salut!"
 	line "Merci pour la"
 	cont "CT31!"
@@ -61,11 +62,11 @@ _TM31ExplanationText2::
 	cont "pas d'bouger!"
 	done
 
-_TM31NoRoomText::
+_CopycatsHouse2FCopycatTM31NoRoomText::
 	text "T'en veux pas?@"
 	text_end
 
-_CopycatsHouse2FText2::
+_CopycatsHouse2FDoduoText::
 	text "DODUO: Doduuu!"
 
 	para "AH, JE RIS DE"
@@ -73,7 +74,7 @@ _CopycatsHouse2FText2::
 	cont "EN CE MIROIR!"
 	done
 
-_CopycatsHouse2FText3::
+_CopycatsHouse2FRareDollText::
 	text "Ca, un #MON"
 	line "rare? Tu t'moques"
 	cont "de moi!"
@@ -82,14 +83,14 @@ _CopycatsHouse2FText3::
 	cont "en plus!"
 	done
 
-_CopycatsHouse2FText6::
+_CopycatsHouse2FSNESText::
 	text "Un plombier?"
 	line "Mais..."
 	cont "Kesski fait?"
 	cont "Y saute? Cool."
 	done
 
-_CopycatsHouse2FText_5cd17::
+_CopycatsHouse2FPCMySecretsText::
 	text "..."
 
 	para "Mes secrets!"
@@ -102,6 +103,6 @@ _CopycatsHouse2FText_5cd17::
 	cont "préféré: MELOFEE!"
 	done
 
-_CopycatsHouse2FText_5cd1c::
+_CopycatsHouse2FPCCantSeeText::
 	text "J'vois rien!"
 	done

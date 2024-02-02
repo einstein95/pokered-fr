@@ -1,17 +1,17 @@
-PikachuFanText::
+_PokemonFanClubPikachuFanNormalText::
 	text "Mon PIKACHU est"
 	line "le plus beau de"
 	cont "tous les PIKACHU!"
 	done
 
-PikachuFanBetterText::
+_PokemonFanClubPikachuFanBetterText::
 	text "Hmm! Mon PIKACHU"
 	line "est deux fois"
 	cont "plus mignon que"
 	cont "celui-ci!"
 	done
 
-SeelFanText::
+_PokemonFanClubSeelFanNormalText::
 	text "Moi, c'que j'aime"
 	line "c'est OTARIA!"
 
@@ -20,7 +20,7 @@ SeelFanText::
 	cont "un câlin!"
 	done
 
-SeelFanBetterText::
+_PokemonFanClubSeelFanBetterText::
 	text "Oh!"
 
 	para "Mon OTARIA est"
@@ -28,16 +28,16 @@ SeelFanBetterText::
 	cont "élégant!"
 	done
 
-FanClubPikachuText::
+_PokemonFanClubPikachuText::
 	text "PIKACHU: Chu!"
 	line "Pikachu!"
 	done
 
-FanClubSeelText::
+_PokemonFanClubSeelText::
 	text "OTARIA: Riaaa!"
 	done
 
-FanClubMeetChairText::
+_PokemonFanClubChairmanIntroText::
 	text "Je suis le maître"
 	line "du Fan Club des"
 	cont "#MON!"
@@ -56,7 +56,7 @@ FanClubMeetChairText::
 	cont "sur mes #MON?"
 	done
 
-FanClubChairStoryText::
+_PokemonFanClubChairmanStoryText::
 	text "Bien!"
 	line "Alors, écoute!"
 
@@ -87,14 +87,14 @@ FanClubChairStoryText::
 	cont "prends ça!"
 	prompt
 
-ReceivedBikeVoucherText::
+_PokemonFanClubReceivedBikeVoucherText::
 	text "<PLAYER> reçoit:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-ExplainBikeVoucherText::
+_PokemonFanClubExplainBikeVoucherText::
 	text_start
 	para "Echange ça contre"
 	line "une BICYCLETTE!"
@@ -112,14 +112,14 @@ ExplainBikeVoucherText::
 	line "aimes pédaler!"
 	done
 
-FanClubNoStoryText::
+_PokemonFanClubNoStoryText::
 	text "Reviens quand tu"
 	line "veux. Je te"
 	cont "raconterai mes"
 	cont "histoires!"
 	done
 
-FanClubChairFinalText::
+_PokemonFanClubChairFinalText::
 	text "Salut, <PLAYER>!"
 
 	para "tu es venu pour"
@@ -130,25 +130,25 @@ FanClubChairFinalText::
 	para "Non? Dommage!"
 	done
 
-FanClubBagFullText::
+_PokemonFanClubBagFullText::
 	text "Votre inventaire"
 	line "est plein!"
 	done
 
-_FanClubText6::
+_PokemonFanClubReceptionistText::
 	text "Notre maître est"
 	line "très bavard en ce"
 	cont "qui concerne les"
 	cont "#MON."
 	done
 
-_FanClubText7::
+_PokemonFanClubSign1Text::
 	text "Ecoutons donc"
 	line "l'avis des"
 	cont "autres dresseurs!"
 	done
 
-_FanClubText8::
+_PokemonFanClubSign2Text::
 	text "Si on te nargue,"
 	line "nargue en retour!"
 	done

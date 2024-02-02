@@ -1,8 +1,8 @@
-_LavenderHouse2Text1::
+_LavenderCuboneHouseCuboneText::
 	text "OSSELAIT: Lailaii!@"
 	text_end
 
-_LavenderHouse2Text_1d9dc::
+_LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText::
 	text "Je déteste ces"
 	line "méchants ROCKET!"
 
@@ -15,7 +15,7 @@ _LavenderHouse2Text_1d9dc::
 	cont "TEAM ROCKET!"
 	done
 
-_LavenderHouse2Text_1d9e1::
+_LavenderCuboneHouseBrunetteGirlGhostIsGoneText::
 	text "Le SPECTRE de"
 	line "la TOUR #MON"
 	cont "est parti!"

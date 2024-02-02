@@ -36,7 +36,7 @@ ShowPokedexMenu:
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	ldh [hJoy7], a
-	ld [wWastedByteCD3A], a
+	ld [wUnusedCD3A], a
 	ld [wOverrideSimulatedJoypadStatesMask], a
 	pop af
 	ld [wListScrollOffset], a
@@ -532,7 +532,7 @@ ShowPokedexDataInternal:
 ; now print the weight (note that weight is stored in tenths of kilograms internally)
 	inc de
 	inc de
-	inc de ; de = upper byte of weight
+	inc de ; de = address of upper byte of weight
 	push de
 ; put weight in big-endian order at hDexWeight
 	ld hl, hDexWeight

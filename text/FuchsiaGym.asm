@@ -1,5 +1,5 @@
-_KogaBeforeBattleText::
-	text "KOGA: Gwahahaha!"
+_FuchsiaGymKogaBeforeBattleText::
+	text "KOGA: Fwahahaha!"
 
 	para "Un nain ose me"
 	line "défier? Moi, le"
@@ -18,10 +18,10 @@ _KogaBeforeBattleText::
 	cont "petits #MON!"
 	done
 
-_ReceivedSoulBadgeText::
-	text "Gwaha...heu?"
-	line "Tu as prouvé ta"
-	cont "valeur!"
+_FuchsiaGymKogaReceivedSoulBadgeText::
+	text "Humph!"
+	line "You have proven"
+	cont "your worth!"
 
 	para "Ouvre ta mimine"
 	line "car voici..."

@@ -1,10 +1,10 @@
-_SchoolText1::
+_ViridianSchoolHouseBrunetteGirlText::
 	text "Pfouh! J'essaie"
 	line "d'apprendre mes"
 	cont "leçons."
 	done
 
-_SchoolText2::
+_ViridianSchoolHouseCooltrainerFText::
 	text "OK!"
 
 	para "Lis attentivement"

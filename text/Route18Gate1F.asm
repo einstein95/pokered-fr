@@ -1,15 +1,15 @@
-_Route18GateText_49928::
+_Route18Gate1FGuardYouNeedABicycleText::
 	text "Il faut un vélo"
 	line "pour aller sur la"
 	cont "PISTE CYCLABLE!"
 	done
 
-_Route18GateText_4992d::
+_Route18Gate1FGuardCyclingRoadUphillText::
 	text "La descente de"
 	line "la PISTE CYCLABLE"
 	cont "commence ici."
 	done
 
-_Route18GateText_49932::
+_Route18Gate1FGuardExcuseMeText::
 	text "Halte!"
 	done

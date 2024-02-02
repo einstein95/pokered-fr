@@ -1,71 +1,71 @@
-_SSAnne10Text8::
+_SSAnneB1FRoomsMachokeText::
 	text "MACHOPEUR: Chop!"
 	line "Chop! Chop!@"
 	text_end
 
-_SSAnne10BattleText1::
+_SSAnneB1FRoomsSailor1BattleText::
 	text "Tu sais ce que"
 	line "l'on raconte sur"
 	cont "les marins et"
 	cont "les duels!"
 	done
 
-_SSAnne10EndBattleText1::
+_SSAnneB1FRoomsSailor1EndBattleText::
 	text "Ouaip!"
 	line "Beau combat!"
 	prompt
 
-_SSAnne10AfterBattleText1::
+_SSAnneB1FRoomsSailor1AfterBattleText::
 	text "Alors, mousse, tu"
 	line "veux devenir"
 	cont "un marin?"
 	done
 
-_SSAnne10BattleText2::
+_SSAnneB1FRoomsSailor2BattleText::
 	text "Ma réputation de"
 	line "marin est en jeu!"
 	done
 
-_SSAnne10EndBattleText2::
+_SSAnneB1FRoomsSailor2EndBattleText::
 	text "Ha!"
 	line "Je sombre!"
 	prompt
 
-_SSAnne10AfterBattleText2::
+_SSAnneB1FRoomsSailor2AfterBattleText::
 	text "As-tu rencontré le"
 	line "Maître Pêcheur à"
 	cont "CARMIN?"
 	done
 
-_SSAnne10BattleText3::
+_SSAnneB1FRoomsSailor3BattleText::
 	text "Nous, les marins,"
 	line "on a aussi des"
 	cont "#MON!"
 	done
 
-_SSAnne10EndBattleText3::
+_SSAnneB1FRoomsSailor3EndBattleText::
 	text "OK!"
 	line "T'es pas nul!"
 	prompt
 
-_SSAnne10AfterBattleText3::
+_SSAnneB1FRoomsSailor3AfterBattleText::
 	text "Tous nos #MON"
 	line "viennent des"
 	cont "hautes mers!"
 	done
 
-_SSAnne10BattleText4::
+_SSAnneB1FRoomsSailor4BattleText::
 	text "J'aime les p'tits"
 	line "gars joyeux"
 	cont "comme toi!@"
 	text_end
 
-_SSAnne10EndBattleText4::
+_SSAnneB1FRoomsSailor4EndBattleText::
 	text "Hein!"
 	line "J'ai perdu? Argh!"
 	prompt
 
-_SSAnne10AfterBattleText4::
+_SSAnneB1FRoomsSailor4AfterBattleText::
 	text "Les #MON d'eau"
 	line "vivent dans les"
 	cont "grands fonds!"
@@ -74,18 +74,18 @@ _SSAnne10AfterBattleText4::
 	line "CANNE!"
 	done
 
-_SSAnne10BattleText5::
+_SSAnneB1FRoomsSailor5BattleText::
 	text "Si tu perds, on"
 	line "te balance aux"
 	cont "requins!"
 	done
 
-_SSAnne10EndBattleText5::
+_SSAnneB1FRoomsSailor5EndBattleText::
 	text "Hein?"
 	line "Battu par toi?"
 	prompt
 
-_SSAnne10AfterBattleText5::
+_SSAnneB1FRoomsSailor5AfterBattleText::
 	text "Souvent, quelques"
 	line "méduses sont"
 	cont "entraînées dans"
@@ -93,7 +93,7 @@ _SSAnne10AfterBattleText5::
 	cont "du bateau..."
 	done
 
-_SSAnne10BattleText6::
+_SSAnneB1FRoomsFisherBattleText::
 	text "Salut étranger!"
 	line "Parlons un peu!"
 
@@ -101,19 +101,19 @@ _SSAnne10BattleText6::
 	line "sont aquatiques!"
 	done
 
-_SSAnne10EndBattleText6::
+_SSAnneB1FRoomsFisherEndBattleText::
 	text "Zut!"
 	line "Celui-là s'est"
 	cont "échappé!"
 	prompt
 
-_SSAnne10AfterBattleText6::
+_SSAnneB1FRoomsFisherAfterBattleText::
 	text "J'allais faire de"
 	line "toi mon"
 	cont "assistant!"
 	done
 
-_SSAnne10Text7::
+_SSAnneB1FRoomsSuperNerdText::
 	text "Mon #MON,"
 	line "MACHOPEUR, est"
 	cont "super fort!!!"

@@ -1,4 +1,4 @@
-_Route16HouseText3::
+_Route16FlyHouseBrunetteGirlText::
 	text "Oh! Tu as trouvé"
 	line "ma cache secrète!"
 
@@ -8,12 +8,12 @@ _Route16HouseText3::
 	cont "que tu m'as vu!"
 	prompt
 
-_ReceivedHM02Text::
+_Route16FlyHouseBrunetteGirlReceivedHM02Text::
 	text "<PLAYER> obtient:"
 	line "CS02!@"
 	text_end
 
-_HM02ExplanationText::
+_Route16FlyHouseBrunetteGirlHM02ExplanationText::
 	text "CS02: VOL."
 	line "Elle vous permet"
 	cont "de revenir dans"
@@ -22,12 +22,12 @@ _HM02ExplanationText::
 	para "Bien pratique!"
 	done
 
-_HM02NoRoomText::
+_Route16FlyHouseBrunetteGirlHM02NoRoomText::
 	text "Votre inventaire"
 	line "est plein."
 	done
 
-_Route16HouseText_1e652::
+_Route16FlyHouseFearowText::
 	text "RAPASDEPIC:"
 	line "Piiiiiik!"
 	done

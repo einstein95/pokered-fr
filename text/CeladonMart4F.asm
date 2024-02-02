@@ -1,10 +1,10 @@
-_CeladonMart4Text2::
+_CeladonMart4FSuperNerdText::
 	text "J'offre une belle"
 	line "#poupée à ma"
 	cont "copine!"
 	done
 
-_CeladonMart4Text3::
+_CeladonMart4FYoungsterText::
 	text "Ecoute donc..."
 
 	para "Tu peux fuir face"
@@ -14,7 +14,7 @@ _CeladonMart4Text3::
 	cont "#POUPEE!"
 	done
 
-_CeladonMart4Text4::
+_CeladonMart4FCurrentFloorSignText::
 	text "Un cadeau..."
 	line "L'amour..."
 	cont "La vie!"

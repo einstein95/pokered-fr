@@ -13,7 +13,7 @@ DisplayTextID::
 .skipSwitchToMapBank
 	ld a, 30 ; half a second
 	ldh [hFrameCounter], a ; used as joypad poll timer
-	ld hl, wMapTextPtr
+	ld hl, wCurMapTextPtr
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a ; hl = map text pointer
@@ -206,7 +206,7 @@ DisplayPlayerBlackedOutText::
 	ld [wSafariSteps], a
 	ld [wSafariSteps+1], a
 	ld [wEventFlags + 73], a ; clear all Safari Zone flags
-	ld [wcf0d], a
+	ld [wNextSafariZoneGateScript], a
 	ld [wSafariZoneGateCurScript], a
 .didnotblackoutinsafari
 	jp HoldTextDisplayOpen

@@ -1,4 +1,4 @@
-_ErikaPreBattleText::
+_CeladonGymErikaPreBattleText::
 	text "Bonjour et sois"
 	line "le bienvenu. Il"
 	cont "fait beau, n'est-"
@@ -31,7 +31,7 @@ _ErikaPreBattleText::
 	line "Tu vas perdre!"
 	done
 
-_ReceivedRainbowBadgeText::
+_CeladonGymErikaReceivedRainbowBadgeText::
 	text "Oh!"
 	line "J'ai perdu?"
 
@@ -42,7 +42,7 @@ _ReceivedRainbowBadgeText::
 	line "BADGE PRISME."
 	prompt
 
-_ErikaPostBattleAdviceText::
+_CeladonGymErikaPostBattleAdviceText::
 	text "Tu recherches les"
 	line "#MON? Ta quête"
 	cont "est noble."
@@ -53,7 +53,7 @@ _ErikaPostBattleAdviceText::
 	cont "#MON."
 	done
 
-_ErikaRainbowBadgeInfoText::
+_CeladonGymRainbowBadgeInfoText::
 	text "Le BADGE PRISME"
 	line "fera obéir les"
 	cont "#MON jusqu'au"
@@ -67,7 +67,7 @@ _ErikaRainbowBadgeInfoText::
 	line "ceci."
 	done
 
-_ReceivedTM21Text::
+_CeladonGymReceivedTM21Text::
 	text "<PLAYER> reçoit"
 	line "@"
 	text_ram wStringBuffer
@@ -86,7 +86,7 @@ _TM21ExplanationText::
 	cont "#MON!"
 	done
 
-_TM21NoRoomText::
+_CeladonGymTM21NoRoomText::
 	text "Ton inventaire"
 	line "est plein."
 	done

@@ -1,4 +1,4 @@
-_VermilionPokecenterText2::
+_VermilionPokecenterFishingGuruText::
 	text "Deux #MON d'un"
 	line "même niveau sont"
 	cont "différents."
@@ -11,7 +11,7 @@ _VermilionPokecenterText2::
 	cont "Ouais mon gars!"
 	done
 
-_VermilionPokecenterText3::
+_VermilionPokecenterSailorText::
 	text "Mon #MON est"
 	line "empoisonné! Il"
 	cont "est tombé dans"

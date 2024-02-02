@@ -1,15 +1,15 @@
-_ProgrammerText::
+_CeladonMansion3FProgrammerText::
 	text "Moi? Chuis un"
 	line "programmeur!"
 	done
 
-_GraphicArtistText::
+_CeladonMansion3FGraphicArtistText::
 	text "Je fais tous les"
 	line "graphismes!"
 	cont "Je t'ai dessiné!"
 	done
 
-_WriterText::
+_CeladonMansion3FWriterText::
 	text "J'ai écrit"
 	line "l'histoire!"
 	cont "ERIKA est belle!"
@@ -21,7 +21,7 @@ _WriterText::
 	line "Elle est mimi!"
 	done
 
-_GameDesignerText::
+_CeladonMansion3FGameDesignerText::
 	text "Yagwahabwa!"
 
 	para "Je suis le"
@@ -35,7 +35,7 @@ _GameDesignerText::
 	line "reviens me voir!"
 	done
 
-_CompletedDexText::
+_CeladonMansion3FGameDesignerCompletedDexText::
 	text "Woah! Génial!"
 	line "Tu as complété"
 	cont "ton #DEX!"
@@ -43,25 +43,25 @@ _CompletedDexText::
 	cont "...@"
 	text_end
 
-_CeladonMansion3Text5::
+_CeladonMansion3FGameProgramPCText::
 	text "Le programme"
 	line "du jeu! Si tu y"
 	cont "touches, tout va"
 	cont "planter!"
 	done
 
-_CeladonMansion3Text6::
+_CeladonMansion3FPlayingGamePCText::
 	text "Quelqu'un joue au"
 	line "lieu de bosser!"
 	done
 
-_CeladonMansion3Text7::
+_CeladonMansion3FGameScriptPCText::
 	text "Le script du jeu!"
 	line "Surtout ne pas"
 	cont "lire la fin!"
 	done
 
-_CeladonMansion3Text8::
+_CeladonMansion3FDevRoomSignText::
 	text "GAME FREAK"
 	line "Développement"
 	done

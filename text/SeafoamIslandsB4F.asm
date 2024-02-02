@@ -1,15 +1,15 @@
-_ArticunoBattleText::
+_SeafoamIslandsB4FArticunoBattleText::
 	text "Yahoo!@"
 	text_end
 
-_SeafoamIslands5Text4::
+_SeafoamIslandsB4FBouldersSignText::
 	text "Les rochers"
 	line "peuvent changer"
 	cont "le niveau de"
 	cont "l'eau!"
 	done
 
-_SeafoamIslands5Text5::
+_SeafoamIslandsB4FDangerSignText::
 	text "DANGER!"
 	line "Rapides!"
 	done

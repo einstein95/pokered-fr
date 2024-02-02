@@ -1,29 +1,29 @@
-_Mansion1BattleText2::
+_PokemonMansion1FScientistBattleText::
 	text "Qui es-tu?"
 	line "C'est interdit"
 	cont "eud' se balader."
 	done
 
-_Mansion1EndBattleText2::
+_PokemonMansion1FScientistEndBattleText::
 	text "Aïe!"
 	prompt
 
-_Mansion1AfterBattleText2::
+_PokemonMansion1FScientistAfterBattleText::
 	text "Une clé? Je ne"
 	line "sais pas d'quoi"
 	cont "tu parles."
 	done
 
-_MansionSwitchText::
+_PokemonMansion1FSwitchText::
 	text "Un bouton secret!"
 
 	para "On appuie?"
 	done
 
-_MansionSwitchPressedText::
+_PokemonMansion1FSwitchPressedText::
 	text "Sans blague!"
 	prompt
 
-_MansionSwitchNotPressedText::
+_PokemonMansion1FSwitchNotPressedText::
 	text "Pas vraiment..."
 	done

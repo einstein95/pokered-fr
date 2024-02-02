@@ -1,4 +1,4 @@
-_Route1ViridianMartSampleText::
+_Route1Youngster1MartSampleText::
 	text "Salut! Je"
 	line "travaille à la"
 	cont "BOUTIQUE #MON."
@@ -13,26 +13,26 @@ _Route1ViridianMartSampleText::
 	cont "échantillon!"
 	prompt
 
-_Route1Text_1cae8::
+_Route1Youngster1GotPotionText::
 	text "<PLAYER> obtient:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_Route1Text_1caee::
+_Route1Youngster1AlsoGotPokeballsText::
 	text "Nous avons aussi"
 	line "des # BALL"
 	cont "pour capturer les"
 	cont "#MON!"
 	done
 
-_Route1Text_1caf3::
+_Route1Youngster1NoRoomText::
 	text "Ton inventaire"
 	line "est plein!"
 	done
 
-_Route1Text2::
+_Route1Youngster2Text::
 	text "Tu vois ces"
 	line "rebords le long"
 	cont "de la route?"
@@ -47,7 +47,7 @@ _Route1Text2::
 	cont "cette façon!"
 	done
 
-_Route1Text3::
+_Route1SignText::
 	text "ROUTE 1"
 	line "BOURG PALETTE -"
 	cont "JADIELLE"

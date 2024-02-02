@@ -1,4 +1,4 @@
-_CeruleanHouse1Text1::
+_CeruleanTradeHouseGrannyText::
 	text "Mon mari aime"
 	line "les échanges de"
 	cont "#MON."

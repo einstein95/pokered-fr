@@ -1,4 +1,4 @@
-_Route22GateText_1e704::
+_Route22GateGuardNoBoulderbadgeText::
 	text "Seul un dresseur"
 	line "expérimenté peut"
 	cont "passer."
@@ -7,7 +7,7 @@ _Route22GateText_1e704::
 	line "BADGE ROCHE!@"
 	text_end
 
-_Route22GateText_1e715::
+_Route22GateGuardICantLetYouPassText::
 	text_start
 
 	para "La loi est dure,"
@@ -16,7 +16,7 @@ _Route22GateText_1e715::
 	cont "pas passer"
 	done
 
-_Route22GateText_1e71a::
+_Route22GateGuardGoRightAheadText::
 	text "Oh! Tu as le"
 	line "BADGE ROCHE!"
 	cont "Tu peux passer!@"

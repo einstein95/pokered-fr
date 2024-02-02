@@ -1,15 +1,15 @@
-_ViridianMartText1::
+_ViridianMartClerkSayHiToOakText::
 	text "Cool! Tu diras"
 	line "bonjour au PROF."
 	cont "CHEN de ma part!"
 	done
 
-_ViridianMartText4::
+_ViridianMartClerkYouCameFromPalletTownText::
 	text "Hé! Tu viens de"
 	line "BOURG PALETTE?"
 	done
 
-ViridianMartParcelQuestText::
+_ViridianMartClerkParcelQuestText::
 	text "Tu connais le"
 	line "PROF. CHEN?"
 
@@ -22,13 +22,13 @@ ViridianMartParcelQuestText::
 	line "le COLIS DE CHEN!@"
 	text_end
 
-_ViridianMartText2::
+_ViridianMartYoungsterText::
 	text "On vend des"
 	line "ANTIDOTES dans"
 	cont "cette boutique."
 	done
 
-_ViridianMartText3::
+_ViridianMartCooltrainerMText::
 	text "Plus de POTIONS!"
 	line "Nous sommes en"
 	cont "rupture de stock."

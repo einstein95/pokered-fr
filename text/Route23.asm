@@ -1,4 +1,4 @@
-_VictoryRoadGuardText1::
+_Route23YouDontHaveTheBadgeYetText::
 	text "On ne passe que"
 	line "sur présentation"
 	cont "d'un..."
@@ -16,7 +16,7 @@ _VictoryRoadGuardText1::
 	cont "LIGUE #MON!@"
 	text_end
 
-_VictoryRoadGuardText2::
+_Route23OhThatIsTheBadgeText::
 	text "On ne passe que"
 	line "sur présentation"
 	cont "d'un..."
@@ -30,14 +30,14 @@ _VictoryRoadGuardText2::
 	text "!@"
 	text_end
 
-_VictoryRoadGuardText_513a3::
+_Route23GoRightAheadText::
 	text_start
 
 	para "OK! Tu peux"
 	line "passer!"
 	done
 
-_Route23Text8::
+_Route23VictoryRoadGateSignText::
 	text "ROUTE VICTOIRE"
 	line "- LIGUE #MON"
 	done

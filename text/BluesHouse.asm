@@ -1,10 +1,10 @@
-_DaisyInitialText::
+_BluesHouseDaisyRivalAtLabText::
 	text "Salut <PLAYER>!"
 	line "<RIVAL> est dans"
 	cont "le labo de pépé! "
 	done
 
-_DaisyOfferMapText::
+_BluesHouseDaisyOfferMapText::
 	text "Tu dois faire une"
 	line "course pour pépé?"
 	cont "Prends ceci,"
@@ -18,12 +18,12 @@ _GotMapText::
 	text "!@"
 	text_end
 
-_DaisyBagFullText::
+_BluesHouseDaisyBagFullText::
 	text "Votre inventaire"
 	line "est plein."
 	done
 
-_DaisyUseMapText::
+_BluesHouseDaisyUseMapText::
 	text "Utilise la CARTE"
 	line "pour connaître ta"
 	cont "position."

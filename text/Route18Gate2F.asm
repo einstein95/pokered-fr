@@ -1,4 +1,4 @@
-_Route18GateUpstairsText_49993::
+_Route18Gate2FLeftBinocularsText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."
@@ -7,7 +7,7 @@ _Route18GateUpstairsText_49993::
 	line "est à l'Ouest!"
 	done
 
-_Route18GateUpstairsText_4999f::
+_Route18Gate2FRightBinocularsText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."

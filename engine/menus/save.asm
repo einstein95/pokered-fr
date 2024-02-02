@@ -372,7 +372,7 @@ ChangeBox::
 	call GetBoxSRAMLocation
 	ld de, wBoxDataStart
 	call CopyBoxToOrFromSRAM ; copy new box from SRAM to WRAM
-	ld hl, wMapTextPtr
+	ld hl, wCurMapTextPtr
 	ld de, wChangeBoxSavedMapTextPointer
 	ld a, [hli]
 	ld [de], a
@@ -705,7 +705,7 @@ ClearSAV:
 
 PadSRAM_FF:
 	ld [MBC1SRamBank], a
-	ld hl, SRAM_Begin
-	ld bc, SRAM_End - SRAM_Begin
+	ld hl, STARTOF(SRAM)
+	ld bc, SIZEOF(SRAM)
 	ld a, $ff
 	jp FillMemory

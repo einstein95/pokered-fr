@@ -1,4 +1,4 @@
-_Lab4Text_75dc6::
+_CinnabarLabFossilRoomScientist1Text::
 	text "Salut!"
 
 	para "Je suis un"
@@ -14,12 +14,12 @@ _Lab4Text_75dc6::
 	cont "fossile pour moi?"
 	prompt
 
-_Lab4Text_75dcb::
+_CinnabarLabFossilRoomScientist1NoFossilsText::
 	text "Non? C'est bien"
 	line "dommage!"
 	done
 
-_Lab4Text_75dd0::
+_CinnabarLabFossilRoomScientist1GoForAWalkText::
 	text "Ca va prendre du"
 	line "temps!"
 
@@ -28,7 +28,7 @@ _Lab4Text_75dd0::
 	cont "bosse!"
 	done
 
-_Lab4Text_75dd5::
+_CinnabarLabFossilRoomScientist1FossilIsBackToLifeText::
 	text "Ben alors! Où"
 	line "étais-tu passé?"
 
@@ -41,7 +41,7 @@ _Lab4Text_75dd5::
 	text "!"
 	prompt
 
-_Lab4Text_610ae::
+_CinnabarLabFossilRoomScientist1SeesFossilText::
 	text "Oh! C'est un"
 	line "@"
 	text_ram wcd6d
@@ -60,7 +60,7 @@ _Lab4Text_610ae::
 	cont "ancien #MON!"
 	done
 
-_Lab4Text_610b3::
+_CinnabarLabFossilRoomScientist1TakesFossilText::
 	text "Tu te grouilles,"
 	line "file-moi ça!"
 
@@ -70,7 +70,7 @@ _Lab4Text_610b3::
 	text "!"
 	prompt
 
-_Lab4Text_610b8::
+_CinnabarLabFossilRoomScientist1GoForAWalkText2::
 	text "Ca va prendre un"
 	line "peu de temps!"
 
@@ -79,7 +79,7 @@ _Lab4Text_610b8::
 	cont "faire un tour!"
 	done
 
-_Lab4Text_610bd::
+_CinnabarLabFossilRoomScientist1ComeAgainText::
 	text "Argayahhaha!"
 	line "Tu reviendras!"
 	done

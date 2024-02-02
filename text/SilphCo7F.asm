@@ -1,4 +1,4 @@
-_MeetLaprasGuyText::
+_SilphCo7FSilphWorkerM1HaveThisPokemonText::
 	text "Oh! Tu n'es pas"
 	line "un ROCKET! Es-tu"
 	cont "là pour nous"
@@ -9,7 +9,7 @@ _MeetLaprasGuyText::
 	cont "cadeau."
 	prompt
 
-_HeresYourLaprasText::
+_SilphCo7FSilphWorkerM1LaprasDescriptionText::
 	text "C'est un LOKHLASS."
 	line "Il est très"
 	cont "intelligent."
@@ -28,7 +28,7 @@ _HeresYourLaprasText::
 	cont "porter!"
 	done
 
-_LaprasGuyText::
+_SilphCo7FSilphWorkerM1IsOurPresidentOkText::
 	text "Le chef de la"
 	line "TEAM ROCKET est"
 	cont "dans la salle du"
@@ -36,12 +36,12 @@ _LaprasGuyText::
 	cont "va-t-il bien?"
 	done
 
-_LaprasGuySavedText::
+_SilphCo7FSilphWorkerM1SavedText::
 	text "De l'aide! Enfin!"
 	line "Merci!"
 	done
 
-_SilphCo7Text_51e00::
+_SilphCo7FSilphWorkerM2AfterTheMasterBallText::
 	text "La TEAM ROCKET"
 	line "voulait s'emparer"
 	cont "de la MASTER BALL"
@@ -50,14 +50,14 @@ _SilphCo7Text_51e00::
 	cont "#MON!"
 	done
 
-_CanceledMasterBallText::
+_SilphCo7FSilphWorkerM2CancelledMasterBallText::
 	text "Le projet MASTER"
 	line "BALL fut annulé"
 	cont "à cause de la"
 	cont "TEAM ROCKET."
 	done
 
-_SilphCo7Text_51e23::
+_SilphCo7FSilphWorkerM3ItWouldBeBadText::
 	text "Grâce au ciel la"
 	line "TEAM ROCKET ne"
 	cont "put investir la"
@@ -65,13 +65,13 @@ _SilphCo7Text_51e23::
 	cont "nos #MON!"
 	done
 
-_SilphCo7Text_51e28::
+_SilphCo7FSilphWorkerM3YouChasedOffTeamRocketText::
 	text "Woah! Tu as battu"
 	line "la TEAM ROCKET"
 	cont "tout seul?"
 	done
 
-_SilphCo7Text_51e46::
+_SilphCo7FSilphWorkerM4ItsReallyDangerousHereText::
 	text "Hé toi! C'est"
 	line "dangereux par"
 	cont "ici! Tu es venu"
@@ -79,28 +79,28 @@ _SilphCo7Text_51e46::
 	cont "Impossible!"
 	done
 
-_SilphCo7Text_51e4b::
+_SilphCo7FSilphWorkerM4SafeAtLastText::
 	text "Enfin libre!"
 	line "Merci merci!"
 	done
 
-_SilphCo7BattleText1::
+_SilphCo7FRocket1BattleText::
 	text "Heu?"
 	line "Alerte! Alerte!"
 	done
 
-_SilphCo7EndBattleText1::
+_SilphCo7FRocket1EndBattleText::
 	text "Oups."
 	line "Perdu! Perdu!"
 	prompt
 
-_SilphCo7AfterBattleText1::
+_SilphCo7FRocket1AfterBattleText::
 	text "Tu ne pourras"
 	line "trouver mon chef"
 	cont "en te baladant!"
 	done
 
-_SilphCo7BattleText2::
+_SilphCo7FScientistBattleText::
 	text "Nyah ha ha!"
 
 	para "Tu me prends pour"
@@ -108,56 +108,56 @@ _SilphCo7BattleText2::
 	cont "SYLPHE?"
 	done
 
-_SilphCo7EndBattleText2::
+_SilphCo7FScientistEndBattleText::
 	text "..."
 	line "Fichu!"
 	prompt
 
-_SilphCo7AfterBattleText2::
+_SilphCo7FScientistAfterBattleText::
 	text "Bien que jeune,"
 	line "tu te débrouilles"
 	cont "pas trop mal!"
 	done
 
-_SilphCo7BattleText3::
+_SilphCo7FRocket2BattleText::
 	text "Je suis l'un des"
 	line "4 frères ROCKET!"
 	done
 
-_SilphCo7EndBattleText3::
+_SilphCo7FRocket2EndBattleText::
 	text "Yaaah!"
 	line "Frères! A l'aide!"
 	prompt
 
-_SilphCo7AfterBattleText3::
+_SilphCo7FRocket2AfterBattleText::
 	text "Pas grave."
 	line "Mes frères se"
 	cont "chargeront de"
 	cont "toi, mon petit!"
 	done
 
-_SilphCo7BattleText4::
+_SilphCo7FRocket3BattleText::
 	text "Un jeune intrus?"
 	line "Mais! C'est toi!"
 	done
 
-_SilphCo7EndBattleText4::
+_SilphCo7FRocket3EndBattleText::
 	text "OK."
 	line "J'ai perdu."
 	prompt
 
-_SilphCo7AfterBattleText4::
+_SilphCo7FRocket3AfterBattleText::
 	text "Rentre chez toi!"
 	line "Mon chef est sans"
 	cont "pitié!"
 	done
 
-_SilphCo7Text_51ebe::
+_SilphCo7FRivalText::
 	text "<RIVAL>: C'que tu"
 	line "es lent, <PLAYER>!"
 	done
 
-_SilphCo7Text_51ec3::
+_SilphCo7FRivalWaitedHereText::
 	text "<RIVAL>: Hahaha!"
 	line "J'étais sûr que"
 	cont "tu passerais par"
@@ -174,14 +174,14 @@ _SilphCo7Text_51ec3::
 	cont "nul?"
 	done
 
-_SilphCo7Text_51ec8::
+_SilphCo7FRivalDefeatedText::
 	text "Oh non!"
 	line "Tu es donc prêt"
 	cont "pour le chef de"
 	cont "la TEAM ROCKET!"
 	prompt
 
-_SilphCo7Text_51ecd::
+_SilphCo7FRivalVictoryText::
 	text "<RIVAL>: Quelle"
 	line "perte de temps!"
 
@@ -189,7 +189,7 @@ _SilphCo7Text_51ecd::
 	line "bac à sable!"
 	prompt
 
-_SilphCo7Text_51ed2::
+_SilphCo7FRivalGoodLuckToYouText::
 	text "OK, <PLAYER>!"
 
 	para "Je décampe!"

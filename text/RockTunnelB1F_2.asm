@@ -1,9 +1,9 @@
-_RockTunnel2AfterBattleText8::
+_RockTunnelB1FHiker3AfterBattleText::
 	text "Je vais encore"
 	line "m'entraîner!"
 	done
 
-_RockTunnel2BattleText9::
+_RockTunnelB1FSuperNerd3BattleText::
 	text "Je dessine des"
 	line "#MON quand"
 	cont "chuis tout seul."
@@ -11,12 +11,12 @@ _RockTunnel2BattleText9::
 	cont "Cool, non?"
 	done
 
-_RockTunnel2EndBattleText9::
+_RockTunnelB1FSuperNerd3EndBattleText::
 	text "Fouii!"
 	line "Je suis crevé!"
 	prompt
 
-_RockTunnel2AfterBattleText9::
+_RockTunnelB1FSuperNerd3AfterBattleText::
 	text "Chuis un artiste,"
 	line "pas un violent."
 	done

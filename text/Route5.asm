@@ -1,4 +1,4 @@
-_Route5Text1::
+_Route5UndergroundPathSignText::
 	text "SOUTERRAIN"
 	line "AZURIA -"
 	cont "CARMIN SUR MER"

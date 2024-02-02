@@ -1,4 +1,4 @@
-_GaryChampionIntroText::
+_ChampionsRoomRivalIntroText::
 	text "<RIVAL>:"
 	line "Bonjour minable."
 
@@ -40,7 +40,7 @@ _GaryChampionIntroText::
 	cont "monde! Yaaa!"
 	done
 
-_GaryDefeatedText::
+_RivalDefeatedText::
 	text "NOoOoON!"
 	line "IMPOSSIBLE!!!"
 	cont "Mon équipe de"
@@ -56,7 +56,7 @@ _GaryDefeatedText::
 	cont "C'est pas juste!"
 	prompt
 
-_GaryVictoryText::
+_RivalVictoryText::
 	text "Hahaha!"
 	line "J'ai gagné!"
 	cont "Nya na nana na!"
@@ -73,7 +73,7 @@ _GaryVictoryText::
 	cont "Minable!"
 	prompt
 
-_GaryText_76103::
+_ChampionsRoomRivalAfterBattleText::
 	text "Qu...Comm...Hein?"
 	line "Moi? Pourquoi?"
 	cont "WHAAAAAAAAAAA!"
@@ -90,11 +90,11 @@ _GaryText_76103::
 	line "Ca me la coupe."
 	done
 
-_GaryText2::
+_ChampionsRoomOakText::
 	text "CHEN: <PLAYER>!"
 	done
 
-_GaryText_76120::
+_ChampionsRoomOakCongratulatesPlayerText::
 	text "CHEN: Tu as gagné!"
 	line "Félicitations!"
 	cont "Tu es le nouveau"
@@ -111,7 +111,7 @@ _GaryText_76120::
 	line "grand maintenant!"
 	done
 
-_GaryText_76125::
+_ChampionsRoomOakDisappointedWithRivalText::
 	text "CHEN: <RIVAL>!"
 	line "Je suis... déçu!"
 
@@ -143,7 +143,7 @@ _GaryText_76125::
 	cont "pis c'est tout!"
 	done
 
-_GaryText_7612a::
+_ChampionsRoomOakComeWithMeText::
 	text "CHEN: <PLAYER>!"
 
 	para "Cette victoire..."

@@ -1,4 +1,4 @@
-_SSAnne1Text1::
+_SSAnne1FWaiterText::
 	text "Bonjour! Je suis"
 	line "le serveur de ce"
 	cont "bateau!"
@@ -11,7 +11,7 @@ _SSAnne1Text1::
 	line "grand large!"
 	done
 
-_SSAnne1Text2::
+_SSAnne1FSailorText::
 	text "Les passagers"
 	line "sont en"
 	cont "ébullition!"

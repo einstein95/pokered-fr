@@ -32,7 +32,7 @@ _BrunoAfterBattleText::
 	cont "t'attend!"
 	done
 
-_BrunoDontRunAwayText::
+_BrunosRoomBrunoDontRunAwayText::
 	text "Une voix:"
 	line "Ne fuis pas!"
 	done

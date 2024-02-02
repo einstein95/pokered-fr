@@ -1,4 +1,4 @@
-_CeladonPrizeRoomText1::
+_GameCornerPrizeRoomBaldingGuyText::
 	text "JE VEUX LE JOLI"
 	line "PORYGON!"
 
@@ -7,7 +7,7 @@ _CeladonPrizeRoomText1::
 	cont "dures!"
 	done
 
-_CeladonPrizeRoomText2::
+_GameCornerPrizeRoomGamblerText::
 	text "La chance..."
 	line "C'est mon truc!"
 	done

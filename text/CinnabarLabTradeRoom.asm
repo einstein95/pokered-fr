@@ -1,4 +1,4 @@
-_Lab2Text1::
+_CinnabarLabTradeRoomSuperNerdText::
 	text "J'ai trouvé cet"
 	line "étrange fossile"
 	cont "sur le MONT"

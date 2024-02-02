@@ -1,4 +1,4 @@
-_TM35PreReceiveText::
+_CinnabarLabMetronomeRoomScientist1Text::
 	text "Tiens tiens!"
 	line "Je viens de créer"
 	cont "une CT sympa!"
@@ -7,14 +7,14 @@ _TM35PreReceiveText::
 	line "trucs étranges!"
 	prompt
 
-_ReceivedTM35Text::
+_CinnabarLabMetronomeRoomScientist1ReceivedTM35Text::
 	text "<PLAYER> reçoit:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM35ExplanationText::
+_CinnabarLabMetronomeRoomScientist1TM35ExplanationText::
 	text "Tik-Tak-Tik-Tak!"
 	line "C'est le bruit du"
 	cont "METRONOME!"
@@ -28,18 +28,18 @@ _TM35ExplanationText::
 	cont "inconnues!"
 	done
 
-_TM35NoRoomText::
+_CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
 	text "Votre inventaire"
 	line "est plein!"
 	done
 
-_Lab3Text2::
+_CinnabarLabMetronomeRoomScientist2Text::
 	text "EVOLI évolue en"
 	line "3 #MON de"
 	cont "type différent."
 	done
 
-_Lab3Text3::
+_CinnabarLabMetronomeRoomPCText::
 	text "Il y a un e-mail!"
 
 	para "..."
@@ -64,6 +64,6 @@ _Lab3Text3::
 	para "..."
 	done
 
-_Lab3Text5::
+_CinnabarLabMetronomeRoomAmberPipeText::
 	text "Un tuyau à ambre!"
 	done

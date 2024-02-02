@@ -1,4 +1,4 @@
-_FuchsiaPokecenterText1::
+_FuchsiaPokecenterRockerText::
 	text "Un seul #MON"
 	line "puissant n'est"
 	cont "pas suffisant."
@@ -8,7 +8,7 @@ _FuchsiaPokecenterText1::
 	cont "façon égale."
 	done
 
-_FuchsiaPokecenterText3::
+_FuchsiaPokecenterCooltrainerFText::
 	text "Il y a un petit"
 	line "passage à l'ouest"
 	cont "de JADIELLE."

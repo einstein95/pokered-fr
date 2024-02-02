@@ -1,4 +1,4 @@
-_BikeShopText_1d810::
+_BikeShopClerkWelcomeText::
 	text "Bienvenue au"
 	line "CYCLES A GOGO."
 
@@ -7,7 +7,7 @@ _BikeShopText_1d810::
 	cont "belle bicyclette!"
 	prompt
 
-_BikeShopText_1d815::
+_BikeShopClerkDoYouLikeItText::
 	text "C'est un super"
 	line "vélo, le veux-tu?"
 	done
@@ -17,7 +17,7 @@ _BikeShopCantAffordText::
 	line "assez d'argent!"
 	prompt
 
-_BikeShopText_1d81f::
+_BikeShopClerkOhThatsAVoucherText::
 	text "Oh! Mais c'est..."
 
 	para "Un BON pour"
@@ -27,7 +27,7 @@ _BikeShopText_1d81f::
 	line "BICYCLETTE!"
 	prompt
 
-_BikeShopText_1d824::
+_BikeShopExchangedVoucherText::
 	text "<PLAYER> échange"
 	line "le BON contre"
 	cont "une BICYCLETTE.@"
@@ -38,7 +38,7 @@ _BikeShopComeAgainText::
 	line "veux!"
 	done
 
-_BikeShopText_1d82f::
+_BikeShopClerkHowDoYouLikeYourBicycleText::
 	text "Comment se porte"
 	line "ta BICYCLETTE?"
 
@@ -48,12 +48,12 @@ _BikeShopText_1d82f::
 	cont "GROTTES!"
 	done
 
-_BikeShopText_1d834::
+_BikeShopBagFullText::
 	text "Ton inventaire"
 	line "est plein!"
 	done
 
-_BikeShopText_1d843::
+_BikeShopMiddleAgedWomanText::
 	text "Un VELO de ville,"
 	line "c'est ce qu'il y"
 	cont "a de mieux!"
@@ -63,13 +63,13 @@ _BikeShopText_1d843::
 	cont "un VTT!"
 	done
 
-_BikeShopText_1d85c::
+_BikeShopYoungsterTheseBikesAreExpensiveText::
 	text "Ces VELOS sont"
 	line "super mais ils"
 	cont "sont très chers!"
 	done
 
-_BikeShopText_1d861::
+_BikeShopYoungsterCoolBikeText::
 	text "Waou! "
 	line "Ta BICYCLETTE est"
 	cont "super cool!"

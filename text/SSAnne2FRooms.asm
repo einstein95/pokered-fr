@@ -1,4 +1,4 @@
-_SSAnne9Text_61bf2::
+_SSAnne2FRoomsGentleman3Text::
 	text "Dans tous mes"
 	line "voyages, je n'ai"
 	cont "jamais vu un"
@@ -9,14 +9,14 @@ _SSAnne9Text_61bf2::
 	line "peu comme ça..."
 	prompt
 
-_SSAnne9Text_61c01::
+_SSAnne2FRoomsGentleman4Text::
 	text "Oui! J'ai vu des"
 	line "gens transporter"
 	cont "des #MON par-"
 	cont "delà les eaux!"
 	done
 
-_SSAnne9Text_61c10::
+_SSAnne2FRoomsGrampsText::
 	text "Les #MON"
 	line "peuvent couper des"
 	cont "petits buissons"
@@ -24,7 +24,7 @@ _SSAnne9Text_61c10::
 	cont "COUPE."
 	done
 
-_SSAnne9Text_61c1f::
+_SSAnne2FRoomsGentleman5Text::
 	text "As-tu déjà vu"
 	line "le PARC SAFARI"
 	cont "à PARMANIE?"
@@ -33,89 +33,89 @@ _SSAnne9Text_61c1f::
 	line "de #MON rares!"
 	done
 
-_SSAnne9Text_61c2e::
+_SSAnne2FRoomsLittleBoyText::
 	text "Mon Pôpa et moi,"
 	line "on pense que le"
 	cont "PARC SAFARI"
 	cont "il est génial!"
 	done
 
-_SSAnne9Text_61c3d::
+_SSAnne2FRoomsBrunetteGirlText::
 	text "Le CAPITAINE"
 	line "avait l'air tout"
 	cont "pâlot!"
 	done
 
-_SSAnne9Text_61c4c::
+_SSAnne2FRoomsBeautyText::
 	text "C'est assez"
 	line "fréquent d'avoir"
 	cont "le mal de mer!"
 	done
 
-_SSAnne9BattleText1::
+_SSAnne2FRoomsGentleman1BattleText::
 	text "Les duels contre"
 	line "les jeunes me"
 	cont "maintiennent en"
 	cont "forme!"
 	done
 
-_SSAnne9EndBattleText1::
+_SSAnne2FRoomsGentleman1EndBattleText::
 	text "Woah!"
 	line "Ha! Je me sens"
 	cont "en pleine forme!"
 	prompt
 
-_SSAnne9AfterBattleText1::
+_SSAnne2FRoomsGentleman1AfterBattleText::
 	text "Hmm! Il y a 15"
 	line "ans, j'aurais"
 	cont "gagné..."
 	done
 
-_SSAnne9BattleText2::
+_SSAnne2FRoomsFisherBattleText::
 	text "Hé! Regarde ce"
 	line "que j'ai pêché!"
 	done
 
-_SSAnne9EndBattleText2::
+_SSAnne2FRoomsFisherEndBattleText::
 	text "OK!"
 	line "J'suis fait!!"
 	prompt
 
-_SSAnne9AfterBattleText2::
+_SSAnne2FRoomsFisherAfterBattleText::
 	text "Une fête?"
 
 	para "Elle doit être"
 	line "finie maintenant."
 	done
 
-_SSAnne9BattleText3::
+_SSAnne2FRoomsGentleman2BattleText::
 	text "Que veux-tu?"
 	line "Un #MON"
 	cont "costaud ou rare?"
 	done
 
-_SSAnne9EndBattleText3::
+_SSAnne2FRoomsGentleman2EndBattleText::
 	text "Bravo!"
 	line "Tu es très fort!"
 	prompt
 
-_SSAnne9AfterBattleText3::
+_SSAnne2FRoomsGentleman2AfterBattleText::
 	text "Je préfère les"
 	line "#MON rares"
 	cont "et costauds!"
 	done
 
-_SSAnne9BattleText4::
+_SSAnne2FRoomsCooltrainerFBattleText::
 	text "Je ne t'ai pas vu"
 	line "à la fête."
 	done
 
-_SSAnne9EndBattleText4::
+_SSAnne2FRoomsCooltrainerFEndBattleText::
 	text "Relax!"
 	line "T'énerve pas!!!"
 	prompt
 
-_SSAnne9AfterBattleText4::
+_SSAnne2FRoomsCooltrainerFAfterBattleText::
 	text "Woah! Tes #MON"
 	line "sont super forts!"
 	cont "Je les adore!"

@@ -1,15 +1,15 @@
-_VermilionHouse1Text1::
+_VermilionPidgeyHouseYoungsterText::
 	text "Mon ROUCOOL va"
 	line "apporter une"
 	cont "lettre jusqu'à"
 	cont "SAFRANIA au Nord!"
 	done
 
-_VermilionHouse1Text2::
+_VermilionPidgeyHousePidgeyText::
 	text "ROUCOOL: Rourou!@"
 	text_end
 
-_VermilionHouse1Text3::
+_VermilionPidgeyHouseLetterText::
 	text "Cher JULIO,"
 	line "j'espère te voir"
 	cont "très bientôt."

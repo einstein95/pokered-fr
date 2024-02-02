@@ -1,7 +1,7 @@
-_FuchsiaHouse3Text_561bd::
-	text "Je suis le grand"
-	line "frère du MAITRE"
-	cont "PECHEUR!"
+_FuchsiaGoodRodHouseFishingGuruText::
+	text "I'm the FISHING"
+	line "GURU's older"
+	cont "brother!"
 
 	para "Moi, mon truc,"
 	line "c'est la pêche!"
@@ -10,14 +10,9 @@ _FuchsiaHouse3Text_561bd::
 	line "pêche, petit?"
 	done
 
-_FuchsiaHouse3Text_561c2::
-	text "Cool! T'as l'air"
-	line "d'un bon gars!"
-
-	para "Prends ça!"
-	line "Que la Grand'"
-	cont "Pêche soit avec"
-	cont "toi, p'tit!"
+_FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText::
+	text "Grand! I like"
+	line "your style!"
 
 	para "<PLAYER> reçoit"
 	line "une @"
@@ -25,20 +20,20 @@ _FuchsiaHouse3Text_561c2::
 	text "!@"
 	text_end
 
-_FuchsiaHouse3Text_56212::
-	text "Oh...Pas cool!"
-	line "Pas cool du tout!"
+_FuchsiaGoodRodHouseFishingGuruThatsSoDisappointingText::
+	text "Oh... That's so"
+	line "disappointing..."
 	done
 
-_FuchsiaHouse3Text_56217::
-	text "Salut,"
+_FuchsiaGoodRodHouseFishingGuruHowAreTheFishText::
+	text "Hello there,"
 	line "<PLAYER>!"
 
 	para "Ca mord?"
 	done
 
-_FuchsiaHouse3Text_5621c::
-	text "Oh non!"
+_FuchsiaGoodRodHouseFishingGuruNoRoomText::
+	text "Oh no!"
 
 	para "Ton inventaire"
 	line "est plein!"

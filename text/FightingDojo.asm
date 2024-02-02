@@ -1,4 +1,4 @@
-_FightingDojoText_5ce8e::
+_FightingDojoKarateMasterText::
 	text "P'tit faiblard!"
 
 	para "Je suis le GRAND"
@@ -14,13 +14,13 @@ _FightingDojoText_5ce8e::
 	para "Ayaaaaa!"
 	done
 
-_FightingDojoText_5ce93::
+_FightingDojoKarateMasterDefeatedText::
 	text "STOP!"
 	line "Tu m'as battu!"
 	cont "J'ai honte!"
 	prompt
 
-_FightingDojoText_5ce98::
+_FightingDojoKarateMasterIWillGiveYouAPokemonText::
 	text "OK, tu as gagné!"
 
 	para "Mais ne va pas"
@@ -37,7 +37,7 @@ _FightingDojoText_5ce98::
 	line "tu veux!"
 	done
 
-_FightingDojoText_5ce9d::
+_FightingDojoKarateMasterStayAndTrainWithUsText::
 	text "Oh!"
 
 	para "Reste avec nous"
@@ -45,17 +45,17 @@ _FightingDojoText_5ce9d::
 	cont "KARATE!"
 	done
 
-_FightingDojoBattleText1::
+_FightingDojoBlackbelt1BattleText::
 	text "Ta garde!"
 	line "Défends-toi!"
 	done
 
-_FightingDojoEndBattleText1::
+_FightingDojoBlackbelt1EndBattleText::
 	text "Oh!"
 	line "Tu m'as éclaté!"
 	prompt
 
-_FightingDojoAfterBattleText1::
+_FightingDojoBlackbelt1AfterBattleText::
 	text "Tu te tais, tu"
 	line "t'assois et tu"
 	cont "attends le grand"
@@ -66,23 +66,23 @@ _FightingDojoAfterBattleText1::
 	cont "vachement balèze!"
 	done
 
-_FightingDojoBattleText2::
+_FightingDojoBlackbelt2BattleText::
 	text "T'as des"
 	line "prétentions?"
 	cont "Montre-moi!"
 	done
 
-_FightingDojoEndBattleText2::
+_FightingDojoBlackbelt2EndBattleText::
 	text "Nyaha!"
 	line "T'es fort!"
 	prompt
 
-_FightingDojoAfterBattleText2::
+_FightingDojoBlackbelt2AfterBattleText::
 	text "Notre maître,"
 	line "c'est un costaud!"
 	done
 
-_FightingDojoBattleText3::
+_FightingDojoBlackbelt3BattleText::
 	text "J'ai peur de"
 	line "rien!"
 
@@ -92,21 +92,21 @@ _FightingDojoBattleText3::
 	cont "t'fracasser!"
 	done
 
-_FightingDojoEndBattleText3::
+_FightingDojoBlackbelt3EndBattleText::
 	text "Woaa!"
 	line "Les pierres, ça"
 	cont "rend pas les"
 	cont "coups!"
 	prompt
 
-_FightingDojoAfterBattleText3::
+_FightingDojoBlackbelt3AfterBattleText::
 	text "La seule chose"
 	line "qui nous fait"
 	cont "peur c'est les"
 	cont "psys!"
 	done
 
-_FightingDojoBattleText4::
+_FightingDojoBlackbelt4BattleText::
 	text "Ayah!"
 
 	para "Tu joues avec ta"
@@ -115,30 +115,30 @@ _FightingDojoBattleText4::
 	cont "pour les balèzes!"
 	done
 
-_FightingDojoEndBattleText4::
+_FightingDojoBlackbelt4EndBattleText::
 	text "Ping!"
 	line "J'suis K.O.!"
 	prompt
 
-_FightingDojoAfterBattleText4::
+_FightingDojoBlackbelt4AfterBattleText::
 	text "Les meilleurs"
 	line "combattants sont"
 	cont "ici!"
 	done
 
-_WantHitmonleeText::
+_FightingDojoHitmonleePokeBallText::
 	text "Tu veux"
 	line "KICKLEE, le"
 	cont "coud'latteur?"
 	done
 
-_WantHitmonchanText::
+_FightingDojoHitmonchanPokeBallText::
 	text "Tu veux"
 	line "TYGNON, le"
 	cont "castagneur?"
 	done
 
-_OtherHitmonText::
+_FightingDojoBetterNotGetGreedyText::
 	text "Tss tss tss!"
 	line "Faut pas être"
 	cont "trop gourmand..."

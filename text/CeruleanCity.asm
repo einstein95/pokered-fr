@@ -1,4 +1,4 @@
-_CeruleanCityText_19668::
+_CeruleanCityRivalPreBattleText::
 	text "<RIVAL>: Yo!"
 	line "<PLAYER>!"
 
@@ -16,19 +16,19 @@ _CeruleanCityText_19668::
 	cont "minable!"
 	done
 
-_CeruleanCityText_1966d::
+_CeruleanCityRivalDefeatedText::
 	text "Houlà!"
 	line "Calmos minable!"
 	cont "T'as gagné, OK!"
 	prompt
 
-_CeruleanCityText_19672::
+_CeruleanCityRivalVictoryText::
 	text "Pfff!"
 	line "Une perte de"
 	cont "temps. Mi-nable!"
 	prompt
 
-_CeruleanCityText_19677::
+_CeruleanCityRivalIWentToBillsText::
 	text "<RIVAL>: Hé!"
 	line "Tu sais quoi?"
 
@@ -56,7 +56,7 @@ _CeruleanCityText_19677::
 	line "Tchao minab'!"
 	done
 
-_CeruleanCityText_196d9::
+_CeruleanCityRocketText::
 	text "Hé le lutin!"
 	line "C'est pas chez"
 	cont "toi, ici..."
@@ -68,19 +68,19 @@ _CeruleanCityText_196d9::
 	cont "Tu m'cherches?"
 	done
 
-_ReceivedTM28Text::
+_CeruleanCityRocketReceivedTM28Text::
 	text "<PLAYER> récupère"
 	line "CT28!@"
 	text_end
 
-_ReceivedTM28Text2::
+_CeruleanCityRocketIBetterGetMovingText::
 	text_start
 
 	para "J'décampe..."
 	line "Bye bye!@"
 	text_end
 
-_TM28NoRoomText::
+_CeruleanCityRocketTM28NoRoomText::
 	text "Tu portes trop"
 	line "d'trucs!"
 
@@ -90,18 +90,18 @@ _TM28NoRoomText::
 	cont "l'histoire!"
 	done
 
-_CeruleanCityText_196ee::
+_CeruleanCityRocketIGiveUpText::
 	text "Stop!"
 	line "J'me rends!"
 	cont "T'es trop fort!"
 	prompt
 
-_CeruleanCityText_196f3::
+_CeruleanCityRocketIllReturnTheTMText::
 	text "OK! Voilà la CT"
 	line "qu'j'ai volée!"
 	prompt
 
-_CeruleanCityText3::
+_CeruleanCityCooltrainerMText::
 	text "T'es un dresseur?"
 	line "Capturer..."
 	cont "Collectionner..."
@@ -109,7 +109,7 @@ _CeruleanCityText3::
 	cont "Dur, hein?"
 	done
 
-_CeruleanCityText4::
+_CeruleanCitySuperNerd1Text::
 	text "Ce buisson devant"
 	line "la boutique blo-"
 	cont "que le passage."
@@ -119,14 +119,14 @@ _CeruleanCityText4::
 	cont "passer."
 	done
 
-_CeruleanCityText5::
+_CeruleanCitySuperNerd2Text::
 	text "Tu fais une"
 	line "encyclopédie sur"
 	cont "les #MON?"
 	cont "Pas mal..."
 	done
 
-_CeruleanCityText6::
+_CeruleanCityGuardText::
 	text "Ces pauvres gens"
 	line "ont été volés."
 
@@ -140,20 +140,20 @@ _CeruleanCityText6::
 	cont "mal à lutter!"
 	done
 
-_CeruleanCityText_19730::
+_CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
 	text "Allez! FLAGADOSS!"
 	line "Attaque! Attaque!"
 	cont "Mais non!!! Tu"
 	cont "m'écoutes, oui?"
 	done
 
-_CeruleanCityText_19735::
+_CeruleanCityCooltrainerF1SlowbroPunchText::
 	text "FLAGADOSS, cogne!"
 	line "Mais non! Tu fais"
 	cont "n'importe quoi!"
 	done
 
-_CeruleanCityText_1973a::
+_CeruleanCityCooltrainerF1SlowbroWithdrawText::
 	text "FLAGADOSS, REPLI!"
 	line "Non! Pas ça!"
 
@@ -167,27 +167,27 @@ _CeruleanCityText_1973a::
 	cont "#MON!"
 	done
 
-_CeruleanCityText_1976f::
+_CeruleanCitySlowbroTookASnoozeText::
 	text "FLAGADOSS pionce"
 	line "comme une masse."
 	done
 
-_CeruleanCityText_19774::
+_CeruleanCitySlowbroIsLoafingAroundText::
 	text "FLAGADOSS"
 	line "flâne..."
 	done
 
-_CeruleanCityText_19779::
+_CeruleanCitySlowbroTurnedAwayText::
 	text "FLAGADOSS se"
 	line "balade..."
 	done
 
-_CeruleanCityText_1977e::
+_CeruleanCitySlowbroIgnoredOrdersText::
 	text "FLAGADOSS ignore"
 	line "les ordres..."
 	done
 
-_CeruleanCityText9::
+_CeruleanCityCooltrainerF2Text::
 	text "Ze veux une zolie"
 	line "BICYCLETTE!"
 
@@ -195,7 +195,7 @@ _CeruleanCityText9::
 	line "rouze!"
 	done
 
-_CeruleanCityText10::
+_CeruleanCitySuperNerd3Text::
 	text "Des #MON trop"
 	line "puissants vivent"
 	cont "dans la CAVE"
@@ -207,14 +207,14 @@ _CeruleanCityText10::
 	cont "droit d'y entrer!"
 	done
 
-_CeruleanCityText12::
+_CeruleanCitySignText::
 	text "AZURIA"
 	line "Baignée par une"
 	cont "aura d'un bleu"
 	cont "mystérieux"
 	done
 
-_CeruleanCityText13::
+_CeruleanCityTrainerTipsText::
 	text "ASTUCE"
 
 	para "Appuyer sur B"
@@ -222,14 +222,14 @@ _CeruleanCityText13::
 	cont "lution l'annule."
 	done
 
-_CeruleanCityText16::
+_CeruleanCityBikeShopSign::
 	text "Plus vite que le"
 	line "vent, plus vite"
 	cont "dans les villes!"
 	cont "...CYCLES A GOGO"
 	done
 
-_CeruleanCityText17::
+_CeruleanCityGymSign::
 	text "AZURIA"
 	line "ARENE #MON"
 	cont "CHAMPION: ONDINE"

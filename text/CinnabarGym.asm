@@ -1,4 +1,4 @@
-_BlainePreBattleText::
+_CinnabarGymBlainePreBattleText::
 	text "Salutations."
 
 	para "Mon nom est..."
@@ -19,7 +19,7 @@ _BlainePreBattleText::
 	cont "faire très chaud!"
 	done
 
-_ReceivedVolcanoBadgeText::
+_CinnabarGymBlaineReceivedVolcanoBadgeText::
 	text "Vlouff!"
 	line "Je me suis fait"
 	cont "vaporiser!"
@@ -28,7 +28,7 @@ _ReceivedVolcanoBadgeText::
 	line "BADGE VOLCAN!@"
 	text_end
 
-_BlainePostBattleAdviceText::
+_CinnabarGymBlainePostBattleAdviceText::
 	text "DEFLAGRATION est"
 	line "la technique de"
 	cont "feu ultime!"
@@ -39,7 +39,7 @@ _BlainePostBattleAdviceText::
 	cont "pas bon ménage!"
 	done
 
-_BlaineVolcanoBadgeInfoText::
+_CinnabarGymBlaineVolcanoBadgeInfoText::
 	text "Haha!"
 
 	para "Le BADGE VOLCAN"
@@ -50,14 +50,14 @@ _BlaineVolcanoBadgeInfoText::
 	para "Prends ça aussi!"
 	done
 
-_ReceivedTM38Text::
+_CinnabarGymBlaineReceivedTM38Text::
 	text "<PLAYER> obtient:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM38ExplanationText::
+_CinnabarGymBlaineTM38ExplanationText::
 	text_start
 
 	para "CT38 :"
@@ -72,22 +72,22 @@ _TM38ExplanationText::
 	cont "l'affaire!"
 	done
 
-_TM38NoRoomText::
+_CinnabarGymBlaineTM38NoRoomText::
 	text "Ton inventaire"
 	line "est plein!"
 	done
 
-_CinnabarGymBattleText2::
+_CinnabarGymSuperNerd1BattleText::
 	text "Un #MON du"
 	line "feu, c'est chaud!"
 	done
 
-_CinnabarGymEndBattleText2::
+_CinnabarGymSuperNerd1EndBattleText::
 	text "Yaha!"
 	line "Fait chaud, non?"
 	prompt
 
-_CinnabarGymAfterBattleText2::
+_CinnabarGymSuperNerd1AfterBattleText::
 	text "Le feu, ça brûle,"
 	line "les flammes, faut"
 	cont "pas mettre la"
@@ -97,7 +97,7 @@ _CinnabarGymAfterBattleText2::
 	line "J'aime le feu..."
 	done
 
-_CinnabarGymBattleText1::
+_CinnabarGymSuperNerd2BattleText::
 	text "Avant, j'étais un"
 	line "voleur, j'avais"
 	cont "honte..."
@@ -106,48 +106,48 @@ _CinnabarGymBattleText1::
 	cont "et je suis fier!"
 	done
 
-_CinnabarGymEndBattleText1::
+_CinnabarGymSuperNerd2EndBattleText::
 	text "Ah!"
 	line "J'ai honte, je me"
 	cont "rends!"
 	prompt
 
-_CinnabarGymAfterBattleText1::
+_CinnabarGymSuperNerd2AfterBattleText::
 	text "Je vole, j'y peux"
 	line "rien. Je vole des"
 	cont "#MON, et"
 	cont "j'me marre bien!"
 	done
 
-_CinnabarGymBattleText3::
+_CinnabarGymSuperNerd3BattleText::
 	text "Les #MON, je"
 	line "maîtrise, alors"
 	cont "toi, tu peux pas"
 	cont "gagner!"
 	done
 
-_CinnabarGymEndBattleText3::
+_CinnabarGymSuperNerd3EndBattleText::
 	text "Ben..."
 	line "Mais...ben...!"
 	prompt
 
-_CinnabarGymAfterBattleText3::
+_CinnabarGymSuperNerd3AfterBattleText::
 	text "J'suis un"
 	line "cérébral, tu peux"
 	cont "pas comprendre!"
 	done
 
-_CinnabarGymBattleText4::
+_CinnabarGymSuperNerd4BattleText::
 	text "Les #MON du"
 	line "feu, j'adore!"
 	done
 
-_CinnabarGymEndBattleText4::
+_CinnabarGymSuperNerd4EndBattleText::
 	text "Flouf!"
 	line "C'est l'feu!"
 	prompt
 
-_CinnabarGymAfterBattleText4::
+_CinnabarGymSuperNerd4AfterBattleText::
 	text "Si y'avait des"
 	line "#MON voleurs,"
 	cont "j'en aurais des"
@@ -156,18 +156,18 @@ _CinnabarGymAfterBattleText4::
 	cont "cambriolages!"
 	done
 
-_CinnabarGymBattleText5::
+_CinnabarGymSuperNerd5BattleText::
 	text "Héhé! Je sais"
 	line "pourquoi AUGUSTE"
 	cont "est devenu un"
 	cont "dresseur!"
 	done
 
-_CinnabarGymEndBattleText5::
+_CinnabarGymSuperNerd5EndBattleText::
 	text "Ouch!"
 	prompt
 
-_CinnabarGymAfterBattleText5::
+_CinnabarGymSuperNerd5AfterBattleText::
 	text "Tout petit,"
 	line "AUGUSTE aimait se"
 	cont "promener dans les"
@@ -187,7 +187,7 @@ _CinnabarGymAfterBattleText5::
 	cont "#MON de feu!"
 	done
 
-_CinnabarGymBattleText6::
+_CinnabarGymSuperNerd6BattleText::
 	text "J'ai bourlingué"
 	line "dans pas mal"
 	cont "d'ARENES, p'tit"
@@ -196,29 +196,29 @@ _CinnabarGymBattleText6::
 	cont "celle-ci!"
 	done
 
-_CinnabarGymEndBattleText6::
+_CinnabarGymSuperNerd6EndBattleText::
 	text "Yacha!"
 	line "Fait très chaud!"
 	prompt
 
-_CinnabarGymAfterBattleText6::
+_CinnabarGymSuperNerd6AfterBattleText::
 	text "PONYTA..."
 	line "FEUNARD..."
 	cont "C'est chaud!"
 	done
 
-_CinnabarGymBattleText7::
+_CinnabarGymSuperNerd7BattleText::
 	text "Tu sais quoi?"
 	line "L'eau c'est fort"
 	cont "contre le feu!"
 	done
 
-_CinnabarGymEndBattleText7::
+_CinnabarGymSuperNerd7EndBattleText::
 	text "Oh!"
 	line "Tu l'savais!"
 	prompt
 
-_CinnabarGymAfterBattleText7::
+_CinnabarGymSuperNerd7AfterBattleText::
 	text "L'eau éteint le"
 	line "feu! Mais le feu"
 	cont "fond la glace! Et"
@@ -226,7 +226,7 @@ _CinnabarGymAfterBattleText7::
 	cont "J'sais plus!"
 	done
 
-_CinnabarGymGuidePreBattleText::
+_CinnabarGymGymGuideChampInMakingText::
 	text "Salut! Graine de"
 	line "champion!"
 
@@ -245,7 +245,7 @@ _CinnabarGymGuidePreBattleText::
 	cont "toujours servir!"
 	done
 
-_CinnabarGymGuidePostBattleText::
+_CinnabarGymGymGuideBeatBlaineText::
 	text "<PLAYER>! Tu as"
 	line "battu AUGUSTE!"
 	done

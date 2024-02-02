@@ -1,10 +1,10 @@
-_OaksLabGaryText1::
+_OaksLabRivalGrampsIsntAroundText::
 	text "<RIVAL>: Yo!"
 	line "<PLAYER>! Pépé"
 	cont "n'est pas là!"
 	done
 
-_OaksLabText40::
+_OaksLabRivalGoAheadAndChooseText::
 	text "<RIVAL>: Je ne"
 	line "suis pas avide"
 	cont "comme toi!"
@@ -13,31 +13,31 @@ _OaksLabText40::
 	line "<PLAYER>!"
 	done
 
-_OaksLabText41::
+_OaksLabRivalMyPokemonLooksStrongerText::
 	text "<RIVAL>: Mon"
 	line "#MON est"
 	cont "plus fort."
 	done
 
-_OaksLabText39::
+_OaksLabThoseArePokeBallsText::
 	text "Ces # BALL"
 	line "contiennent des"
 	cont "#MON!"
 	done
 
-_OaksLabCharmanderText::
+_OaksLabYouWantCharmanderText::
 	text "Veux-tu le"
 	line "#MON de feu,"
 	cont "SALAMECHE?"
 	done
 
-_OaksLabSquirtleText::
+_OaksLabYouWantSquirtleText::
 	text "Veux-tu le"
 	line "#MON de l'eau,"
 	cont "CARAPUCE?"
 	done
 
-_OaksLabBulbasaurText::
+_OaksLabYouWantBulbasaurText::
 	text "Veux-tu le"
 	line "#MON des"
 	cont "plantes,"
@@ -62,19 +62,19 @@ _OaksLabLastMonText::
 	cont "PROF. CHEN!"
 	done
 
-_OaksLabText_1d2f0::
+_OaksLabOak1WhichPokemonDoYouWantText::
 	text "CHEN: <PLAYER>,"
 	line "quel #MON "
 	cont "choisis-tu?"
 	done
 
-_OaksLabText_1d2f5::
+_OaksLabOak1YourPokemonCanFightText::
 	text "CHEN: Ton #MON"
 	line "te protègera des"
 	cont "#MON sauvages!"
 	done
 
-_OaksLabText_1d2fa::
+_OaksLabOak1RaiseYourYoungPokemonText::
 	text "CHEN: <PLAYER>,"
 	line "entraîne ton"
 	cont "#MON au combat"
@@ -82,7 +82,7 @@ _OaksLabText_1d2fa::
 	cont "devienne fort!"
 	done
 
-_OaksLabDeliverParcelText1::
+_OaksLabOak1DeliverParcelText::
 	text "CHEN: <PLAYER>!"
 
 	para "Comment va ton"
@@ -104,7 +104,7 @@ _OaksLabDeliverParcelText1::
 	line "le COLIS DE CHEN.@"
 	text_end
 
-_OaksLabDeliverParcelText2::
+_OaksLabOak1ParcelThanksText::
 	text_start
 
 	para "Ah! C'est la"
@@ -113,13 +113,13 @@ _OaksLabDeliverParcelText2::
 	cont "Merci!"
 	done
 
-_OaksLabAroundWorldText::
+_OaksLabOak1PokemonAroundTheWorldText::
 	text "Les #MON du"
 	line "monde entier sont"
 	cont "à toi, <PLAYER>!"
 	done
 
-_OaksLabGivePokeballsText1::
+_OaksLabOak1ReceivedPokeballsText::
 	text "CHEN: Il ne te"
 	line "suffit pas de"
 	cont "voir un #MON"
@@ -136,7 +136,7 @@ _OaksLabGivePokeballsText1::
 	line "5 # BALL!@"
 	text_end
 
-_OaksLabGivePokeballsText2::
+_OaksLabGivePokeballsExplanationText::
 	text_start
 	para "Quand un #MON"
 	line "sauvage apparaît,"
@@ -159,7 +159,7 @@ _OaksLabGivePokeballsText2::
 	cont "des #MON!"
 	done
 
-_OaksLabPleaseVisitText::
+_OaksLabOak1ComeSeeMeSometimesText::
 	text "CHEN: Reviens me"
 	line "voir de temps en"
 	cont "temps."
@@ -169,7 +169,7 @@ _OaksLabPleaseVisitText::
 	cont "#DEX."
 	done
 
-_OaksLabText_1d31d::
+_OaksLabOak1HowIsYourPokedexComingText::
 	text "CHEN: Je suis"
 	line "content de te"
 	cont "revoir. Où en"
@@ -178,18 +178,18 @@ _OaksLabText_1d31d::
 	cont "Voyons, voyons..."
 	prompt
 
-_OaksLabText_1d32c::
+_OaksLabPokedexText::
 	text "C'est comme une"
 	line "encyclopédie"
 	cont "mais les pages"
 	cont "sont blanches!"
 	done
 
-_OaksLabText8::
+_OaksLabOak2Text::
 	text "?"
 	done
 
-_OaksLabText_1d340::
+_OaksLabGirlText::
 	text "Le PROF. CHEN est"
 	line "la référence en"
 	cont "matière de"
@@ -201,13 +201,13 @@ _OaksLabText_1d340::
 	cont "#MON!"
 	done
 
-_OaksLabRivalWaitingText::
+_OaksLabRivalFedUpWithWaitingText::
 	text "<RIVAL>: Pépé!"
 	line "J'en ai marre"
 	cont "d'attendre!"
 	done
 
-_OaksLabChooseMonText::
+_OaksLabOakChooseMonText::
 	text "CHEN: <RIVAL>?"
 	line "Heu..."
 
@@ -235,24 +235,24 @@ _OaksLabChooseMonText::
 	cont "Choisis-en un!"
 	done
 
-_OaksLabRivalInterjectionText::
+_OaksLabRivalWhatAboutMeText::
 	text "<RIVAL>: Ben!"
 	line "Pépé! Mon pépé!"
 	cont "Et moi?"
 	done
 
-_OaksLabBePatientText::
+_OaksLabOakBePatientText::
 	text "CHEN: Patience,"
 	line "<RIVAL>! Tu en"
 	cont "auras un aussi!"
 	done
 
-_OaksLabLeavingText::
+_OaksLabOakDontGoAwayYetText::
 	text "CHEN: Hé! Ne pars"
 	line "pas tout d'suite!"
 	done
 
-_OaksLabRivalPickingMonText::
+_OaksLabRivalIllTakeThisOneText::
 	text "<RIVAL>: Je"
 	line "prends celui-ci!"
 	done
@@ -264,7 +264,7 @@ _OaksLabRivalReceivedMonText::
 	text "!@"
 	text_end
 
-_OaksLabRivalChallengeText::
+_OaksLabRivalIllTakeYouOnText::
 	text "<RIVAL>: Minute,"
 	line "<PLAYER>!"
 	cont "Voyons lequel de"
@@ -275,19 +275,19 @@ _OaksLabRivalChallengeText::
 	line "battre, minable!"
 	done
 
-_OaksLabText_1d3be::
+_OaksLabRivalIPickedTheWrongPokemonText::
 	text "QUOI???"
 	line "Incroyable!"
 	cont "J'ai pas pris le"
 	cont "bon #MON!"
 	prompt
 
-_OaksLabText_1d3c3::
+_OaksLabRivalAmIGreatOrWhatText::
 	text "<RIVAL>: Yeah! Je"
 	line "suis fort, hein?"
 	prompt
 
-_OaksLabRivalToughenUpText::
+_OaksLabRivalSmellYouLaterText::
 	text "<RIVAL>: OK!"
 	line "Je vais entraîner"
 	cont "mon #MON!"
@@ -296,22 +296,22 @@ _OaksLabRivalToughenUpText::
 	line "A plus tard!"
 	done
 
-_OaksLabText21::
+_OaksLabRivalGrampsText::
 	text "<RIVAL>: Pépé!"
 	done
 
-_OaksLabText22::
+_OaksLabRivalWhatDidYouCallMeForText::
 	text "<RIVAL>: Pourquoi"
 	line "tu m'as appelé?"
 	done
 
-_OaksLabText23::
+_OaksLabOakIHaveARequestText::
 	text "CHEN: Bon! J'ai"
 	line "une faveur à vous"
 	cont "demander."
 	done
 
-_OaksLabText24::
+_OaksLabOakMyInventionPokedexText::
 	text "Il y a sur ce"
 	line "bureau mon"
 	cont "invention..."
@@ -327,7 +327,7 @@ _OaksLabText24::
 	line "encyclopédie!"
 	done
 
-_OaksLabText25::
+_OaksLabOakGotPokedexText::
 	text "CHEN: <PLAYER> et"
 	line "<RIVAL>! Prenez"
 	cont "ces #DEX!"
@@ -336,7 +336,7 @@ _OaksLabText25::
 	line "le #DEX!@"
 	text_end
 
-_OaksLabText26::
+_OaksLabOakThatWasMyDreamText::
 	text "Faire un guide"
 	line "complet sur les"
 	cont "#MON du monde"
@@ -360,7 +360,7 @@ _OaksLabText26::
 	cont "commence!"
 	done
 
-_OaksLabText27::
+_OaksLabRivalLeaveItAllToMeText::
 	text "<RIVAL>: OK,"
 	line "pépé! Donne-les"
 	cont "moi tous!"
@@ -379,7 +379,7 @@ _OaksLabText27::
 	cont "donner une! Yark!"
 	done
 
-_OaksLabText_1d405::
+_OaksLabScientistText::
 	text "J'assiste le"
 	line "PROF. CHEN."
 	cont "Je suis donc son"

@@ -1,4 +1,4 @@
-_SSAnne3Text1::
+_SSAnne3FSailorText::
 	text "Notre CAPITAINE"
 	line "est un maître"
 	cont "d'armes!"

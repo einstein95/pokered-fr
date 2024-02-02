@@ -1,4 +1,4 @@
-_LanceBeforeBattleText::
+_LancesRoomLanceBeforeBattleText::
 	text "Ah! Enfin..."
 	line "J'ai entendu"
 	cont "parler de toi, "
@@ -31,7 +31,7 @@ _LanceBeforeBattleText::
 	para "L'entends-tu?"
 	done
 
-_LanceEndBattleText::
+_LancesRoomLanceEndBattleText::
 	text "Incroyable!"
 
 	para "Tu as bien mérité"
@@ -39,7 +39,7 @@ _LanceEndBattleText::
 	cont "Maître #MON!"
 	prompt
 
-_LanceAfterBattleText::
+_LancesRoomLanceAfterBattleText::
 	text "Comment mes"
 	line "dragons ont-ils"
 	cont "pu succomber à"

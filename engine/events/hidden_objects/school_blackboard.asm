@@ -194,6 +194,8 @@ StatusAilmentText2:
 	next " GEL"
 	next " RET@"
 
+	db "@" ; unused
+
 ViridianBlackboardStatusPointers:
 	dw ViridianBlackboardSleepText
 	dw ViridianBlackboardPoisonText

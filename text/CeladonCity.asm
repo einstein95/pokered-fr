@@ -1,4 +1,4 @@
-_CeladonCityText1::
+_CeladonCityLittleGirlText::
 	text "J'ai eu mon"
 	line "SMOGO à"
 	cont "CRAMOIS'ILE!"
@@ -9,19 +9,19 @@ _CeladonCityText1::
 	cont "rien!"
 	done
 
-_CeladonCityText2::
+_CeladonCityGramps1Text::
 	text "Héhé! Cette ARENE"
 	line "est terrible! Y'a"
 	cont "plein d'meufs!"
 	done
 
-_CeladonCityText3::
+_CeladonCityGirlText::
 	text "Le CASINO n'est"
 	line "pas très bon pour"
 	cont "notre image!"
 	done
 
-_CeladonCityText4::
+_CeladonCityGramps2Text::
 	text "Pfff... J'ai tout"
 	line "perdu au CASINO!"
 
@@ -32,7 +32,7 @@ _CeladonCityText4::
 	cont "claquer!"
 	done
 
-_TM41PreText::
+_CeladonCityGramps3Text::
 	text "Bonjour!"
 
 	para "Enfin tu viens"
@@ -42,14 +42,14 @@ _TM41PreText::
 	line "C'est pour toi!"
 	prompt
 
-_ReceivedTM41Text::
+_CeladonCityGramps3ReceivedTM41Text::
 	text "<PLAYER> reçoit:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM41ExplanationText::
+_CeladonCityGramps3TM41ExplanationText::
 	text "La CT41 contient"
 	line "E-COQUE!"
 
@@ -59,12 +59,12 @@ _TM41ExplanationText::
 	para "LEVEINARD!"
 	done
 
-_TM41NoRoomText::
+_CeladonCityGramps3TM41NoRoomText::
 	text "Oh! Ton sac est"
 	line "plein!"
 	done
 
-_CeladonCityText6::
+_CeladonCityFisherText::
 	text "C'est mon copain:"
 	line "TARTARD!"
 
@@ -74,21 +74,21 @@ _CeladonCityText6::
 	cont "PIERRE EAU!"
 	done
 
-_CeladonCityText7::
+_CeladonCityPoliwrathText::
 	text "TARTARD: Tarta!"
 	line "Taaaar!@"
 	text_end
 
-_CeladonCityText8::
+_CeladonCityRocket1Text::
 	text "Kesstu mates?"
 	done
 
-_CeladonCityText9::
+_CeladonCityRocket2Text::
 	text "Laisse la TEAM"
 	line "tranquille!"
 	done
 
-_CeladonCityText10::
+_CeladonCityTrainerTips1Text::
 	text "ASTUCE"
 
 	para "PRECISION +"
@@ -108,13 +108,13 @@ _CeladonCityText10::
 	cont "CELADOPOLE!"
 	done
 
-_CeladonCityText11::
+_CeladonCitySignText::
 	text "CELADOPOLE"
 	line "Ville aux rêves"
 	cont "arc-en-ciel"
 	done
 
-_CeladonCityText13::
+_CeladonCityGymSignText::
 	text "CELADOPOLE"
 	line "ARENE #MON"
 	cont "CHAMPION: ERIKA"
@@ -123,18 +123,18 @@ _CeladonCityText13::
 	line "les plantes!"
 	done
 
-_CeladonCityText14::
+_CeladonCityMansionSignText::
 	text "MANOIR CELADON"
 	done
 
-_CeladonCityText15::
+_CeladonCityDeptStoreSignText::
 	text "Y'a tout c'qui"
 	line "t'faut au CENTRE"
 	cont "COMMERCIAL de"
 	cont "CELADOPOLE!"
 	done
 
-_CeladonCityText16::
+_CeladonCityTrainerTips2Text::
 	text "ASTUCE"
 
 	para "DEFENSE SPEC"
@@ -150,13 +150,13 @@ _CeladonCityText16::
 	cont "CELADOPOLE!"
 	done
 
-_CeladonCityText17::
+_CeladonCityPrizeExchangeSignText::
 	text "CHANGE"
 	line "Des jetons contre"
 	cont "de bô prix!"
 	done
 
-_CeladonCityText18::
+_CeladonCityGameCornerSignText::
 	text "CASINO ROCKET"
 	line "Club de jeu"
 	cont "pour adultes!"

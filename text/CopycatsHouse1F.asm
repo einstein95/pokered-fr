@@ -1,11 +1,11 @@
-_CopycatsHouse1FText1::
+_CopycatsHouse1FMiddleAgedWomanText::
 	text "Ma fille est très"
 	line "égocentrique!"
 	cont "Elle n'a pas"
 	cont "beaucoup d'amis."
 	done
 
-_CopycatsHouse1FText2::
+_CopycatsHouse1FMiddleAgedManText::
 	text "Ma fille adore"
 	line "imiter les gens."
 
@@ -16,7 +16,7 @@ _CopycatsHouse1FText2::
 	cont "C'est dément!"
 	done
 
-_CopycatsHouse1FText3::
+_CopycatsHouse1FChanseyText::
 	text "LEVEINARD :"
 	line "Vénar! Vénar!@"
 	text_end

@@ -1,4 +1,4 @@
-_ViridianForestEntranceText1::
+_ViridianForestSouthGateGirlText::
 	text "Vas-tu dans la"
 	line "FORET DE JADE,"
 	cont "mon poussin? Fais"
@@ -7,7 +7,7 @@ _ViridianForestEntranceText1::
 	cont "labyrinthe!"
 	done
 
-_ViridianForestEntranceText2::
+_ViridianForestSouthGateLittleGirlText::
 	text "RATTATA est"
 	line "petit mais il est"
 	cont "vicieux! En as-tu"
