@@ -1,35 +1,35 @@
-_Mansion4BattleText1::
+_PokemonMansionB1FBurglarBattleText::
 	text "Oh-oh. Où que je"
 	line "suis, moi?"
 	done
 
-_Mansion4EndBattleText1::
+_PokemonMansionB1FBurglarEndBattleText::
 	text "Oups."
 	prompt
 
-_Mansion4AfterBattleText1::
+_PokemonMansionB1FBurglarAfterBattleText::
 	text "De bons objets"
 	line "traînent dans le"
 	cont "coin."
 	done
 
-_Mansion4BattleText2::
+_PokemonMansionB1FScientistBattleText::
 	text "La science?"
 	line "C'est le pied."
 	done
 
-_Mansion4EndBattleText2::
+_PokemonMansionB1FScientistEndBattleText::
 	text "..."
 	line "Bah pourquoi?"
 	prompt
 
-_Mansion4AfterBattleText2::
+_PokemonMansionB1FScientistAfterBattleText::
 	text "J'adore cet"
 	line "endroit! J'y fais"
 	cont "mon internat!"
 	done
 
-_Mansion4Text7::
+_PokemonMansionB1FDiaryText::
 	text "Rapport:"
 	line "1er Septembre."
 	cont "MEWTWO est trop"

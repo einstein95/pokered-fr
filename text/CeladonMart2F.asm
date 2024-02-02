@@ -1,4 +1,4 @@
-_CeladonMart2Text3::
+_CeladonMart2FMiddleAgedManText::
 	text "Le SUPEREPOUSSE"
 	line "tient les faibles"
 	cont "#MON à"
@@ -8,14 +8,14 @@ _CeladonMart2Text3::
 	line "plus puissant!"
 	done
 
-_CeladonMart2Text4::
+_CeladonMart2FGirlText::
 	text "Equipe-toi de"
 	line "RAPPELS avant"
 	cont "de partir à"
 	cont "l'aventure."
 	done
 
-_CeladonMart2Text5::
+_CeladonMart2FCurrentFloorSignText::
 	text "Les objets de"
 	line "premier choix!"
 

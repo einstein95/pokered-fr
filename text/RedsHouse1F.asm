@@ -1,4 +1,4 @@
-_MomWakeUpText::
+_RedsHouse1FMomWakeUpText::
 	text "MERE: Bon."
 	line "Il arrive qu'un"
 	cont "jour le fils aimé"
@@ -11,20 +11,20 @@ _MomWakeUpText::
 	cont "voisine."
 	done
 
-_MomHealText1::
+_RedsHouse1FMomYouShouldRestText::
 	text "MERE: <PLAYER>!"
 	line "Tu devrais faire"
 	cont "une sieste."
 	prompt
 
-_MomHealText2::
+_RedsHouse1FMomLookingGreatText::
 	text "MERE: Ah, bien!"
 	line "Toi et tes"
 	cont "#MON êtes"
 	cont "en pleine forme!"
 	done
 
-_StandByMeText::
+_RedsHouse1FTVStandByMeMovieText::
 	text "Un dessin animé!"
 	line "Un petit garçon"
 	cont "avec une queue de"
@@ -33,7 +33,7 @@ _StandByMeText::
 	para "Bon, j'y vais!"
 	done
 
-_TVWrongSideText::
+_RedsHouse1FTVWrongSideText::
 	text "Oups, mauvais"
 	line "côté."
 	done

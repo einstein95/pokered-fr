@@ -1,4 +1,4 @@
-_LavenderMartText2::
+_LavenderMartBaldingGuyText::
 	text "Je cherche des"
 	line "objets permettant"
 	cont "d'augmenter la"
@@ -16,7 +16,7 @@ _LavenderMartText2::
 	line "peux en trouver?"
 	done
 
-_LavenderMartReviveText::
+_LavenderMartCooltrainerMReviveText::
 	text "Connais-tu"
 	line "le RAPPEL? Il"
 	cont "permet de"
@@ -24,7 +24,7 @@ _LavenderMartReviveText::
 	cont "#MON K.O.!"
 	done
 
-_LavenderMartNuggetText::
+_LavenderMartCooltrainerMNuggetText::
 	text "J'ai trouvé une"
 	line "PEPITE dans les"
 	cont "montagnes."

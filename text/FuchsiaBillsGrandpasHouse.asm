@@ -1,4 +1,4 @@
-_FuchsiaHouse1Text1::
+_FuchsiaBillsGrandpasHouseMiddleAgedWomanText::
 	text "Le GARDIEN du"
 	line "PARC SAFARI est"
 	cont "vieux mais trop"
@@ -9,7 +9,7 @@ _FuchsiaHouse1Text1::
 	cont "contre."
 	done
 
-_FuchsiaHouse1Text2::
+_FuchsiaBillsGrandpasHouseBillsGrandpaText::
 	text "Hmm? Tu connais"
 	line "LEO?"
 
@@ -20,7 +20,7 @@ _FuchsiaHouse1Text2::
 	line "collectionnite!"
 	done
 
-_FuchsiaHouse1Text3::
+_FuchsiaBillsGrandpasHouseYoungsterText::
 	text "LEO enregistre"
 	line "ses données sur"
 	cont "les #MON sur"

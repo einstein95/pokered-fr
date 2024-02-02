@@ -1,10 +1,10 @@
-_CeladonHouseText1::
+_CeladonChiefHouseChiefText::
 	text "Yahahaha!"
 	line "Triple 7!!!"
 	cont "Par ici l'pognon!"
 	done
 
-_CeladonHouseText2::
+_CeladonChiefHouseRocketText::
 	text "CHEF!"
 
 	para "2000 #MON ont"
@@ -12,7 +12,7 @@ _CeladonHouseText2::
 	cont "prix de casino!"
 	done
 
-_CeladonHouseText3::
+_CeladonChiefHouseSailorText::
 	text "Ne touche pas au"
 	line "bouton sur le"
 	cont "poster du CASINO!"

@@ -101,7 +101,7 @@ HoFShowMonOrPlayer:
 	ld a, $c0
 	ldh [hSCX], a
 	ld a, [wHoFMonSpecies]
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	ld [wd0b5], a
 	ld [wBattleMonSpecies2], a
 	ld [wWholeScreenPaletteMonSpecies], a
@@ -165,7 +165,7 @@ HoFDisplayMonInfo:
 	ld de, HoFMonInfoText
 	call PlaceString
 	hlcoord 1, 4
-	ld de, wcd6d
+	ld de, wNameBuffer
 	call PlaceString
 	ld a, [wHoFMonLevel]
 	hlcoord 8, 7
@@ -276,7 +276,7 @@ HoFRecordMonInfo:
 	ld [hli], a
 	ld e, l
 	ld d, h
-	ld hl, wcd6d
+	ld hl, wNameBuffer
 	ld bc, NAME_LENGTH
 	jp CopyData
 

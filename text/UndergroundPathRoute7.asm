@@ -1,4 +1,4 @@
-_UndergroundPathEntRoute7Text1::
+_UndergroundPathRoute7MiddleAgedManText::
 	text "Il y a un #MON"
 	line "endormi près de"
 	cont "CELADOPOLE."

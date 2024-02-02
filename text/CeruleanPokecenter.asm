@@ -1,4 +1,4 @@
-_CeruleanPokecenterText2::
+_CeruleanPokecenterSuperNerdText::
 	text "Sacré LEO!"
 
 	para "Il donnerait"
@@ -8,7 +8,7 @@ _CeruleanPokecenterText2::
 	cont "#MON rare!"
 	done
 
-_CeruleanPokecenterText3::
+_CeruleanPokecenterGentlemanText::
 	text "Tu connais LEO?"
 
 	para "On raconte que"

@@ -1,4 +1,4 @@
-_MtMoonPokecenterText1::
+_MtMoonPokecenterYoungsterText::
 	text "J'ai 6 # BALL"
 	line "à ma ceinture."
 
@@ -7,7 +7,7 @@ _MtMoonPokecenterText1::
 	cont "#MON."
 	done
 
-_MtMoonPokecenterText3::
+_MtMoonPokecenterGentlemanText::
 	text "La TEAM ROCKET"
 	line "a encore attaqué"
 	cont "les habitants"
@@ -18,7 +18,7 @@ _MtMoonPokecenterText3::
 	cont "infos!"
 	done
 
-_MagikarpSalesmanText1::
+_MtMoonPokecenterMagikarpSalesmanIGotADealText::
 	text "Bonjour l'ami!"
 	line "J'ai une super"
 	cont "affaire à te"
@@ -30,22 +30,22 @@ _MagikarpSalesmanText1::
 	cont "Qu'en dis-tu?"
 	done
 
-_MagikarpSalesmanNoText::
+_MtMoonPokecenterMagikarpSalesmanNoText::
 	text "Non? Va-zy lui!"
 	line "C'est un service"
 	cont "que j'te rends!"
 	done
 
-_MagikarpSalesmanNoMoneyText::
+_MtMoonPokecenterMagikarpSalesmanNoMoneyText::
 	text "T'es à sec, mon"
 	line "p'tit bouchon!"
 	done
 
-_MagikarpSalesmanText2::
+_MtMoonPokecenterMagikarpSalesmanNoRefundsText::
 	text "Ni repris,"
 	line "ni échangé!"
 	done
 
-_MtMoonPokecenterText5::
+_MtMoonPokecenterClipboardText::
 	text_start
 	done

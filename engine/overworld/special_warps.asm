@@ -1,60 +1,60 @@
-SpecialWarpIn::
+PrepareForSpecialWarp::
 	call LoadSpecialWarpData
 	predef LoadTilesetHeader
-	ld hl, wd732
-	bit 2, [hl] ; dungeon warp or fly warp?
-	res 2, [hl]
-	jr z, .next
-; if dungeon warp or fly warp
+	ld hl, wStatusFlags6
+	bit BIT_FLY_OR_DUNGEON_WARP, [hl]
+	res BIT_FLY_OR_DUNGEON_WARP, [hl]
+	jr z, .debugNewGameWarp
 	ld a, [wDestinationMap]
-	jr .next2
+	jr .next
+.debugNewGameWarp
+	bit BIT_DEBUG_MODE, [hl]
+	jr z, .setNewGameMatWarp ; apply to StartNewGameDebug only
+	call PrepareNewGameDebug
+.setNewGameMatWarp
+	; This is called by OakSpeech during StartNewGame and
+	; loads the first warp event for the specified map index.
+	ld a, PALLET_TOWN
 .next
-	bit 1, [hl]
-	jr z, .next3
-	call DebugStart
-.next3
-	ld a, 0
-.next2
 	ld b, a
-	ld a, [wd72d]
-	and a
-	jr nz, .next4
+	ld a, [wStatusFlags3]
+	and a ; ???
+	jr nz, .next2
 	ld a, b
-.next4
-	ld hl, wd732
-	bit 4, [hl] ; dungeon warp?
+.next2
+	ld hl, wStatusFlags6
+	bit BIT_DUNGEON_WARP, [hl]
 	ret nz
-; if not dungeon warp
 	ld [wLastMap], a
 	ret
 
-; gets the map ID, tile block map view pointer, tileset, and coordinates
 LoadSpecialWarpData:
-	ld a, [wd72d]
+	ld a, [wCableClubDestinationMap]
 	cp TRADE_CENTER
 	jr nz, .notTradeCenter
-	ld hl, TradeCenterSpec1
+	ld hl, TradeCenterPlayerWarp
 	ldh a, [hSerialConnectionStatus]
-	cp USING_INTERNAL_CLOCK ; which gameboy is clocking determines who is on the left and who is on the right
+	cp USING_INTERNAL_CLOCK
 	jr z, .copyWarpData
-	ld hl, TradeCenterSpec2
+	ld hl, TradeCenterFriendWarp
 	jr .copyWarpData
 .notTradeCenter
 	cp COLOSSEUM
 	jr nz, .notColosseum
-	ld hl, ColosseumSpec1
+	ld hl, ColosseumPlayerWarp
 	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	jr z, .copyWarpData
-	ld hl, ColosseumSpec2
+	ld hl, ColosseumFriendWarp
 	jr .copyWarpData
 .notColosseum
-	ld a, [wd732]
-	bit 1, a
-	jr nz, .notFirstMap
+	ld a, [wStatusFlags6]
+	bit BIT_DEBUG_MODE, a
+	; warp to wLastMap (PALLET_TOWN) for StartNewGameDebug
+	jr nz, .notNewGameWarp
 	bit 2, a
-	jr nz, .notFirstMap
-	ld hl, FirstMapSpec
+	jr nz, .notNewGameWarp
+	ld hl, NewGameWarp
 .copyWarpData
 	ld de, wCurMap
 	ld c, $7
@@ -68,20 +68,19 @@ LoadSpecialWarpData:
 	ld [wCurMapTileset], a
 	xor a
 	jr .done
-.notFirstMap
+.notNewGameWarp
 	ld a, [wLastMap] ; this value is overwritten before it's ever read
-	ld hl, wd732
-	bit 4, [hl] ; used dungeon warp (jumped down hole/waterfall)?
-	jr nz, .usedDunegonWarp
-	bit 6, [hl] ; return to last pokemon center (or player's house)?
-	res 6, [hl]
+	ld hl, wStatusFlags6
+	bit BIT_DUNGEON_WARP, [hl]
+	jr nz, .usedDungeonWarp
+	bit BIT_ESCAPE_WARP, [hl]
+	res BIT_ESCAPE_WARP, [hl]
 	jr z, .otherDestination
-; return to last pokemon center or player's house
 	ld a, [wLastBlackoutMap]
 	jr .usedFlyWarp
-.usedDunegonWarp
-	ld hl, wd72d
-	res 4, [hl]
+.usedDungeonWarp
+	ld hl, wStatusFlags3
+	res BIT_ON_DUNGEON_WARP, [hl]
 	ld a, [wDungeonWarpDestinationMap]
 	ld b, a
 	ld [wCurMap], a
@@ -142,7 +141,7 @@ LoadSpecialWarpData:
 .done
 	ld [wYOffsetSinceLastSpecialWarp], a
 	ld [wXOffsetSinceLastSpecialWarp], a
-	ld a, $ff ; the player's coordinates have already been updated using a special warp, so don't use any of the normal warps
+	ld a, -1 ; exclude normal warps
 	ld [wDestinationWarpID], a
 	ret
 

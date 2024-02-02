@@ -1,4 +1,4 @@
-_PewterHouse2Text1::
+_PewterSpeechHouseGamblerText::
 	text "Un #MON"
 	line "apprend des"
 	cont "attaques en"
@@ -12,7 +12,7 @@ _PewterHouse2Text1::
 	cont "dresseurs!"
 	done
 
-_PewterHouse2Text2::
+_PewterSpeechHouseYoungsterText::
 	text "Les #MON sont"
 	line "plus faciles à"
 	cont "capturer une fois"

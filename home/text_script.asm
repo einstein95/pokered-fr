@@ -13,7 +13,7 @@ DisplayTextID::
 .skipSwitchToMapBank
 	ld a, 30 ; half a second
 	ldh [hFrameCounter], a ; used as joypad poll timer
-	ld hl, wMapTextPtr
+	ld hl, wCurMapTextPtr
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a ; hl = map text pointer
@@ -128,8 +128,8 @@ CloseTextDisplay::
 	call InitMapSprites ; reload sprite tile pattern data (since it was partially overwritten by text tile patterns)
 	ld hl, wFontLoaded
 	res 0, [hl]
-	ld a, [wd732]
-	bit 3, a ; used fly warp
+	ld a, [wStatusFlags6]
+	bit BIT_FLY_WARP, a
 	call z, LoadPlayerSpriteGraphics
 	call LoadCurrentMapView
 	pop af
@@ -196,9 +196,9 @@ PokemonFaintedText::
 DisplayPlayerBlackedOutText::
 	ld hl, PlayerBlackedOutText
 	call PrintText
-	ld a, [wd732]
-	res 5, a ; reset forced to use bike bit
-	ld [wd732], a
+	ld a, [wStatusFlags6]
+	res BIT_ALWAYS_ON_BIKE, a
+	ld [wStatusFlags6], a
 	CheckEvent EVENT_IN_SAFARI_ZONE
 	jr z, .didnotblackoutinsafari
 	xor a
@@ -206,7 +206,7 @@ DisplayPlayerBlackedOutText::
 	ld [wSafariSteps], a
 	ld [wSafariSteps+1], a
 	ld [wEventFlags + 73], a ; clear all Safari Zone flags
-	ld [wcf0d], a
+	ld [wNextSafariZoneGateScript], a
 	ld [wSafariZoneGateCurScript], a
 .didnotblackoutinsafari
 	jp HoldTextDisplayOpen

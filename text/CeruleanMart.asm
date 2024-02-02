@@ -1,4 +1,4 @@
-_CeruleanMartText2::
+_CeruleanMartCooltrainerMText::
 	text "Le REPOUSSE tient"
 	line "les #MON"
 	cont "sauvages à"
@@ -11,7 +11,7 @@ _CeruleanMartText2::
 	cont "efficacité!"
 	done
 
-_CeruleanMartText3::
+_CeruleanMartCooltrainerFText::
 	text "As-tu déjà vu des"
 	line "SUPER BONBONS??"
 

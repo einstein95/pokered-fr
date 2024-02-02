@@ -37,14 +37,14 @@ _Route22RivalAfterBattleText1::
 	cont "minable!"
 	done
 
-_Route22RivalDefeatedText1::
+_Route22Rival1DefeatedText::
 	text "Haha!"
 	line "Tu as eu une"
 	cont "chance de"
 	cont "minable, minable!"
 	prompt
 
-_Route22Text_511bc::
+_Route22Rival1VictoryText::
 	text "<RIVAL>: Quoi?"
 	line "Pourquoi j'ai 2"
 	cont "#MON?"
@@ -96,14 +96,14 @@ _Route22RivalAfterBattleText2::
 	cont "savoir, minable!"
 	done
 
-_Route22RivalDefeatedText2::
+_Route22Rival2DefeatedText::
 	text "Quoi!?"
 
 	para "Je pensais à"
 	line "autre chose!"
 	prompt
 
-_Route22Text_511d0::
+_Route22Rival2VictoryText::
 	text "<RIVAL>: Hahaha!"
 	line "<PLAYER>! T'es"
 	cont "vraiment nul! Un"
@@ -114,7 +114,7 @@ _Route22Text_511d0::
 	line "t'entraîner!"
 	prompt
 
-_Route22FrontGateText::
+_Route22PokemonLeagueSignText::
 	text "LIGUE #MON"
 	line "Porte d'entrée"
 	done

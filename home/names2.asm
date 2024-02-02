@@ -83,14 +83,14 @@ GetName::
 	jr nz, .nextName
 	ld h, d
 	ld l, e
-	ld de, wcd6d
+	ld de, wNameBuffer
 	ld bc, NAME_BUFFER_LENGTH
 	call CopyData
 .gotPtr
 	ld a, e
-	ld [wUnusedCF8D], a
+	ld [wUnusedNamePointer], a
 	ld a, d
-	ld [wUnusedCF8D + 1], a
+	ld [wUnusedNamePointer + 1], a
 	pop de
 	pop bc
 	pop hl

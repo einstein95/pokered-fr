@@ -77,7 +77,7 @@ DrawHPBar::
 ; 02: current box
 ; 03: daycare
 ; OUTPUT:
-; [wcf91] = pokemon ID
+; [wCurPartySpecies] = pokemon ID
 ; wLoadedMon = base address of pokemon data
 ; wMonHeader = base address of base stats
 LoadMonData::
@@ -101,7 +101,7 @@ LoadFrontSpriteByMonIndex::
 	push hl
 	ld a, [wd11e]
 	push af
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	ld [wd11e], a
 	predef IndexToPokedex
 	ld hl, wd11e
@@ -115,7 +115,7 @@ LoadFrontSpriteByMonIndex::
 	jr c, .validDexNumber   ; dex >#151 invalid
 .invalidDexNumber
 	ld a, RHYDON ; $1
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	ret
 .validDexNumber
 	push hl
@@ -198,8 +198,8 @@ PartyMenuInit::
 	ld a, 1 ; hardcoded bank
 	call BankswitchHome
 	call LoadHpBarAndStatusTilePatterns
-	ld hl, wd730
-	set 6, [hl] ; turn off letter printing delay
+	ld hl, wStatusFlags5
+	set BIT_NO_TEXT_DELAY, [hl]
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 	ld [wMenuWatchMovingOutOfBounds], a
@@ -245,8 +245,8 @@ HandlePartyMenuInput::
 	ld [wPartyMenuAnimMonEnabled], a
 	ld a, [wCurrentMenuItem]
 	ld [wPartyAndBillsPCSavedMenuItem], a
-	ld hl, wd730
-	res 6, [hl] ; turn on letter printing delay
+	ld hl, wStatusFlags5
+	res BIT_NO_TEXT_DELAY, [hl]
 	ld a, [wMenuItemToSwap]
 	and a
 	jp nz, .swappingPokemon
@@ -264,7 +264,7 @@ HandlePartyMenuInput::
 	ld c, a
 	add hl, bc
 	ld a, [hl]
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	ld [wBattleMonSpecies2], a
 	call BankswitchBack
 	and a
@@ -433,7 +433,7 @@ GetMonHeader::
 	ld [MBC1RomBank], a
 	ret
 
-; copy party pokemon's name to wcd6d
+; copy party pokemon's name to wNameBuffer
 GetPartyMonName2::
 	ld a, [wWhichPokemon] ; index within party
 	ld hl, wPartyMonNicks
@@ -443,7 +443,7 @@ GetPartyMonName::
 	push hl
 	push bc
 	call SkipFixedLengthTextEntries ; add NAME_LENGTH to hl, a times
-	ld de, wcd6d
+	ld de, wNameBuffer
 	push de
 	ld bc, NAME_LENGTH
 	call CopyData

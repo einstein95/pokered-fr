@@ -1,34 +1,34 @@
-_Mansion3BattleText1::
+_PokemonMansion3FSuperNerdBattleText::
 	text "Fouiii..."
 	line "C'est grand ici!"
 	done
 
-_Mansion3EndBattleText1::
+_PokemonMansion3FSuperNerdEndBattleText::
 	text "Yargl!"
 	prompt
 
-_Mansion3AfterBattleText1::
+_PokemonMansion3FSuperNerdAfterBattleText::
 	text "Mais où est donc"
 	line "mon complice?"
 	done
 
-_Mansion3BattleText2::
+_PokemonMansion3FScientistBattleText::
 	text "Mon mentor vivait"
 	line "ici autrefois."
 	done
 
-_Mansion3EndBattleText2::
+_PokemonMansion3FScientistEndBattleText::
 	text "!!!"
 	line "Impressionnant!"
 	prompt
 
-_Mansion3AfterBattleText2::
+_PokemonMansion3FScientistAfterBattleText::
 	text "T'es perdu?"
 	line "Essaie de sauter"
 	cont "par là-bas!"
 	done
 
-_Mansion3Text5::
+_PokemonMansion3FDiaryText::
 	text "Rapport:"
 	line "6 Février."
 	cont "MEW est papa "

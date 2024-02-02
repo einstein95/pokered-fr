@@ -1,10 +1,10 @@
-_SafariZoneRestHouse1Text1::
+_SafariZoneCenterRestHouseGirlText::
 	text "JULIA: Où est"
 	line "NICO, mon petit"
 	cont "ami?"
 	done
 
-_SafariZoneRestHouse1Text2::
+_SafariZoneCenterRestHouseScientistText::
 	text "Je capture des"
 	line "#MON pour"
 	cont "les offrir!"

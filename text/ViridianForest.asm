@@ -1,4 +1,4 @@
-_ViridianForestText1::
+_ViridianForestYoungster1Text::
 	text "Je suis ici"
 	line "avec des amis!"
 
@@ -6,57 +6,57 @@ _ViridianForestText1::
 	line "pour se battre!"
 	done
 
-
+_ViridianForestYoungster2BattleText::
 _ViridianForestBattleText1::
 	text "Hé! Mais tu as"
 	line "des #MON!"
 	cont "Yah! A l'attaque!"
 	done
 
-_ViridianForestEndBattleText1::
+_ViridianForestYoungster2EndBattleText::
 	text "NON!"
 	line "CHENIPAN n'y"
 	cont "arrivera pas!"
 	prompt
 
-_ViridianFrstAfterBattleText1::
+_ViridianForestYoungster2AfterBattleText::
 	text "Chut! Tu fais"
 	line "peur aux"
 	cont "insectes..."
 	done
 
-_ViridianForestBattleText2::
+_ViridianForestYoungster3BattleText::
 	text "Haha! Un dresseur"
 	line "de #MON, un"
 	cont "vrai, ne se"
 	cont "débine jamais!!!"
 	done
 
-_ViridianForestEndBattleText2::
+_ViridianForestYoungster3EndBattleText::
 	text "Oups!"
 	line "N'en n'a plus des"
 	cont "#MON, moi!"
 	prompt
 
-_ViridianFrstAfterBattleText2::
+_ViridianForestYoungster3AfterBattleText::
 	text "Fichtre! J'vais"
 	line "en choper des"
 	cont "plus balèzes!"
 	done
 
-_ViridianForestBattleText3::
+_ViridianForestYoungster4BattleText::
 	text "Hop, hop! Minute!"
 	line "On n'est pas"
 	cont "pressé!"
 	done
 
-_ViridianForestEndBattleText3::
+_ViridianForestYoungster4EndBattleText::
 	text "Houlà!"
 	line "J'abandonne!"
 	cont "T'es trop fort!"
 	prompt
 
-_ViridianFrstAfterBattleText3::
+_ViridianForestYoungster4AfterBattleText::
 	text "Tu trouveras"
 	line "peut-être des"
 	cont "objets par terre!"
@@ -66,7 +66,7 @@ _ViridianFrstAfterBattleText3::
 	cont "laissé tomber..."
 	done
 
-_ViridianForestText8::
+_ViridianForestYoungster5Text::
 	text "J'suis à court de"
 	line "# BALL!"
 	cont "Je ne peux plus"
@@ -77,7 +77,7 @@ _ViridianForestText8::
 	line "toujours un max!"
 	done
 
-_ViridianForestText9::
+_ViridianForestTrainerTips1Text::
 	text "ASTUCE"
 
 	para "Pour éviter les"
@@ -86,14 +86,14 @@ _ViridianForestText9::
 	cont "les hautes herbes!"
 	done
 
-_ViridianForestText10::
+_ViridianForestUseAntidoteSignText::
 	text "L'ANTIDOTE vendu"
 	line "dans les"
 	cont "BOUTIQUES PKMN"
 	cont "guérit du poison."
 	done
 
-_ViridianForestText11::
+_ViridianForestTrainerTips2Text::
 	text "ASTUCE"
 
 	para "Pour évaluer"
@@ -102,7 +102,7 @@ _ViridianForestText11::
 	cont "Chen via un PC!"
 	done
 
-_ViridianForestText12::
+_ViridianForestTrainerTips3Text::
 	text "ASTUCE"
 
 	para "Interdiction de"
@@ -114,7 +114,7 @@ _ViridianForestText12::
 	cont "sauvage!"
 	done
 
-_ViridianForestText13::
+_ViridianForestTrainerTips4Text::
 	text "ASTUCE"
 
 	para "Un #MON"
@@ -125,7 +125,7 @@ _ViridianForestText13::
 	line "il peut s'enfuir!"
 	done
 
-_ViridianForestText14::
+_ViridianForestLeavingSignText::
 	text "VOUS QUITTEZ LA"
 	line "FORET DE JADE."
 	cont "VOUS ALLEZ VERS"

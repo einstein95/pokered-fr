@@ -1,4 +1,4 @@
-_Route12HouseText_564c0::
+_Route12SuperRodHouseFishingGuruDoYouLikeToFishText::
 	text "Mon frère,"
 	line "j'suis le maître"
 	cont "pêcheur!"
@@ -10,7 +10,7 @@ _Route12HouseText_564c0::
 	line "mon frère?"
 	done
 
-_Route12HouseText_564c5::
+_Route12SuperRodHouseFishingGuruReceivedSuperRodText::
 	text "Trop cool!"
 	line "J't'aime bien!"
 
@@ -24,7 +24,7 @@ _Route12HouseText_564c5::
 	text "!@"
 	text_end
 
-_Route12HouseText_564ca::
+_Route12SuperRodHouseFishingGuruFishingWayOfLifeText::
 	text_start
 
 	para "La pêche c'est"
@@ -36,12 +36,12 @@ _Route12HouseText_564ca::
 	cont "pas, ça va pas!"
 	done
 
-_Route12HouseText_564cf::
+_Route12SuperRodHouseFishingGuruThatsDisappointingText::
 	text "Oh... Je suis"
 	line "très déçu..."
 	done
 
-_Route12HouseText_564d4::
+_Route12SuperRodHouseFishingGuruTryFishingText::
 	text "Salut,"
 	line "<PLAYER>!"
 
@@ -55,7 +55,7 @@ _Route12HouseText_564d4::
 	line "et pêche encore! "
 	done
 
-_Route12HouseText_564d9::
+_Route12SuperRodHouseFishingGuruNoRoomText::
 	text "Ha ben non!"
 
 	para "J'avais un cadeau"

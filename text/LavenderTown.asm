@@ -1,14 +1,14 @@
-_LavenderTownText_4413c::
+_LavenderTownLittleGirlDoYouBelieveInGhostsText::
 	text "Crois-tu aux"
 	line "SPECTRES?"
 	done
 
-_LavenderTownText_44141::
+_LavenderTownLittleGirlSoThereAreBelieversText::
 	text "Vraiment? Il en"
 	line "faut..."
 	done
 
-_LavenderTownText_44146::
+_LavenderTownLittleGirlHaHaGuessNotText::
 	text "T'as raison."
 
 	para "La main toute"
@@ -17,7 +17,7 @@ _LavenderTownText_44146::
 	cont "alors..."
 	done
 
-_LavenderTownText2::
+_LavenderTownCooltrainerMText::
 	text "Cette ville est"
 	line "le cimetière des"
 	cont "#MON."
@@ -27,7 +27,7 @@ _LavenderTownText2::
 	cont "recueillement."
 	done
 
-_LavenderTownText3::
+_LavenderTownSuperNerdText::
 	text "Des SPECTRES sont"
 	line "apparus dans la"
 	cont "TOUR #MON."
@@ -38,13 +38,13 @@ _LavenderTownText3::
 	cont "la ROCKET."
 	done
 
-_LavenderTownText4::
+_LavenderTownSignText::
 	text "LAVANVILLE"
 	line "Le pourpre de"
 	cont "la noblesse"
 	done
 
-_LavenderTownText5::
+_LavenderTownSilphScopeSignText::
 	text "Tout nouveau"
 	line "SCOPE SYLPHE!"
 
@@ -53,13 +53,13 @@ _LavenderTownText5::
 	para "SYLPHE SARL"
 	done
 
-_LavenderTownText8::
+_LavenderTownPokemonHouseSignText::
 	text "BENEVOLAT DE"
 	line "LAVANVILLE"
 	cont "MAISON #MON"
 	done
 
-_LavenderTownText9::
+_LavenderTownPokemonTowerSignText::
 	text "Paix à l'âme des"
 	line "#MON"
 	cont "TOUR #MON"

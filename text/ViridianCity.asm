@@ -1,4 +1,4 @@
-_ViridianCityText1::
+_ViridianCityYoungster1Text::
 	text "Des # BALL!"
 	line "Mais... T'as des"
 	cont "#MON!"
@@ -9,7 +9,7 @@ _ViridianCityText1::
 	cont "veut, hein?"
 	done
 
-_ViridianCityText_19122::
+_ViridianCityGambler1GymAlwaysClosedText::
 	text "Cette ARENE"
 	line "#MON est"
 	cont "toujours fermée."
@@ -18,25 +18,25 @@ _ViridianCityText_19122::
 	line "le CHAMPION?"
 	done
 
-_ViridianCityText_19127::
+_ViridianCityGambler1GymLeaderReturnedText::
 	text "Le CHAMPION de"
 	line "l'ARENE de"
 	cont "JADIELLE est de"
 	cont "retour! Dingue!"
 	done
 
-_ViridianCityText_1914d::
+_ViridianCityYoungster2YouWantToKnowAboutText::
 	text "Tu veux tout"
 	line "savoir sur les 2"
 	cont "types de chenille"
 	cont "#MON?"
 	done
 
-_ViridianCityText_19152::
+ViridianCityYoungster2OkThenText::
 	text "Bon. OK."
 	done
 
-_ViridianCityText_19157::
+ViridianCityYoungster2CaterpieAndWeedleDescriptionText::
 	text "Contrairement à"
 	line "CHENIPAN, ASPICOT"
 	cont "est venimeux."
@@ -45,14 +45,14 @@ _ViridianCityText_19157::
 	line "DARD-VENIN!"
 	done
 
-_ViridianCityText_19175::
+_ViridianCityGirlHasntHadHisCoffeeYetText::
 	text "Papinou! Tu vas"
 	line "t'lever, ouais?"
 	cont "T'as vidé la cave"
 	cont "ou quoi?"
 	done
 
-_ViridianCityText_1917a::
+_ViridianCityGirlWhenIGoShopText::
 	text "Je passe par la"
 	line "FORET DE JADE"
 	cont "pour faire mes"
@@ -60,14 +60,14 @@ _ViridianCityText_1917a::
 	cont "ARGENTA."
 	done
 
-_ViridianCityText_19191::
+_ViridianCityOldManSleepyPrivatePropertyText::
 	text "Passage..."
 	line "INTERDIT!"
 
 	para "Propriété privée!"
 	done
 
-_ViridianCityText_191ca::
+ViridianCityFisherYouCanHaveThisText::
 	text "(Baiiiille)!"
 	line "J'ai dû dormir"
 	cont "dehors."
@@ -84,23 +84,23 @@ _ViridianCityText_191ca::
 	cont "pour toi."
 	prompt
 
-_ReceivedTM42Text::
+_ViridianCityFisherReceivedTM42Text::
 	text "<PLAYER> reçoit:"
 	line "CT42!@"
 	text_end
 
-_TM42Explanation::
+_ViridianCityFisherTM42ExplanationText::
 	text "CT42 contient"
 	line "DEVOREVE..."
 	cont "...(pionce)..."
 	done
 
-_TM42NoRoomText::
+_ViridianCityFisherTM42NoRoomText::
 	text "Tu es trop"
 	line "chargé."
 	done
 
-_ViridianCityText_1920a::
+_ViridianCityOldManHadMyCoffeeNowText::
 	text "Ahh... Un p'tit"
 	line "somme, un bon"
 	cont "café et hop! La"
@@ -114,7 +114,7 @@ _ViridianCityText_1920a::
 	line "T'es pressé?"
 	done
 
-_ViridianCityText_1920f::
+_ViridianCityOldManKnowHowToCatchPokemonText::
 	text "Je vois que tu as"
 	line "un #DEX."
 
@@ -131,24 +131,24 @@ _ViridianCityText_1920f::
 	para "J'vais t'montrer."
 	done
 
-_ViridianCityText_19214::
+_ViridianCityOldManTimeIsMoneyText::
 	text "Le temps, c'est"
 	line "d'l'argent. Va."
 	done
 
-_ViridianCityText_19219::
+_ViridianCityOldManYouNeedToWeakenTheTargetText::
 	text "D'abord, il faut"
 	line "affaiblir le"
 	cont "#MON désiré."
 	done
 
-_ViridianCityText8::
+_ViridianCitySignText::
 	text "JADIELLE"
 	line "Verte comme"
 	cont "l'espérance"
 	done
 
-_ViridianCityText9::
+_ViridianCityTrainerTips1Text::
 	text "ASTUCE"
 
 	para "Capturez des"
@@ -162,7 +162,7 @@ _ViridianCityText9::
 	cont "faciles!"
 	done
 
-_ViridianCityText10::
+_ViridianCityTrainerTips2Text::
 	text "ASTUCE"
 
 	para "Les attaques sont"
@@ -178,12 +178,12 @@ _ViridianCityText10::
 	cont "#MON!"
 	done
 
-_ViridianCityText13::
+_ViridianCityGymSignText::
 	text "ARENE #MON"
 	line "de JADIELLE"
 	done
 
-_ViridianCityText14::
+_ViridianCityGymLockedText::
 	text "Les portes de"
 	line "l'ARENE sont"
 	cont "fermées..."

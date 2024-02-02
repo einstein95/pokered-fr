@@ -1,4 +1,4 @@
-_TM18PreReceiveText::
+_CeladonMart3FClerkTM18PreReceiveText::
 	text "J'ai fini!!!!"
 	line "J'ai fini"
 	cont "#MON!!!!"
@@ -8,25 +8,25 @@ _TM18PreReceiveText::
 	cont "petit!"
 	prompt
 
-_ReceivedTM18Text::
+_CeladonMart3FClerkReceivedTM18Text::
 	text "<PLAYER> reçoit"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM18ExplanationText::
+_CeladonMart3FClerkTM18ExplanationText::
 	text "CT18: RIPOSTE!"
 	line "Bon allez..."
 	cont "Bonne chance!"
 	done
 
-_TM18NoRoomText::
+_CeladonMart3FClerkTM18NoRoomText::
 	text "Ton sac est plein"
 	line "à craquer!"
 	done
 
-_CeladonMart3Text2::
+_CeladonMart3FGameBoyKid1Text::
 	text "Tous les #MON"
 	line "capturés ont un"
 	cont "numéro d'immatri-"
@@ -36,7 +36,7 @@ _CeladonMart3Text2::
 	cont "d'Origine)!"
 	done
 
-_CeladonMart3Text3::
+_CeladonMart3FGameBoyKid2Text::
 	text "Ouaiiis!"
 
 	para "Mon pote va"
@@ -45,7 +45,7 @@ _CeladonMart3Text3::
 	cont "mon GRAVALANCH!"
 	done
 
-_CeladonMart3Text4::
+_CeladonMart3FGameBoyKid3Text::
 	text "Cool! Un"
 	line "GRAVALANCH!"
 
@@ -59,7 +59,7 @@ _CeladonMart3Text4::
 	cont "autre #MON!"
 	done
 
-_CeladonMart3Text5::
+_CeladonMart3FLittleBoyText::
 	text "Le numéro d'imma-"
 	line "triculation d'un"
 	cont "#MON sert à"
@@ -67,36 +67,36 @@ _CeladonMart3Text5::
 	cont "d'un échange!"
 	done
 
-_CeladonMart3Text6::
+_CeladonMart3FSNESText::
 	text "Une SUPER"
 	line "NINTENDO!"
 	done
 
-_CeladonMart3Text7::
+_CeladonMart3FRPGText::
 	text "Un RPG! Cool..."
 	line "Mais trop dur!"
 	done
 
-_CeladonMart3Text9::
+_CeladonMart3FSportsGameText::
 	text "Un jeu de sport!"
 	line "Vive le foot!"
 	done
 
-_CeladonMart3Text11::
+_CeladonMart3FPuzzleGameText::
 	text "Quatre lignes!"
 	line "En un seul coup!"
 	done
 
-_CeladonMart3Text13::
+_CeladonMart3FFightingGameText::
 	text "Kan contre Ryo!"
 	line "Hadoh Ken!"
 	done
 
-_CeladonMart3Text14::
+_CeladonMart3FCurrentFloorSignText::
 	text "2ème: JEUX VIDEO"
 	done
 
-_CeladonMart3Text15::
+_CeladonMart3FPokemonPosterText::
 	text "Rouge et Bleu!"
 	line "Deux #MON!"
 	done

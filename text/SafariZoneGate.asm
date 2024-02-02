@@ -1,9 +1,9 @@
-_SafariZoneEntranceText1::
+_SafariZoneGateSafariZoneWorker1Text::
 	text "Bienvenue au"
 	line "PARC SAFARI!"
 	done
 
-SafariZoneEntranceText_9e6e4::
+_SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText::
 	text "Pour juste 500¥,"
 	line "tu peux attraper"
 	cont "autant de #MON"
@@ -13,7 +13,7 @@ SafariZoneEntranceText_9e6e4::
 	para "Qu'en dis-tu?@"
 	text_end
 
-SafariZoneEntranceText_9e747::
+_SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText::
 	text "Ca fera 500¥"
 	line "siouplaît!"
 
@@ -25,7 +25,7 @@ SafariZoneEntranceText_9e747::
 	line "30 SAFARI BALL!@"
 	text_end
 
-_SafariZoneEntranceText_75360::
+_SafariZoneGateSafariZoneWorker1CallYouOnThePAText::
 	text_start
 
 	para "J'utiliserai le"
@@ -36,42 +36,42 @@ _SafariZoneEntranceText_75360::
 	cont "épuisés!"
 	done
 
-_SafariZoneEntranceText_75365::
+_SafariZoneGateSafariZoneWorker1PleaseComeAgainText::
 	text "Très bien!"
 	line "A plus tard!"
 	done
 
-_SafariZoneEntranceText_7536a::
+_SafariZoneGateSafariZoneWorker1NotEnoughMoneyText::
 	text "Hop hop hop!"
 	line "Pas d'sous!"
 	done
 
-SafariZoneEntranceText_9e814::
+_SafariZoneGateSafariZoneWorker1LeavingEarlyText::
 	text "On part déjà?@"
 	text_end
 
-_SafariZoneEntranceText_753bb::
+_SafariZoneGateSafariZoneWorker1ReturnSafariBallsText::
 	text "Donne-moi donc"
 	line "tes SAFARI BALL"
 	cont "neuves."
 	done
 
-_SafariZoneEntranceText_753c0::
+_SafariZoneGateSafariZoneWorker1GoodLuckText::
 	text "Bonne chance!"
 	done
 
-_SafariZoneEntranceText_753c5::
+_SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText::
 	text "Bonne chasse?"
 	line "Allez..."
 	cont "A plus tard!"
 	done
 
-_SafariZoneEntranceText_753e6::
+_SafariZoneGateSafariZoneWorker2FirstTimeHereText::
 	text "C'est...c'est la"
 	line "première fois?"
 	done
 
-_SafariZoneEntranceText_753eb::
+_SafariZoneGateSafariZoneWorker2SafariZoneExplanationText::
 	text "Le PARC SAFARI a"
 	line "4 zones."
 
@@ -95,7 +95,7 @@ _SafariZoneEntranceText_753eb::
 	cont "place!"
 	done
 
-_SafariZoneEntranceText_753f0::
+_SafariZoneGateSafariZoneWorker2YoureARegularHereText::
 	text "Oh! T'es un"
 	line "habitué!"
 	done

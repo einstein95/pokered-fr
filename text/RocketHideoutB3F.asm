@@ -1,15 +1,15 @@
-_RocketHideout3BattleText2::
+_RocketHideoutB3FRocket1BattleText::
 	text "Ne te mêle plus"
 	line "des affaires de"
 	cont "la TEAM ROCKET!"
 	done
 
-_RocketHideout3EndBattleText2::
+_RocketHideoutB3FRocket1EndBattleText::
 	text "Paf!"
 	line "J'suis au tapis!"
 	prompt
 
-_RocketHideout3AfterBattleTxt2::
+_RocketHideoutB3FRocket1AfterBattleText::
 	text "Le SCOPE SYLPHE?"
 	line "Le bidule que le"
 	cont "chef a volé?"
@@ -17,7 +17,7 @@ _RocketHideout3AfterBattleTxt2::
 	cont "quelque part..."
 	done
 
-_RocketHideout3BattleTxt::
+_RocketHideout3BattleText::
 	text "On nous a"
 	line "prévenus de ton"
 	cont "arrivée!"

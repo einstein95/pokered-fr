@@ -1,4 +1,4 @@
-_UGPathRoute7EntranceUnusedText_5d773::
+_UndergroundPathRoute7CopyUnusedGirlText::
 	text "Je veux aller au"
 	line "centre commercial"
 	cont "de CELADOPOLE..."
@@ -8,14 +8,14 @@ _UGPathRoute7EntranceUnusedText_5d773::
 	cont "là-bas."
 	done
 
-_UGPathRoute7EntranceUnusedText_5d778::
+_UndergroundPathRoute7CopyUnusedTeamRocketHadAHideoutText::
 	text "La TEAM ROCKET"
 	line "possède un abri"
 	cont "secret dans"
 	cont "CELADOPOLE!"
 	done
 
-_UGPathRoute7EntranceUnusedText_5d77d::
+_UndergroundPathRoute7CopyUnusedMiddleAgedManText::
 	text "Tu veux acheter"
 	line "plein de trucs?"
 
@@ -23,7 +23,7 @@ _UGPathRoute7EntranceUnusedText_5d77d::
 	line "vers l'ouest!"
 	done
 
-_UGPathRoute7EntranceUnusedText_5d782::
+_UndergroundPathRoute7CopyUnusedGoesUnderSaffronText::
 	text "Le SOUTERRAIN"
 	line "passe sous"
 	cont "SAFRANIA et"

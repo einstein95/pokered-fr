@@ -1,4 +1,4 @@
-_SSAnne7RubText::
+_SSAnneCaptainsRoomRubCaptainsBackText::
 	text "CAPITAINE: Blorf."
 	line "J'suis pas bien."
 	cont "Beurp..."
@@ -11,7 +11,7 @@ _SSAnne7RubText::
 	line "Scratch...@"
 	text_end
 
-_ReceivingHM01Text::
+_SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
 	text "CAPITAINE: Merci"
 	line "moussaillon!"
 	cont "Ca va beaucoup"
@@ -35,14 +35,14 @@ _ReceivingHM01Text::
 	cont "tes #MON!"
 	prompt
 
-_ReceivedHM01Text::
+_SSAnneCaptainsRoomCaptainReceivedHM01Text::
 	text "<PLAYER> obtient"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_SSAnne7Text_61932::
+_SSAnneCaptainsRoomCaptainNotSickAnymoreText::
 	text "CAPITAINE: Haaaa!"
 
 	para "Maintenant que"
@@ -50,18 +50,18 @@ _SSAnne7Text_61932::
 	cont "va lever l'ancre!"
 	done
 
-_HM01NoRoomText::
+_SSAnneCaptainsRoomCaptainHM01NoRoomText::
 	text "Ha zut! Tu n'as"
 	line "plus de place"
 	cont "pour cet objet!"
 	done
 
-_SSAnne7Text2::
+_SSAnneCaptainsRoomTrashText::
 	text "Quoi?!?"
 	line "Il a mangé ça???"
 	done
 
-_SSAnne7Text3::
+_SSAnneCaptainsRoomSeasickBookText::
 	text "Comment guérir"
 	line "le mal de mer..."
 	cont "Le CAPITAINE lit"

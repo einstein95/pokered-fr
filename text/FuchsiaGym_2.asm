@@ -1,4 +1,4 @@
-_KogaPostBattleAdviceText::
+_FuchsiaGymKogaPostBattleAdviceText::
 	text "TOXIK fera"
 	line "souffrir de plus"
 	cont "en plus un"
@@ -9,7 +9,7 @@ _KogaPostBattleAdviceText::
 	line "pétoche!"
 	done
 
-_KogaSoulBadgeInfoText::
+_FuchsiaGymKogaSoulBadgeInfoText::
 	text "Le BADGE AME fera"
 	line "monter la DEFENSE"
 	cont "de tes #MON!"
@@ -22,14 +22,14 @@ _KogaSoulBadgeInfoText::
 	line "aussi ceci!"
 	done
 
-_ReceivedTM06Text::
+_FuchsiaGymKogaReceivedTM06Text::
 	text "<PLAYER> reçoit:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM06ExplanationText::
+_FuchsiaGymKogaTM06ExplanationText::
 	text_start
 	para "CT06: TOXIK!"
 
@@ -40,13 +40,13 @@ _TM06ExplanationText::
 	cont "...j'te jure!"
 	done
 
-_TM06NoRoomText::
+_FuchsiaGymKogaTM06NoRoomText::
 	text "Gnaaaa!!!"
 	line "Ton inventaire"
 	cont "est plein!"
 	done
 
-_FuchsiaGymBattleText1::
+_FuchsiaGymRocker1BattleText::
 	text "La force..."
 	line "Pas glop."
 
@@ -59,53 +59,53 @@ _FuchsiaGymBattleText1::
 	cont "Mange ta mandale!"
 	done
 
-_FuchsiaGymEndBattleText1::
+_FuchsiaGymRocker1EndBattleText::
 	text "Que?"
 	line "Que quoi?"
 	prompt
 
-_FuchsiaGymAfterBattleText1::
+_FuchsiaGymRocker1AfterBattleText::
 	text "Tu penses avec"
 	line "ta tête? Heu?"
 	cont "Syntax Error!"
 	done
 
-_FuchsiaGymBattleText2::
+_FuchsiaGymRocker2BattleText::
 	text "J'veux être un"
 	line "ninja, pour faire"
 	cont "yaaaaa!"
 	done
 
-_FuchsiaGymEndBattleText2::
+_FuchsiaGymRocker2EndBattleText::
 	text "Geuh..."
 	line "A perdu!"
 	prompt
 
-_FuchsiaGymAfterBattleText2::
+_FuchsiaGymRocker2AfterBattleText::
 	text "L'entraînement..."
 	line "C'est le pied!"
 	done
 
-_FuchsiaGymBattleText3::
+_FuchsiaGymRocker3BattleText::
 	text "Crois-tu pouvoir"
 	line "me battre? Haha."
 	cont "Nabot!"
 	done
 
-_FuchsiaGymEndBattleText3::
+_FuchsiaGymRocker3EndBattleText::
 	text "Quoi?"
 	line "Eul'nabot m'a"
 	cont "battu?"
 	prompt
 
-_FuchsiaGymAfterBattleText3::
+_FuchsiaGymRocker3AfterBattleText::
 	text "Les attaques de"
 	line "poison et de"
 	cont "sommeil sont très"
 	cont "puissantes! Oui!"
 	done
 
-_FuchsiaGymBattleText4::
+_FuchsiaGymRocker4BattleText::
 	text "Pas bouger!"
 
 	para "Nos jolis murs"
@@ -113,12 +113,12 @@ _FuchsiaGymBattleText4::
 	cont "sympas, non?"
 	done
 
-_FuchsiaGymEndBattleText4::
+_FuchsiaGymRocker4EndBattleText::
 	text "Whoa!"
 	line "Tout mort!"
 	prompt
 
-_FuchsiaGymAfterBattleText4::
+_FuchsiaGymRocker4AfterBattleText::
 	text "Chuis cuit!"
 	line "Voilà un conseil!"
 
@@ -127,7 +127,7 @@ _FuchsiaGymAfterBattleText4::
 	cont "les murs..."
 	done
 
-_FuchsiaGymBattleText5::
+_FuchsiaGymRocker5BattleText::
 	text "J'veux être un"
 	line "ninja et sauter"
 	cont "d'arbre en arbre!"
@@ -137,15 +137,15 @@ _FuchsiaGymBattleText5::
 	cont "goret d'l'espace!"
 	done
 
-_FuchsiaGymEndBattleText5::
+_FuchsiaGymRocker5EndBattleText::
 	text "Gruik!"
 	prompt
 
-_FuchsiaGymAfterBattleText5::
+_FuchsiaGymRocker5AfterBattleText::
 	text "J'suis nul!"
 	done
 
-_FuchsiaGymBattleText6::
+_FuchsiaGymRocker6BattleText::
 	text "KOGA fait partie"
 	line "d'une grande"
 	cont "famille de"
@@ -156,12 +156,12 @@ _FuchsiaGymBattleText6::
 	cont "es-tu? Pourquoi?"
 	done
 
-_FuchsiaGymEndBattleText6::
+_FuchsiaGymRocker6EndBattleText::
 	text "..."
 	line "Défaite."
 	prompt
 
-_FuchsiaGymAfterBattleText6::
+_FuchsiaGymRocker6AfterBattleText::
 	text "La lumière"
 	line "engendre l'ombre. "
 
@@ -169,7 +169,7 @@ _FuchsiaGymAfterBattleText6::
 	line "Force choisis-tu?"
 	done
 
-_FuchsiaGymGuidePreBattleText::
+_FuchsiaGymGymGuideChampInMakingText::
 	text "Hop là! Graine"
 	line "de champion!"
 
@@ -187,7 +187,7 @@ _FuchsiaGymGuidePreBattleText::
 	cont "pour l'atteindre!"
 	done
 
-_FuchsiaGymGuidePostBattleText::
+_FuchsiaGymGymGuideBeatKogaText::
 	text "Un ninja? Bah..."
 	line "C'est gros, roux"
 	cont "et ça fait"

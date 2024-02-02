@@ -1,4 +1,4 @@
-_FuchsiaMeetingRoomText1::
+_FuchsiaMeetingRoomSafariZoneWorker1::
 	text "Nous avons"
 	line "surnommé le"
 	cont "GARDIEN, RAMOLOSS."
@@ -8,7 +8,7 @@ _FuchsiaMeetingRoomText1::
 	cont "RAMOLOSS!"
 	done
 
-_FuchsiaMeetingRoomText2::
+_FuchsiaMeetingRoomSafariZoneWorker2::
 	text "RAMOLOSS s'y"
 	line "connaît beaucoup"
 	cont "en #MON!"
@@ -19,7 +19,7 @@ _FuchsiaMeetingRoomText2::
 	cont "anciens!"
 	done
 
-_FuchsiaMeetingRoomText3::
+_FuchsiaMeetingRoomSafariZoneWorker3::
 	text "RAMOLOSS m'a"
 	line "parlé, mais je ne"
 	cont "comprends rien à"

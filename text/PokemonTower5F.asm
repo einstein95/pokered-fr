@@ -1,4 +1,4 @@
-_PokemonTower5Text1::
+_PokemonTower5FChanneler1Text::
 	text "Approche, enfant!"
 	line "J'ai scellé cet"
 	cont "endroit grâce à"
@@ -9,54 +9,54 @@ _PokemonTower5Text1::
 	line "reposer ici!"
 	done
 
-_PokemonTower5BattleText1::
+_PokemonTower5FChanneler2BattleText::
 	text "Donne...moi..."
 	line "ton...âme..."
 	done
 
-_PokemonTower5EndBattleText1::
+_PokemonTower5FChanneler2EndBattleText::
 	text "Glargh!"
 	prompt
 
-_PokemonTower5AfterBattleText1::
+_PokemonTower5FChanneler2AfterBattleText::
 	text "J'étais possédée!"
 	done
 
-_PokemonTower5BattleText2::
+_PokemonTower5FChanneler3BattleText::
 	text "Viens...avec..."
 	line "nous..."
 	done
 
-_PokemonTower5EndBattleText2::
+_PokemonTower5FChanneler3EndBattleText::
 	text "Hein!"
 	line "J'ai fait un"
 	cont "cauchemar!"
 	prompt
 
-_PokemonTower5AfterBattleText2::
+_PokemonTower5FChanneler3AfterBattleText::
 	text "J'étais possédée!"
 	done
 
-_PokemonTower5BattleText3::
+_PokemonTower5FChanneler4BattleText::
 	text "Zombis!"
 	done
 
-_PokemonTower5EndBattleText3::
+_PokemonTower5FChanneler4EndBattleText::
 	text "Hein?"
 	prompt
 
-_PokemonTower5AfterBattleText3::
+_PokemonTower5FChanneler4AfterBattleText::
 	text "Je suis revenue à"
 	line "la raison!"
 	done
 
-_PokemonTower5BattleText4::
+_PokemonTower5FChanneler5BattleText::
 	text "Poyé Polomi!"
 	line "Le mal est parmi"
 	cont "nous...."
 	done
 
-_PokemonTower5EndBattleText4::
+_PokemonTower5FChanneler5EndBattleText::
 	text "Quoi?"
 	line "Jeune taoïste, tu"
 	cont "oses m'ôter le"
@@ -64,13 +64,13 @@ _PokemonTower5EndBattleText4::
 	cont "bouche!"
 	prompt
 
-_PokemonTower5AfterBattleText4::
+_PokemonTower5FChanneler5AfterBattleText::
 	text "Mon Tao à moi,"
 	line "c'est le plus bô"
 	cont "des Taos!"
 	done
 
-_PokemonTower5Text7::
+_PokemonTower5FPurifiedZoneText::
 	text "Vous pénétrez"
 	line "dans une zone"
 	cont "sanctuaire!"

@@ -1,58 +1,58 @@
-_MoltresBattleText::
+_VictoryRoad2FMoltresBattleText::
 	text "Yahoo!@"
 	text_end
 
-_VictoryRoad2BattleText1::
+_VictoryRoad2FHikerBattleText::
 	text "La ROUTE VICTOIRE"
 	line "est l'épreuve"
 	cont "finale de tout"
 	cont "dresseur!"
 	done
 
-_VictoryRoad2EndBattleText1::
+_VictoryRoad2FHikerEndBattleText::
 	text "Ouargh!"
 	prompt
 
-_VictoryRoad2AfterBattleText1::
+_VictoryRoad2FHikerAfterBattleText::
 	text "Si tu es bloqué,"
 	line "essaie de bouger"
 	cont "les rochers!"
 	done
 
-_VictoryRoad2BattleText2::
+_VictoryRoad2FSuperNerd1BattleText::
 	text "Alors comme ça,"
 	line "tu cherches les"
 	cont "claques?"
 	done
 
-_VictoryRoad2EndBattleText2::
+_VictoryRoad2FSuperNerd1EndBattleText::
 	text "Argh!"
 	line "T'as gagné!"
 	prompt
 
-_VictoryRoad2AfterBattleText2::
+_VictoryRoad2FSuperNerd1AfterBattleText::
 	text "<RIVAL> est aussi"
 	line "arrivé ici!"
 	done
 
-_VictoryRoad2BattleText3::
+_VictoryRoad2FCooltrainerMBattleText::
 	text "Allez, viens"
 	line "manger ta claque!"
 	done
 
-_VictoryRoad2EndBattleText3::
+_VictoryRoad2FCooltrainerMEndBattleText::
 	text "Beuh!"
 	line "J'me suis pris"
 	cont "une claque!"
 	prompt
 
-_VictoryRoad2AfterBattleText3::
+_VictoryRoad2FCooltrainerMAfterBattleText::
 	text "Tu as le droit de"
 	line "parcourir la"
 	cont "ROUTE VICTOIRE!"
 	done
 
-_VictoryRoad2BattleText4::
+_VictoryRoad2FSuperNerd2BattleText::
 	text "Si tu peux"
 	line "remporter ces"
 	cont "épreuves,"
@@ -61,12 +61,12 @@ _VictoryRoad2BattleText4::
 	cont "des 4!"
 	done
 
-_VictoryRoad2EndBattleText4::
+_VictoryRoad2FSuperNerd2EndBattleText::
 	text "Ha!"
 	line "J'y crois pas!"
 	prompt
 
-_VictoryRoad2AfterBattleText4::
+_VictoryRoad2FSuperNerd2AfterBattleText::
 	text "En ce qui"
 	line "concerne les"
 	cont "#MON, j'suis"
@@ -75,18 +75,18 @@ _VictoryRoad2AfterBattleText4::
 	cont "Du mooooonde!"
 	done
 
-_VictoryRoad2BattleText5::
+_VictoryRoad2FSuperNerd3BattleText::
 	text "La ROUTE de la"
 	line "VICTOIRE est une"
 	cont "étape difficile?"
 	done
 
-_VictoryRoad2EndBattleText5::
+_VictoryRoad2FSuperNerd3EndBattleText::
 	text "Bon..."
 	line "J'ai perdu, non?"
 	prompt
 
-_VictoryRoad2AfterBattleText5::
+_VictoryRoad2FSuperNerd3AfterBattleText::
 	text "De nombreux"
 	line "dresseurs ont"
 	cont "abandonné ici!"

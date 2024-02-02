@@ -1,9 +1,9 @@
-_OakAppearsText::
+_PalletTownOakHeyWaitDontGoOutText::
 	text "CHEN: Hé toi, là!"
 	line "Ne pars pas!@"
 	text_end
 
-_OakWalksUpText::
+_PalletTownOakItsUnsafeText::
 	text "CHEN: C'est super"
 	line "dangereux! Des"
 	cont "#MON sauvages"
@@ -18,7 +18,7 @@ _OakWalksUpText::
 	para "Suis-moi!"
 	done
 
-_PalletTownText2::
+_PalletTownGirlText::
 	text "J'élève des"
 	line "#MON, moi"
 	cont "aussi!"
@@ -28,7 +28,7 @@ _PalletTownText2::
 	cont "protéger!"
 	done
 
-_PalletTownText3::
+_PalletTownFisherText::
 	text "Le progrès..."
 	line "C'est dément!"
 
@@ -39,24 +39,24 @@ _PalletTownText3::
 	cont "#MON via PC!"
 	done
 
-_PalletTownText4::
+_PalletTownOaksLabSignText::
 	text "LABO #MON"
 	line "DU PROF. CHEN"
 	done
 
-_PalletTownText5::
+_PalletTownSignText::
 	text "BOURG PALETTE"
 	line "Un monde de"
 	cont "couleurs s'ouvre"
 	cont "à vous!"
 	done
 
-_PalletTownText6::
+_PalletTownPlayersHouseSignText::
 	text "Maison de"
 	line "<PLAYER>"
 	done
 
-_PalletTownText7::
+_PalletTownRivalsHouseSignText::
 	text "Maison de"
 	line "<RIVAL>"
 	done

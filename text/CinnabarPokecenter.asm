@@ -1,4 +1,4 @@
-_CinnabarPokecenterText2::
+_CinnabarPokecenterCooltrainerFText::
 	text "Tu peux empêcher"
 	line "une évolution."
 
@@ -9,7 +9,7 @@ _CinnabarPokecenterText2::
 	cont "comme avant."
 	done
 
-_CinnabarPokecenterText3::
+_CinnabarPokecenterGentlemanText::
 	text "Dis-moi, t'as des"
 	line "copains?"
 

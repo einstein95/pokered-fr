@@ -28,7 +28,7 @@ AttackAnimationPointers:
 	dw JumpKickAnim
 	dw RollingKickAnim
 	dw SandAttackAnim
-	dw HeadButtAnim
+	dw HeadbuttAnim
 	dw HornAttackAnim
 	dw FuryAttackAnim
 	dw HornDrillAnim
@@ -192,7 +192,7 @@ AttackAnimationPointers:
 	dw SleepEnemyAnim
 	dw ConfusedPlayerAnim
 	dw ConfusedEnemyAnim
-	dw FaintAnim
+	dw SlideDownAnim
 	dw BallTossAnim
 	dw BallShakeAnim
 	dw BallPoofAnim
@@ -363,7 +363,7 @@ SandAttackAnim:
 	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
 	db -1 ; end
 
-HeadButtAnim:
+HeadbuttAnim:
 	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
 
@@ -1263,7 +1263,7 @@ BallBlockAnim:
 	battle_anim NO_MOVE, SUBANIM_0_BALL_BLOCK, 0, 3
 	db -1 ; end
 
-FaintAnim:
+SlideDownAnim:
 	battle_anim DIG, SE_SLIDE_MON_DOWN
 	db -1 ; end
 

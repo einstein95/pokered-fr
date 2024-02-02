@@ -2,10 +2,11 @@ Route15Gate2F_Script:
 	jp DisableAutoTextBoxDrawing
 
 Route15Gate2F_TextPointers:
-	dw Route15GateUpstairsText1
-	dw Route15GateUpstairsText2
+	def_text_pointers
+	dw_const Route15Gate2FOaksAideText,   TEXT_ROUTE15GATE2F_OAKS_AIDE
+	dw_const Route15Gate2FBinocularsText, TEXT_ROUTE15GATE2F_BINOCULARS
 
-Route15GateUpstairsText1:
+Route15Gate2FOaksAideText:
 	text_asm
 	CheckEvent EVENT_GOT_EXP_ALL
 	jr nz, .got_item
@@ -15,7 +16,7 @@ Route15GateUpstairsText1:
 	ldh [hOaksAideRewardItem], a
 	ld [wd11e], a
 	call GetItemName
-	ld hl, wcd6d
+	ld hl, wNameBuffer
 	ld de, wOaksAideRewardItemName
 	ld bc, ITEM_NAME_LENGTH
 	call CopyData
@@ -25,20 +26,20 @@ Route15GateUpstairsText1:
 	jr nz, .no_item
 	SetEvent EVENT_GOT_EXP_ALL
 .got_item
-	ld hl, Route15GateUpstairsText_4968c
+	ld hl, .ExpAllText
 	call PrintText
 .no_item
 	jp TextScriptEnd
 
-Route15GateUpstairsText_4968c:
-	text_far _Route15GateUpstairsText_4968c
+.ExpAllText:
+	text_far _Route15Gate2FOaksAideExpAllText
 	text_end
 
-Route15GateUpstairsText2:
+Route15Gate2FBinocularsText:
 	text_asm
-	ld hl, Route15GateUpstairsText_49698
+	ld hl, .Text
 	jp GateUpstairsScript_PrintIfFacingUp
 
-Route15GateUpstairsText_49698:
-	text_far _Route15GateUpstairsText_49698
+.Text:
+	text_far _Route15Gate2FBinocularsText
 	text_end

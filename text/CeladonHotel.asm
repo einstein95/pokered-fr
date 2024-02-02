@@ -1,4 +1,4 @@
-_CeladonHotelText1::
+_CeladonHotelGrannyText::
 	text "Des #MON quoi?"
 	line "C'est un hôtel"
 	cont "ici..."
@@ -6,7 +6,7 @@ _CeladonHotelText1::
 	para "Et c'est complet."
 	done
 
-_CeladonHotelText2::
+_CeladonHotelBeautyText::
 	text "Je suis en"
 	line "vacances avec mon"
 	cont "frère et mon"
@@ -16,7 +16,7 @@ _CeladonHotelText2::
 	line "si belle!"
 	done
 
-_CeladonHotelText3::
+_CeladonHotelSuperNerdText::
 	text "Mais pourquoi y'a"
 	line "son frère?"
 	done

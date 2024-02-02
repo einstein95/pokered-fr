@@ -1,16 +1,16 @@
-_RocketHideout2BattleText2::
+_RocketHideoutB1FRocketBattleText::
 	text "Le chef dit qu'on"
 	line "peut voir les"
 	cont "fantômes avec un"
 	cont "SCOPE SYLPHE!"
 	done
 
-_RocketHideout2EndBattleText2::
+_RocketHideoutB1FRocketEndBattleText::
 	text "STOP!"
 	line "J'me rends!"
 	prompt
 
-_RocketHideout2AfterBattleTxt2::
+_RocketHideoutB1FRocketAfterBattleText::
 	text "Le repaire de la"
 	line "TEAM ROCKET a 4"
 	cont "étages. Pourras-"

@@ -1,4 +1,4 @@
-_SaffronGateText_1dfe7::
+_SaffronGateGuardGeeImThirstyText::
 	text "Je suis de garde"
 	line "mais je crève de"
 	cont "soif!"
@@ -7,7 +7,7 @@ _SaffronGateText_1dfe7::
 	line "fermée. Dégage."
 	done
 
-_SaffronGateText_8aaa9::
+_SaffronGateGuardImParchedText::
 	text "C'que j'ai soif!"
 	line "C'est dingue!"
 	cont "..."
@@ -16,7 +16,7 @@ _SaffronGateText_8aaa9::
 	cont "Merci, p'tit!@"
 	text_end
 
-_SaffronGateText_1dff1::
+_SaffronGateGuardYouCanGoOnThroughText::
 	text_start
 
 	para "..."
@@ -32,7 +32,7 @@ _SaffronGateText_1dff1::
 	cont "gardes!"
 	done
 
-_SaffronGateText_1dff6::
+_SaffronGateGuardThanksForTheDrinkText::
 	text "Salut! Merci"
 	line "pour le verre!"
 	done

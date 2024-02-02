@@ -1,4 +1,4 @@
-_FuchsiaCityText1::
+_FuchsiaCityYoungster1Text::
 	text "Connais-tu le jeu"
 	line "du SAFARI?"
 	cont "Certains #MON"
@@ -6,7 +6,7 @@ _FuchsiaCityText1::
 	cont "qu'à cet endroit."
 	done
 
-_FuchsiaCityText2::
+_FuchsiaCityGamblerText::
 	text "Il y a un zoo"
 	line "devant l'entrée"
 	cont "du PARC SAFARI."
@@ -16,46 +16,46 @@ _FuchsiaCityText2::
 	cont "des #MON."
 	done
 
-_FuchsiaCityText3::
+_FuchsiaCityErikText::
 	text "NICO: Mais où est"
 	line "JULIA? Elle est"
 	cont "tout l'temps à la"
 	cont "bourre."
 	done
 
-_FuchsiaCityText4::
+_FuchsiaCityYoungster2Text::
 	text "Cette BALL est"
 	line "vraiment un"
 	cont "#MON."
 	done
 
-_FuchsiaCityText5::
+_FuchsiaCityPokemonText::
 	text "!"
 	done
 
-_FuchsiaCityText11::
+_FuchsiaCitySignText::
 	text "PARMANIE"
 	line "Rose comme la"
 	cont "passion"
 	done
 
-_FuchsiaCityText13::
+_FuchsiaCitySafariGameSignText::
 	text "JEU DU SAFARI"
 	line "Chope-les tous!"
 	done
 
-_FuchsiaCityText16::
+_FuchsiaCityWardensHomeSignText::
 	text "PARC SAFARI"
 	line "MAISON DU GARDIEN"
 	done
 
-_FuchsiaCityText17::
+_FuchsiaCitySafariZoneSignText::
 	text "LE PARADIS DES"
 	line "#MON"
 	cont "PARC SAFARI"
 	done
 
-_FuchsiaCityText18::
+_FuchsiaCityGymSignText::
 	text "PARMANIE"
 	line "ARENE #MON"
 	cont "CHAMPION: KOGA"
@@ -64,7 +64,7 @@ _FuchsiaCityText18::
 	line "poisons infinis"
 	done
 
-_FuchsiaCityChanseyText::
+_FuchsiaCityChanseySignText::
 	text "Nom: LEVEINARD"
 
 	para "Il faut un bol"
@@ -72,14 +72,14 @@ _FuchsiaCityChanseyText::
 	cont "capturer un."
 	prompt
 
-_FuchsiaCityVoltorbText::
+_FuchsiaCityVoltorbSignText::
 	text "Nom: VOLTORBE"
 
 	para "Portrait craché"
 	line "d'une # BALL."
 	prompt
 
-_FuchsiaCityKangaskhanText::
+_FuchsiaCityKangaskhanSignText::
 	text "Nom: KANGOUREX"
 
 	para "Ce #MON élève"
@@ -87,20 +87,20 @@ _FuchsiaCityKangaskhanText::
 	cont "poche ventrale."
 	prompt
 
-_FuchsiaCitySlowpokeText::
+_FuchsiaCitySlowpokeSignText::
 	text "Nom: RAMOLOSS"
 
 	para "Sympa mais..."
 	line "Méga-lent!"
 	prompt
 
-_FuchsiaCityLaprasText::
+_FuchsiaCityLaprasSignText::
 	text "Nom: LOKHLASS"
 
 	para "Le roi des mers."
 	prompt
 
-_FuchsiaCityOmanyteText::
+_FuchsiaCityFossilSignOmanyteText::
 	text "Nom: AMONITA"
 
 	para "Un #MON créé"
@@ -108,7 +108,7 @@ _FuchsiaCityOmanyteText::
 	cont "fossile."
 	prompt
 
-_FuchsiaCityKabutoText::
+_FuchsiaCityFossilSignKabutoText::
 	text "Nom: KABUTO"
 
 	para "Un #MON créé"
@@ -116,6 +116,6 @@ _FuchsiaCityKabutoText::
 	cont "fossile."
 	prompt
 
-_FuchsiaCityText_19b2a::
+_FuchsiaCityFossilSignUndeterminedText::
 	text "..."
 	done

@@ -1,4 +1,4 @@
-_SafariZoneRestHouse2Text1::
+_SafariZoneWestRestHouseScientistText::
 	text "Une PIERRE peut"
 	line "faire fuir les"
 	cont "#MON mais ils"
@@ -6,13 +6,13 @@ _SafariZoneRestHouse2Text1::
 	cont "ciles à capturer."
 	done
 
-_SafariZoneRestHouse2Text2::
+_SafariZoneWestRestHouseCooltrainerMText::
 	text "Un APPAT peut"
 	line "faciliter vos"
 	cont "captures."
 	done
 
-_SafariZoneRestHouse2Text3::
+_SafariZoneWestRestHouseSilphWorkerFText::
 	text "J'ai cherché"
 	line "toute la sainte"
 	cont "journée mais j'ai"

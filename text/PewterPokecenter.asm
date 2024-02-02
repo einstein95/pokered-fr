@@ -1,4 +1,4 @@
-_PewterPokecenterText2::
+_PewterPokecenterGentlemanText::
 	text "Quoi!?"
 
 	para "La TEAM ROCKET"
@@ -8,7 +8,7 @@ _PewterPokecenterText2::
 	para "Damnation!"
 	done
 
-_PewterJigglypuffText::
+_PewterPokecenterJigglypuffText::
 	text "RONDOUDOU: Dou!"
 	line "Doudouuuu!"
 	done

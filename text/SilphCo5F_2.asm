@@ -1,27 +1,27 @@
-_SilphCo5EndBattleText4::
+_SilphCo5FRockerEndBattleText::
 	text "Non!"
 	line "Mon Dieu!"
 	prompt
 
-_SilphCo5AfterBattleText4::
+_SilphCo5FRockerAfterBattleText::
 	text "Tu n'es qu'au"
 	line "4ème étage!"
 	cont "Le chef est"
 	cont "encore loin!"
 	done
 
-_SilphCo5BattleText5::
+_SilphCo5FRocket2BattleText::
 	text "Cause mieux"
 	line "à la grande"
 	cont "TEAM ROCKET!"
 	done
 
-_SilphCo5EndBattleText5::
+_SilphCo5FRocket2EndBattleText::
 	text "Kheu..."
 	line "Kheu..."
 	prompt
 
-_SilphCo5AfterBattleText5::
+_SilphCo5FRocket2AfterBattleText::
 	text "Ce qui me"
 	line "rappelle..."
 
@@ -29,7 +29,7 @@ _SilphCo5AfterBattleText5::
 	line "SMOGOGO!"
 	done
 
-_SilphCo5Text9::
+_SilphCo5FPokemonReport1Text::
 	text "C'est un RAPPORT"
 	line "sur les #MON!"
 
@@ -39,7 +39,7 @@ _SilphCo5Text9::
 	cont "LABO #MON!"
 	done
 
-_SilphCo5Text10::
+_SilphCo5FPokemonReport2Text::
 	text "C'est un RAPPORT"
 	line "sur les #MON!"
 
@@ -48,7 +48,7 @@ _SilphCo5Text10::
 	cont "les #MON!"
 	done
 
-_SilphCo5Text11::
+_SilphCo5FPokemonReport3Text::
 	text "C'est un RAPPORT"
 	line "sur les #MON!"
 

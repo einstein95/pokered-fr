@@ -1,4 +1,4 @@
-_GiovanniPreBattleText::
+_ViridianGymGiovanniPreBattleText::
 	text "Fwahaha! Te voici"
 	line "dans mon repaire!"
 
@@ -20,7 +20,7 @@ _GiovanniPreBattleText::
 	cont "tu vas déguster!"
 	done
 
-_ReceivedEarthBadgeText::
+_ViridianGymGiovanniReceivedEarthBadgeText::
 	text "Ah!"
 	line "Voilà ce que"
 	cont "j'appelle du"
@@ -30,7 +30,7 @@ _ReceivedEarthBadgeText::
 	cont "le BADGE TERRE!@"
 	text_end
 
-_GiovanniPostBattleAdviceText::
+_ViridianGymGiovanniPostBattleAdviceText::
 	text "OK, j'ai perdu!"
 	line "Je ne suis pas"
 	cont "digne d'être le"
@@ -52,7 +52,7 @@ _GiovanniPostBattleAdviceText::
 	cont "nouveau! Adieu!@"
 	text_end
 
-_GiovanniEarthBadgeInfoText::
+_ViridianGymGiovanniEarthBadgeInfoText::
 	text "Grâce au BADGE"
 	line "TERRE tous les"
 	cont "#MON obéiront"
@@ -75,12 +75,12 @@ _GiovanniEarthBadgeInfoText::
 	cont "dresseurs!"
 	done
 
-_ReceivedTM27Text::
+_ViridianGymGiovanniReceivedTM27Text::
 	text "<PLAYER> reçoit"
 	line "CT27!@"
 	text_end
 
-_TM27ExplanationText::
+_ViridianGymGiovanniTM27ExplanationText::
 	text_start
 
 	para "CT27: ABIME!"
@@ -94,124 +94,124 @@ _TM27ExplanationText::
 	cont "longtemps..."
 	done
 
-_TM27NoRoomText::
+_ViridianGymGiovanniTM27NoRoomText::
 	text "Votre inventaire"
 	line "est plein!"
 	done
 
-_ViridianGymBattleText1::
+_ViridianGymCooltrainerM1BattleText::
 	text "Hé! Tu dois être"
 	line "crevé, non? "
 	done
 
-_ViridianGymEndBattleText1::
+_ViridianGymCooltrainerM1EndBattleText::
 	text "Ha!"
 	line "J'suis essoufflé!"
 	prompt
 
-_ViridianGymAfterBattleText1::
+_ViridianGymCooltrainerM1AfterBattleText::
 	text "Il faut que tu"
 	line "sois fort pour te"
 	cont "mesurer au..."
 	cont "CHAMPION!"
 	done
 
-_ViridianGymBattleText2::
+_ViridianGymHiker1BattleText::
 	text "Groaar!"
 	line "Colère! Viens"
 	cont "te battre!"
 	done
 
-_ViridianGymEndBattleText2::
+_ViridianGymHiker1EndBattleText::
 	text "Rargh!"
 	prompt
 
-_ViridianGymAfterBattleText2::
+_ViridianGymHiker1AfterBattleText::
 	text "Grouargh!"
 	done
 
-_ViridianGymBattleText3::
+_ViridianGymRocker1BattleText::
 	text "Avec mes #MON"
 	line "je fais de la"
 	cont "jolie musique!"
 	done
 
-_ViridianGymEndBattleText3::
+_ViridianGymRocker1EndBattleText::
 	text "Tu es"
 	line "très fort!"
 	prompt
 
-_ViridianGymAfterBattleText3::
+_ViridianGymRocker1AfterBattleText::
 	text "Sais-tu qui est"
 	line "notre CHAMPION?"
 	done
 
-_ViridianGymBattleText4::
+_ViridianGymHiker2BattleText::
 	text "Le Karaté est"
 	line "l'art martial"
 	cont "ultime!"
 	done
 
-_ViridianGymEndBattleText4::
+_ViridianGymHiker2EndBattleText::
 	text "Yaha!"
 	prompt
 
-_ViridianGymAfterBattleText4::
+_ViridianGymHiker2AfterBattleText::
 	text "Mes #MON sont"
 	line "des karatékas..."
 	done
 
-_ViridianGymBattleText5::
+_ViridianGymCooltrainerM2BattleText::
 	text "Je vais t'écraser"
 	line "avec style et"
 	cont "élégance!"
 	done
 
-_ViridianGymEndBattleText5::
+_ViridianGymCooltrainerM2EndBattleText::
 	text "..."
 	line "Tout perdu!"
 	prompt
 
-_ViridianGymAfterBattleText5::
+_ViridianGymCooltrainerM2AfterBattleText::
 	text "Le CHAMPION va"
 	line "me taper dessus!"
 	done
 
-_ViridianGymBattleText6::
+_ViridianGymHiker3BattleText::
 	text "J'suis le ROI du"
 	line "KARATE! Ton"
 	cont "destin repose"
 	cont "entre mes mains!"
 	done
 
-_ViridianGymEndBattleText6::
+_ViridianGymHiker3EndBattleText::
 	text "Yaah!"
 	prompt
 
-_ViridianGymAfterBattleText6::
+_ViridianGymHiker3AfterBattleText::
 	text "La LIGUE #MON?"
 	line "Toi? Hahahahah!!!"
 	cont "T'es un rigolo!"
 	done
 
-_ViridianGymBattleText7::
+_ViridianGymRocker2BattleText::
 	text "Tes #MON vont"
 	line "se courber sous"
 	cont "mes coups de"
 	cont "fouet!"
 	done
 
-_ViridianGymEndBattleText7::
+_ViridianGymRocker2EndBattleText::
 	text "Aïee!"
 	prompt
 
-_ViridianGymAfterBattleText7::
+_ViridianGymRocker2AfterBattleText::
 	text "Attends! Je ne"
 	line "faisais pas"
 	cont "attention!"
 	done
 
-_ViridianGymBattleText8::
+_ViridianGymCooltrainerM3BattleText::
 	text "L'ARENE de"
 	line "JADIELLE était"
 	cont "fermée depuis"
@@ -220,12 +220,12 @@ _ViridianGymBattleText8::
 	cont "enfin revenu!"
 	done
 
-_ViridianGymEndBattleText8::
+_ViridianGymCooltrainerM3EndBattleText::
 	text "!!!"
 	line "Défaite!"
 	prompt
 
-_ViridianGymAfterBattleText8::
+_ViridianGymCooltrainerM3AfterBattleText::
 	text "Tu ne pourras"
 	line "accéder à la"
 	cont "LIGUE #MON"

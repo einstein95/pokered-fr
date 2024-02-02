@@ -1,16 +1,16 @@
-_RocketHideout4Text_4557a::
+_RocketHideoutB4FGiovanniImpressedYouGotHereText::
 	text "Hmm! Tu me"
 	line "surprends. T'es"
 	cont "dans le genre"
 	cont "PENIBLE!"
 	done
 
-_RocketHideout4Text_4557f::
+_RocketHideoutB4FGiovanniWhatCannotBeText::
 	text "QUOI!"
 	line "Damnation!"
 	prompt
 
-_RocketHideout4Text_45584::
+_RocketHideoutB4FGiovanniHopeWeMeetAgainText::
 	text "Tu élèves tes"
 	line "#MON trop"
 	cont "soigneusement."
@@ -28,51 +28,51 @@ _RocketHideout4Text_45584::
 	line "et cette fois..."
 	done
 
-_RocketHideout4BattleText2::
+_RocketHideoutB4FGiovanniBattleText::
 	text "Je te reconnais!"
 	line "Tu as ruiné nos"
 	cont "plans sur le"
 	cont "MONT SELENITE!"
 	done
 
-_RocketHideout4EndBattleText2::
+_RocketHideoutB4FGiovanniEndBattleText::
 	text "Enfer!"
 	line "Et encore enfer!"
 	prompt
 
-_RocketHide4AfterBattleText2::
+_RocketHideoutB4FGiovanniAfterBattleText::
 	text "Je comprends pas,"
 	line "t'aimes pas la"
 	cont "TEAM ROCKET?"
 	done
 
-_RocketHideout4BattleText3::
+_RocketHideoutB4FRocket1BattleText::
 	text "Tu ne trouves pas"
 	line "que nos plans"
 	cont "maléfiques sont"
 	cont "super cool?"
 	done
 
-_RocketHideout4EndBattleText3::
+_RocketHideoutB4FRocket1EndBattleText::
 	text "Ayayargh!"
 	prompt
 
-_RocketHide4AfterBattleText3::
+_RocketHideoutB4FRocket1AfterBattleText::
 	text "CHEF! Pardon!"
 	line "J'ai échoué..."
 	done
 
-_RocketHideout4BattleText4::
+_RocketHideoutB4FRocket2BattleText::
 	text "L'ascenseur ne"
 	line "marche pas? Il"
 	cont "faut la CLE ASC.!"
 	done
 
-_RocketHideout4EndBattleText4::
+_RocketHideoutB4FRocket2EndBattleText::
 	text "Argh!"
 	prompt
 
-_RocketHideout4Text_455ec::
+_RocketHideoutB4FRocket2AfterBattleText::
 	text "Mince! J'ai"
 	line "perdu la "
 	cont "CLE ASC.!"

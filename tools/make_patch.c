@@ -103,12 +103,14 @@ int parse_number(const char *input, int base) {
 
 void parse_symbol_value(char *input, int *restrict bank, int *restrict address) {
 	char *colon = strchr(input, ':');
-	if (!colon) {
-		error_exit("Error: Cannot parse bank+address: \"%s\"\n", input);
+	if (colon) {
+		*colon++ = '\0';
+		*bank = parse_number(input, 16);
+		*address = parse_number(colon, 16);
+	} else {
+		*bank = 0;
+		*address = parse_number(input, 16);
 	}
-	*colon++ = '\0';
-	*bank = parse_number(input, 16);
-	*address = parse_number(colon, 16);
 }
 
 void parse_symbols(const char *filename, struct Symbol **symbols) {
@@ -165,7 +167,7 @@ int strfind(const char *s, const char *list[], int count) {
 	return -1;
 }
 
-#define vstrfind(s, ...) strfind(s, (const char *[]){__VA_ARGS__}, sizeof (const char *[]){__VA_ARGS__} / sizeof(const char *))
+#define vstrfind(s, ...) strfind(s, (const char *[]){__VA_ARGS__}, COUNTOF((const char *[]){__VA_ARGS__}))
 
 int parse_arg_value(const char *arg, bool absolute, const struct Symbol *symbols, const char *patch_name) {
 	// Comparison operators for "ConditionValueB" evaluate to their particular values

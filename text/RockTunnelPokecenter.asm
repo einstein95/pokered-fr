@@ -1,4 +1,4 @@
-_RockTunnelPokecenterText2::
+_RockTunnelPokecenterGentlemanText::
 	text "Les #MON d'un"
 	line "certain élément"
 	cont "sont plus ou"
@@ -6,7 +6,7 @@ _RockTunnelPokecenterText2::
 	cont "d'autres!"
 	done
 
-_RockTunnelPokecenterText3::
+_RockTunnelPokecenterFisherText::
 	text "J'ai vendu une"
 	line "PEPITE pour"
 	cont "5000¥!"

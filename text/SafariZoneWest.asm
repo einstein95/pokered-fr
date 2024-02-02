@@ -1,8 +1,8 @@
-_SafariZoneWestText5::
+_SafariZoneWestRestHouseSignText::
 	text "ABRI"
 	done
 
-_SafariZoneWestText6::
+_SafariZoneWestFindWardensTeethSignText::
 	text "AVIS"
 
 	para "Veuillez trouver"
@@ -16,7 +16,7 @@ _SafariZoneWestText6::
 	cont "GARDIEN."
 	done
 
-_SafariZoneWestText7::
+_SafariZoneWestTrainerTipsText::
 	text "ASTUCE"
 
 	para "Grand concours"
@@ -26,7 +26,7 @@ _SafariZoneWestText7::
 	line "CABANE SECRETE!"
 	done
 
-_SafariZoneWestText8::
+_SafariZoneWestSignText::
 	text "PARC 3"
 	line "EST: PARC CENTRAL"
 	done

@@ -1,4 +1,4 @@
-_ViridianHouseText1::
+_ViridianNicknameHouseBaldingGuyText::
 	text "Trouver des noms,"
 	line "c'est rigolo"
 	cont "mais c'est dur!"
@@ -8,16 +8,16 @@ _ViridianHouseText1::
 	cont "plus faciles."
 	done
 
-_ViridianHouseText2::
+_ViridianNicknameHouseLittleGirlText::
 	text "Mon pôpa aime les"
 	line "#MON aussi."
 	done
 
-_ViridianHouseText_1d5b1::
+_ViridianNicknameHouseSpearowText::
 	text "PIAFFY: Tetweet!"
 	done
 
-_ViridianHouseText4::
+_ViridianNicknameHouseSpearySignText::
 	text "PIAFABEC"
 	line "Nom: PIAFFY"
 	done

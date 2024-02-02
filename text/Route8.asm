@@ -1,61 +1,61 @@
-_Route8BattleText1::
+_Route8SuperNerd1BattleText::
 	text "T'es un bon avec"
 	line "tes #MON."
 	cont "Mais les maths,"
 	cont "tu connais?"
 	done
 
-_Route8EndBattleText1::
+_Route8SuperNerd1EndBattleText::
 	text "Ouch!"
 	line "2 plus 2... 7?"
 	prompt
 
-_Route8AfterBattleText1::
+_Route8SuperNerd1AfterBattleText::
 	text "Je suis meilleur"
 	line "à l'école!"
 	done
 
-_Route8BattleText2::
+_Route8Gambler1BattleText::
 	text "Le sort en est"
 	line "jeté!"
 	done
 
-_Route8EndBattleText2::
+_Route8Gambler1EndBattleText::
 	text "Haaa!"
 	line "Le hasard..."
 	prompt
 
-_Route8AfterBattleText2::
+_Route8Gambler1AfterBattleText::
 	text "Dame chance n'est"
 	line "pas avec moi!"
 	done
 
-_Route8BattleText3::
+_Route8SuperNerd2BattleText::
 	text "Il te faut une"
 	line "bonne stratégie!"
 	done
 
-_Route8EndBattleText3::
+_Route8SuperNerd2EndBattleText::
 	text "Hé!"
 	line "Pas logique!"
 	prompt
 
-_Route8AfterBattleText3::
+_Route8SuperNerd2AfterBattleText::
 	text "D'abord TADMORV"
 	line "et après..."
 	cont "Et puis..."
 	done
 
-_Route8BattleText4::
+_Route8CooltrainerF1BattleText::
 	text "Moi, j'aime les"
 	line "NIDORAN! Yaha!"
 	done
 
-_Route8EndBattleText4::
+_Route8CooltrainerF21EndBattleText::
 	text "Hein?"
 	prompt
 
-_Route8AfterBattleText4::
+_Route8CooltrainerF1AfterBattleText::
 	text "Quand un #MON"
 	line "grandit, il est"
 	cont "gros et moche."
@@ -63,69 +63,69 @@ _Route8AfterBattleText4::
 	cont "tout petits!"
 	done
 
-_Route8BattleText5::
+_Route8SuperNerd3BattleText::
 	text "L'école c'est"
 	line "cool, les #MON"
 	cont "c'est mieux!"
 	done
 
-_Route8EndBattleText5::
+_Route8SuperNerd3EndBattleText::
 	text "Ben..."
 	line "L'école c'est"
 	cont "plus facile!"
 	prompt
 
-_Route8AfterBattleText5::
+_Route8SuperNerd3AfterBattleText::
 	text "On est bloqué"
 	line "ici, aux portes"
 	cont "de SAFRANIA."
 	done
 
-_Route8BattleText6::
+_Route8CooltrainerF2BattleText::
 	text "MIAOUSS est si"
 	line "mignon. Miaou!"
 	done
 
-_Route8EndBattleText6::
+_Route8CooltrainerF2EndBattleText::
 	text "Miaou!"
 	prompt
 
-_Route8AfterBattleText6::
+_Route8CooltrainerF2AfterBattleText::
 	text "Je trouve que"
 	line "ROUCOOL et"
 	cont "RATTATA sont trop"
 	cont "cool!"
 	done
 
-_Route8BattleText7::
+_Route8CooltrainerF3BattleText::
 	text "Je sais, on a"
 	line "l'air idiot"
 	cont "debout!"
 	done
 
-_Route8EndBattleText7::
+_Route8CooltrainerF3EndBattleText::
 	text "Ben..."
 	line "C'est malin ça!"
 	prompt
 
-_Route8AfterBattleText7::
+_Route8CooltrainerF3AfterBattleText::
 	text "Le gardien de la"
 	line "porte de SAFRANIA"
 	cont "ne nous laissera"
 	cont "pas passer!"
 	done
 
-_Route8BattleText8::
+_Route8Gambler2BattleText::
 	text "Je suis un"
 	line "joueur errant!"
 	done
 
-_Route8EndBattleText8::
+_Route8Gambler2EndBattleText::
 	text "J'ai"
 	line "raté le jackpot!"
 	prompt
 
-_Route8AfterBattleText8::
+_Route8Gambler2AfterBattleText::
 	text "Le jeu et les"
 	line "#MON, c'est"
 	cont "comme les"
@@ -135,7 +135,7 @@ _Route8AfterBattleText8::
 	cont "t'arrêter! Fou!"
 	done
 
-_Route8BattleText9::
+_Route8CooltrainerF4BattleText::
 	text "Qu'il est mimi,"
 	line "gentil et trognon"
 	cont "ce #MON!"
@@ -143,21 +143,21 @@ _Route8BattleText9::
 	cont "Hein? A qui?"
 	done
 
-_Route8EndBattleText9::
+_Route8CooltrainerF4EndBattleText::
 	text "Arrête!"
 
 	para "T'es pas gentil"
 	line "avec MELOFEE!"
 	prompt
 
-_Route8AfterBattleText9::
+_Route8CooltrainerF4AfterBattleText::
 	text "Il paraît que"
 	line "MELOFEE peut"
 	cont "évoluer grâce à "
 	cont "une PIERRE LUNE."
 	done
 
-_Route8Text10::
+_Route8UndergroundSignText::
 	text "SOUTERRAIN"
 	line "CELADOPOLE -"
 	cont "LAVANVILLE"

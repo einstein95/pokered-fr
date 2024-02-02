@@ -1,11 +1,11 @@
-_CinnabarMartText2::
+_CinnabarMartSilphWorkerFText::
 	text "Ils n'ont pas de"
 	line "ATTAQUE +? C'est"
 	cont "vachement balèze"
 	cont "dans les bastons!"
 	done
 
-_CinnabarMartText3::
+_CinnabarMartScientistText::
 	text "Ca fait pas de"
 	line "mal d'être plein"
 	cont "d'objets! Ca fait"

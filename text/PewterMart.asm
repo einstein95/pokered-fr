@@ -1,4 +1,4 @@
-_PewterMartText2::
+_PewterMartYoungsterText::
 	text "Un vieil homme"
 	line "m'a vendu cet"
 	cont "étrange poisson"
@@ -9,7 +9,7 @@ _PewterMartText2::
 	cont "500¥!"
 	done
 
-_PewterMartText3::
+_PewterMartSuperNerdText::
 	text "Si tu élèves bien"
 	line "tes #MON, même"
 	cont "les plus faibles,"
