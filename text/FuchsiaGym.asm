@@ -21,7 +21,7 @@ _FuchsiaGymKogaBeforeBattleText::
 _FuchsiaGymKogaReceivedSoulBadgeText::
 	text "Gwaha...heu?"
 	line "Tu as prouvé ta"
-	cont "valeur!
+	cont "valeur!"
 
 	para "Ouvre ta mimine"
 	line "car voici..."
