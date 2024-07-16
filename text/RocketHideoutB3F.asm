@@ -17,7 +17,7 @@ _RocketHideoutB3FRocket1AfterBattleText::
 	cont "quelque part..."
 	done
 
-_RocketHideout3BattleTxt::
+_RocketHideout3BattleText::
 	text "On nous a"
 	line "prévenus de ton"
 	cont "arrivée!"
