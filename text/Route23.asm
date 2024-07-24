@@ -3,12 +3,12 @@ _Route23YouDontHaveTheBadgeYetText::
 	line "sur présentation"
 	cont "d'un..."
 	cont "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 
 	para "Tu n'as pas le"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 
 	para "Il te le faut"
@@ -21,12 +21,12 @@ _Route23OhThatIsTheBadgeText::
 	line "sur présentation"
 	cont "d'un..."
 	cont "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 
 	para "Oh! Mais c'est le"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!@"
 	text_end
 

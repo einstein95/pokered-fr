@@ -18,7 +18,7 @@ _NameRatersHouseNameRaterWhichPokemonText::
 	prompt
 
 _NameRatersHouseNameRaterGiveItANiceNameText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "?"
 	line "Mouais, c'est pas"
 	cont "mal!"
@@ -60,7 +60,7 @@ _NameRatersHouseNameRaterComeAnyTimeYouLikeText::
 	done
 
 _NameRatersHouseNameRaterATrulyImpeccableNameText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "?"
 	line "C'est un nom"
 	cont "parfait, fais-moi"
@@ -69,6 +69,6 @@ _NameRatersHouseNameRaterATrulyImpeccableNameText::
 
 	para "Prends soin de"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 	done

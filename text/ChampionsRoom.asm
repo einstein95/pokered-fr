@@ -104,7 +104,7 @@ _ChampionsRoomOakCongratulatesPlayerText::
 	para "Tu as tant changé"
 	line "depuis ton départ"
 	cont "avec @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 
 	para "<PLAYER>, tu es"
