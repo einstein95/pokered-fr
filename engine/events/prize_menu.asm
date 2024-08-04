@@ -219,7 +219,7 @@ HandlePrizeChoice:
 	jr .subtractCoins
 .giveMon
 	ld a, [wd11e]
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	push af
 	call GetPrizeMonLevel
 	ld c, a
@@ -284,7 +284,7 @@ OhFineThenTextPtr:
 	text_end
 
 GetPrizeMonLevel:
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	ld b, a
 	ld hl, PrizeMonLevelDictionary
 .loop
