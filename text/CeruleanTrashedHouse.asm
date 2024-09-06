@@ -1,4 +1,4 @@
-_CeruleanTrashedText_1d6ab::
+_CeruleanTrashedHouseFishingGuruTheyStoleATMText::
 	text "Ces ROCKET, ils"
 	line "sont si méchants!"
 
@@ -16,7 +16,7 @@ _CeruleanTrashedText_1d6ab::
 	line "yeux de la tête!"
 	done
 
-_CeruleanTrashedText_1d6b0::
+_CeruleanTrashedHouseFishingGuruWhatsLostIsLostText::
 	text "Contre mauvaise"
 	line "fortune bon"
 	cont "coeur!"
@@ -27,7 +27,7 @@ _CeruleanTrashedText_1d6b0::
 	cont "TUNNELS sans CT!"
 	done
 
-_CeruleanHouseTrashedText2::
+_CeruleanTrashedHouseGirlText::
 	text "La TEAM ROCKET"
 	line "doit maintenant"
 	cont "creuser des"
@@ -35,7 +35,7 @@ _CeruleanHouseTrashedText2::
 	cont "ce qui bouge!"
 	done
 
-_CeruleanHouseTrashedText3::
+_CeruleanTrashedHouseWallHoleText::
 	text "La TEAM ROCKET a"
 	line "creusé une"
 	cont "nouvelle sortie!"

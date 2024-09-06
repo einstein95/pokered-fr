@@ -1,4 +1,4 @@
-_Route11GateText1::
+_Route11Gate1FGuardText::
 	text "C'est dur de"
 	line "donner un surnom"
 	cont "sympa à ses jolis"

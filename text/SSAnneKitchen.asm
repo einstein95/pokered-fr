@@ -1,4 +1,4 @@
-_SSAnne6Text1::
+_SSAnneKitchenCook1Text::
 	text "Hé! Le mouflet,"
 	line "y'en a qui bossent"
 
@@ -6,19 +6,19 @@ _SSAnne6Text1::
 	line "Alors dégage!"
 	done
 
-_SSAnne6Text2::
+_SSAnneKitchenCook2Text::
 	text "J'ai vu une Ball"
 	line "bizarre dans la"
 	cont "poubelle..."
 	done
 
-_SSAnne6Text3::
+_SSAnneKitchenCook3Text::
 	text "J'ai trop de"
 	line "boulot! J'en ai"
 	cont "des vertiges!"
 	done
 
-_SSAnne6Text4::
+_SSAnneKitchenCook4Text::
 	text "Pourquoi?"
 	line "Pourquoi moi?"
 
@@ -27,7 +27,7 @@ _SSAnne6Text4::
 	cont "d'patates..."
 	done
 
-_SSAnne6Text5::
+_SSAnneKitchenCook5Text::
 	text "Tu connais"
 	line "RONFLEX?"
 
@@ -36,7 +36,7 @@ _SSAnne6Text5::
 	cont "et à pioncer!"
 	done
 
-_SSAnne6Text6::
+_SSAnneKitchenCook6Text::
 	text "Sniff... "
 	line "...sniff..."
 
@@ -44,14 +44,14 @@ _SSAnne6Text6::
 	line "des oignons..."
 	done
 
-_SSAnne6Text_61807::
+_SSAnneKitchenCook7MainCourseIsText::
 	text "Hm, hm! Je suis"
 	line "le chef cuistot!"
 
 	para "Voilà le menu:"
 	prompt
 
-_SSAnne6Text_6180c::
+SSAnneKitchenCook7SalmonDuSaladText::
 	text "Salade de saumon!"
 
 	para "Pour ceux qui ne"
@@ -60,7 +60,7 @@ _SSAnne6Text_6180c::
 	cont "chose!"
 	done
 
-_SSAnne6Text_61811::
+SSAnneKitchenCook7EelsAuBarbecueText::
 	text "Pâté d'anguilles!"
 
 	para "De quoi donner"
@@ -68,7 +68,7 @@ _SSAnne6Text_61811::
 	cont "mutinerie!"
 	done
 
-_SSAnne6Text_61816::
+SSAnneKitchenCook7PrimeBeefSteakText::
 	text "Côtes de boeuf!"
 
 	para "Mais je crois"

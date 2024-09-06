@@ -8,12 +8,13 @@ RocketHideoutB2F_Script:
 	ret
 
 RocketHideoutB2F_ScriptPointers:
-	dw RocketHideout2Script0
-	dw DisplayEnemyTrainerTextAndStartBattle
-	dw EndTrainerBattle
-	dw RocketHideout2Script3
+	def_script_pointers
+	dw_const RocketHideoutB2FDefaultScript,         SCRIPT_ROCKETHIDEOUTB2F_DEFAULT
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_ROCKETHIDEOUTB2F_START_BATTLE
+	dw_const EndTrainerBattle,                      SCRIPT_ROCKETHIDEOUTB2F_END_BATTLE
+	dw_const RocketHideoutB2FPlayerSpinningScript,  SCRIPT_ROCKETHIDEOUTB2F_PLAYER_SPINNING
 
-RocketHideout2Script0:
+RocketHideoutB2FDefaultScript:
 	ld a, [wYCoord]
 	ld b, a
 	ld a, [wXCoord]
@@ -22,14 +23,14 @@ RocketHideout2Script0:
 	call DecodeArrowMovementRLE
 	cp $ff
 	jp z, CheckFightingMapTrainers
-	ld hl, wd736
-	set 7, [hl]
+	ld hl, wMovementFlags
+	set BIT_SPINNING, [hl]
 	call StartSimulatingJoypadStates
 	ld a, SFX_ARROW_TILES
 	call PlaySound
-	ld a, $ff
+	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
-	ld a, $3
+	ld a, SCRIPT_ROCKETHIDEOUTB2F_PLAYER_SPINNING
 	ld [wCurMapScript], a
 	ret
 
@@ -255,47 +256,48 @@ RocketHideout2ArrowMovement36:
 	db D_LEFT, 5
 	db -1 ; end
 
-RocketHideout2Script3:
+RocketHideoutB2FPlayerSpinningScript:
 	ld a, [wSimulatedJoypadStatesIndex]
 	and a
 	jr nz, LoadSpinnerArrowTiles
 	xor a
 	ld [wJoyIgnore], a
-	ld hl, wd736
-	res 7, [hl]
-	ld a, $0
+	ld hl, wMovementFlags
+	res BIT_SPINNING, [hl]
+	ld a, SCRIPT_ROCKETHIDEOUTB2F_DEFAULT
 	ld [wCurMapScript], a
 	ret
 
 INCLUDE "engine/overworld/spinners.asm"
 
 RocketHideoutB2F_TextPointers:
-	dw RocketHideout2Text1
-	dw PickUpItemText
-	dw PickUpItemText
-	dw PickUpItemText
-	dw PickUpItemText
+	def_text_pointers
+	dw_const RocketHideoutB2FRocketText, TEXT_ROCKETHIDEOUTB2F_ROCKET
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_MOON_STONE
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_NUGGET
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_TM_HORN_DRILL
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_SUPER_POTION
 
 RocketHideout2TrainerHeaders:
 	def_trainers
 RocketHideout2TrainerHeader0:
-	trainer EVENT_BEAT_ROCKET_HIDEOUT_2_TRAINER_0, 4, RocketHideout2BattleText2, RocketHideout2EndBattleText2, RocketHideout2AfterBattleTxt2
+	trainer EVENT_BEAT_ROCKET_HIDEOUT_2_TRAINER_0, 4, RocketHideoutB1FRocketBattleText, RocketHideoutB1FRocketEndBattleText, RocketHideoutB1FRocketAfterBattleText
 	db -1 ; end
 
-RocketHideout2Text1:
+RocketHideoutB2FRocketText:
 	text_asm
 	ld hl, RocketHideout2TrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
-RocketHideout2BattleText2:
-	text_far _RocketHideout2BattleText2
+RocketHideoutB1FRocketBattleText:
+	text_far _RocketHideoutB1FRocketBattleText
 	text_end
 
-RocketHideout2EndBattleText2:
-	text_far _RocketHideout2EndBattleText2
+RocketHideoutB1FRocketEndBattleText:
+	text_far _RocketHideoutB1FRocketEndBattleText
 	text_end
 
-RocketHideout2AfterBattleTxt2:
-	text_far _RocketHideout2AfterBattleTxt2
+RocketHideoutB1FRocketAfterBattleText:
+	text_far _RocketHideoutB1FRocketAfterBattleText
 	text_end

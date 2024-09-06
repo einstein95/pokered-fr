@@ -1,4 +1,4 @@
-_FuchsiaMartText2::
+_FuchsiaMartMiddleAgedManText::
 	text "As-tu une affiche"
 	line "du PARC SAFARI?"
 
@@ -6,7 +6,7 @@ _FuchsiaMartText2::
 	line "Et des almanachs?"
 	done
 
-_FuchsiaMartText3::
+_FuchsiaMartCooltrainerFText::
 	text "Tu connais la"
 	line "VITESSE +? Elle"
 	cont "augmente la"

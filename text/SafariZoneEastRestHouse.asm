@@ -1,10 +1,10 @@
-_SafariZoneRestHouse3Text1::
+_SafariZoneEastRestHouseScientistText::
 	text "T'en as capturé"
 	line "combien? Moi"
 	cont "j'suis naze!"
 	done
 
-_SafariZoneRestHouse3Text2::
+_SafariZoneEastRestHouseRockerText::
 	text "J'ai trouvé un"
 	line "LEVEINARD!"
 
@@ -13,7 +13,7 @@ _SafariZoneRestHouse3Text2::
 	cont "pendant 4 heures!"
 	done
 
-_SafariZoneRestHouse3Text3::
+_SafariZoneEastRestHouseSilphWorkerMText::
 	text "Pffff!"
 	line "J'en ai marre!"
 	done

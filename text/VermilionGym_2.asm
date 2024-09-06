@@ -1,4 +1,4 @@
-_LTSurgePostBattleAdviceText::
+_VermilionGymLTSurgePostBattleAdviceText::
 	text "Un p'tit conseil,"
 	line "gamin!"
 
@@ -11,7 +11,7 @@ _LTSurgePostBattleAdviceText::
 	cont "la terre!"
 	done
 
-_LTSurgeThunderBadgeInfoText::
+_VermilionGymLTSurgeThunderBadgeInfoText::
 	text "Le BADGEFOUDRE"
 	line "augmente la"
 	cont "VITESSE de tes"
@@ -26,7 +26,7 @@ _LTSurgeThunderBadgeInfoText::
 	cont "Prends ça!"
 	done
 
-_ReceivedTM24Text::
+_VermilionGymLTSurgeReceivedTM24Text::
 	text "<PLAYER> reçoit:"
 	line "@"
 	text_ram wStringBuffer
@@ -43,14 +43,14 @@ _TM24ExplanationText::
 	cont "foudre!"
 	done
 
-_TM24NoRoomText::
+_VermilionGymLTSurgeTM24NoRoomText::
 	text "Revue d'paquetage"
 	line "p'tit gars, ton"
 	cont "inventaire est"
 	cont "plein!"
 	done
 
-_ReceivedThunderBadgeText::
+_VermilionGymLTSurgeReceivedThunderBadgeText::
 	text "Whoo!"
 
 	para "Gard'vous! T'es"
@@ -61,19 +61,19 @@ _ReceivedThunderBadgeText::
 	line "le BADGEFOUDRE!"
 	prompt
 
-_VermilionGymBattleText1::
+_VermilionGymGentlemanBattleText::
 	text "Dans l'armée, le"
 	line "MAJOR BOB était"
 	cont "mon instructeur"
 	cont "de combat!"
 	done
 
-_VermilionGymEndBattleText1::
+_VermilionGymGentlemanEndBattleText::
 	text "Stop!"
 	line "Tu es fort!"
 	prompt
 
-_VermilionGymAfterBattleText1::
+_VermilionGymGentlemanAfterBattleText::
 	text "Les portes ne"
 	line "s'ouvrent pas?"
 
@@ -81,19 +81,19 @@ _VermilionGymAfterBattleText1::
 	line "est prudent!"
 	done
 
-_VermilionGymBattleText2::
+_VermilionGymSuperNerdBattleText::
 	text "J'suis un poids"
 	line "plume, mais je"
 	cont "suis bon avec"
 	cont "l'électricité!"
 	done
 
-_VermilionGymEndBattleText2::
+_VermilionGymSuperNerdEndBattleText::
 	text "Argh!"
 	line "J'suis cuit!"
 	prompt
 
-_VermilionGymAfterBattleText2::
+_VermilionGymSuperNerdAfterBattleText::
 	text "OK, je parle!"
 
 	para "Le MAJOR BOB a"
@@ -103,19 +103,19 @@ _VermilionGymAfterBattleText2::
 	cont "...Quequ'part!"
 	done
 
-_VermilionGymBattleText3::
+_VermilionGymSailorBattleText::
 	text "C'est pas un"
 	line "endroit pour les"
 	cont "gamins, ici!"
 	done
 
-_VermilionGymEndBattleText3::
+_VermilionGymSailorEndBattleText::
 	text "Argh!"
 	line "Tu m'as eu par"
 	cont "surprise!"
 	prompt
 
-_VermilionGymAfterBattleText3::
+_VermilionGymSailorAfterBattleText::
 	text "Il y a une double"
 	line "sécurité! Voici"
 	cont "un indice!"
@@ -125,7 +125,7 @@ _VermilionGymAfterBattleText3::
 	cont "est à côté!"
 	done
 
-_VermilionGymGuidePreBattleText::
+_VermilionGymGymGuideChampInMakingText::
 	text "Salut! Champion"
 	line "en herbe!"
 
@@ -157,7 +157,7 @@ _VermilionGymGuidePreBattleText::
 	cont "lui!"
 	done
 
-_VermilionGymGuidePostBattleText::
+_VermilionGymGymGuideBeatLTSurgeText::
 	text "Wouh! Ce match"
 	line "était survolté!"
 	done

@@ -1,4 +1,4 @@
-_SSAnne2Text1::
+_SSAnne2FWaiterText::
 	text "Ce luxueux bateau"
 	line "accueille tous"
 	cont "les dresseurs!"
@@ -9,7 +9,7 @@ _SSAnne2Text1::
 	cont "les dresseurs!"
 	done
 
-_SSAnneRivalBeforeBattleText::
+_SSAnne2FRivalText::
 	text "<RIVAL>: Salut!"
 	line "<PLAYER>!"
 
@@ -34,7 +34,7 @@ _SSAnneRivalBeforeBattleText::
 	cont "herbes!"
 	done
 
-_SSAnneRivalDefeatedText::
+_SSAnne2FRivalDefeatedText::
 	text "Mouaff!"
 
 	para "Au moins, tu"
@@ -42,7 +42,7 @@ _SSAnneRivalDefeatedText::
 	cont "#MON!"
 	prompt
 
-_SSAnneRivalWonText::
+_SSAnne2FRivalVictoryText::
 	text "<PLAYER>! Tu as"
 	line "le mal de mer?"
 
@@ -51,7 +51,7 @@ _SSAnneRivalWonText::
 	cont "Minable!"
 	prompt
 
-_SSAnneRivalCaptainText::
+_SSAnne2FRivalCutMasterText::
 	text "<RIVAL>: Il y"
 	line "a le maître de la"
 	cont "technique COUPE"

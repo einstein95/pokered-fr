@@ -1,4 +1,4 @@
-_ViridianForestExitText1::
+_ViridianForestNorthGateSuperNerdText::
 	text "De nombreux"
 	line "#MON vivent"
 	cont "uniquement dans"
@@ -10,7 +10,7 @@ _ViridianForestExitText1::
 	cont "les avoir!"
 	done
 
-_ViridianForestExitText2::
+_ViridianForestNorthGateGrampsText::
 	text "As-tu remarqué"
 	line "les buissons sur"
 	cont "la route?"

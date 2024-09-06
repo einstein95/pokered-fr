@@ -1,4 +1,4 @@
-_SabrinaPreBattleText::
+_SaffronGymSabrinaText::
 	text "J'avais prédit"
 	line "ton arrivée!"
 
@@ -21,7 +21,7 @@ _SabrinaPreBattleText::
 	cont "mes pouvoirs!"
 	done
 
-_ReceivedMarshBadgeText::
+_SaffronGymSabrinaReceivedMarshBadgeText::
 	text "Ha!"
 	line "Je suis surprise!"
 	cont "Tu as gagné."
@@ -36,7 +36,7 @@ _ReceivedMarshBadgeText::
 	line "BADGE MARAIS!@"
 	text_end
 
-_SabrinaPostBattleAdviceText::
+_SaffronGymSabrinaPostBattleAdviceText::
 	text "Tout le monde est"
 	line "un peu médium!"
 	cont "Il faut juste"
@@ -44,7 +44,7 @@ _SabrinaPostBattleAdviceText::
 	cont "dons!"
 	done
 
-_KogaMarshBadgeInfoText::
+_SaffronGymSabrinaMarshBadgeInfoText::
 	text "Avec le BADGE"
 	line "MARAIS, les"
 	cont "#MON de niveau"
@@ -64,7 +64,7 @@ _KogaMarshBadgeInfoText::
 	line "aussi!"
 	done
 
-_ReceivedTM46Text::
+_SaffronGymSabrinaReceivedTM46Text::
 	text "<PLAYER> obtient:"
 	line "CT46!@"
 	text_end
@@ -78,12 +78,12 @@ _TM46ExplanationText::
 	cont "dévastatrice!"
 	done
 
-_TM46NoRoomText::
+_SaffronGymSabrinaTM46NoRoomText::
 	text "Ton inventaire"
 	line "est plein!"
 	done
 
-_SaffronGymGuidePreBattleText::
+_SaffronGymGuideChampInMakingText::
 	text "Salut! Graine de"
 	line "champion!"
 
@@ -102,7 +102,7 @@ _SaffronGymGuidePreBattleText::
 	cont "un coup!"
 	done
 
-_SaffronGymGuidePostBattleText::
+_SaffronGymGuideBeatSabrinaText::
 	text "Pouvoirs psy?"
 	line "Hmmm..."
 
@@ -110,19 +110,19 @@ _SaffronGymGuidePostBattleText::
 	line "gagnerais!"
 	done
 
-_SaffronGymBattleText1::
+_SaffronGymChanneler1BattleText::
 	text "MORGANE est une"
 	line "petite parvenue!"
 	cont "Mais je l'aime"
 	cont "bien!"
 	done
 
-_SaffronGymEndBattleText1::
+_SaffronGymChanneler1EndBattleText::
 	text "Rhhâ!"
 	line "J'suis nulle!"
 	prompt
 
-_SaffronGymAfterBattleText1::
+_SaffronGymChanneler1AfterBattleText::
 	text "Dans une baston,"
 	line "ce qui est"
 	cont "important, c'est"
@@ -135,26 +135,26 @@ _SaffronGymAfterBattleText1::
 	cont "la victoire!"
 	done
 
-_SaffronGymBattleText2::
+_SaffronGymYoungster1BattleText::
 	text "Nos pouvoirs"
 	line "occultes te font"
 	cont "peur?"
 	done
 
-_SaffronGymEndBattleText2::
+_SaffronGymYoungster1EndBattleText::
 	text "Nyan!"
 	line "T'as pas l'air"
 	cont "effrayé!"
 	prompt
 
-_SaffronGymAfterBattleText2::
+_SaffronGymYoungster1AfterBattleText::
 	text "Les #MON psy"
 	line "craignent les"
 	cont "insectes et les"
 	cont "fantômes!"
 	done
 
-_SaffronGymBattleText3::
+_SaffronGymChanneler2BattleText::
 	text "L'aura du maître"
 	line "déteint sur ses"
 	cont "#MON."
@@ -163,54 +163,54 @@ _SaffronGymBattleText3::
 	line "forts, non?"
 	done
 
-_SaffronGymEndBattleText3::
+_SaffronGymChanneler2EndBattleText::
 	text "Argh!"
 	line "Je l'savais!"
 	prompt
 
-_SaffronGymAfterBattleText3::
+_SaffronGymChanneler2AfterBattleText::
 	text "Les attaques de"
 	line "mes #MON ne"
 	cont "sont pas assez"
 	cont "fortes!"
 	done
 
-_SaffronGymBattleText4::
+_SaffronGymYoungster2BattleText::
 	text "La puissance sans"
 	line "maîtrise n'est"
 	cont "rien!"
 	done
 
-_SaffronGymEndBattleText4::
+_SaffronGymYoungster2EndBattleText::
 	text "Huh!"
 	line "J'appelle pas ça"
 	cont "rien!"
 	prompt
 
-_SaffronGymAfterBattleText4::
+_SaffronGymYoungster2AfterBattleText::
 	text "MORGANE a"
 	line "pulvérisé le"
 	cont "grand MAITRE de"
 	cont "KARATE!"
 	done
 
-_SaffronGymBattleText5::
+_SaffronGymChanneler3BattleText::
 	text "Toi...Moi..."
 	line "Nos #MON..."
 	cont "FIGHT!"
 	done
 
-_SaffronGymEndBattleText5::
+_SaffronGymChanneler3EndBattleText::
 	text "Puff!"
 	line "J'ai perdu!"
 	prompt
 
-_SaffronGymAfterBattleText5::
+_SaffronGymChanneler3AfterBattleText::
 	text "J'avais prévu ce"
 	line "qui s'est passé."
 	done
 
-_SaffronGymBattleText6::
+_SaffronGymYoungster3BattleText::
 	text "MORGANE est jeune"
 	line "mais elle est"
 	cont "aussi notre"
@@ -222,12 +222,12 @@ _SaffronGymBattleText6::
 	cont "l'atteindre!"
 	done
 
-_SaffronGymEndBattleText6::
+_SaffronGymYoungster3EndBattleText::
 	text "Oups!"
 	line "J'ai rien capté!"
 	prompt
 
-_SaffronGymAfterBattleText6::
+_SaffronGymYoungster3AfterBattleText::
 	text "Il y avait deux"
 	line "ARENES #MON à"
 	cont "SAFRANIA."
@@ -239,7 +239,7 @@ _SaffronGymAfterBattleText6::
 	cont "pulvérisé!"
 	done
 
-_SaffronGymBattleText7::
+_SaffronGymYoungster4BattleText::
 	text "Le CHAMPION de"
 	line "l'ARENE #MON"
 	cont "de SAFRANIA est"
@@ -252,11 +252,11 @@ _SaffronGymBattleText7::
 	cont "Vilain crapaud!"
 	done
 
-_SaffronGymEndBattleText7::
+_SaffronGymYoungster4EndBattleText::
 	text "Arrrgh!"
 	prompt
 
-_SaffronGymAfterBattleText7::
+_SaffronGymYoungster4AfterBattleText::
 	text "J'ai lu dans ton"
 	line "esprit! C'est pas"
 	cont "très bien rangé"

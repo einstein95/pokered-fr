@@ -1,4 +1,4 @@
-_CeladonMansion5Text1::
+_CeladonMansionRoofHouseHikerText::
 	text "Je sais tout sur"
 	line "le monde des"
 	cont "#MON et sur ta"

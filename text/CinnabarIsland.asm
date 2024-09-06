@@ -1,9 +1,9 @@
-_CinnabarIslandText8::
+_CinnabarIslandDoorIsLockedText::
 	text "La porte est"
 	line "fermée..."
 	done
 
-_CinnabarIslandText1::
+_CinnabarIslandGirlText::
 	text "AUGUSTE,"
 	line "de l'ARENE de"
 	cont "CRAMOIS'ILE, vit"
@@ -13,24 +13,24 @@ _CinnabarIslandText1::
 	cont "étrange..."
 	done
 
-_CinnabarIslandText2::
+_CinnabarIslandGamblerText::
 	text "Des scientifiques"
 	line "font de drôles"
 	cont "d'expériences"
 	cont "dans l'coin."
 	done
 
-_CinnabarIslandText3::
+_CinnabarIslandSignText::
 	text "CRAMOIS'ILE"
 	line "Vive comme les"
 	cont "flammes"
 	done
 
-_CinnabarIslandText6::
+_CinnabarIslandPokemonLabSignText::
 	text "LABO #MON"
 	done
 
-_CinnabarIslandText7::
+_CinnabarIslandGymSignText::
 	text "CRAMOIS'ILE"
 	line "ARENE #MON"
 	cont "CHAMPION: AUGUSTE"

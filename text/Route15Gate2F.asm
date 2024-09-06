@@ -1,4 +1,4 @@
-_Route15GateUpstairsText_4968c::
+_Route15Gate2FOaksAideExpAllText::
 	text "MULTI. EXP"
 	line "distribue l'EXP à"
 	cont "tous tes #MON,"
@@ -15,7 +15,7 @@ _Route15GateUpstairsText_4968c::
 	cont "dans ton PC."
 	done
 
-_Route15GateUpstairsText_49698::
+_Route15Gate2FBinocularsText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."

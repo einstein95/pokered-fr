@@ -1,9 +1,9 @@
-_CeladonMartRoofText_484ee::
+_CeladonMartRoofLittleGirlGiveHerWhichDrinkText::
 	text "Quelle boisson"
 	line "lui offrir?"
 	done
 
-_CeladonMartRoofText_484f3::
+_CeladonMartRoofLittleGirlYayFreshWaterText::
 	text "Ouais ouais!"
 
 	para "DE L'EAU!"
@@ -13,14 +13,15 @@ _CeladonMartRoofText_484f3::
 	para "Tiens...c'est"
 	line "pour toi!@"
 	text_end
-_CeladonMartRoofText_484f9::
+
+_CeladonMartRoofLittleGirlReceivedTM13Text::
 	text "<PLAYER> reçoit"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_CeladonMartRoofText_484fe::
+_CeladonMartRoofLittleGirlTM13ExplanationText::
 	text_start
 
 	para "@"
@@ -33,7 +34,7 @@ _CeladonMartRoofText_484fe::
 	cont "l'ennemi!@"
 	text_end
 
-_CeladonMartRoofText_48504::
+_CeladonMartRoofLittleGirlYaySodaPopText::
 	text "Ouaiiis!"
 
 	para "Du SODA COOL!"
@@ -43,14 +44,14 @@ _CeladonMartRoofText_48504::
 	para "Tiens, prends ça!@"
 	text_end
 
-_CeladonMartRoofText_4850a::
+_CeladonMartRoofLittleGirlReceivedTM48Text::
 	text "<PLAYER> reçoit"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_CeladonMartRoofText_4850f::
+_CeladonMartRoofLittleGirlTM48ExplanationText::
 	text_start
 
 	para "@"
@@ -63,7 +64,7 @@ _CeladonMartRoofText_4850f::
 	cont "à l'ennemi!@"
 	text_end
 
-_CeladonMartRoofText_48515::
+_CeladonMartRoofLittleGirlYayLemonadeText::
 	text "Ouaiiis!"
 
 	para "D'la LIMONADE!"
@@ -73,29 +74,29 @@ _CeladonMartRoofText_48515::
 	para "V'là pour toi!@"
 	text_end
 
-_ReceivedTM49Text::
+_CeladonMartRoofLittleGirlReceivedTM49Text::
 	text "<PLAYER> reçoit:"
 	line "CT49!@"
 	text_end
 
-_CeladonMartRoofText_48520::
+_CeladonMartRoofLittleGirlTM49ExplanationText::
 	text_start
 
 	para "TM49..."
 	line "TRIPLATTAQUE!@"
 	text_end
 
-_CeladonMartRoofText_48526::
+_CeladonMartRoofLittleGirlNoRoomText::
 	text "Plus de place!@"
 	text_end
 
-_CeladonMartRoofText_4852c::
+_CeladonMartRoofLittleGirlImNotThirstyText::
 	text "Heu..."
 	line "Non merci."
 	cont "A pu soif!@"
 	text_end
 
-_CeladonMartRoofText1::
+_CeladonMartRoofSuperNerdText::
 	text "Ma soeur est"
 	line "dresseur. Tu le"
 	cont "crois, ça?"
@@ -105,17 +106,17 @@ _CeladonMartRoofText1::
 	cont "Elle m'agace!"
 	done
 
-_CeladonMartRoofText_48598::
+_CeladonMartRoofLittleGirlImThirstyText::
 	text "N'ai soif!"
 	line "Ne veux boire!"
 	done
 
-_CeladonMartRoofText4::
+_CeladonMartRoofLittleGirlGiveHerADrinkText::
 	text "N'ai soif!"
 	line "Ne veux boire!"
 	done
 
-_CeladonMartRoofText6::
+_CeladonMartRoofCurrentFloorSignText::
 	text "DERNIER ETAGE:"
 	line "DISTRIBUTEURS"
 	done

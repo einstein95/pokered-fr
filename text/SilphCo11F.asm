@@ -1,4 +1,4 @@
-_SilphCoPresidentText::
+_SilphCo11FSilphPresidentText::
 	text "PDG: Merci d'avoir"
 	line "sauvé la SYLPHE!"
 
@@ -18,14 +18,14 @@ _SilphCoPresidentText::
 	cont "plaisir!"
 	prompt
 
-_ReceivedSilphCoMasterBallText::
+_SilphCo11FSilphPresidentReceivedMasterBallText::
 	text "<PLAYER> obtient:"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_SilphCo10Text_6231c::
+_SilphCo11FSilphPresidentMasterBallDescriptionText::
 	text "PDG: Tu ne peux"
 	line "acheter ceci"
 	cont "nulle part!"
@@ -42,12 +42,12 @@ _SilphCo10Text_6231c::
 	line "avec sagesse."
 	done
 
-_SilphCoMasterBallNoRoomText::
+_SilphCo11FSilphPresidentNoRoomText::
 	text "Tu n'as pas assez"
 	line "de place sur toi."
 	done
 
-_SilphCo11Text2::
+_SilphCo11FBeautyText::
 	text "SECRETAIRE: Merci"
 	line "de nous avoir"
 	cont "tous sauvés!"
@@ -56,7 +56,7 @@ _SilphCo11Text2::
 	line "exemplaire."
 	done
 
-_SilphCo11Text3::
+_SilphCo11FGiovanniText::
 	text "Ah, <PLAYER>!"
 	line "Une fois encore"
 	cont "nos routes se"
@@ -75,12 +75,12 @@ _SilphCo11Text3::
 	line "Déguste!"
 	done
 
-_SilphCo10Text_62330::
+_SilphCo10FGiovanniILostAgainText::
 	text "Arrgh!!"
 	line "Encore perdu!?"
 	prompt
 
-_SilphCo10Text_62335::
+_SilphCo11FGiovanniYouRuinedOurPlansText::
 	text "NOoOoOoOon!"
 	line "Notre invasion de"
 	cont "la SYLPHE est"
@@ -101,41 +101,41 @@ _SilphCo10Text_62335::
 	cont "fera bobo!"
 	done
 
-_SilphCo11BattleText1::
+_SilphCo11FRocket1BattleText::
 	text "Holà toi!"
 	line "Pas bouger!"
 	done
 
-_SilphCo11EndBattleText1::
+_SilphCo11FRocket1EndBattleText::
 	text "Non..."
 	line "Pitié!"
 	prompt
 
-_SilphCo11AfterBattleText1::
+_SilphCo11FRocket1AfterBattleText::
 	text "Tu cherches"
 	line "l'embrouille?"
 	done
 
-_SilphCo11BattleText2::
+_SilphCo11FRocket2BattleText::
 	text "Halte! As-tu un"
 	line "rendez-vous en"
 	cont "règle avec mon"
 	cont "chef?"
 	done
 
-_SilphCo11EndBattleText2::
+_SilphCo11FRocket2EndBattleText::
 	text "Gaah!"
 	line "Cassé la tête!"
 	prompt
 
-_SilphCo11AfterBattleText2::
+_SilphCo11FRocket2AfterBattleText::
 	text "Prends garde..."
 	line "Les #MON de"
 	cont "mon chef sont"
 	cont "terribles!"
 	done
 
-_SilphCo10Text_6237b::
+_SilphCo10FPorygonText::
 	text "Des #MON sur"
 	line "le moniteur!"
 	done

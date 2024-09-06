@@ -1,4 +1,4 @@
-_CeladonMart1Text1::
+_CeladonMart1FReceptionistText::
 	text "Bonjour et bien-"
 	line "venue au CENTRE"
 	cont "COMMERCIAL de"
@@ -10,7 +10,7 @@ _CeladonMart1Text1::
 	cont "du magasin."
 	done
 
-_CeladonMart1Text2::
+_CeladonMart1FDirectorySignText::
 	text "RDC:"
 	line "RENSEIGNEMENTS"
 
@@ -27,7 +27,7 @@ _CeladonMart1Text2::
 	line "DISTRIBUTEURS"
 	done
 
-_CeladonMart1Text3::
+_CeladonMart1FCurrentFloorSignText::
 	text "RDC: "
 	line "RENSEIGNEMENTS"
 	done

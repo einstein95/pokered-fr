@@ -1,4 +1,4 @@
-_VermilionMartText2::
+_VermilionMartCooltrainerMText::
 	text "Il y en a, des"
 	line "très méchants,"
 	cont "qui utilisent les"
@@ -19,7 +19,7 @@ _VermilionMartText2::
 	cont "ROCKET."
 	done
 
-_VermilionMartText3::
+_VermilionMartCooltrainerFText::
 	text "Les #MON"
 	line "peuvent être"
 	cont "gentils ou"

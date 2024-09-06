@@ -1,4 +1,4 @@
-_DiglettsCaveRoute2Text1::
+_DiglettsCaveRoute2FishingGuruText::
 	text "J'y vois rien"
 	line "dans la GROTTE."
 

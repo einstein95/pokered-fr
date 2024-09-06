@@ -1,63 +1,63 @@
-_RockTunnel2BattleText2::
+_RockTunnelB1FCooltrainerF1BattleText::
 	text "La nature..."
 	line "C'est beau!"
 	done
 
-_RockTunnel2EndBattleText2::
+_RockTunnelB1FCooltrainerF1EndBattleText::
 	text "Oh!"
 	line "Au secours!"
 	prompt
 
-_RockTunnel2AfterBattleText2::
+_RockTunnelB1FCooltrainerF1AfterBattleText::
 	text "J'veux rentrer à"
 	line "ma maison!"
 	done
 
-_RockTunnel2BattleText3::
+_RockTunnelB1FHiker1BattleText::
 	text "Hahaha! J'suis"
 	line "trop fort!"
 	done
 
-_RockTunnel2EndBattleText3::
+_RockTunnelB1FHiker1EndBattleText::
 	text "Oups!"
 	line "Niveau muscles:"
 	cont "zéro!"
 	prompt
 
-_RockTunnel2AfterBattleText3::
+_RockTunnelB1FHiker1AfterBattleText::
 	text "J'aime pas penser"
 	line "alors je cogne."
 	done
 
-_RockTunnel2BattleText4::
+_RockTunnelB1FSuperNerd1BattleText::
 	text "Tu as un"
 	line "#DEX?"
 	cont "Je le veux!"
 	done
 
-_RockTunnel2EndBattleText4::
+_RockTunnelB1FSuperNerd1EndBattleText::
 	text "Zut!"
 	line "J'suis jaloux!"
 	prompt
 
-_RockTunnel2AfterBattleText4::
+_RockTunnelB1FSuperNerd1AfterBattleText::
 	text "Tu me donneras"
 	line "ton #DEX plus"
 	cont "tard?"
 	done
 
-_RockTunnel2BattleText5::
+_RockTunnelB1FSuperNerd2BattleText::
 	text "Connais-tu"
 	line "les dresseurs"
 	cont "costumés?"
 	done
 
-_RockTunnel2EndBattleText5::
+_RockTunnelB1FSuperNerd2EndBattleText::
 	text "Ben..."
 	line "C'est ça."
 	prompt
 
-_RockTunnel2AfterBattleText5::
+_RockTunnelB1FSuperNerd2AfterBattleText::
 	text "Les dresseurs"
 	line "costumés se"
 	cont "déguisent en"
@@ -65,46 +65,46 @@ _RockTunnel2AfterBattleText5::
 	cont "s'amuser."
 	done
 
-_RockTunnel2BattleText6::
+_RockTunnelB1FHiker2BattleText::
 	text "Mes #MON"
 	line "vont te faire"
 	cont "pleurer!"
 	done
 
-_RockTunnel2EndBattleText6::
+_RockTunnelB1FHiker2EndBattleText::
 	text "Ah!"
 	line "Je pleure."
 	prompt
 
-_RockTunnel2AfterBattleText6::
+_RockTunnelB1FHiker2AfterBattleText::
 	text "Les montagnes"
 	line "regorgent de"
 	cont "#MON rocheux."
 	done
 
-_RockTunnel2BattleText7::
+_RockTunnelB1FCooltrainerF2BattleText::
 	text "J'suis paumée"
 	line "mais..."
 	cont "A l'attaque!"
 	done
 
-_RockTunnel2EndBattleText7::
+_RockTunnelB1FCooltrainerF2EndBattleText::
 	text "Oh!"
 	line "Perdu!"
 	prompt
 
-_RockTunnel2AfterBattleText7::
+_RockTunnelB1FCooltrainerF2AfterBattleText::
 	text "J'aime les petits"
 	line "#MON, les gros"
 	cont "me font peur!"
 	done
 
-_RockTunnel2BattleText8::
+_RockTunnelB1FHiker3BattleText::
 	text "Donne-toi à fond,"
 	line "mon mignon!"
 	done
 
-_RockTunnel2EndBattleText8::
+_RockTunnelB1FHiker3EndBattleText::
 	text "Mince!"
 	line "Détruit!"
 	prompt

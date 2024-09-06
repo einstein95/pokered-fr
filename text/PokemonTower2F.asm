@@ -1,4 +1,4 @@
-_PokemonTower2Text_6062d::
+_PokemonTower2FRivalWhatBringsYouHereText::
 	text "<RIVAL>: Hé,"
 	line "<PLAYER>!"
 	cont "Kesstu fais là?"
@@ -10,7 +10,7 @@ _PokemonTower2Text_6062d::
 	cont "K.O.! Minable!"
 	done
 
-_PokemonTower2Text_60632::
+_PokemonTower2FRivalDefeatedText::
 	text "Hein?"
 	line "Petit fennec!"
 
@@ -19,7 +19,7 @@ _PokemonTower2Text_60632::
 	cont "M-I-N-A-B-L-E!"
 	prompt
 
-_PokemonTower2Text_60637::
+_PokemonTower2FRivalVictoryText::
 	text "<RIVAL>: Haha,"
 	line "Tes #MON sont"
 	cont "minables..."
@@ -29,7 +29,7 @@ _PokemonTower2Text_60637::
 	line "entraîner un peu!"
 	prompt
 
-_PokemonTower2Text_6063c::
+_PokemonTower2FRivalHowsYourDexText::
 	text "Où en est ton"
 	line "#DEX? Je"
 	cont "viens de capturer"
@@ -50,7 +50,7 @@ _PokemonTower2Text_6063c::
 	line "Gros minable!"
 	done
 
-_PokemonTower2Text2::
+_PokemonTower2FChannelerText::
 	text "Nous ne pouvons"
 	line "identifier les"
 	cont "SPECTRES!"

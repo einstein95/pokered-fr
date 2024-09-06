@@ -1,53 +1,53 @@
-_Route17BattleText1::
+_Route17Biker1BattleText::
 	text "Pff... Un gosse,"
 	line "ça n'a jamais"
 	cont "d'flouze!"
 	done
 
-_Route17EndBattleText1::
+_Route17Biker1EndBattleText::
 	text "Nan!!!"
 	line "Mon carbure!"
 	prompt
 
-_Route17AfterBattleText1::
+_Route17Biker1AfterBattleText::
 	text "Y a plein de"
 	line "trucs qui"
 	cont "traînent sur la"
 	cont "PISTE CYCLABLE!"
 	done
 
-_Route17BattleText2::
+_Route17Biker2BattleText::
 	text "Kesstu veux, toi"
 	line "l'mioche?"
 	done
 
-_Route17EndBattleText2::
+_Route17Biker2EndBattleText::
 	text "Whoua!"
 	prompt
 
-_Route17AfterBattleText2::
+_Route17Biker2AfterBattleText::
 	text "Je vais t'éjecter"
 	line "d'ici à coup de"
 	cont "claques!"
 	done
 
-_Route17BattleText3::
+_Route17Biker3BattleText::
 	text "Tu vas à"
 	line "PARMANIE?"
 	done
 
-_Route17EndBattleText3::
+_Route17Biker3EndBattleText::
 	text "Argh!"
 	line "Fumée!"
 	prompt
 
-_Route17AfterBattleText3::
+_Route17Biker3AfterBattleText::
 	text "J'aime pédaler"
 	line "comme un dingue! "
 	cont "Un giga-dingue!"
 	done
 
-_Route17BattleText4::
+_Route17Biker4BattleText::
 	text "On est MOTARDS!"
 	line "Des vrais,"
 	cont "des purs,"
@@ -56,114 +56,114 @@ _Route17BattleText4::
 	cont "Et tout et tout!"
 	done
 
-_Route17EndBattleText4::
+_Route17Biker4EndBattleText::
 	text "Nyargh!"
 	line "J'ai crevé une"
 	cont "roue!"
 	prompt
 
-_Route17AfterBattleText4::
+_Route17Biker4AfterBattleText::
 	text "Tu cherches"
 	line "l'aventure?"
 	done
 
-_Route17BattleText5::
+_Route17Biker5BattleText::
 	text "Mes VOLTORBE vont"
 	line "t'électrocuter!"
 	done
 
-_Route17EndBattleText5::
+_Route17Biker5EndBattleText::
 	text "Arglagh!"
 	line "J'm'a suis fait"
 	cont "électrocuter!"
 	prompt
 
-_Route17AfterBattleText5::
+_Route17Biker5AfterBattleText::
 	text "J'ai attrapé"
 	line "un VOLTORBE dans"
 	cont "la CENTRALE."
 	done
 
-_Route17BattleText6::
+_Route17Biker6BattleText::
 	text "Hein? Faire"
 	line "évoluer mes"
 	cont "#MON?"
 	cont "Ben pourquoi?"
 	done
 
-_Route17EndBattleText6::
+_Route17Biker6EndBattleText::
 	text "Ha..."
 	line "OK, OK!"
 	prompt
 
-_Route17AfterBattleText6::
+_Route17Biker6AfterBattleText::
 	text "Certains #MON"
 	line "ont besoin d'une"
 	cont "PIERRE pour"
 	cont "évoluer."
 	done
 
-_Route17BattleText7::
+_Route17Biker7BattleText::
 	text "J'ai besoin d'un"
 	line "peu d'exercice!"
 	done
 
-_Route17EndBattleText7::
+_Route17Biker7EndBattleText::
 	text "Pfou!"
 	line "J'suis épuisé!"
 	prompt
 
-_Route17AfterBattleText7::
+_Route17Biker7AfterBattleText::
 	text "Cool! J'ai perdu"
 	line "du poids!"
 	done
 
-_Route17BattleText8::
+_Route17Biker8BattleText::
 	text "No future!"
 	done
 
-_Route17EndBattleText8::
+_Route17Biker8EndBattleText::
 	text "Aaaargh!"
 	prompt
 
-_Route17AfterBattleText8::
+_Route17Biker8AfterBattleText::
 	text "Prépare-toi à la"
 	line "baston, microbe!"
 	done
 
-_Route17BattleText9::
+_Route17Biker9BattleText::
 	text "Mignon le VELO!"
 	line "Comment ça se"
 	cont "conduit?"
 	done
 
-_Route17EndBattleText9::
+_Route17Biker9EndBattleText::
 	text "Pan!"
 	line "Dans les dents!"
 	prompt
 
-_Route17AfterBattleText9::
+_Route17Biker9AfterBattleText::
 	text "La pente rend"
 	line "la conduite"
 	cont "difficile!"
 	done
 
-_Route17BattleText10::
+_Route17Biker10BattleText::
 	text "Du vent gamin!"
 	line "J'suis épuisé!"
 	done
 
-_Route17EndBattleText10::
+_Route17Biker10EndBattleText::
 	text "Voilà,"
 	line "t'es content?"
 	prompt
 
-_Route17AfterBattleText10::
+_Route17Biker10AfterBattleText::
 	text "Je vais aller"
 	line "piquer un somme!"
 	done
 
-_Route17Text11::
+_Route17NoticeSign1Text::
 	text "Un conseil!"
 
 	para "Attention à ne"
@@ -171,7 +171,7 @@ _Route17Text11::
 	cont "objet important!"
 	done
 
-_Route17Text12::
+_Route17TrainerTips1Text::
 	text "ASTUCE"
 
 	para "Chaque #MON"
@@ -184,7 +184,7 @@ _Route17Text12::
 	cont "forts."
 	done
 
-_Route17Text13::
+_Route17TrainerTips2Text::
 	text "ASTUCE"
 
 	para "Appuyez sur A ou"
@@ -193,13 +193,13 @@ _Route17Text13::
 	cont "descente."
 	done
 
-_Route17Text14::
+_Route17SignText::
 	text "ROUTE 17"
 	line "CELADOPOLE -"
 	cont "PARMANIE"
 	done
 
-_Route17Text15::
+_Route17NoticeSign2Text::
 	text "Un conseil!"
 
 	para "Ne jetez pas ce"
@@ -211,7 +211,7 @@ _Route17Text15::
 	cont "tout mimi!"
 	done
 
-_Route17Text16::
+_Route17CyclingRoadEndsSignText::
 	text "PISTE CYCLABLE"
 	line "Fin de la"
 	cont "descente!"

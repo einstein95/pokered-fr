@@ -1,4 +1,4 @@
-_SSAnne5Text1::
+_SSAnneBowSuperNerdText::
 	text "La fête est"
 	line "finie! Nous"
 
@@ -6,13 +6,13 @@ _SSAnne5Text1::
 	line "lever l'ancre!"
 	done
 
-_SSAnne5Text2::
+_SSAnneBowSailor1Text::
 	text "Nyah! Briquer le"
 	line "pont c'est un"
 	cont "travail épuisant!"
 	done
 
-_SSAnne5Text3::
+_SSAnneBowCooltrainerMText::
 	text "Gueuh! J'suis"
 	line "malaaaaade..."
 
@@ -20,36 +20,36 @@ _SSAnne5Text3::
 	line "vom... (beurp)"
 	done
 
-_SSAnne5BattleText1::
+_SSAnneBowSailor2BattleText::
 	text "Hé! Copain!"
 
 	para "Tu danses?"
 	line "Un tango?"
 	done
 
-_SSAnne5EndBattleText1::
+_SSAnneBowSailor2EndBattleText::
 	text "..."
 	line "T'es bon!"
 	prompt
 
-_SSAnne5AfterBattleText1::
+_SSAnneBowSailor2AfterBattleText::
 	text "Tu sais combien"
 	line "il y a de #MON"
 	cont "différents? Hein,"
 	cont "tu l'sais, hein?"
 	done
 
-_SSAnne5BattleText2::
+_SSAnneBowSailor3BattleText::
 	text "Hoho! Alors, on"
 	line "a le mal de mer? "
 	done
 
-_SSAnne5EndBattleText2::
+_SSAnneBowSailor3EndBattleText::
 	text "Oh!"
 	line "Beau combat!"
 	prompt
 
-_SSAnne5AfterBattleText2::
+_SSAnneBowSailor3AfterBattleText::
 	text "Mon Pôpa, y dit"
 	line "qu'y a 100 #MON"
 	cont "différents. J'suis"

@@ -1,4 +1,4 @@
-_MistyPreBattleText::
+_CeruleanGymMistyPreBattleText::
 	text "Salut! T'es un"
 	line "nouveau!"
 
@@ -19,7 +19,7 @@ _MistyPreBattleText::
 	cont "aquatiques!"
 	done
 
-_TM11ExplanationText::
+_CeruleanGymMistyTM11ExplanationText::
 	text "La CT11 contient"
 	line "BULLES D'O!"
 
@@ -27,7 +27,7 @@ _TM11ExplanationText::
 	line "#MON de l'eau!"
 	done
 
-_MistyCascadeBadgeInfoText::
+_CeruleanGymMistyCascadeBadgeInfoText::
 	text "Le BADGECASCADE"
 	line "oblige tous les"
 	cont "#MON d'un"
@@ -51,17 +51,17 @@ _MistyCascadeBadgeInfoText::
 	line "CT favorite!"
 	done
 
-_ReceivedTM11Text::
+_CeruleanGymMistyReceivedTM11Text::
 	text "<PLAYER> reçoit"
 	line "la CT11!@"
 	text_end
 
-_TM11NoRoomText::
+_CeruleanGymMistyTM11NoRoomText::
 	text "Ton inventaire"
 	line "est plein!"
 	done
 
-_ReceivedCascadeBadgeText::
+_CeruleanGymMistyReceivedCascadeBadgeText::
 	text "Whouha!"
 	line "T'es super fort!"
 
@@ -115,7 +115,7 @@ _CeruleanGymAfterBattleText2::
 	cont "comme toi!"
 	done
 
-_CeruleanGymGuidePreBattleText::
+_CeruleanGymGymGuideChampInMakingText::
 	text "Salut à toi!"
 	line "Futur champion!"
 
@@ -135,7 +135,7 @@ _CeruleanGymGuidePreBattleText::
 	cont "l'électricité!"
 	done
 
-_CeruleanGymGuidePostBattleText::
+_CeruleanGymGymGuideBeatMistyText::
 	text "Tu as battu"
 	line "ONDINE! Génial!"
 

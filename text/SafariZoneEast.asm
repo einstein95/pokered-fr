@@ -1,8 +1,8 @@
-_SafariZoneEastText5::
+_SafariZoneEastRestHouseSignText::
 	text "ABRI"
 	done
 
-_SafariZoneEastText6::
+_SafariZoneEastTrainerTipsText::
 	text "ASTUCE"
 
 	para "Le temps s'écoule"
@@ -10,7 +10,7 @@ _SafariZoneEastText6::
 	cont "pas!"
 	done
 
-_SafariZoneEastText7::
+_SafariZoneEastSignText::
 	text "PARC CENTRAL"
 	line "NORD: PARC 2"
 	done

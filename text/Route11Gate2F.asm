@@ -1,4 +1,4 @@
-_Route11GateUpstairsText_494a3::
+_Route11Gate2FOaksAideItemfinderDescriptionText::
 	text "Il y a des objets"
 	line "invisibles sur"
 	cont "le sol."
@@ -12,7 +12,7 @@ _Route11GateUpstairsText_494a3::
 	cont "trouver toi-même!"
 	done
 
-_BinocularsSnorlaxText::
+_Route11Gate2FLeftBinocularsSnorlaxText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."
@@ -22,7 +22,7 @@ _BinocularsSnorlaxText::
 	cont "sur la route!"
 	done
 
-_BinocularsNoSnorlaxText::
+_Route11Gate2FLeftBinocularsNoSnorlaxText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."
@@ -32,7 +32,7 @@ _BinocularsNoSnorlaxText::
 	cont "Bon! On y va?"
 	done
 
-_Route11GateUpstairsText_494d5::
+_Route11Gate2FRightBinocularsText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."

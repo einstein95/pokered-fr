@@ -1,4 +1,4 @@
-_ViridianPokeCenterText2::
+_ViridianPokecenterGentlemanText::
 	text "Tu peux utiliser"
 	line "le PC."
 
@@ -7,7 +7,7 @@ _ViridianPokeCenterText2::
 	cont "Elle est cool!"
 	done
 
-_ViridianPokeCenterText3::
+_ViridianPokecenterCooltrainerMText::
 	text "Il y a un CENTRE"
 	line "#MON dans"
 	cont "chaque ville."

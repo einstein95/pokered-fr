@@ -1,4 +1,4 @@
-_PewterCityText1::
+_PewterCityCooltrainerFText::
 	text "On raconte que"
 	line "les MELOFEE sont"
 	cont "les habitants de"
@@ -11,7 +11,7 @@ _PewterCityText1::
 	cont "SELENITE."
 	done
 
-_PewterCityText2::
+_PewterCityCooltrainerMText::
 	text "Il y a de très"
 	line "bons dresseurs"
 	cont "par ici!"
@@ -23,42 +23,42 @@ _PewterCityText2::
 	cont "est terrible!"
 	done
 
-_PewterCityText_193f1::
+_PewterCitySuperNerd1DidYouCheckOutMuseumText::
 	text "Es-tu allé au"
 	line "MUSEE?"
 	done
 
-_PewterCityText_193f6::
+_PewterCitySuperNerd1WerentThoseFossilsAmazingText::
 	text "Les fossiles du"
 	line "MONT SELENITE"
 	cont "sont beaux, hein?"
 	done
 
-_PewterCityText_193fb::
+_PewterCitySuperNerd1YouHaveToGoText::
 	text "Non?"
 	line "Mais il faut y"
 	cont "aller, voyons!"
 	done
 
-_PewterCityText13::
+_PewterCitySuperNerd1ItsRightHereText::
 	text "C'est par là!"
 	line "L'entrée est"
 	cont "payante mais ça"
 	cont "vaut l'coup!"
 	done
 
-_PewterCityText_19427::
+_PewterCitySuperNerd2DoYouKnowWhatImDoingText::
 	text "Psssst!"
 	line "Tu sais c'que"
 	cont "j'fais?"
 	done
 
-_PewterCityText_1942c::
+_PewterCitySuperNerd2ThatsRightText::
 	text "Ah bon?"
 	line "OK."
 	done
 
-_PewterCityText_19431::
+_PewterCitySuperNerd2ImSprayingRepelText::
 	text "Je vaporise du"
 	line "REPOUSSE pour"
 	cont "éloigner les"
@@ -66,14 +66,14 @@ _PewterCityText_19431::
 	cont "bô jardin!"
 	done
 
-_PewterCityText_1945d::
+_PewterCityYoungsterYoureATrainerFollowMeText::
 	text "T'es un dresseur?"
 	line "PIERRE cherche un"
 	cont "adversaire!"
 	cont "Suis-moi!"
 	done
 
-_PewterCityText14::
+_PewterCityYoungsterGoTakeOnBrockText::
 	text "Si t'es fort..."
 	line "T'as pas tort..."
 	cont "Alors..."
@@ -81,7 +81,7 @@ _PewterCityText14::
 	cont "Ou t'es mort!"
 	done
 
-_PewterCityText6::
+_PewterCityTrainerTipsText::
 	text "ASTUCE"
 
 	para "Chaque #MON"
@@ -91,7 +91,7 @@ _PewterCityText6::
 	cont "gagne de l'EXP!"
 	done
 
-_PewterCityText7::
+_PewterCityPoliceNoticeSignText::
 	text "AVIS!"
 
 	para "On nous signale"
@@ -104,13 +104,13 @@ _PewterCityText7::
 	cont "POLICE d'ARGENTA!"
 	done
 
-_PewterCityText10::
+_PewterCityMuseumSignText::
 	text "MUSEE DES"
 	line "SCIENCES"
 	cont "d'ARGENTA"
 	done
 
-_PewterCityText11::
+_PewterCityGymSignText::
 	text "ARENE #MON"
 	line "d'ARGENTA"
 	cont "CHAMPION: PIERRE"
@@ -120,7 +120,7 @@ _PewterCityText11::
 	cont "Bonne blague."
 	done
 
-_PewterCityText12::
+_PewterCitySignText::
 	text "ARGENTA"
 	line "Le mat et le gris"
 	cont "de la roche."

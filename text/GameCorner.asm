@@ -1,4 +1,4 @@
-_CeladonGameCornerText1::
+_GameCornerBeauty1Text::
 	text "Bienvenue!"
 
 	para "Echangez vos"
@@ -6,7 +6,7 @@ _CeladonGameCornerText1::
 	cont "prix à côté."
 	done
 
-_CeladonGameCornerText_48d22::
+_GameCornerClerk1DoYouNeedSomeGameCoinsText::
 	text "Bienvenue au"
 	line "CASINO ROCKET!"
 
@@ -17,32 +17,32 @@ _CeladonGameCornerText_48d22::
 	line "jetons. OK?"
 	done
 
-_CeladonGameCornerText_48d27::
+_GameCornerClerk1ThanksHereAre50CoinsText::
 	text "Merci! Voici vos"
 	line "50 jetons!"
 	done
 
-_CeladonGameCornerText_48d2c::
+_GameCornerClerk1PleaseComePlaySometimeText::
 	text "Non?"
 	line "Ben pourquoi?"
 	done
 
-_CeladonGameCornerText_48d31::
+_GameCornerClerk1CantAffordTheCoinsText::
 	text "Pas d'sous."
 	line "Pas d'jetons."
 	done
 
-_CeladonGameCornerText_48d36::
+_GameCornerClerk1CoinCaseIsFullText::
 	text "Oups! Votre BOITE"
 	line "est pleine."
 	done
 
-_CeladonGameCornerText_48d3b::
+_GameCornerClerk1DontHaveCoinCaseText::
 	text "Il vous faut une"
 	line "BOITE JETON!"
 	done
 
-_CeladonGameCornerText3::
+_GameCornerMiddleAgedMan1Text::
 	text "Ecoute donc ça..."
 
 	para "On raconte que"
@@ -51,39 +51,39 @@ _CeladonGameCornerText3::
 	cont "ROCKET."
 	done
 
-_CeladonGameCornerText4::
+_GameCornerBeauty2Text::
 	text "Ces machines ont"
 	line "des mécanismes"
 	cont "différents... "
 	cont "Ca c'est sûr!"
 	done
 
-_CeladonGameCornerText_48d9c::
+_GameCornerFishingGuruWantToPlayText::
 	text "Petit..."
 	line "Tu veux jouer?"
 	prompt
 
-_Received10CoinsText::
+_GameCornerFishingGuruReceived10CoinsText::
 	text "<PLAYER> reçoit"
 	line "10 jetons!@"
 	text_end
 
-_CeladonGameCornerText_48da7::
+_GameCornerFishingGuruDontNeedMyCoinsText::
 	text "T'as pas besoin"
 	line "d'mes jetons!"
 	done
 
-_CeladonGameCornerText_48dac::
+_GameCornerFishingGuruWinsComeAndGoText::
 	text "La chance..."
 	line "Ca craint."
 	done
 
-_CeladonGameCornerText6::
+_GameCornerMiddleAgedWomanText::
 	text "Ce que j'peux"
 	line "m'éclater! Yaaa!"
 	done
 
-_CeladonGameCornerText_48dca::
+_GameCornerGymGuideChampInMakingText::
 	text "Hé toi!"
 
 	para "Sacré toi, va..."
@@ -104,7 +104,7 @@ _CeladonGameCornerText_48dca::
 	cont "piège!"
 	done
 
-_CeladonGameCornerText_48dcf::
+_GameCornerGymGuideTheyOfferRarePokemonText::
 	text "De très rares"
 	line "#MON sont à"
 	cont "échanger contre"
@@ -114,29 +114,29 @@ _CeladonGameCornerText_48dcf::
 	line "dur de gagner!"
 	done
 
-_CeladonGameCornerText8::
+_GameCornerGamblerText::
 	text "Jouer! Jouer!"
 	line "Encore jouer!"
 	cont "Jouer et jouer!"
 	cont "Jouer encore! Ga."
 	done
 
-_CeladonGameCornerText_48e26::
+_GameCornerClerk2WantSomeCoinsText::
 	text "Quoi ça? Tu veux"
 	line "des jetons?"
 	prompt
 
-_Received20CoinsText::
+_GameCornerClerk2Received20CoinsText::
 	text "<PLAYER> reçoit"
 	line "20 jetons!@"
 	text_end
 
-_CeladonGameCornerText_48e31::
+_GameCornerClerk2YouHaveLotsOfCoinsText::
 	text "T'en as des"
 	line "jetons, toi!"
 	done
 
-_CeladonGameCornerText_48e36::
+_GameCornerClerk2INeedMoreCoinsText::
 	text "Méga-mince!"
 	line "Y m'faut des"
 	cont "jetons pour"
@@ -144,47 +144,47 @@ _CeladonGameCornerText_48e36::
 	cont "#MON!"
 	done
 
-_CeladonGameCornerText_48e88::
+_GameCornerGentlemanThrowingMeOffText::
 	text "Hein? Des jetons?"
 	line "En voilà! Mais..."
 	cont "Comment dire..."
 	cont "Dégage!"
 	prompt
 
-_CeladonGameCornerText_48e8d::
+_GameCornerGentlemanReceived20CoinsText::
 	text "<PLAYER> reçoit"
 	line "20 jetons!@"
 	text_end
 
-_CeladonGameCornerText_48e93::
+_GameCornerGentlemanYouGotYourOwnCoinsText::
 	text "T'as tes jetons?"
 	line "Alors va jouer..."
 	done
 
-_CeladonGameCornerText_48e98::
+_GameCornerGentlemanCloselyWatchTheReelsText::
 	text "Le truc c'est de"
 	line "regarder l'écran"
 	cont "comme un dingue!"
 	done
 
-_CeladonGameCornerText_48ece::
+_GameCornerRocketImGuardingThisPosterText::
 	text "Je surveille le"
 	line "poster!"
 	cont "Bouge de là!"
 	done
 
-_CeladonGameCornerText_48ed3::
+_GameCornerRocketBattleEndText::
 	text "Grââ!"
 	prompt
 
-_CeladonGameCornerText_48ed8::
+_GameCornerRocketAfterBattleText::
 	text "Not' cachette va"
 	line "être découverte!"
 	cont "J'va prév'nir eul"
 	cont "CHEF!"
 	done
 
-_CeladonGameCornerText_48f09::
+_GameCornerPosterSwitchBehindPosterText::
 	text "Oh!"
 
 	para "Un bouton secret"
@@ -192,7 +192,7 @@ _CeladonGameCornerText_48f09::
 	cont "Allez, hop!@"
 	text_end
 
-_CeladonGameCornerText_48f19::
+_GameCornerOopsForgotCoinCaseText::
 	text "Oups! Pas de"
 	line "BOITE JETON!"
 	done

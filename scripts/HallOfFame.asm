@@ -4,22 +4,23 @@ HallOfFame_Script:
 	ld a, [wHallOfFameCurScript]
 	jp CallFunctionInTable
 
-HallofFameRoomScript_5a4aa:
+HallofFameRoomClearScripts: ; unreferenced
 	xor a
 	ld [wJoyIgnore], a
 	ld [wHallOfFameCurScript], a
 	ret
 
 HallOfFame_ScriptPointers:
-	dw HallofFameRoomScript0
-	dw HallofFameRoomScript1
-	dw HallofFameRoomScript2
-	dw HallofFameRoomScript3
+	def_script_pointers
+	dw_const HallOfFameDefaultScript,            SCRIPT_HALLOFFAME_DEFAULT
+	dw_const HallOfFameOakCongratulationsScript, SCRIPT_HALLOFFAME_OAK_CONGRATULATIONS
+	dw_const HallOfFameResetEventsAndSaveScript, SCRIPT_HALLOFFAME_RESET_EVENTS_AND_SAVE
+	dw_const HallOfFameNoopScript,               SCRIPT_HALLOFFAME_NOOP
 
-HallofFameRoomScript3:
+HallOfFameNoopScript:
 	ret
 
-HallofFameRoomScript2:
+HallOfFameResetEventsAndSaveScript:
 	call Delay3
 	ld a, [wLetterPrintingDelayFlags]
 	push af
@@ -28,11 +29,12 @@ HallofFameRoomScript2:
 	predef HallOfFamePC
 	pop af
 	ld [wLetterPrintingDelayFlags], a
-	ld hl, wFlags_D733
-	res 1, [hl]
+	ld hl, wStatusFlags7
+	res BIT_NO_MAP_MUSIC, [hl]
+	assert wStatusFlags7 + 1 == wElite4Flags
 	inc hl
-	set 0, [hl]
-	xor a
+	set BIT_UNUSED_BEAT_ELITE_4, [hl] ; debug, unused?
+	xor a ; SCRIPT_*_DEFAULT
 	ld hl, wLoreleisRoomCurScript
 	ld [hli], a ; wLoreleisRoomCurScript
 	ld [hli], a ; wBrunosRoomCurScript
@@ -55,30 +57,30 @@ HallofFameRoomScript2:
 	call WaitForTextScrollButtonPress
 	jp Init
 
-HallofFameRoomScript0:
-	ld a, $ff
+HallOfFameDefaultScript:
+	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 	ld hl, wSimulatedJoypadStatesEnd
-	ld de, RLEMovement5a528
+	ld de, HallOfFameEntryMovement
 	call DecodeRLEList
 	dec a
 	ld [wSimulatedJoypadStatesIndex], a
 	call StartSimulatingJoypadStates
-	ld a, $1
+	ld a, SCRIPT_HALLOFFAME_OAK_CONGRATULATIONS
 	ld [wHallOfFameCurScript], a
 	ret
 
-RLEMovement5a528:
+HallOfFameEntryMovement:
 	db D_UP, 5
 	db -1 ; end
 
-HallofFameRoomScript1:
+HallOfFameOakCongratulationsScript:
 	ld a, [wSimulatedJoypadStatesIndex]
 	and a
 	ret nz
 	ld a, PLAYER_DIR_RIGHT
 	ld [wPlayerMovingDirection], a
-	ld a, $1
+	ld a, HALLOFFAME_OAK
 	ldh [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	ld a, SPRITE_FACING_LEFT
@@ -89,21 +91,22 @@ HallofFameRoomScript1:
 	ld [wJoyIgnore], a
 	inc a ; PLAYER_DIR_RIGHT
 	ld [wPlayerMovingDirection], a
-	ld a, $1
+	ld a, TEXT_HALLOFFAME_OAK
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
-	ld a, $ff
+	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
 	ld [wJoyIgnore], a
 	ld a, HS_CERULEAN_CAVE_GUY
 	ld [wMissableObjectIndex], a
 	predef HideObject
-	ld a, $2
+	ld a, SCRIPT_HALLOFFAME_RESET_EVENTS_AND_SAVE
 	ld [wHallOfFameCurScript], a
 	ret
 
 HallOfFame_TextPointers:
-	dw HallofFameRoomText1
+	def_text_pointers
+	dw_const HallOfFameOakText, TEXT_HALLOFFAME_OAK
 
-HallofFameRoomText1:
-	text_far _HallofFameRoomText1
+HallOfFameOakText:
+	text_far _HallOfFameOakText
 	text_end

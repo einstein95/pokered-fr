@@ -1,4 +1,4 @@
-_LoreleiBeforeBattleText::
+_LoreleisRoomLoreleiBeforeBattleText::
 	text "Bienvenue à la"
 	line "LIGUE #MON!"
 
@@ -20,12 +20,12 @@ _LoreleiBeforeBattleText::
 	line "Z'est parti!"
 	done
 
-_LoreleiEndBattleText::
+_LoreleisRoomLoreleiEndBattleText::
 	text "Comment"
 	line "as-tu ozé?"
 	prompt
 
-_LoreleiAfterBattleText::
+_LoreleisRoomLoreleiAfterBattleText::
 	text "Tu es fort."
 	line "Z'est bien."
 
@@ -35,7 +35,7 @@ _LoreleiAfterBattleText::
 	cont "zurprizes!"
 	done
 
-_LoreleiDontRunAwayText::
+_LoreleisRoomLoreleiDontRunAwayText::
 	text "Une voix:"
 	line "Ne fuis pas!"
 	done

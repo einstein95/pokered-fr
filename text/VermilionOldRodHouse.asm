@@ -1,4 +1,4 @@
-_VermilionHouse2Text_560b1::
+_VermilionOldRodHouseFishingGuruDoYouLikeToFishText::
 	text "Je suis le..."
 	line "MAITRE PECHEUR!"
 
@@ -9,7 +9,7 @@ _VermilionHouse2Text_560b1::
 	line "tête?"
 	done
 
-_VermilionHouse2Text_560b6::
+_VermilionOldRodHouseFishingGuruTakeThisText::
 	text "Terrib'! Toi,"
 	line "j't'aime bien!"
 
@@ -22,7 +22,7 @@ _VermilionHouse2Text_560b6::
 	text "!@"
 	text_end
 
-_VermilionHouse2Text_560bb::
+_VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText::
 	text_start
 
 	para "Pêcher, c'est la"
@@ -35,12 +35,12 @@ _VermilionHouse2Text_560bb::
 	cont "pêche encore!"
 	done
 
-_VermilionHouse2Text_560c0::
+_VermilionOldRodHouseFishingGuruThatsSoDisappointingText::
 	text "Oh...ben..."
 	line "C'est dommage..."
 	done
 
-_VermilionHouse2Text_560c5::
+_VermilionOldRodHouseFishingGuruHowAreTheFishBitingText::
 	text "B'jour à toi,"
 	line "<PLAYER>!"
 
@@ -48,7 +48,7 @@ _VermilionHouse2Text_560c5::
 	line "Hein? Hein?"
 	done
 
-_VermilionHouse2Text_560ca::
+_VermilionOldRodHouseFishingGuruNoRoomText::
 	text "Oh non!"
 
 	para "T'as plus d'place"

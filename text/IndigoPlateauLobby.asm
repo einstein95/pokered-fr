@@ -1,4 +1,4 @@
-_IndigoPlateauLobbyText2::
+_IndigoPlateauLobbyGymGuideText::
 	text "Salut! Champion"
 	line "en herbe!"
 
@@ -19,7 +19,7 @@ _IndigoPlateauLobbyText2::
 	cont "Ecrase-les!"
 	done
 
-_IndigoPlateauLobbyText3::
+_IndigoPlateauLobbyCooltrainerFText::
 	text "A partir d'ici,"
 	line "tu affronteras"
 	cont "les quatre"

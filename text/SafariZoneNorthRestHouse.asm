@@ -1,4 +1,4 @@
-_SafariZoneRestHouse4Text1::
+_SafariZoneNorthRestHouseScientistText::
 	text "Tu peux garder"
 	line "tous les objets"
 	cont "trouvés dans le"
@@ -9,13 +9,13 @@ _SafariZoneRestHouse4Text1::
 	cont "les essayer!"
 	done
 
-_SafariZoneRestHouse4Text2::
+_SafariZoneNorthRestHouseSafariZoneWorkerText::
 	text "Un recoin du PARC"
 	line "SAFARI renferme"
 	cont "un prix!"
 	done
 
-_SafariZoneRestHouse4Text3::
+_SafariZoneNorthRestHouseGentlemanText::
 	text "Mon EVOLI s'est"
 	line "transformé en un"
 	cont "PYROLI!"

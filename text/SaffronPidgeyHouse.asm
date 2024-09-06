@@ -1,4 +1,4 @@
-_SaffronHouse1Text1::
+_SaffronPidgeyHouseBrunetteGirlText::
 	text "Merci pour cette"
 	line "belle lettre, à"
 	cont "bientôt!"
@@ -8,18 +8,18 @@ _SaffronHouse1Text1::
 	cont "J'suis amoureuse!"
 	done
 
-_SaffronHouse1Text2::
+_SaffronPidgeyHousePidgeyText::
 	text "ROUCOOL: Rourou!@"
 	text_end
 
-_SaffronHouse1Text3::
+_SaffronPidgeyHouseYoungsterText::
 	text "La COPIEUSE est"
 	line "mignonne! Je vais"
 	cont "lui offrir une"
 	cont "#POUPEE!"
 	done
 
-_SaffronHouse1Text4::
+_SaffronPidgeyHousePaperText::
 	text "J'ai reçu comme"
 	line "récompense un"
 	cont "PP PLUS."

@@ -1,8 +1,8 @@
-_Museum1FText_5c21a::
+_Museum1FScientist1ComeAgainText::
 	text "A bientôt!"
 	done
 
-_Museum1FText_5c21f::
+_Museum1FScientist1WouldYouLikeToComeInText::
 	text "50¥ le ticket"
 	line "pour un enfant."
 
@@ -10,17 +10,17 @@ _Museum1FText_5c21f::
 	line "entrer?"
 	done
 
-_Museum1FText_5c224::
+_Museum1FScientist1ThankYouText::
 	text "50¥! Parfait!"
 	line "Merci!"
 	done
 
-_Museum1FText_5c229::
+_Museum1FScientist1DontHaveEnoughMoneyText::
 	text "Vous n'avez pas"
 	line "assez d'argent."
 	prompt
 
-_Museum1FText_5c22e::
+_Museum1FScientist1DoYouKnowWhatAmberIsText::
 	text "Ne te cache pas"
 	line "dans l'ombre!"
 
@@ -30,7 +30,7 @@ _Museum1FText_5c22e::
 	cont "sert l'AMBRE?"
 	done
 
-_Museum1FText_5c233::
+_Museum1FScientist1TheresALabSomewhereText::
 	text "Dans un certain"
 	line "labo, on essaie"
 	cont "de régénérer les"
@@ -38,28 +38,28 @@ _Museum1FText_5c233::
 	cont "grâce à l'AMBRE."
 	done
 
-_Museum1FText_5c238::
+_Museum1FScientist1AmberIsFossilizedTreeSapText::
 	text "L'AMBRE est de la"
 	line "sève fossilisée."
 	done
 
-_Museum1FText_5c23d::
+_Museum1FScientist1GoToOtherSideText::
 	text "Va de l'autre"
 	line "côté!"
 	done
 
-_Museum1FText_5c242::
+_Museum1FScientist1TakePlentyOfTimeText::
 	text "Prends tout ton"
 	line "temps pour"
 	cont "regarder!"
 	done
 
-_Museum1FText_5c251::
+_Museum1FGamblerText::
 	text "Voici un"
 	line "sublime fossile!"
 	done
 
-_Museum1FText_5c28e::
+_Museum1FScientist2TakeThisToAPokemonLabText::
 	text "Je crois qu'il y"
 	line "a des traces"
 	cont "d'ADN de #MON"
@@ -84,23 +84,23 @@ _Museum1FText_5c28e::
 	cont "l'examiner!"
 	prompt
 
-_ReceivedOldAmberText::
+_Museum1FScientist2ReceivedOldAmberText::
 	text "<PLAYER> obtient"
 	line "VIEIL AMBRE!@"
 	text_end
 
-_Museum1FText_5c299::
+_Museum1FScientist2GetTheOldAmberCheckText::
 	text "Chut! Va faire"
 	line "examiner ce"
 	cont "morceau d'AMBRE!"
 	done
 
-_Museum1FText_5c29e::
+_Museum1FScientist2YouDontHaveSpaceText::
 	text "Votre inventaire"
 	line "est plein!"
 	done
 
-_Museum1FText_5c2ad::
+_Museum1FScientist3Text::
 	text "Nous avons 2"
 	line "fossiles dont"
 	cont "nous sommes très"
@@ -109,7 +109,7 @@ _Museum1FText_5c2ad::
 	cont "préhistoriques!"
 	done
 
-_Museum1FText_5c2bc::
+_Museum1FOldAmberText::
 	text "L'AMBRE c'est"
 	line "beau!!!"
 	done

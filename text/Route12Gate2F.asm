@@ -1,4 +1,4 @@
-_TM39PreReceiveText::
+_Route12Gate2FBrunetteGirlYouCanHaveThisText::
 	text "Les cendres de"
 	line "mes #MON"
 	cont "sont dans la"
@@ -9,12 +9,12 @@ _TM39PreReceiveText::
 	cont "ai plus besoin..."
 	prompt
 
-_ReceivedTM39Text::
+_Route12Gate2FBrunetteGirlReceivedTM39Text::
 	text "<PLAYER> obtient"
 	line "CT39!@"
 	text_end
 
-_TM39ExplanationText::
+_Route12Gate2FBrunetteGirlTM39ExplanationText::
 	text "La CT39 s'appelle"
 	line "METEORES."
 
@@ -25,12 +25,12 @@ _TM39ExplanationText::
 	cont "coup!"
 	done
 
-_TM39NoRoomText::
+_Route12Gate2FBrunetteGirlTM39NoRoomText::
 	text "Ton inventaire"
 	line "est plein!"
 	done
 
-_Route12GateUpstairsText_495b8::
+_Route12Gate2FLeftBinocularsText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."
@@ -39,7 +39,7 @@ _Route12GateUpstairsText_495b8::
 	line "pêcheur!"
 	done
 
-_Route12GateUpstairsText_495c4::
+_Route12Gate2FRightBinocularsText::
 	text "Vous regardez"
 	line "dans les"
 	cont "jumelles."

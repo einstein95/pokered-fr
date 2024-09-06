@@ -1,4 +1,4 @@
-_BillsHouseText_1e865::
+_BillsHouseBillImNotAPokemonText::
 	text "Yhah! Je suis un"
 	line "#MON..."
 	cont "..."
@@ -21,7 +21,7 @@ _BillsHouseText_1e865::
 	cont "Tu m'aides alors?"
 	done
 
-_BillsHouseText_1e86a::
+_BillsHouseBillUseSeparationSystemText::
 	text "Je vais dans le"
 	line "TELEPORTEUR."
 	cont "Lance vite le"
@@ -29,7 +29,7 @@ _BillsHouseText_1e86a::
 	cont "PC!"
 	done
 
-_BillsHouseText_1e86f::
+_BillsHouseBillNoYouGottaHelpText::
 	text "Non!? Hé, mais tu"
 	line "dois m'aider, je"
 	cont "suis un mec cool!"
@@ -39,7 +39,7 @@ _BillsHouseText_1e86f::
 	cont "doux seigneur?"
 	prompt
 
-_BillThankYouText::
+_BillsHouseBillThankYouText::
 	text "LEO: Yahoo!"
 	line "Merci, mec!"
 	cont "Je t'en dois une!"
@@ -67,7 +67,7 @@ _SSTicketNoRoomText::
 	line "est plein, mec!"
 	done
 
-_BillsHouseText_1e8cb::
+_BillsHouseBillWhyDontYouGoInsteadOfMeText::
 	text "L'OCEANE, le"
 	line "bateau, est à"
 	cont "CARMIN. Les"
@@ -81,7 +81,7 @@ _BillsHouseText_1e8cb::
 	cont "Vas-y à ma place."
 	done
 
-_BillsHouseText_1e8da::
+_BillsHouseBillCheckOutMyRarePokemonText::
 	text "LEO: Hé, regarde"
 	line "un peu ma collec'."
 	cont "J'ai des #MON"

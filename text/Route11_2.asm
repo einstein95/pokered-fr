@@ -1,29 +1,29 @@
-_Route11EndBattleText9::
+_Route11SuperNerd2EndBattleText::
 	text "Whoa!"
 	line "Tu fais des"
 	cont "étincelles!"
 	prompt
 
-_Route11AfterBattleText9::
+_Route11SuperNerd2AfterBattleText::
 	text "Bon, j'ai du"
 	line "boulot, moi!"
 	done
 
-_Route11BattleText10::
+_Route11Youngster4BattleText::
 	text "Mes #MON sont"
 	line "prêts!"
 	done
 
-_Route11EndBattleText10::
+_Route11Youngster4EndBattleText::
 	text "Trop,"
 	line "trop trop balèze!"
 	prompt
 
-_Route11AfterBattleText10::
+_Route11Youngster4AfterBattleText::
 	text "Faut qu'je chope"
 	line "des plus forts!"
 	done
 
-_Route11Text11::
+_Route11DiglettsCaveSignText::
 	text "CAVE TAUPIQUEUR"
 	done

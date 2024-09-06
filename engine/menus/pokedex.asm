@@ -36,7 +36,7 @@ ShowPokedexMenu:
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	ldh [hJoy7], a
-	ld [wWastedByteCD3A], a
+	ld [wUnusedOverrideSimulatedJoypadStatesIndex], a
 	ld [wOverrideSimulatedJoypadStatesMask], a
 	pop af
 	ld [wListScrollOffset], a
@@ -397,14 +397,14 @@ ShowPokedexData:
 
 ; function to display pokedex data from inside the pokedex
 ShowPokedexDataInternal:
-	ld hl, wd72c
-	set 1, [hl]
+	ld hl, wStatusFlags2
+	set BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $33 ; 3/7 volume
 	ldh [rNR50], a
 	call GBPalWhiteOut ; zero all palettes
 	call ClearScreen
 	ld a, [wd11e] ; pokemon ID
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	push af
 	ld b, SET_PAL_POKEDEX
 	call RunPaletteCommand
@@ -488,7 +488,7 @@ ShowPokedexDataInternal:
 	call IsPokemonBitSet
 	pop af
 	ld [wd11e], a
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	ld [wd0b5], a
 	pop de
 
@@ -502,8 +502,8 @@ ShowPokedexDataInternal:
 	call GetMonHeader ; load pokemon picture location
 	hlcoord 1, 1
 	call LoadFlippedFrontSpriteByMonIndex ; draw pokemon picture
-	ld a, [wcf91]
-	call PlayCry ; play pokemon cry
+	ld a, [wCurPartySpecies]
+	call PlayCry
 
 	pop hl
 	pop de
@@ -532,7 +532,7 @@ ShowPokedexDataInternal:
 ; now print the weight (note that weight is stored in tenths of kilograms internally)
 	inc de
 	inc de
-	inc de ; de = upper byte of weight
+	inc de ; de = address of upper byte of weight
 	push de
 ; put weight in big-endian order at hDexWeight
 	ld hl, hDexWeight
@@ -585,8 +585,8 @@ ShowPokedexDataInternal:
 	call RunDefaultPaletteCommand
 	call LoadTextBoxTilePatterns
 	call GBPalNormal
-	ld hl, wd72c
-	res 1, [hl]
+	ld hl, wStatusFlags2
+	res BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $77 ; max volume
 	ldh [rNR50], a
 	ret

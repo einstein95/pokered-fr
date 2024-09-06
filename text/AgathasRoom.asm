@@ -46,7 +46,7 @@ _AgathaAfterBattleText::
 	cont "passer."
 	done
 
-_AgathaDontRunAwayText::
+_AgathasRoomAgathaDontRunAwayText::
 	text "Une voix:"
 	line "Ne fuis pas!"
 	done

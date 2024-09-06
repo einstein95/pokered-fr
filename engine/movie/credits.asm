@@ -29,7 +29,7 @@ HallOfFamePC:
 	ld c, 128
 	call DelayFrames
 	xor a
-	ld [wUnusedCD3D], a ; not read
+	ld [wUnusedCreditsByte], a ; not read
 	ld [wNumCreditsMonsDisplayed], a
 	jp Credits
 
@@ -59,7 +59,7 @@ DisplayCreditsMon:
 	ld hl, CreditsMons
 	add hl, bc ; go that far in the list of monsters and get the next one
 	ld a, [hl]
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	ld [wd0b5], a
 	hlcoord 8, 6
 	call GetMonHeader
@@ -131,10 +131,10 @@ ScrollCreditsMonLeft_SetSCX:
 	ret
 
 HoFGBPalettes:
-	db %11000000
-	db %11010000
-	db %11100000
-	db %11110000
+	dc 3, 0, 0, 0
+	dc 3, 1, 0, 0
+	dc 3, 2, 0, 0
+	dc 3, 3, 0, 0
 
 CreditsCopyTileMapToVRAM:
 	ld a, l

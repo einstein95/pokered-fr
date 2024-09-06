@@ -13,7 +13,7 @@
 	const POKE_BALL     ; $04
 	const TOWN_MAP      ; $05
 	const BICYCLE       ; $06
-	const SURFBOARD     ; $07 buggy?
+	const SURFBOARD     ; $07
 	const SAFARI_BALL   ; $08
 	const POKEDEX       ; $09
 	const MOON_STONE    ; $0A
@@ -28,9 +28,9 @@
 	const SUPER_POTION  ; $13
 	const POTION        ; $14
 	const BOULDERBADGE  ; $15
+DEF SAFARI_BAIT EQU BOULDERBADGE ; overload
 	const CASCADEBADGE  ; $16
-DEF SAFARI_BAIT EQU $15 ; overload
-DEF SAFARI_ROCK EQU $16 ; overload
+DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const THUNDERBADGE  ; $17
 	const RAINBOWBADGE  ; $18
 	const SOULBADGE     ; $19
@@ -52,13 +52,13 @@ DEF SAFARI_ROCK EQU $16 ; overload
 	const DOME_FOSSIL   ; $29
 	const HELIX_FOSSIL  ; $2A
 	const SECRET_KEY    ; $2B
-	const UNUSED_ITEM   ; $2C "?????"
+	const ITEM_2C       ; $2C ; unused
 	const BIKE_VOUCHER  ; $2D
 	const X_ACCURACY    ; $2E
 	const LEAF_STONE    ; $2F
 	const CARD_KEY      ; $30
 	const NUGGET        ; $31
-	const PP_UP_2       ; $32
+	const ITEM_32       ; $32 ; unused
 	const POKE_DOLL     ; $33
 	const FULL_HEAL     ; $34
 	const REVIVE        ; $35
@@ -215,3 +215,6 @@ DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 ; These fit in 7 bytes, with one unused bit left over.
 DEF __tmhm_value__ = NUM_TM_HM + 1
 DEF UNUSED_TMNUM EQU __tmhm_value__
+
+DEF MAX_HIDDEN_ITEMS EQU 112
+DEF MAX_HIDDEN_COINS EQU 16

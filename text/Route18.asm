@@ -1,60 +1,60 @@
-_Route18BattleText1::
+_Route18CooltrainerM1BattleText::
 	text "Je fouille les"
 	line "hautes herbes"
 	cont "pour y trouver"
 	cont "des #MON."
 	done
 
-_Route18EndBattleText1::
+_Route18CooltrainerM1EndBattleText::
 	text "Oh!"
 	prompt
 
-_Route18AfterBattleText1::
+_Route18CooltrainerM1AfterBattleText::
 	text "Ah, si j'avais"
 	line "une meule!"
 	done
 
-_Route18BattleText2::
+_Route18CooltrainerM2BattleText::
 	text "Cui cui cui!"
 	line "J'fais l'oiseau,"
 	cont "hein?"
 	done
 
-_Route18EndBattleText2::
+_Route18CooltrainerM2EndBattleText::
 	text "..."
 	line "J'suis cuit!"
 	prompt
 
-_Route18AfterBattleText2::
+_Route18CooltrainerM2AfterBattleText::
 	text "Le week-end, je"
 	line "collectionne"
 	cont "les #MON"
 	cont "aquatiques!"
 	done
 
-_Route18BattleText3::
+_Route18CooltrainerM3BattleText::
 	text "T'es sur mon"
 	line "gazon, dégage!"
 	done
 
-_Route18EndBattleText3::
+_Route18CooltrainerM3EndBattleText::
 	text "Ah?"
 	prompt
 
-_Route18AfterBattleText3::
+_Route18CooltrainerM3AfterBattleText::
 	text "C'est mon endroit"
 	line "préféré pour"
 	cont "chasser les"
 	cont "#MON!"
 	done
 
-_Route18Text4::
+_Route18SignText::
 	text "ROUTE 18"
 	line "CELADOPOLE -"
 	cont "PARMANIE"
 	done
 
-_Route18Text5::
+_Route18CyclingRoadSignText::
 	text "PISTE CYCLABLE"
 	line "Interdite aux"
 	cont "piétons!"

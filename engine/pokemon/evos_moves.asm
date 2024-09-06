@@ -53,13 +53,13 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld h, [hl]
 	ld l, a
 	push hl
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	push af
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 	call LoadMonData
 	pop af
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	pop hl
 
 .evoEntryLoop ; loop over evolution entries
@@ -67,20 +67,20 @@ Evolution_PartyMonLoop: ; loop over party mons
 	and a ; have we reached the end of the evolution data?
 	jr z, Evolution_PartyMonLoop
 	ld b, a ; evolution type
-	cp EV_TRADE
+	cp EVOLVE_TRADE
 	jr z, .checkTradeEvo
 ; not trade evolution
 	ld a, [wLinkState]
 	cp LINK_STATE_TRADING
 	jr z, Evolution_PartyMonLoop ; if trading, go the next mon
 	ld a, b
-	cp EV_ITEM
+	cp EVOLVE_ITEM
 	jr z, .checkItemEvo
 	ld a, [wForceEvolution]
 	and a
 	jr nz, Evolution_PartyMonLoop
 	ld a, b
-	cp EV_LEVEL
+	cp EVOLVE_LEVEL
 	jr z, .checkLevel
 .checkTradeEvo
 	ld a, [wLinkState]
@@ -95,7 +95,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 .checkItemEvo
 	ld a, [hli]
 	ld b, a ; evolution item
-	ld a, [wcf91] ; this is supposed to be the last item used, but it is also used to hold species numbers
+	ld a, [wCurItem]
 	cp b ; was the evolution item in this entry used?
 	jp nz, .nextEvoEntry1 ; if not, go to the next evolution entry
 .checkLevel
@@ -105,7 +105,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	cp b ; is the mon's level greater than the evolution requirement?
 	jp c, .nextEvoEntry2 ; if so, go the next evolution entry
 .doEvolution
-	ld [wCurEnemyLVL], a
+	ld [wCurEnemyLevel], a
 	ld a, 1
 	ld [wEvolutionOccurred], a
 	push hl
@@ -267,7 +267,7 @@ RenameEvolvedMon:
 	call GetName
 	pop af
 	ld [wd0b5], a
-	ld hl, wcd6d
+	ld hl, wNameBuffer
 	ld de, wStringBuffer
 .compareNamesLoop
 	ld a, [de]
@@ -283,7 +283,7 @@ RenameEvolvedMon:
 	call AddNTimes
 	push hl
 	call GetName
-	ld hl, wcd6d
+	ld hl, wNameBuffer
 	pop de
 	jp CopyData
 
@@ -320,7 +320,7 @@ Evolution_ReloadTilesetTilePatterns:
 LearnMoveFromLevelUp:
 	ld hl, EvosMovesPointerTable
 	ld a, [wd11e] ; species
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	dec a
 	ld bc, 0
 	ld hl, EvosMovesPointerTable
@@ -340,7 +340,7 @@ LearnMoveFromLevelUp:
 	and a ; have we reached the end of the learn set?
 	jr z, .done ; if we've reached the end of the learn set, jump
 	ld b, a ; level the move is learnt at
-	ld a, [wCurEnemyLVL]
+	ld a, [wCurEnemyLevel]
 	cp b ; is the move learnt at the mon's current level?
 	ld a, [hli] ; move ID
 	jr nz, .learnSetLoop
@@ -371,11 +371,11 @@ LearnMoveFromLevelUp:
 	call CopyToStringBuffer
 	predef LearnMove
 .done
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	ld [wd11e], a
 	ret
 
-; writes the moves a mon has at level [wCurEnemyLVL] to [de]
+; writes the moves a mon has at level [wCurEnemyLevel] to [de]
 ; move slots are being filled up sequentially and shifted if all slots are full
 WriteMonMoves:
 	call GetPredefRegisters
@@ -384,7 +384,7 @@ WriteMonMoves:
 	push bc
 	ld hl, EvosMovesPointerTable
 	ld b, 0
-	ld a, [wcf91]  ; cur mon ID
+	ld a, [wCurPartySpecies]
 	dec a
 	add a
 	rl b
@@ -407,7 +407,7 @@ WriteMonMoves:
 	and a
 	jp z, .done       ; end of list
 	ld b, a
-	ld a, [wCurEnemyLVL]
+	ld a, [wCurEnemyLevel]
 	cp b
 	jp c, .done       ; mon level < move level (assumption: learnset is sorted by level)
 	ld a, [wLearningMovesFromDayCare]

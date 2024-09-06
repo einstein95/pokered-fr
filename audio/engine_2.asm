@@ -842,7 +842,8 @@ Audio2_note_pitch:
 	bit BIT_PERFECT_PITCH, [hl] ; has toggle_perfect_pitch been used?
 	jr z, .skipFrequencyInc
 	inc e                       ; if yes, increment the frequency by 1
-	jr nc, .skipFrequencyInc
+	jr nc, .skipFrequencyInc    ; Likely a mistake, because `inc` does not set flag C.
+	                            ; Fortunately this does not seem to affect any notes that actually occur.
 	inc d
 .skipFrequencyInc
 	ld hl, wChannelFrequencyLowBytes
@@ -1406,7 +1407,7 @@ Audio2_PlaySound::
 
 .playMusic
 	xor a
-	ld [wUnusedC000], a
+	ld [wUnusedMusicByte], a
 	ld [wDisableChannelOutputWhenSfxEnds], a
 	ld [wMusicTempo + 1], a
 	ld [wMusicWaveInstrument], a
@@ -1647,7 +1648,7 @@ Audio2_PlaySound::
 	ld a, $77
 	ldh [rNR50], a ; full volume
 	xor a
-	ld [wUnusedC000], a
+	ld [wUnusedMusicByte], a
 	ld [wDisableChannelOutputWhenSfxEnds], a
 	ld [wMuteAudioAndPauseMusic], a
 	ld [wMusicTempo + 1], a

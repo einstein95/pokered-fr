@@ -1,4 +1,4 @@
-_CeruleanHouse2Text_74e77::
+_CeruleanBadgeHouseMiddleAgedManText::
 	text "Les BADGES sont"
 	line "portés par des"
 	cont "dresseurs de haut"
@@ -12,7 +12,7 @@ _CeruleanHouse2Text_74e77::
 	cont "pouvoirs!"
 	prompt
 
-_CeruleanHouse2Text_74e7c::
+_CeruleanBadgeHouseMiddleAgedManWhichBadgeText::
 	text "Dis-moi..."
 
 	para "Lequel des 8"
@@ -20,12 +20,12 @@ _CeruleanHouse2Text_74e7c::
 	cont "que je décrive?"
 	done
 
-_CeruleanHouse2Text_74e81::
+_CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText::
 	text "Reviens me voir"
 	line "quand tu veux."
 	done
 
-_CeruleanHouse2Text_74e96::
+_CeruleanBadgeHouseBoulderBadgeText::
 	text "L'ATTAQUE de tous"
 	line "tes #MON est"
 	cont "augmentée."
@@ -35,7 +35,7 @@ _CeruleanHouse2Text_74e96::
 	cont "FLASH."
 	prompt
 
-_CeruleanHouse2Text_74e9b::
+_CeruleanBadgeHouseCascadeBadgeText::
 	text "Les #MON d'un"
 	line "niveau inférieur"
 	cont "à 30 t'obéiront."
@@ -51,7 +51,7 @@ _CeruleanHouse2Text_74e9b::
 	cont "des combats."
 	prompt
 
-_CeruleanHouse2Text_74ea0::
+_CeruleanBadgeHouseThunderBadgeText::
 	text "La VITESSE de"
 	line "tous tes #MON"
 	cont "sera un peu"
@@ -63,7 +63,7 @@ _CeruleanHouse2Text_74ea0::
 	cont "combats."
 	prompt
 
-_CeruleanHouse2Text_74ea5::
+_CeruleanBadgeHouseRainbowBadgeText::
 	text "Les #MON"
 	line "jusqu'au niveau"
 	cont "50 t'obéiront."
@@ -77,7 +77,7 @@ _CeruleanHouse2Text_74ea5::
 	cont "FORCE."
 	prompt
 
-_CeruleanHouse2Text_74eaa::
+_CeruleanBadgeHouseSoulBadgeText::
 	text "La DEFENSE de"
 	line "tous tes #MON"
 	cont "sera augmentée."
@@ -88,7 +88,7 @@ _CeruleanHouse2Text_74eaa::
 	cont "des combats."
 	prompt
 
-_CeruleanHouse2Text_74eaf::
+_CeruleanBadgeHouseMarshBadgeText::
 	text "Les #MON de"
 	line "niveau 70 ou"
 	cont "moins t'obéiront."
@@ -99,13 +99,13 @@ _CeruleanHouse2Text_74eaf::
 	cont "incontrôlables!"
 	prompt
 
-_CeruleanHouse2Text_74eb4::
+_CeruleanBadgeHouseVolcanoBadgeText::
 	text "Le SPECIAL de tes"
 	line "#MON sera un"
 	cont "peu augmenté."
 	prompt
 
-_CeruleanHouse2Text_74eb9::
+_CeruleanBadgeHouseEarthBadgeText::
 	text "Tous les #MON"
 	line "obéiront à tes"
 	cont "ordres!"

@@ -71,14 +71,14 @@ StatusScreen:
 ; mon is in a box or daycare
 	ld a, [wLoadedMonBoxLevel]
 	ld [wLoadedMonLevel], a
-	ld [wCurEnemyLVL], a
+	ld [wCurEnemyLevel], a
 	ld hl, wLoadedMonHPExp - 1
 	ld de, wLoadedMonStats
 	ld b, $1
 	call CalcStats ; Recalculate stats
 .DontRecalculate
-	ld hl, wd72c
-	set 1, [hl]
+	ld hl, wStatusFlags2
+	set BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $33
 	ldh [rNR50], a ; Reduce the volume
 	call GBPalWhiteOutWithDelay3
@@ -170,9 +170,9 @@ StatusScreen:
 	call GBPalNormal
 	hlcoord 1, 0
 	call LoadFlippedFrontSpriteByMonIndex ; draw Pokémon picture
-	ld a, [wcf91]
-	call PlayCry ; play Pokémon cry
-	call WaitForTextScrollButtonPress ; wait for button
+	ld a, [wCurPartySpecies]
+	call PlayCry
+	call WaitForTextScrollButtonPress
 	pop af
 	ldh [hTileAnimations], a
 	ret
@@ -430,8 +430,8 @@ StatusScreen2:
 	call WaitForTextScrollButtonPress ; wait for button
 	pop af
 	ldh [hTileAnimations], a
-	ld hl, wd72c
-	res 1, [hl]
+	ld hl, wStatusFlags2
+	res BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $77
 	ldh [rNR50], a
 	call GBPalWhiteOut

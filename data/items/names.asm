@@ -6,7 +6,7 @@ ItemNames::
 	li "POKé BALL"
 	li "CARTE"
 	li "BICYCLETTE"
-	li "?????"
+	li "?????" ; SURFBOARD
 	li "SAFARI BALL"
 	li "POKéDEX"
 	li "PIERRE LUNE"
@@ -43,13 +43,13 @@ ItemNames::
 	li "FOSSILE DOME"
 	li "NAUTILE"
 	li "CLE SECRETE"
-	li "?????"
+	li "?????" ; ITEM_2C
 	li "BON COMMANDE"
 	li "PRECISION +"
 	li "PIERREPLANTE"
 	li "CARTE MAGN."
 	li "PEPITE"
-	li "PP PLUS"
+	li "PP PLUS" ; ITEM_32
 	li "POKéPOUPEE"
 	li "TOTAL SOIN"
 	li "RAPPEL"

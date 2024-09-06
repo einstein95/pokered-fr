@@ -1,44 +1,44 @@
-_SilphCo3Text_59ff9::
+_SilphCo3FSilphWorkerMWhatShouldIDoText::
 	text "Je travaille pour"
 	line "la SYLPHE SARL."
 	cont "Que faire d'autre?"
 	done
 
-_SilphCo3Text_59ffe::
+_SilphCo3FSilphWorkerMYouSavedUsText::
 	text "<PLAYER>! Toi et"
 	line "tes #MON,"
 	cont "vous nous avez"
 	cont "sauvés!"
 	done
 
-_SilphCo3BattleText1::
+_SilphCo3FRocketBattleText::
 	text "T'occupe pas de"
 	line "nos affaires!"
 	done
 
-_SilphCo3EndBattleText1::
+_SilphCo3FRocketEndBattleText::
 	text "Yaha!"
 	line "T'es trop fort!"
 	prompt
 
-_SilphCo3AfterBattleText1::
+_SilphCo3FRocketAfterBattleText::
 	text "Tu peux ouvrir"
 	line "les portes avec"
 	cont "la CARTE MAGN.!"
 	done
 
-_SilphCo3BattleText2::
+_SilphCo3FScientistBattleText::
 	text "Je préfère"
 	line "la TEAM ROCKET à"
 	cont "la SYLPHE SARL!!!"
 	done
 
-_SilphCo3EndBattleText2::
+_SilphCo3FScientistEndBattleText::
 	text "!!!"
 	line "Tu m'as eu!"
 	prompt
 
-_SilphCo3AfterBattleText2::
+_SilphCo3FScientistAfterBattleText::
 	text "Hmmm..."
 
 	para "J'aide la TEAM"
