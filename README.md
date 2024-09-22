@@ -4,9 +4,9 @@ This is a disassembly of Pokémon: Version Rouge and Bleue.
 
 It builds the following ROMs:
 
-* Pokemon - Version Rouge (F) [S].gb  `sha1: 47a7622fa30e6402a3891fe65b3a930bf9bd7aec`
-* Pokemon - Version Bleue (F) [S].gb  `sha1: 47faa910d0e073c600665bf9c83b6bd17babdf8a`
-* pokeblue_debug.gbc (debug build) `sha1: a46b07c821b0df992237071490d681cdd61e8d1a`
+* Pokemon - Version Rouge (F) [S].gb  ~~`sha1: 47a7622fa30e6402a3891fe65b3a930bf9bd7aec`~~
+* Pokemon - Version Bleue (F) [S].gb  ~~`sha1: 47faa910d0e073c600665bf9c83b6bd17babdf8a`~~
+* pokeblue_debug.gbc (debug build) ~~`sha1: a46b07c821b0df992237071490d681cdd61e8d1a`~~
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
