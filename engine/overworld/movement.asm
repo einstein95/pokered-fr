@@ -57,7 +57,7 @@ UpdatePlayerSprite:
 .next
 	ld [wSpritePlayerStateData1FacingDirection], a
 	ld a, [wFontLoaded]
-	bit 0, a
+	bit BIT_FONT_LOADED, a
 	jr nz, .notMoving
 .moving
 	ld a, [wMovementFlags]
@@ -135,11 +135,11 @@ UpdateNPCSprite:
 	ld l, a
 	inc l
 	ld a, [hl]        ; x#SPRITESTATEDATA1_MOVEMENTSTATUS
-	bit 7, a ; is the face player flag set?
+	bit BIT_FACE_PLAYER, a
 	jp nz, MakeNPCFacePlayer
 	ld b, a
 	ld a, [wFontLoaded]
-	bit 0, a
+	bit BIT_FONT_LOADED, a
 	jp nz, notYetMoving
 	ld a, b
 	cp $2
@@ -412,7 +412,7 @@ MakeNPCFacePlayer:
 	ld a, [wStatusFlags3]
 	bit BIT_NO_NPC_FACE_PLAYER, a
 	jr nz, notYetMoving
-	res 7, [hl]
+	res BIT_FACE_PLAYER, [hl]
 	ld a, [wPlayerDirection]
 	bit PLAYER_DIR_BIT_UP, a
 	jr z, .notFacingDown
@@ -654,7 +654,7 @@ CanWalkOntoTile:
 	add SPRITESTATEDATA2_YDISPLACEMENT
 	ld l, a
 	ld a, [hli]        ; x#SPRITESTATEDATA2_YDISPLACEMENT (initialized at $8, keep track of where a sprite did go)
-	bit 7, d           ; check if going upwards (d=$ff)
+	bit 7, d           ; check if going upwards (d == -1)
 	jr nz, .upwards
 	add d
 	; bug: these tests against $5 probably were supposed to prevent
@@ -671,7 +671,7 @@ CanWalkOntoTile:
 .checkHorizontal
 	ld d, a
 	ld a, [hl]         ; x#SPRITESTATEDATA2_XDISPLACEMENT (initialized at $8, keep track of where a sprite did go)
-	bit 7, e           ; check if going left (e=$ff)
+	bit 7, e           ; check if going left (e == -1)
 	jr nz, .left
 	add e
 	cp $5              ; compare, but no conditional jump like in the vertical check above (bug?)
