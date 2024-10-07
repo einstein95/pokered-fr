@@ -15,6 +15,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
 - [**Wiki**][wiki] (includes [tutorials][tutorials])
 - [**Symbols**][symbols]
+- [**Tools**][tools]
 - **Discord:** [pret][discord]
 - **IRC:** [libera#pret][irc]
 
@@ -42,6 +43,7 @@ Other disassembly projects:
 [wiki]: https://github.com/pret/pokered/wiki
 [tutorials]: https://github.com/pret/pokered/wiki/Tutorials
 [symbols]: https://github.com/pret/pokered/tree/symbols
+[tools]: https://github.com/pret/pokemon-asm-tools
 [discord]: https://discord.gg/d5dubZ3
 [irc]: https://web.libera.chat/?#pret
 [ci]: https://github.com/einstein95/pokered-fr/actions
