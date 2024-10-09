@@ -43,7 +43,7 @@ Other disassembly projects:
 [wiki]: https://github.com/pret/pokered/wiki
 [tutorials]: https://github.com/pret/pokered/wiki/Tutorials
 [symbols]: https://github.com/pret/pokered/tree/symbols
-[tools]: https://github.com/pret/pokemon-asm-tools
+[tools]: https://github.com/pret/gb-asm-tools
 [discord]: https://discord.gg/d5dubZ3
 [irc]: https://web.libera.chat/?#pret
 [ci]: https://github.com/einstein95/pokered-fr/actions
