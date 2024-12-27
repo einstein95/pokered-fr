@@ -1,5 +1,5 @@
 TrainerNames::
-	list_start TrainerNames
+	list_start
 	li "GAMIN"
 	li "SCOUT"
 	li "FILLETTE"
