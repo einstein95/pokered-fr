@@ -4448,7 +4448,7 @@ CalculateDamage:
 ; Multi-hit attacks may or may not have 0 bp.
 	cp TWO_TO_FIVE_ATTACKS_EFFECT
 	jr z, .skipbp
-	cp $1e
+	cp EFFECT_1E
 	jr z, .skipbp
 
 ; Calculate OHKO damage based on remaining HP.
@@ -6682,7 +6682,7 @@ BattleRandom:
 	add hl, bc
 	inc a
 	ld [wLinkBattleRandomNumberListIndex], a
-	cp 9
+	cp SERIAL_RNS_LENGTH - 1
 	ld a, [hl]
 	pop bc
 	pop hl
@@ -6705,7 +6705,7 @@ ENDC
 	ld [wLinkBattleRandomNumberListIndex], a
 
 	ld hl, wLinkBattleRandomNumberList
-	ld b, 9
+	ld b, SERIAL_RNS_LENGTH - 1
 .loop
 	ld a, [hl]
 	ld c, a
