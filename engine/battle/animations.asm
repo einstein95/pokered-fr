@@ -2180,8 +2180,8 @@ AnimCopyRowRight:
 	jr nz, AnimCopyRowRight
 	ret
 
-; get the sound of the move id in b
-GetMoveSoundB:
+; only used by the unreferenced PlayIntroMoveSound
+GetIntroMoveSound:
 	ld a, b
 	call GetMoveSound
 	ld b, a
