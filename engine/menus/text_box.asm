@@ -142,7 +142,7 @@ DisplayMoneyBox:
 	call PlaceString
 	hlcoord 12, 1
 	ld de, wPlayerMoney
-	ld c, LEADING_ZEROES | 3
+	ld c, 3 | LEADING_ZEROES
 	call PrintBCDNumber
 	ld hl, wStatusFlags5
 	res BIT_NO_TEXT_DELAY, [hl]

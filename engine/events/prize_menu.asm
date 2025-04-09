@@ -126,15 +126,15 @@ GetPrizeMenuId:
 ; put prices on the right side of the textbox
 	ld de, wPrize1Price
 	hlcoord 13, 5
-	ld c, LEADING_ZEROES | 2
+	ld c, 2 | LEADING_ZEROES
 	call PrintBCDNumber
 	ld de, wPrize2Price
 	hlcoord 13, 7
-	ld c, LEADING_ZEROES | 2
+	ld c, 2 | LEADING_ZEROES
 	call PrintBCDNumber
 	ld de, wPrize3Price
 	hlcoord 13, 9
-	ld c, LEADING_ZEROES | 2
+	ld c, 2 | LEADING_ZEROES
 	jp PrintBCDNumber
 
 INCLUDE "data/events/prizes.asm"
@@ -153,7 +153,7 @@ PrintPrizePrice:
 	call PlaceString
 	hlcoord 13, 1
 	ld de, wPlayerCoins
-	ld c, LEADING_ZEROES | 2
+	ld c, 2 | LEADING_ZEROES
 	call PrintBCDNumber
 	ret
 
