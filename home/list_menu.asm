@@ -129,7 +129,7 @@ DisplayListMenuIDLoop::
 	and a ; PCPOKEMONLISTMENU?
 	jr z, .pokemonList
 ; if it's an item menu
-	assert wCurListMenuItem == wCurItem
+	ASSERT wCurListMenuItem == wCurItem
 	push hl
 	call GetItemPrice
 	pop hl
@@ -147,7 +147,7 @@ DisplayListMenuIDLoop::
 	call GetName
 	jr .storeChosenEntry
 .pokemonList
-	assert wCurListMenuItem == wCurPartySpecies
+	ASSERT wCurListMenuItem == wCurPartySpecies
 	ld hl, wPartyCount
 	ld a, [wListPointer]
 	cp l ; is it a list of party pokemon or box pokemon?
@@ -297,7 +297,7 @@ DisplayChooseQuantityMenu::
 	ld de, SpacesBetweenQuantityAndPriceText
 	call PlaceString
 	ld de, hMoney ; total price
-	ld c, LEADING_ZEROES | 3
+	ld c, 3 | LEADING_ZEROES
 	call PrintBCDNumber
 	hlcoord 9, 10
 .printQuantity
@@ -422,7 +422,7 @@ PrintListMenuEntries::
 	pop hl
 	ld bc, SCREEN_WIDTH + 5 ; 1 row down and 5 columns right
 	add hl, bc
-	ld c, LEADING_ZEROES | 3
+	ld c, 3 | LEADING_ZEROES
 	call PrintBCDNumber
 	ld [hl], "¥"
 .skipPrintingItemPrice

@@ -111,7 +111,7 @@ NextChar::
 	inc de
 	jp PlaceNextChar
 
-NullChar:: ; unused
+NullChar::
 	ld b, h
 	ld c, l
 	pop hl
@@ -277,7 +277,7 @@ _ContTextNoPause::
 
 ; move both rows of text in the normal text box up one row
 ; always called twice in a row
-; first time, copy the two rows of text to the "in between" rows that are usually emtpy
+; first time, copy the two rows of text to the "in between" rows that are usually empty
 ; second time, copy the bottom row of text into the top row of text
 ScrollTextUpOneLine::
 	hlcoord 0, 14 ; top row of text

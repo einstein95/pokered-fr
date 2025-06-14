@@ -51,7 +51,7 @@ _Route8CooltrainerF1BattleText::
 	line "NIDORAN! Yaha!"
 	done
 
-_Route8CooltrainerF21EndBattleText::
+_Route8CooltrainerF1EndBattleText::
 	text "Hein?"
 	prompt
 

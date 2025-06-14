@@ -552,7 +552,7 @@ DrawTrainerInfo:
 	call PlaceString
 	hlcoord 8, 4
 	ld de, wPlayerMoney
-	ld c, LEFT_ALIGN | LEADING_ZEROES | 3
+	ld c, 3 | LEADING_ZEROES | LEFT_ALIGN
 	call PrintBCDNumber
 	ld [hl], "¥"
 	hlcoord 9, 6

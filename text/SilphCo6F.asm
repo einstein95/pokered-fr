@@ -61,12 +61,12 @@ _SilphCo6FRocket1BattleText::
 	line "4 frères ROCKET!"
 	done
 
-_SilphCo6Rocket1EndBattleText::
+_SilphCo6FRocket1EndBattleText::
 	text "Oups..."
 	line "Dans le vent!"
 	prompt
 
-_SilphCo6Rocket1AfterBattleText::
+_SilphCo6FRocket1AfterBattleText::
 	text "Pas grave!"
 	line "Mes frères me"
 	cont "vengeront!"
