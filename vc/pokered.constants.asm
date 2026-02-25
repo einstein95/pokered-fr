@@ -55,8 +55,8 @@ EXPORT SPORE
 EXPORT DEF C_CHAR EQU 'C'
 EXPORT DEF V_CHAR EQU 'V'
 	; "<SPACE>" is necessary since spaces separate template command arguments
-	charmap "<SPACE>", " "
-EXPORT DEF SPACE_CHAR EQU "<SPACE>"
+	charmap "<SPACE>", ' '
+EXPORT DEF SPACE_CHAR EQU '<SPACE>'
 EXPORT ROCK_SLIDE
 EXPORT HAZE
 

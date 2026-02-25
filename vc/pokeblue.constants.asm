@@ -67,5 +67,5 @@ EXPORT ROCK_SLIDE
 ; [FPA 40 Begin]
 EXPORT HAZE
 	; "<SPACE>" is necessary since spaces separate template command arguments
-	charmap "<SPACE>", " "
-EXPORT DEF SPACE_CHAR EQU "<SPACE>"
+	charmap "<SPACE>", ' '
+EXPORT DEF SPACE_CHAR EQU '<SPACE>'

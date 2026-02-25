@@ -1076,7 +1076,7 @@ wPartyMenuBlkPacket:: ds $30
 NEXTU
 	ds 29
 ; storage buffer for various strings
-wStringBuffer:: ds NAME_BUFFER_LENGTH - 1
+wStringBuffer:: ds NAME_BUFFER_LENGTH
 
 NEXTU
 	ds 29
@@ -1084,8 +1084,6 @@ NEXTU
 wExpAmountGained:: dw
 wGainBoostedExp:: db
 ENDU
-
-	ds 1
 
 wGymCityName:: ds GYM_CITY_LENGTH
 
